@@ -53,3 +53,6 @@ jobs:
 
       - name: Build application
         run: npm run build
+
+      - name: Verify hosting rules and GA4
+        run: npm run check:hosting && npm run check:analytics

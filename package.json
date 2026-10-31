@@ -19,6 +19,8 @@
     "check:prettier": "prettier --check .",
     "check:technical-seo": "node scripts/verify-technical-seo.mjs",
     "check:prelaunch": "node scripts/verify-prelaunch.mjs",
+    "check:hosting": "node scripts/verify-production-hosting.mjs",
+    "check:analytics": "node scripts/verify-analytics.mjs",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w ."

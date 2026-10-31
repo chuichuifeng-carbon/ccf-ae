@@ -15,6 +15,7 @@ import type { AstroIntegration } from 'astro';
 
 import astrowind from './vendor/integration';
 import technicalSeo from './vendor/integration/technicalSeo';
+import productionHosting from './vendor/integration/productionHosting';
 import pageSeo from './src/data/seo.json';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter';
@@ -106,6 +107,7 @@ export default defineConfig({
     }),
     // Run after compression and sitemap generation so every static <img> is covered.
     technicalSeo(),
+    productionHosting(),
   ],
 
   image: {

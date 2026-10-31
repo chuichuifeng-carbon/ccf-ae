@@ -2,20 +2,52 @@
 import { ANALYTICS } from 'astrowind:config';
 
 const id = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALYTICS.vendors.googleAnalytics.id) : '';
-const partytown = !!ANALYTICS?.vendors?.googleAnalytics?.partytown;
-const scriptType = partytown ? 'text/partytown' : undefined;
 ---
 
-{id && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${id}`} type={scriptType} />}
-
-<script is:inline id="ga-init" data-id={id} type={id ? scriptType : undefined}>
-  if (document.getElementById('ga-init').dataset.id) {
-    var d = document.getElementById('ga-init').dataset.id;
+<script is:inline id="ga-init" data-id={id}>
+  (() => {
+    const id = document.getElementById('ga-init')?.dataset.id;
+    // Inline scripts can run again after Astro navigation. Initialize only once.
+    if (!id || window.__ccfAnalyticsInitialized) return;
+    window.__ccfAnalyticsInitialized = true;
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      dataLayer.push(arguments);
-    };
+    window.gtag =
+      window.gtag ||
+      function () {
+        window.dataLayer.push(arguments);
+      };
     window.gtag('js', new Date());
-    window.gtag('config', d);
-  }
+    window.gtag('config', id, {
+      send_page_view: false,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+    });
+    const loader = document.createElement('script');
+    loader.async = true;
+    loader.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
+    document.head.appendChild(loader);
+    let previousPage = document.referrer;
+    let lastPage = '';
+    function trackPage() {
+      const page = new URL(location.href);
+      // Never send inquiry text or arbitrary query parameters to Analytics.
+      for (const key of [...page.searchParams.keys()]) {
+        if (!['utm_source', 'utm_medium', 'utm_campaign', 'utm_id', 'utm_term', 'utm_content', 'gclid'].includes(key)) {
+          page.searchParams.delete(key);
+        }
+      }
+      page.hash = '';
+      if (page.href === lastPage) return;
+      window.gtag('event', 'page_view', {
+        send_to: id,
+        page_title: document.title,
+        page_location: page.href,
+        page_referrer: previousPage,
+      });
+      previousPage = page.href;
+      lastPage = page.href;
+    }
+    // Fires on initial load and after ClientRouter has swapped title/content.
+    document.addEventListener('astro:page-load', trackPage);
+  })();
 </script>
