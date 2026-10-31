@@ -1,0 +1,184 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Bento from '~/components/widgets/Bento.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'قطع كربون فايبر للسيارات حسب نوع القطعة | CCF',
+  description:
+    'اختر قطع ألياف الكربون حسب النوع: شفة أمامية، ديفيوزر، سبويلر، غطاء محرك ومرايا. راجع التطبيقات المختارة واطلب عرض توريد للموزعين وورش التعديل.',
+};
+
+import { img } from '~/utils/siteImages';
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="منتجات ألياف الكربون للسيارات"
+    title="قطع كربون فايبر للسيارات حسب نوع القطعة"
+    subtitle="تصفّح قطع ألياف الكربون ضمن نطاق BMW وMercedes-AMG وPorsche: شفاه أمامية، ناشرات، قطع جانبية، أجنحة، أغطية محرك وصندوق ومرايا وشبكات. تختلف القطع المتاحة حسب الطراز والمرجع."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: '3', title: 'علامات مركبات في هذا الموقع' },
+      { amount: '8', title: 'فئات منتجات رئيسية' },
+      { amount: 'OEM/ODM', title: 'كتالوج + تطوير مخصص' },
+    ]}
+  />
+
+  <!-- Product categories -->
+  <Bento
+    tagline="نطاق المنتجات"
+    title="قطع ألياف الكربون حسب النوع"
+    subtitle="استكشف قطع السيارات المصنوعة من ألياف الكربون لدينا — سبويلر، أجنحة، أغطية محرك، ناشرات والمزيد. تختلف التوفر حسب تطبيق المركبة."
+    columns={4}
+    classes={{ container: 'max-w-[1720px]' }}
+    items={[
+      {
+        title: 'الشفاه الأمامية والسبليتر',
+        image: {
+          src: img(
+            'glossy carbon fiber front lip splitter for sports car bumper, dark studio product photography, visible weave'
+          ),
+          alt: 'شفاه أمامية وسبليتر من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/front-lips-splitters' },
+      },
+      {
+        title: 'الناشرات الخلفية',
+        image: {
+          src: img(
+            'carbon fiber rear diffuser with vertical fins mounted on sports car rear bumper, dark studio product photography'
+          ),
+          alt: 'ناشرات خلفية من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/rear-diffusers' },
+      },
+      {
+        title: 'التنانير الجانبية',
+        image: {
+          src: img('pair of glossy carbon fiber side skirts on dark studio floor, automotive product photography'),
+          alt: 'تنانير جانبية من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/side-skirts' },
+      },
+      {
+        title: 'السبويلر والأجنحة',
+        image: {
+          src: img('carbon fiber GT rear wing spoiler with aluminum mounts, dark studio product photography'),
+          alt: 'سبويلر وأجنحة من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/spoilers-wings' },
+      },
+      {
+        title: 'أغطية المحرك',
+        image: {
+          src: img('carbon fiber car hood with air vents, glossy weave texture, dark studio product photography'),
+          alt: 'أغطية محرك من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/hoods' },
+      },
+      {
+        title: 'أغطية صندوق الأمتعة',
+        image: {
+          src: img(
+            'carbon fiber trunk lid with integrated ducktail spoiler for sports sedan, dark studio product photography'
+          ),
+          alt: 'أغطية صندوق أمتعة من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/trunk-lids' },
+      },
+      {
+        title: 'الشبكات وفتحات التهوية',
+        image: {
+          src: img(
+            'carbon fiber front kidney grille and air intake trim for luxury car, dark studio product photography'
+          ),
+          alt: 'شبكات وفتحات تهوية من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/grilles-air-intake' },
+      },
+      {
+        title: 'أغطية المرايا',
+        image: {
+          src: img('pair of glossy carbon fiber side mirror caps, dark studio product photography, visible weave'),
+          alt: 'أغطية مرايا من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض الفئة', href: '/products/mirror-caps' },
+      },
+    ]}
+  />
+
+  <!-- Product FAQ -->
+  <FAQs
+    tagline="أسئلة المنتجات"
+    title="الأسئلة الشائعة حول قطع ألياف الكربون"
+    subtitle="إجابات عن أسئلة شائعة حول بنية المنتجات والتشطيبات والطلب بالجملة."
+    schema
+    items={[
+      {
+        title: 'ما أنواع قطع ألياف الكربون التي تقدمها CCF؟',
+        description:
+          'يشمل كتالوج CCF قطعاً خارجية وداخلية وإيروديناميكية وقطع هيكل لتطبيقات مركبات مختارة — شفاه أمامية، ناشرات خلفية، تنانير جانبية، سبويلر، أغطية محرك وأغطية صناديق أمتعة. تصفح حسب المركبة وافتح صفحة المنتج للتحقق من التصميم والتطبيق المذكورين.',
+      },
+      {
+        title: 'ما الفرق بين قطع الكربون الجاف والكربون الرطب؟',
+        description:
+          'يشير الكربون الجاف عادةً إلى قطع مصنوعة من ألياف كربون مُشبّعة مسبقاً (بريبريغ)، بينما يشير الكربون الرطب إلى عملية تمديد الراتنج الرطب. هذه المصطلحات وحدها لا تحدد الوزن أو القوة أو المطابقة — اسأل عن عملية التصنيع والبنية والوزن الفعلي للقطعة المختارة قبل مقارنة عروض الأسعار.',
+      },
+      {
+        title: 'هل تتوفر تشطيبات لامعة ومطفية؟',
+        description:
+          'تعتمد التشطيبات المتاحة على المنتج ومتطلبات الطلب. أرسل لنا مرجع المنتج والتشطيب المفضل (لامع أو مطفي) للتأكيد. وعند طلب طقم متطابق، حدد أيضاً نمط النسيج واتجاهه — لا تفترض أن القطع المطلوبة بشكل منفصل ستكون متطابقة المظهر.',
+      },
+      {
+        title: 'هل تعرض صور المنتجات كل ما يشمله الطلب؟',
+        description:
+          'صور المنتجات هي مراجع تصميمية؛ أكّد المحتويات المورّدة لرمز المنتج المحدد. اسأل عما إذا كان الإدراج يغطي قطعة واحدة أم زوجاً أم طقماً متعدد القطع، وعما إذا كانت الأقواس والمثبتات والملحقات مشمولة. قد تعرض صور المركبات قطعاً إضافية تُطلب بشكل منفصل.',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="لم تجد القطعة التي تحتاجها؟"
+    subtitle='أرسل لنا طراز مركبتك والقطعة المطلوبة — سنتحقق من تغطية الكتالوج أو نقيّم طلب تطوير مخصص. يمكنك أيضاً <a class="text-link underline" href="https://ccfrp.com/products/" target="_blank" rel="noopener">تصفح المنتجات على الموقع الرئيسي ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+  <FeaturedProducts />
+</PageLayout>

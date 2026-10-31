@@ -1,0 +1,531 @@
+{
+  "pages": 43,
+  "indexed": 38,
+  "imagePlacements": 334,
+  "imageSitemapPages": 32,
+  "responsiveOriginals": 203,
+  "imageBytesComparison": {
+    "originalBytes": 13063123,
+    "width640Bytes": 5532866,
+    "reductionPercent": 58,
+    "note": "Unique source images compared with their 640px versions; not measured total page transfer or Core Web Vitals."
+  },
+  "results": [
+    {
+      "route": "/",
+      "index": true,
+      "imagePlacements": 27,
+      "breadcrumbGraphs": 0,
+      "status": "passed"
+    },
+    {
+      "route": "/products",
+      "index": true,
+      "imagePlacements": 12,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/vehicles",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/catalogs",
+      "index": true,
+      "imagePlacements": 40,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/grow",
+      "index": true,
+      "imagePlacements": 7,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/grow/wholesale",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/grow/oem-odm",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/grow/dropshipping",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/grow/channel-partners",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/vehicles/bmw",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/vehicles/mercedes-amg",
+      "index": true,
+      "imagePlacements": 17,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/vehicles/porsche",
+      "index": true,
+      "imagePlacements": 11,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/front-lips-splitters",
+      "index": true,
+      "imagePlacements": 17,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/rear-diffusers",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/side-skirts",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/spoilers-wings",
+      "index": true,
+      "imagePlacements": 7,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/hoods",
+      "index": true,
+      "imagePlacements": 6,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/trunk-lids",
+      "index": true,
+      "imagePlacements": 5,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/grilles-air-intake",
+      "index": true,
+      "imagePlacements": 40,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/mirror-caps",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/cases",
+      "index": true,
+      "imagePlacements": 2,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/cases/canada-distributor-visit",
+      "index": true,
+      "imagePlacements": 2,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/cases/usa-oem-carbon-fiber",
+      "index": true,
+      "imagePlacements": 2,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/about",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/contact",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/faqs",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/editorial-policy",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/return-refund-policy",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/privacy",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/terms",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/blog",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/dry-carbon-vs-wet-carbon",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/category/adlh-almshtryn",
+      "index": false,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/tag/aljmlh",
+      "index": false,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/tag/altsnya",
+      "index": false,
+      "imagePlacements": 2,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/tag/alyaf-alkrbwn-aljaf",
+      "index": false,
+      "imagePlacements": 2,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/404.html",
+      "index": false,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 0,
+      "status": "passed"
+    },
+    {
+      "route": "/carbon-fiber-parts-fitment-check",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    }
+  ],
+  "http": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/products",
+      "status": 200
+    },
+    {
+      "path": "/vehicles",
+      "status": 200
+    },
+    {
+      "path": "/catalogs",
+      "status": 200
+    },
+    {
+      "path": "/grow",
+      "status": 200
+    },
+    {
+      "path": "/grow/wholesale",
+      "status": 200
+    },
+    {
+      "path": "/grow/oem-odm",
+      "status": 200
+    },
+    {
+      "path": "/grow/dropshipping",
+      "status": 200
+    },
+    {
+      "path": "/grow/channel-partners",
+      "status": 200
+    },
+    {
+      "path": "/vehicles/bmw",
+      "status": 200
+    },
+    {
+      "path": "/vehicles/mercedes-amg",
+      "status": 200
+    },
+    {
+      "path": "/vehicles/porsche",
+      "status": 200
+    },
+    {
+      "path": "/products/front-lips-splitters",
+      "status": 200
+    },
+    {
+      "path": "/products/rear-diffusers",
+      "status": 200
+    },
+    {
+      "path": "/products/side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/spoilers-wings",
+      "status": 200
+    },
+    {
+      "path": "/products/hoods",
+      "status": 200
+    },
+    {
+      "path": "/products/trunk-lids",
+      "status": 200
+    },
+    {
+      "path": "/products/grilles-air-intake",
+      "status": 200
+    },
+    {
+      "path": "/products/mirror-caps",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "status": 200
+    },
+    {
+      "path": "/cases",
+      "status": 200
+    },
+    {
+      "path": "/cases/canada-distributor-visit",
+      "status": 200
+    },
+    {
+      "path": "/cases/usa-oem-carbon-fiber",
+      "status": 200
+    },
+    {
+      "path": "/about",
+      "status": 200
+    },
+    {
+      "path": "/contact",
+      "status": 200
+    },
+    {
+      "path": "/faqs",
+      "status": 200
+    },
+    {
+      "path": "/editorial-policy",
+      "status": 200
+    },
+    {
+      "path": "/return-refund-policy",
+      "status": 200
+    },
+    {
+      "path": "/privacy",
+      "status": 200
+    },
+    {
+      "path": "/terms",
+      "status": 200
+    },
+    {
+      "path": "/blog",
+      "status": 200
+    },
+    {
+      "path": "/dry-carbon-vs-wet-carbon",
+      "status": 200
+    },
+    {
+      "path": "/category/adlh-almshtryn",
+      "status": 200
+    },
+    {
+      "path": "/tag/aljmlh",
+      "status": 200
+    },
+    {
+      "path": "/tag/altsnya",
+      "status": 200
+    },
+    {
+      "path": "/tag/alyaf-alkrbwn-aljaf",
+      "status": 200
+    },
+    {
+      "path": "/404.html",
+      "status": 200
+    },
+    {
+      "path": "/carbon-fiber-parts-fitment-check",
+      "status": 200
+    },
+    {
+      "path": "/compare-wholesale-carbon-fiber-quotes",
+      "status": 200
+    },
+    {
+      "path": "/technical-seo-missing-page",
+      "status": 404
+    },
+    {
+      "path": "/vehicles/audi",
+      "status": 404
+    },
+    {
+      "path": "/vehicles/ferrari",
+      "status": 404
+    },
+    {
+      "path": "/vehicles/lamborghini",
+      "status": 404
+    },
+    {
+      "path": "/cases/european-football-player-carbon-fiber",
+      "status": 404
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-index.xml",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-0.xml",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-images.xml",
+      "status": 200
+    },
+    {
+      "path": "/rss.xml",
+      "status": 200
+    }
+  ],
+  "limits": "Local preview does not execute hosting-platform redirect/header rules. Validate production HTTP, CDN caching, Search Console indexing and field CWV after deployment."
+}

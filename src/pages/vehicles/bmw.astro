@@ -1,0 +1,146 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
+import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF',
+  description:
+    'كتالوجات قطع كربون بي إم دبليو BMW M2 وM3 وM4 وM5 وأجيال G وF المختارة. حدّد الطراز والشاسيه ومرجع القطعة لطلب عرض توريد من المصنع.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="تصفح حسب المركبة · BMW"
+    title="قطع ألياف الكربون لسيارات BMW"
+    subtitle="تصفّح قطع كربون فايبر بي إم دبليو BMW M2 وM3 وM4 وM5 وأجيال G وF المختارة. افتح كتالوج الطراز أدناه، ثم حدّد مرجع القطعة وسنة المركبة ونسخة الهيكل لطلب توريد بالجملة من مصنع CCF."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <ModelCatalogs brand="bmw" />
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: 'M2 · M3 · M4 · M5', title: 'تطبيقات M الرئيسية' },
+      { amount: 'G · F', title: 'أجيال متعددة مغطاة' },
+      { amount: 'كربون جاف', title: 'تركيز الإنتاج' },
+    ]}
+  />
+
+  <!-- Covered models -->
+  <Features2
+    tagline="الطرازات المغطاة"
+    title="طرازات BMW التي نغطيها"
+    subtitle="تطبيقات M الحالية والسابقة، إضافة إلى الفئات الأساسية — توفر القطع يختلف حسب الطراز والجيل."
+    columns={3}
+    items={[
+      {
+        title: 'الجيل الحالي M',
+        description: 'G80/G82 M3 و M4 · G87 M2 · G90 M5 — أوسع تغطية في كتالوجنا، بتصاميم CSL و MP و R44 وغيرها.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'الجيل السابق M',
+        description: 'F80/F82/F83 M3 و M4 · F87 M2 · F90 M5 — قطع إيروديناميكية وألواح هيكل وأغطية مرايا.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'الفئات الأساسية',
+        description:
+          'G42 الفئة الثانية · G20/G28 و F30 الفئة الثالثة · G22/G23/G26 الفئة الرابعة · G30/G38 و G60/G68 الفئة الخامسة.',
+        icon: 'tabler:car',
+      },
+    ]}
+  />
+
+  <!-- Popular part types -->
+  <Features
+    tagline="القطع الأكثر طلباً"
+    title="قطع ألياف الكربون الشائعة لمركبات BMW"
+    columns={3}
+    defaultIcon="tabler:checkbox"
+    items={[
+      {
+        title: 'الشفاه الأمامية',
+        description: 'تصاميم CSL و R44 و V و MP لمركبات G80/G82 و G87 M2 و G90 M5 وأجيال F.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'الناشرات الخلفية',
+        description: 'تصاميم MP و 3D وإصدارات بإضاءة وسطية لمركبات M الحالية والسابقة.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'التنانير الجانبية',
+        description: 'تصاميم MP وبروفايل مسطح لمركبات G80/G82/G83 و G87 M2 و G90 M5.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'الأجنحة والسبويلر',
+        description: 'أجنحة MP و A-Style و AT-R3 وسبويلر CS لغطاء الصندوق.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'أغطية المحرك وصناديق الأمتعة',
+        description: 'أغطية محرك بتصاميم AC و APN وأغطية صناديق بتصميم CSL — بنسيج قياسي أو Forged Carbon.',
+        icon: 'tabler:engine',
+      },
+      {
+        title: 'الشبكات والزخارف',
+        description: 'شبكات أمامية بتصاميم CSL و V و MP، شبكات كيدني، وأغطية مرايا بديلة.',
+        icon: 'tabler:grill',
+      },
+    ]}
+  />
+
+  <aside class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+    <h2 class="text-2xl font-bold mb-3">هل اخترت المرجع المناسب لمركبتك؟</h2>
+    <p class="text-lg text-muted">
+      يوضح <a class="text-primary underline" href="/carbon-fiber-parts-fitment-check">دليل مراجعة التوافق قبل الطلب</a> صور
+      المصد والعادم وبيانات المركبة التي تساعدنا على مراجعة النسخة المطلوبة.
+    </p>
+  </aside>
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اطلب عرض سعر لقطع BMW"
+    subtitle='أرسل طراز مركبتك ورمز الشاسيه والقطعة المطلوبة والكمية. <a class="text-link underline" href="https://ccfrp.com/vehicles/bmw/" target="_blank" rel="noopener">تصفح قطع BMW الكاملة على الموقع الرئيسي ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+  <FeaturedProducts />
+</PageLayout>

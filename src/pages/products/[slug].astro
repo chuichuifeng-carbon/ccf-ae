@@ -1,0 +1,132 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import SourceGallery from '~/components/widgets/SourceGallery.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
+import Button from '~/components/ui/Button.astro';
+import { featuredProducts } from '~/data/b2b/featured';
+import images from '~/data/b2b/product-images.json';
+import { whatsappUrl } from '~/utils/inquiry';
+export function getStaticPaths() {
+  return featuredProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+}
+const { product } = Astro.props;
+const original = `https://ccfrp.com/${product.slug}/`;
+const photo = (images as Record<string, { image: string }>)[original];
+const catalog = `https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-g80-m4-g82-carbon-fiber-parts-catalog.pdf#page=${product.page}`;
+---
+
+<PageLayout
+  metadata={{ title: product.title, description: product.description, openGraph: { images: [{ url: photo.image }] } }}
+>
+  <HeroText
+    title={product.title}
+    tagline="تفاصيل المنتج · توريد B2B"
+    subtitle={product.description}
+    callToAction={{
+      text: 'اطلب سعر هذا المنتج عبر واتساب',
+      href: whatsappUrl(product.title, original),
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{ text: 'البريد وبيانات التواصل', href: '/contact' }}
+  />
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10 grid gap-10 md:grid-cols-2">
+    <a href={photo.image} target="_blank" rel="noopener"
+      ><img
+        src={photo.image}
+        alt={product.title}
+        width="900"
+        height="750"
+        fetchpriority="high"
+        class="w-full rounded-2xl bg-white object-contain"
+      /></a
+    >
+    <div class="space-y-5">
+      <h2 class="text-2xl font-bold">المواصفات ومراجعة المطابقة</h2>
+      <p>تطبيق المركبة المنشور: <bdi dir="ltr">{product.model}</bdi></p>
+      {
+        product.rows.length > 0 && (
+          <div class="overflow-x-auto">
+            <>
+              <table class="w-full text-start border-collapse">
+                <>
+                  <caption class="text-start text-sm text-muted mb-3">مراجع الكتالوج — ليست أرقام SKU للمصنع</caption>
+                  <thead>
+                    <tr>
+                      {['رقم المرجع', 'التطبيق المدرج', 'تسمية المادة'].map((label) => (
+                        <th class="text-start p-3 border-b border-gray-300 dark:border-slate-600">{label}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {product.rows.map((row) => (
+                      <tr>
+                        {row.map((value) => (
+                          <td class="p-3 border-b border-gray-200 dark:border-slate-700">
+                            <bdi dir="ltr">{value}</bdi>
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </>
+              </table>
+              <p class="mt-3 text-sm text-muted">
+                DCF تسمية واردة في الكتالوج؛ أكّد بنية المادة المطلوبة في عرض السعر.
+              </p>
+            </>
+          </div>
+        )
+      }
+      <ul class="list-disc ps-5 space-y-3">{product.checks.map((check) => <li>{check}</li>)}</ul>
+      {
+        product.page > 0 && (
+          <Button
+            href={catalog}
+            target="_blank"
+            text={`عرض صفحة ${product.page} من الكتالوج`}
+            icon="tabler:file-type-pdf"
+          />
+        )
+      }
+      <p class="text-sm text-muted">
+        صور المركبة قد تعرض تجهيزات إضافية. اتفق على المادة والتشطيب ومحتويات التوريد والكمية والوجهة قبل تأكيد الطلب.
+      </p>
+      <a href={original} target="_blank" rel="noopener" class="text-primary underline"
+        >صور إضافية والمصدر الأصلي على ccfrp.com ↗</a
+      >
+    </div>
+  </section>
+  <SourceGallery productSlug={product.slug} />
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-8">
+    <div class="rounded-2xl border border-gray-200 dark:border-slate-700 p-6 space-y-3">
+      <h2 class="text-xl font-bold">المصدر ومسؤولية المعلومات</h2>
+      <p>
+        الجهة الناشرة: <a class="text-primary underline" href="/about#publisher">CCF</a>. تعتمد معلومات هذه الصفحة
+        وصورتها على صفحة المنتج الأصلية المنشورة على ccfrp.com{
+          product.page > 0 ? ` ومرجع الكتالوج في الصفحة ${product.page}` : ''
+        }.
+      </p>
+      <p class="text-sm text-muted">
+        آخر تحقق من المصدر المنشور: <time datetime="2026-10-30">30 أكتوبر 2026</time>. هذا تاريخ فحص المصدر، وليس فحص
+        قطعة أو تأكيداً للمخزون. لا تُعرض في هذه الصفحة نتائج اختبار مستقل للوزن أو القوة.
+      </p>
+      <div class="flex flex-wrap gap-4 text-primary underline">
+        <a href="/editorial-policy">منهج المصادر والتصحيحات</a><a href="/return-refund-policy"
+          >الضمان ومعالجة المطالبات</a
+        ><a href="mailto:info@ccfrp.com?subject=Product%20information%20correction">الإبلاغ عن اختلاف في المعلومات</a>
+      </div>
+    </div>
+  </section>
+
+  <nav
+    aria-label="روابط توريد ذات صلة"
+    class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex flex-wrap gap-5 text-primary underline"
+  >
+    <a href={`/products/${product.category}`}>{product.categoryName}</a><a href="/vehicles/bmw">كتالوجات BMW</a><a
+      href="/grow/wholesale">التوريد بالجملة</a
+    ><a href="/grow/oem-odm">تطوير OEM/ODM</a><a href="/catalogs">جميع الكتالوجات</a>
+  </nav>
+  <FeaturedProducts />
+</PageLayout>

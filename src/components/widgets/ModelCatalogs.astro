@@ -1,0 +1,82 @@
+---
+import catalogs from '~/data/b2b/catalogs.json';
+import Headline from '~/components/ui/Headline.astro';
+import Button from '~/components/ui/Button.astro';
+import { whatsappUrl } from '~/utils/inquiry';
+const { brand } = Astro.props as { brand?: string };
+const names: Record<string, string> = {
+  bmw: 'BMW',
+  'mercedes-amg': 'Mercedes-AMG',
+  porsche: 'Porsche',
+};
+const groups = brand ? catalogs.filter((group) => group.brand === brand) : catalogs;
+---
+
+<section id="model-catalogs" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 scroll-mt-24">
+  <Headline
+    title="اختر كتالوج مركبتك"
+    subtitle="افتح ملف PDF مباشرة، ثم أرسل رقم المرجع واسم الكتالوج والكمية للتحقق من المطابقة والأسعار. أرقام الصفوف مراجع داخل الكتالوج وليست أرقام SKU موحّدة."
+  />
+  <div class="space-y-10">
+    {
+      groups.map((group) => (
+        <div>
+          <h3 class="text-2xl font-bold mb-4">{names[group.brand]}</h3>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {group.entries.map((entry) => (
+              <article
+                data-model-card
+                class="overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-700 bg-page"
+              >
+                <a
+                  href={entry.url}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={`كتالوج ${names[group.brand]} ${entry.model}`}
+                >
+                  <img
+                    src={entry.image}
+                    alt={entry.imageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 420px"
+                    class="w-full aspect-[16/10] object-contain bg-gray-50 dark:bg-slate-900"
+                  />
+                </a>
+                <div class="p-5">
+                  <h4 class="font-bold text-lg mb-4">
+                    <bdi dir="ltr">{entry.model}</bdi>
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <Button
+                      variant="primary"
+                      href={whatsappUrl(`كتالوج ${names[group.brand]} ${entry.model}`, entry.url)}
+                      data-inquiry-context={`كتالوج ${names[group.brand]} ${entry.model}`}
+                      data-inquiry-reference={entry.url}
+                      target="_blank"
+                      text="اسأل عن القطع"
+                      icon="tabler:brand-whatsapp"
+                    />
+                    <Button
+                      variant="secondary"
+                      href={entry.url}
+                      target="_blank"
+                      text="فتح كتالوج PDF"
+                      icon="tabler:file-type-pdf"
+                    />
+                  </div>
+                  <p class="text-xs text-muted mt-3">صورة توضيحية للطراز؛ ليست صورة منتج أو إثبات مطابقة.</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <p class="mt-6 text-sm text-muted">
+    ملفات الكتالوج الأصلية مستضافة على ccfrp.com وقد تتضمن الإنجليزية والصينية. إدراج المركبة لا يضمن توافق كل قطعة مع
+    جميع تجهيزاتها أو توفرها الفوري. للطرازات غير المدرجة ضمن BMW وMercedes-AMG وPorsche، أرسل السنة وصورة القطعة عبر
+    واتساب.
+  </p>
+</section>

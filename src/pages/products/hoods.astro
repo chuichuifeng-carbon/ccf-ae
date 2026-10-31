@@ -1,0 +1,85 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ProductCollection from '~/components/widgets/ProductCollection.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'غطاء محرك كربون BMW M2 وM3 وM5 | CCF',
+  description:
+    'استعرض أغطية محرك كربون BMW بتصاميم وفتحات تهوية مختارة. راجع الجيل والقفل والمفصلات وبنية المادة، وأرسل المرجع والكمية لطلب عرض توريد.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="فئة المنتجات · ألواح الهيكل"
+    title="أغطية محرك كربون لسيارات BMW"
+    subtitle="قارن أغطية محرك كربون لتطبيقات BMW E92 وF87 وG87 M2 وG80 M3 وF90 وG90 M5 المختارة. حدّد التصميم والفتحات وبنية المادة، ثم أكّد القفل والمفصلات ومحتويات التوريد قبل طلب سعر الجملة."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Representative products -->
+  <ProductCollection category="hoods" title="صور وتصاميم أغطية المحرك" />
+
+  <!-- Buyer checks -->
+  <Features
+    tagline="دليل المشتري"
+    title="ما الذي تتحقق منه قبل اختيار غطاء محرك"
+    columns={3}
+    defaultIcon="tabler:checkbox"
+    items={[
+      {
+        title: 'أكّد بيانات المركبة',
+        description: 'سنة الطراز، تكوين الهيكل، ونقاط المفصلات والقفل — أغطية المحرك حساسة للمطابقة الدقيقة.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'أكّد البنية الداخلية',
+        description: 'الهيكل السفلي، خلوص حجرة المحرك، وتصميم فتحات التهوية — تحقق من توافقها مع مكونات المحرك.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'جرّب التركيب قبل الطلاء',
+        description: 'افحص المطابقة على المركبة قبل أي أعمال طلاء أو لمسات نهائية — هذه ممارسة قياسية لقطع الهيكل.',
+        icon: 'tabler:checkbox',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اطلب عرض سعر لأغطية المحرك"
+    subtitle='أرسل مرجع المنتج وطراز مركبتك وسنتها والكمية المطلوبة. <a class="text-link underline" href="https://ccfrp.com/products/hoods-trunk-lids/#hoods" target="_blank" rel="noopener">تصفح المجموعة الكاملة على الموقع الرئيسي ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

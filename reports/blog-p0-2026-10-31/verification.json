@@ -1,0 +1,18 @@
+{
+  "posts": 3,
+  "rssItems": 3,
+  "results": [
+    {
+      "topic": "AR-P0-001",
+      "route": "/carbon-fiber-parts-fitment-check",
+      "internalHtmlDestinations": 9,
+      "status": "passed"
+    },
+    {
+      "topic": "AR-P0-002",
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "internalHtmlDestinations": 8,
+      "status": "passed"
+    }
+  ]
+}

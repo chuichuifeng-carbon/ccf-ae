@@ -1,0 +1,88 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import artwork from '~/data/b2b/site-artwork.json';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Projects from '~/components/widgets/Projects.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'زيارات عملاء مصنع قطع الكربون ومراجعة المورد | CCF',
+  description:
+    'شاهد صور زيارات عملاء من كندا والولايات المتحدة إلى CCF لمناقشة قطع الكربون ومراجعة المنتجات. استخدم الأدلة لتقييم المورد قبل طلب التوريد.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="قصص العملاء · أدلة المشاريع"
+    title="زيارات العملاء ومناقشات توريد قطع الكربون"
+    subtitle="شاهد كيف يتعامل العملاء الدوليون مع CCF — من مراجعة المنتجات إلى مناقشات المشاريع وجهاً لوجه وتقييم المورد في الصين."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Case studies -->
+  <Projects
+    tagline="أدلة العملاء"
+    title="شاهد العمل. شاهد التفاعل."
+    subtitle="توثّق هذه القصص زيارات حقيقية إلى CCF ومناقشات المنتجات والتوريد مع مشترين من الولايات المتحدة وكندا."
+    columns={2}
+    items={[
+      {
+        title: 'عميل أمريكي يزور CCF',
+        description:
+          'مناقشة وجهاً لوجه حول مشروع ألياف كربون للسيارات وتعاون محتمل — تحولت إلى طلب كبير يقترب من حمولة حاوية.',
+        image: {
+          src: artwork.caseUs,
+          alt: 'عميل أمريكي يزور مصنع CCF لألياف الكربون',
+        },
+        tags: ['الولايات المتحدة', 'زيارة مصنع'],
+        href: '/cases/usa-oem-carbon-fiber',
+      },
+      {
+        title: 'عميل كندي يزور CCF',
+        description:
+          'مناقشة شخصية حول منتجات ألياف الكربون ومتطلبات المشروع — تطورت إلى طلب حقيقي لقطع كربون لمركبات BMW.',
+        image: {
+          src: artwork.caseCanada,
+          alt: 'عميل كندي يزور مصنع CCF لألياف الكربون',
+        },
+        tags: ['كندا', 'زيارة مصنع'],
+        href: '/cases/canada-distributor-visit',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="قيّم CCF كمورّدك القادم"
+    subtitle="قصص العملاء جزء من العناية الواجبة — راجع معلومات شركتنا وخلفيتنا التصنيعية وتغطية المركبات، ثم ناقش متطلبات مشروعك مع فريقنا."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

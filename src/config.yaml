@@ -1,0 +1,83 @@
+site:
+  name: CCF
+  site: 'https://amxnx.vip'
+  base: '/'
+  trailingSlash: false
+  organization:
+    legalName: 'Guangzhou Chui Chui Feng Automotive Products Co., Ltd.'
+    email: 'info@ccfrp.com'
+    telephone: '+86-134-2769-0360'
+    mainWebsite: 'https://ccfrp.com'
+    streetAddress: 'Room 201, No. 2 Caodi Middle Street, Qinghe Village, Renhe Town, Baiyun District'
+    addressLocality: 'Guangzhou'
+    addressRegion: 'Guangdong'
+    addressCountry: 'CN'
+    sameAs:
+      - 'https://ccfrp.com'
+      - 'https://www.linkedin.com/company/ccfrp'
+      - 'https://www.facebook.com/ccfrpcom'
+      - 'https://www.instagram.com/ccfcarbon/'
+      - 'https://www.youtube.com/@ccfrp2006'
+
+# Default SEO metadata
+metadata:
+  title:
+    default: مصنع قطع كربون فايبر للسيارات في الصين | CCF
+    template: '%s — CCF'
+  description: 'مصنع CCF لقطع كربون فايبر BMW ومرسيدس AMG وبورش. توريد للموزعين وورش التعديل وتطوير OEM/ODM؛ أرسل الطراز والكمية لطلب عرض سعر عبر واتساب.'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: CCF
+    images:
+      - url: '/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp'
+        width: 1200
+        height: 900
+    type: website
+  twitter:
+    cardType: summary_large_image
+
+i18n:
+  language: ar
+  textDirection: rtl
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 8
+
+    post:
+      isEnabled: true
+      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      robots:
+        index: true
+
+    list:
+      isEnabled: true
+      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      robots:
+        index: true
+
+    category:
+      isEnabled: true
+      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      robots:
+        index: false
+
+    tag:
+      isEnabled: true
+      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      robots:
+        index: false
+
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

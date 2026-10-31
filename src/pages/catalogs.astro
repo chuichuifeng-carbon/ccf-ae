@@ -1,0 +1,83 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'كتالوج قطع كربون BMW ومرسيدس وبورش PDF | CCF',
+  description:
+    'افتح كتالوجات PDF لقطع كربون BMW وMercedes-AMG وPorsche حسب الطراز والجيل. حدّد رقم المرجع والمادة ثم أرسل الكمية والوجهة لطلب السعر عبر واتساب.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="BMW · Mercedes-AMG · Porsche · كتالوجات PDF"
+    title="كتالوجات قطع ألياف الكربون PDF حسب المركبة"
+    subtitle="اختر العلامة والطراز وافتح كتالوج PDF مباشرة. تعرض هذه الصفحة كتالوجات BMW ومرسيدس Mercedes-AMG وبورش Porsche؛ حدّد رقم المرجع والمادة ثم أرسل الكمية وبلد التسليم لطلب عرض سعر عبر واتساب."
+    callToAction={{
+      text: 'اسأل عن القطع عبر واتساب',
+      href: 'https://wa.me/8613427690360',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{ text: 'اختر كتالوج المركبة', href: '#model-catalogs', variant: 'secondary' }}
+  />
+
+  <ModelCatalogs />
+
+  <!-- About the catalog library -->
+  <Features2
+    tagline="داخل مكتبة الكتالوجات"
+    title="مراجع منتجات حسب العلامة والطراز"
+    subtitle="تعرض كتالوجات PDF مراجع المنتجات المنشورة لتطبيقات مركبات مختارة. للتطبيقات دون كتالوج منشور، أرسل الطراز والسنة والقطع المطلوبة لمراجعة الملاءمة والتوفر."
+    columns={4}
+    items={[
+      {
+        title: 'كتالوجات العلامات الثلاث',
+        description: 'مراجع المنتجات حسب الطراز لسيارات BMW وMercedes-AMG وPorsche فقط في هذا الموقع.',
+        icon: 'tabler:file-type-pdf',
+      },
+      {
+        title: 'مراجعة التطبيق',
+        description: 'أرسل سنة المركبة ورمز الهيكل ومرجع القطعة وصور منطقة التركيب لمراجعة المطابقة.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'طلب من وحدة واحدة',
+        description: 'منتجات الكتالوج القياسية تدعم الشراء بوحدة واحدة حيثما توفرت، مع إمكانية دمج منتجات مختارة.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'تطوير OEM/ODM',
+        description: 'لقطعة غير موجودة في الكتالوج، يمكن مراجعة التوريد بعلامة خاصة أو مشروع تطوير منفصل.',
+        icon: 'tabler:settings',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اختر كتالوج BMW أو Mercedes-AMG أو Porsche"
+    subtitle="المكتبة الكاملة مستضافة على ccfrp.com. تصفّح الكتالوج المناسب لمركبتك، ثم أرسل رمز المنتج والكمية وبلد الوجهة للتحقق من التوفر والتسعير."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

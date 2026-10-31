@@ -1,0 +1,120 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'زيارة عميل أمريكي ومناقشة مشروع كربون | CCF',
+  ignoreTitleTemplate: true,
+  description:
+    'شاهد زيارة عميل أمريكي إلى CCF لمناقشة مشروع كربون ومراجعة المنتجات والمستودع. تعرّف على انتقال مناقشات التوريد إلى طلب حقيقي.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="الولايات المتحدة · زيارة مصنع ألياف كربون"
+    title="زيارة عميل أمريكي ومناقشة مشروع كربون"
+    subtitle="عميل من الولايات المتحدة زار CCF — مصنع ألياف كربون للسيارات في قوانغدونغ، الصين — لمناقشة وجهاً لوجه حول قطع ألياف الكربون ومتطلبات المشروع وتعاون B2B محتمل."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- The visit -->
+  <Content
+    tagline="زيارة العميل · الولايات المتحدة"
+    title="من اللقاء الأول إلى مناقشة على مستوى المصنع"
+    content="خلال الزيارة، التقى العميل الأمريكي بفريق CCF وناقش متطلبات مشروع ألياف الكربون للسيارات وراجع مخزون منتجاتنا ومستودعنا شخصياً."
+    image={{
+      src: '/images/verified/usa-customer-ccf-business-meeting.webp',
+      alt: 'مناقشة مشروع ألياف كربون مع عميل أمريكي في مصنع CCF',
+      aspect: '4/3',
+    }}
+    items={[
+      {
+        title: 'اجتماع وجهاً لوجه',
+        description: 'بناء أساس التعاون بلقاء مباشر مع فريق CCF.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'مناقشة المشروع',
+        description: 'مراجعة متطلبات المنتج والمشروع واحتياجات السوق مباشرة.',
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'جولة في المستودع',
+        description: 'معاينة قطع ألياف الكربون والمخزون شخصياً بدلاً من الاكتفاء بالصور.',
+        icon: 'tabler:building-warehouse',
+      },
+    ]}
+  />
+
+  <!-- The result -->
+  <Content
+    isReversed
+    tagline="من زيارة المصنع إلى طلب حقيقي"
+    title="الزيارة بنت الثقة. ثم جاء الطلب."
+    content="بعد لقاء فريق CCF ومناقشة متطلبات المنتج ومعاينة قطع ألياف الكربون شخصياً، تقدّم العميل الأمريكي بطلب كبير لقطع ألياف كربون للسيارات يقترب من حمولة حاوية كاملة."
+    image={{
+      src: '/images/verified/usa-customer-half-container-carbon-fiber-order.webp',
+      alt: 'طلب قطع ألياف كربون مغلف وجاهز للشحن إلى الولايات المتحدة',
+      aspect: '4/3',
+    }}
+    items={[
+      {
+        title: 'معاينة المنتجات شخصياً',
+        description: 'راجع العميل منتجاتنا مباشرة بدلاً من اتخاذ قرار التوريد من الصور وحدها.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'متطلبات نوقشت وجهاً لوجه',
+        description: 'اختيار المنتجات واحتياجات السوق ومتطلبات التعاون نوقشت مباشرة مع فريقنا.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'ثقة أكبر بالمورد',
+        description: 'رؤية المنتجات والمستودع والفريق منحت العميل معلومات أكثر لتقييم CCF كمورّد طويل الأمد.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'المناقشة تحولت إلى طلب',
+        description: 'بعد الزيارة ومناقشات التوريد، قدّم العميل طلباً كبيراً يقترب من حمولة حاوية كاملة.',
+        icon: 'tabler:packages',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="تفكّر في زيارة CCF؟"
+    subtitle="يمكن للمشترين الدوليين ترتيب زيارة مسبقاً — شارك معلومات شركتك ومتطلبات التوريد والموضوعات المفضلة للمناقشة قبل السفر."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

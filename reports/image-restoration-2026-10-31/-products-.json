@@ -1,0 +1,496 @@
+{
+  "route": "/products/",
+  "status": 200,
+  "images": [
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-front-lips-splitters.webp",
+      "alt": "Carbon fiber front lips and front splitters for cars"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-rear-diffusers.webp",
+      "alt": "Carbon fiber rear diffusers for automotive body kits"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-side-skirts.webp",
+      "alt": "Carbon fiber automotive side skirts"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-rear-spoilers-wings.webp",
+      "alt": "Carbon fiber rear spoilers and rear wings for cars"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-hoods.webp",
+      "alt": "Carbon fiber car hood for automotive applications"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-trunks.webp",
+      "alt": "Carbon fiber automotive trunks and trunk lids"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-grilles-air-intake-parts.webp",
+      "alt": "Automotive grille and exterior trim product range"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/carbon-fiber-mirror-caps.webp",
+      "alt": "Carbon fiber side mirror caps for cars"
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.jpg",
+      "alt": "Three separate lip sections arranged against a white background."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/029-bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style-reference-01.jpg",
+      "alt": "Rear diffuser components laid out on a white background."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/022-bmw-g80-g82-carbon-fiber-side-skirts-3d-style-reference-01new.png",
+      "alt": "Pair of long side skirt pieces with visible attachment features."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/033-bmw-g80-g82-carbon-fiber-rear-wing-mp-style-reference-01.jpg",
+      "alt": "Raised rear wing with two visible supports on a white background."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/035-bmw-g80-m3-carbon-fiber-hood-ac-style-reference-01new.jpg",
+      "alt": "Hood panel with sculpted contours and visible openings."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/036-bmw-g80-m3-carbon-fiber-trunk-lid-csl-style-reference-01.jpg",
+      "alt": "Trunk lid outer view showing its raised rear profile."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/043-bmw-g87-m2-carbon-fiber-front-lip-mp-style-reference-01.jpg",
+      "alt": "Front lip sections showing curved outer pieces and mounting details."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/054-bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style-reference-01.jpg",
+      "alt": "Rear diffuser reference with center fins and swept outer sections."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/055-bmw-g87-m2-carbon-fiber-rear-spoiler-mp-style-reference-01.png",
+      "alt": "Curved rear spoiler photographed on a white background."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/057-bmw-g87-m2-carbon-fiber-trunk-lid-reference-01.jpg",
+      "alt": "Trunk lid outer surface photographed on a white background."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/131-bmw-g90-m5-carbon-fiber-front-lip-split-section-reference-01new.jpg",
+      "alt": "Two separate curved front lip sections."
+    },
+    {
+      "src": "https://ccfrp.com/wp-content/uploads/2026/10/134-bmw-g90-m5-carbon-fiber-side-skirts-reference-01.jpg",
+      "alt": "Two long side skirt pieces with raised end profiles."
+    }
+  ],
+  "links": [
+    {
+      "href": "#content",
+      "label": "Skip to content"
+    },
+    {
+      "href": "https://ccfrp.com/",
+      "label": ""
+    },
+    {
+      "href": "https://ccfrp.com/",
+      "label": "Home"
+    },
+    {
+      "href": "https://ccfrp.com/products/",
+      "label": "Products"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/",
+      "label": "Vehicles"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/bmw/",
+      "label": "BMW"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/mercedes-amg/",
+      "label": "Mercedes"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/audi/",
+      "label": "Audi"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/porsche/",
+      "label": "Porsche"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/ferrari/",
+      "label": "Ferrari"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/lamborghini/",
+      "label": "Lamborghini"
+    },
+    {
+      "href": "https://ccfrp.com/catalogs/",
+      "label": "Catalogs"
+    },
+    {
+      "href": "https://ccfrp.com/grow/",
+      "label": "Services"
+    },
+    {
+      "href": "https://ccfrp.com/grow/oem-odm/",
+      "label": "OEM&ODM"
+    },
+    {
+      "href": "https://ccfrp.com/grow/wholesale/",
+      "label": "Wholesale"
+    },
+    {
+      "href": "https://ccfrp.com/grow/dropshipping/",
+      "label": "Dropshipping"
+    },
+    {
+      "href": "https://ccfrp.com/grow/channel-partners/",
+      "label": "Channel Partners"
+    },
+    {
+      "href": "https://ccfrp.com/cases/",
+      "label": "Cases"
+    },
+    {
+      "href": "https://ccfrp.com/cases/european-football-player-carbon-fiber/",
+      "label": "European Football Player Custom Carbon Fiber"
+    },
+    {
+      "href": "https://ccfrp.com/cases/canada-distributor-visit/",
+      "label": "Canadian Customer Visit & Project Discussion"
+    },
+    {
+      "href": "https://ccfrp.com/cases/usa-oem-carbon-fiber/",
+      "label": "US Customer Company Visit & Project Discussion"
+    },
+    {
+      "href": "https://ccfrp.com/about/",
+      "label": "About"
+    },
+    {
+      "href": "https://ccfrp.com/contact/",
+      "label": "Contact"
+    },
+    {
+      "href": "#",
+      "label": "Search"
+    },
+    {
+      "href": "https://ccfrp.com/",
+      "label": ""
+    },
+    {
+      "href": "#",
+      "label": "Search"
+    },
+    {
+      "href": "https://ccfrp.com/",
+      "label": "Home"
+    },
+    {
+      "href": "https://ccfrp.com/products/",
+      "label": "Products"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/",
+      "label": "Vehicles"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/bmw/",
+      "label": "BMW"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/mercedes-amg/",
+      "label": "Mercedes"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/audi/",
+      "label": "Audi"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/porsche/",
+      "label": "Porsche"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/ferrari/",
+      "label": "Ferrari"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/lamborghini/",
+      "label": "Lamborghini"
+    },
+    {
+      "href": "https://ccfrp.com/catalogs/",
+      "label": "Catalogs"
+    },
+    {
+      "href": "https://ccfrp.com/grow/",
+      "label": "Services"
+    },
+    {
+      "href": "https://ccfrp.com/grow/oem-odm/",
+      "label": "OEM&ODM"
+    },
+    {
+      "href": "https://ccfrp.com/grow/wholesale/",
+      "label": "Wholesale"
+    },
+    {
+      "href": "https://ccfrp.com/grow/dropshipping/",
+      "label": "Dropshipping"
+    },
+    {
+      "href": "https://ccfrp.com/grow/channel-partners/",
+      "label": "Channel Partners"
+    },
+    {
+      "href": "https://ccfrp.com/cases/",
+      "label": "Cases"
+    },
+    {
+      "href": "https://ccfrp.com/cases/european-football-player-carbon-fiber/",
+      "label": "European Football Player Custom Carbon Fiber"
+    },
+    {
+      "href": "https://ccfrp.com/cases/canada-distributor-visit/",
+      "label": "Canadian Customer Visit & Project Discussion"
+    },
+    {
+      "href": "https://ccfrp.com/cases/usa-oem-carbon-fiber/",
+      "label": "US Customer Company Visit & Project Discussion"
+    },
+    {
+      "href": "https://ccfrp.com/about/",
+      "label": "About"
+    },
+    {
+      "href": "https://ccfrp.com/contact/",
+      "label": "Contact"
+    },
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/vehicles/",
+      "label": "Find Parts by Vehicle →"
+    },
+    {
+      "href": "#categories",
+      "label": "Explore Product Types ↓"
+    },
+    {
+      "href": "https://ccfrp.com/products/aero-parts/#front-lips",
+      "label": "01 Front Lips & Splitters"
+    },
+    {
+      "href": "https://ccfrp.com/products/aero-parts/#rear-diffusers",
+      "label": "02 Rear Diffusers"
+    },
+    {
+      "href": "https://ccfrp.com/products/aero-parts/#side-skirts",
+      "label": "03 Side Skirts"
+    },
+    {
+      "href": "https://ccfrp.com/products/aero-parts/#spoilers-wings",
+      "label": "04 Carbon Fiber Spoilers & Wings"
+    },
+    {
+      "href": "https://ccfrp.com/products/hoods-trunk-lids/#hoods",
+      "label": "05 Carbon Fiber Hoods"
+    },
+    {
+      "href": "https://ccfrp.com/products/hoods-trunk-lids/#trunk-lids",
+      "label": "06 Carbon Fiber Trunk Lids"
+    },
+    {
+      "href": "https://ccfrp.com/products/grilles-exterior-trim/#grilles",
+      "label": "07 Grilles & Exterior Trim"
+    },
+    {
+      "href": "https://ccfrp.com/products/grilles-exterior-trim/#mirror-caps",
+      "label": "08 Mirror Caps"
+    },
+    {
+      "href": "https://ccfrp.com/vehicles/",
+      "label": "Find Parts by Vehicle →"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style/",
+      "label": "BMW G80 / G82 Front Lip · CSL Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style/",
+      "label": "BMW G80 / G82 Rear Diffuser · MP Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-side-skirts-3d-style/",
+      "label": "BMW G80 / G82 Side Skirts · 3D Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-wing-mp-style/",
+      "label": "BMW G80 / G82 Rear Wing · MP Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g80-m3-carbon-fiber-hood-ac-style/",
+      "label": "BMW G80 M3 Carbon Fiber Hood · AC Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g80-m3-carbon-fiber-trunk-lid-csl-style/",
+      "label": "BMW G80 M3 Trunk Lid · CSL Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-front-lip-mp-style/",
+      "label": "BMW G87 M2 Front Lip · MP Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style/",
+      "label": "BMW G87 M2 Rear Diffuser · R44 Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-spoiler-mp-style/",
+      "label": "BMW G87 M2 Rear Spoiler · MP Style VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-trunk-lid/",
+      "label": "BMW G87 M2 Carbon Fiber Trunk Lid VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g90-m5-carbon-fiber-front-lip-split-section/",
+      "label": "BMW G90 M5 Front Lip · Split Section VIEW PRODUCT ↗"
+    },
+    {
+      "href": "https://ccfrp.com/bmw-g90-m5-carbon-fiber-side-skirts/",
+      "label": "BMW G90 M5 Carbon Fiber Side Skirts VIEW PRODUCT ↗"
+    },
+    {
+      "href": "/vehicles/",
+      "label": "FIND PARTS BY VEHICLE →"
+    },
+    {
+      "href": "#inquiry",
+      "label": "Ask About a Part →"
+    },
+    {
+      "href": "#faq-products",
+      "label": "Products & materials ↗"
+    },
+    {
+      "href": "#faq-fitment",
+      "label": "Vehicle fitment & installation ↗"
+    },
+    {
+      "href": "#faq-ordering",
+      "label": "Wholesale orders & quotations ↗"
+    },
+    {
+      "href": "#faq-custom",
+      "label": "Custom development & repeat sourcing ↗"
+    },
+    {
+      "href": "/contact/#inquiry-form",
+      "label": "Ask CCF about your parts →"
+    },
+    {
+      "href": "/vehicles/",
+      "label": "Browse parts by vehicle →"
+    },
+    {
+      "href": "/vehicles/",
+      "label": "Find your vehicle catalog →"
+    },
+    {
+      "href": "/grow/wholesale/",
+      "label": "Explore wholesale supply →"
+    },
+    {
+      "href": "/contact/#inquiry-form",
+      "label": "Request a product quotation →"
+    },
+    {
+      "href": "/grow/oem-odm/",
+      "label": "Explore OEM/ODM development →"
+    },
+    {
+      "href": "https://www.linkedin.com/company/ccfrp",
+      "label": "LinkedIn"
+    },
+    {
+      "href": "https://facebook.com/ccfrpcom",
+      "label": "Facebook"
+    },
+    {
+      "href": "https://www.instagram.com/ccfcarbon/",
+      "label": "Instagram"
+    },
+    {
+      "href": "https://www.youtube.com/@ccfrp2006",
+      "label": "YouTube"
+    },
+    {
+      "href": "/products/",
+      "label": "All Products"
+    },
+    {
+      "href": "/products/aero-parts/",
+      "label": "Aero Parts"
+    },
+    {
+      "href": "/hoods-trunk-lids/",
+      "label": "Hoods & Trunk Lids"
+    },
+    {
+      "href": "/products/grilles-exterior-trim/",
+      "label": "Grilles & Exterior Trim"
+    },
+    {
+      "href": "/vehicles/",
+      "label": "Parts by Vehicle"
+    },
+    {
+      "href": "/catalogs/",
+      "label": "Download Catalogs"
+    },
+    {
+      "href": "https://ccfrp.com/cases/",
+      "label": "Cases"
+    },
+    {
+      "href": "https://ccfrp.com/grow/oem-odm/",
+      "label": "OEM&ODM"
+    },
+    {
+      "href": "https://ccfrp.com/grow/wholesale/",
+      "label": "Wholesale"
+    },
+    {
+      "href": "https://ccfrp.com/grow/dropshipping/",
+      "label": "Dropshipping"
+    },
+    {
+      "href": "https://ccfrp.com/grow/channel-partners/",
+      "label": "Channel Partners"
+    },
+    {
+      "href": "https://ccfrp.com/blog/",
+      "label": "Our Blog"
+    },
+    {
+      "href": "https://wa.me/8613427690360?text=ccfrp.com%20I%27m%20interested%20in%20your%20products.%20Could%20you%20please%20send%20me%20more%20details%3F",
+      "label": "+86 134-2769-0360"
+    },
+    {
+      "href": "/cdn-cgi/l/email-protection#b0d9ded6dff0d3d3d6c2c09ed3dfdd",
+      "label": "[email protected]"
+    },
+    {
+      "href": "https://ccfrp.com",
+      "label": "Room 201, No. 2 Caodi Middle Street, Qinghe Village, Renhe Town, Baiyun District, Guangzhou, Guangdong, China"
+    }
+  ]
+}

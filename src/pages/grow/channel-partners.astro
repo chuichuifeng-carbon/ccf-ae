@@ -1,0 +1,191 @@
+---
+import SourceGallery from '~/components/widgets/SourceGallery.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'شراكة توزيع قطع كربون السيارات للموزعين | CCF',
+  description:
+    'ناقش شراكة توزيع قطع كربون السيارات مع CCF. قدّم سوقك وقنوات البيع وخطة المنتجات والشراء لمراجعة شروط التعاون والمنطقة دون افتراض حصرية تلقائية.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="موزعون · تجار · شراكة قنوات"
+    title="شراكة توزيع قطع الكربون للموزعين والتجار"
+    subtitle="للموزعين والتجار الذين يخططون لتوريد متكرر: ناقش شراكة قطع كربون BMW ومرسيدس AMG وبورش حول سوقك وقنوات البيع وخطة المنتجات والشراء. تُراجع المنطقة والشروط والدعم باتفاق مكتوب، ولا تعني الشراكة حصرية تلقائية."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <SourceGallery />
+
+  <!-- Who this partnership is for -->
+  <Features2
+    tagline="لمن صُممت هذه الشراكة"
+    title="شراكة قوية تبدأ بقدرة سوقية حقيقية"
+    subtitle="شراكات قنوات CCF مصممة لشركات السيارات المؤسسة التي تملك عملاء وقنوات مبيعات وقدرة واضحة على تطوير سوقها المحلي."
+    columns={4}
+    items={[
+      {
+        title: 'الموزعون والمستوردون',
+        description: 'لديك عملاء سيارات نشطون أو نشاط شراء أو قدرة توزيع في بلدك أو منطقتك.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'ورش التعديل والأداء',
+        description: 'عملك في التعديل والتركيب يمنحك رؤية مباشرة لتطبيقات المركبات وتفضيلات العملاء.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'البائعون ذوو النشاط التجاري الراسخ',
+        description: 'متجرك أو قنواتك تبيع منتجات ما بعد البيع للسيارات بمستوى ملموس ومبيعات متكررة.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'شركات النمو الإقليمي',
+        description: 'قادر على توسيع تغطية المنتجات أو وصول الموزعين أو الوعي بالسوق المحلي مع الوقت.',
+        icon: 'tabler:chart-bar',
+      },
+    ]}
+  />
+
+  <!-- How channel partnership works -->
+  <Steps2
+    tagline="كيف تعمل شراكة القنوات"
+    title="ابنِ الشراكة حول سوقك الحقيقي"
+    subtitle="نفهم أولاً سوقك وقنوات مبيعاتك وفرصة منتجاتك، ثم نحدد نموذج تعاون منطقي تجارياً للطرفين."
+    items={[
+      {
+        title: 'حدّد سوقك',
+        description: 'شارك بلدك أو منطقتك وعملاءك المستهدفين وطلب المركبات وفرصة السوق الحالية.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'راجع قنوات بيعك',
+        description: 'أظهر كيف تصل إلى العملاء عبر التوزيع أو التجزئة أو التجارة الإلكترونية أو ورش التعديل.',
+        icon: 'tabler:route',
+      },
+      {
+        title: 'ابنِ خطة المنتجات',
+        description: 'اختر المركبات ومنتجات الكربون وهيكل الشراء المناسب لسوقك.',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'اتفق على التعاون',
+        description: 'الاتفاق على الشروط التجارية والمسؤوليات والدعم وتوقعات السوق المطبقة.',
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'وسّع ما ينجح',
+        description: 'مراجعة المبيعات وأداء المنتجات، ثم توسيع التعاون حيث يدعمه السوق.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+
+  <!-- What the partnership can support -->
+  <Features2
+    tagline="اقتصاديات الشراكة"
+    title="شروط أفضل تأتي من حالة عمل أقوى"
+    subtitle="شروط الشركاء لا تُبنى على اللقب وحده — حجم الشراء والمخزون المحلي وتغطية المنتجات ووصول السوق وبيانات الطلب كلها تؤثر في هيكلة النموذج التجاري."
+    columns={3}
+    items={[
+      {
+        title: 'حجم شراء متوقع',
+        description: 'الشراء المتسق يدعم هيكلاً تجارياً أكثر كفاءة.',
+        icon: 'tabler:packages',
+      },
+      {
+        title: 'مخزون محلي',
+        description: 'المخزون المحلي يحسّن التوفر وأداء التسليم للعملاء.',
+        icon: 'tabler:building-warehouse',
+      },
+      {
+        title: 'نطاق منتجات أوسع',
+        description: 'تخطيط منتجات قوي يزيد حصة الطلب الذي يمكنك تلبيته.',
+        icon: 'tabler:layers-intersect',
+      },
+      {
+        title: 'تغطية سوق أكبر',
+        description: 'قدرة التوزيع تخلق قيمة تتجاوز المشتريات الفردية.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'بيانات طلب',
+        description: 'ملاحظات السوق تساعد الطرفين على تخطيط المنتجات حول فرص حقيقية.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'شروط محددة بالاتفاق',
+        description: 'المنطقة والحصرية والتسعير واستخدام العلامة تُحدد باتفاق كتابي — الحصرية ليست تلقائية.',
+        icon: 'tabler:lock',
+      },
+    ]}
+  />
+
+  <FAQs
+    title="أسئلة شراكة توزيع قطع الكربون"
+    schema
+    items={[
+      {
+        title: 'ما الفرق بين الشراء بالجملة وشراكة التوزيع؟',
+        description:
+          'طلب الجملة يركز على مراجع وكميات وشروط توريد محددة. شراكة التوزيع تناقش كذلك خطة المنتجات وقنوات البيع والسوق المستهدف والمسؤوليات والدعم بموجب اتفاق مكتوب.',
+      },
+      {
+        title: 'هل تمنح الشراكة حصرية في منطقتي؟',
+        description:
+          'الحصرية ليست تلقائية. المنطقة واستخدام العلامة وأي شروط حصرية أو التزامات شراء تُراجع وتُحدد باتفاق مكتوب قبل اعتمادها.',
+      },
+      {
+        title: 'ما المعلومات المطلوبة لمراجعة الشراكة؟',
+        description:
+          'أرسل تعريف الشركة والسوق والمدن وقنوات البيع والمركبات المستهدفة ومراجع المنتجات وخطة الشراء والمخزون. تساعد هذه البيانات على مناقشة نطاق تعاون واقعي.',
+      },
+      {
+        title: 'هل يمكن البدء بطلب جملة قبل شراكة أوسع؟',
+        description:
+          'يمكن مناقشة طلب توريد محدد أولاً وتقييم المنتجات وآلية العمل. بعد ذلك تُراجع فرص توسيع التعاون وفق الطلب الفعلي والشروط التي يتفق عليها الطرفان.',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="جاهز لشراكة أعمق؟"
+    subtitle="أرسل معلومات شركتك وسوقك المستهدف وقنوات مبيعاتك وخطة الشراء المتوقعة — تُراجع ترتيبات التوزيع وأي شروط إقليمية بشكل فردي."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

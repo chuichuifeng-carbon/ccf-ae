@@ -1,0 +1,14 @@
+---
+import { getAsset } from '~/utils/permalinks';
+import { APP_BLOG } from 'astrowind:config';
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="sitemap" href={getAsset('/sitemap-index.xml')} />
+{
+  APP_BLOG.isEnabled && (
+    <link rel="alternate" type="application/rss+xml" title="أدلة شراء قطع الكربون — CCF" href={getAsset('/rss.xml')} />
+  )
+}

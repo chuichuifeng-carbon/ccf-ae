@@ -1,0 +1,38 @@
+User-agent: *
+Disallow: /decapcms/
+
+# AI search & answer-engine crawlers are explicitly welcome (GEO).
+# Each group keeps the /decapcms/ exclusion; everything else is allowed.
+User-agent: GPTBot
+Allow: /
+Disallow: /decapcms/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /decapcms/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /decapcms/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /decapcms/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /decapcms/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /decapcms/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /decapcms/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /decapcms/
+
+Sitemap: https://amxnx.vip/sitemap-index.xml

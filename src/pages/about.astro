@@ -1,0 +1,309 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import BuyerEvidence from '~/components/widgets/BuyerEvidence.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Timeline from '~/components/widgets/Timeline.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'عن CCF: مصنع قطع الكربون في قوانغدونغ، الصين',
+  description:
+    'تعرّف على شركة CCF ومكتب قوانغتشو وقاعدة الإنتاج في تشينغيوان بالصين. راجع صور المصنع وتاريخ التصنيع ووثائق التحقق قبل اختيار مورد قطع الكربون.',
+};
+
+import { img } from '~/utils/siteImages';
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="عن CCF"
+    title="شركة CCF ومصنع قطع الكربون في الصين"
+    subtitle="CCF هي موقع B2B لشركة Guangzhou Chui Chui Feng Automotive Products المحدودة. بدأت خلفيتنا التصنيعية بالمواد المركبة في 2006، وتوسعت إلى ألياف الكربون للسيارات في 2010، وتحوّل تركيزها الإنتاجي الرئيسي إلى قطع الكربون الجاف في 2016."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Key stats -->
+  <Stats
+    stats={[
+      { amount: '3', title: 'علامات مركبات في هذا الموقع' },
+      { amount: '2006', title: 'تصنيع مواد مركبة منذ' },
+      { amount: '95%', title: 'تركيز على الكربون الجاف' },
+    ]}
+  />
+
+  <section id="publisher" class="max-w-5xl mx-auto px-4 sm:px-6 py-10 scroll-mt-24">
+    <h2 class="text-2xl font-bold mb-4">الشركة والجهة الناشرة لهذا الموقع</h2>
+    <p class="text-lg leading-relaxed">
+      تنشر Guangzhou Chui Chui Feng Automotive Products Co., Ltd. محتوى موقع CCF العربي على amxnx.vip. يعرض هذا الموقع
+      وموقعنا الرئيسي ccfrp.com أعمال الشركة نفسها؛ يعمل فريقنا من الصين، ولا يشير النطاق أو اللغة العربية إلى وجود فرع
+      أو مستودع محلي في بلد المشتري.
+    </p>
+    <p class="mt-4 leading-relaxed">
+      تشير سنة 2006 إلى بداية خلفيتنا في تصنيع المواد المركبة؛ لا نستخدمها هنا لإثبات تاريخ التسجيل القانوني للشركة.
+      يمكن طلب وثائق الشركة المناسبة عند مراجعة المورد.
+    </p>
+    <div class="mt-4 flex flex-wrap gap-5 text-primary underline">
+      <a href="/editorial-policy">مصادر المحتوى والتصحيحات</a><a href="/contact">بيانات الشركة والتواصل</a><a
+        href="https://ccfrp.com/about/"
+        target="_blank"
+        rel="noopener">ملف الشركة على الموقع الرئيسي ↗</a
+      >
+    </div>
+  </section>
+
+  <!-- Company identity -->
+  <Content
+    tagline="هوية الشركة"
+    title="الشركة وراء CCF"
+    content="CCF هي المنصة الدولية B2B لشركة Guangzhou Chui Chui Feng Automotive Products المحدودة — مقرنا الرئيسي في قوانغتشو وقاعدة إنتاج ألياف الكربون في تشينغيوان، قوانغدونغ، الصين. من نعمل معهم: علامات ما بعد البيع · الموزعون · ورش الأداء · المستوردون · البائعون عبر الإنترنت."
+    image={{
+      src: img('modern automotive parts factory building exterior in Guangdong China, industrial photography'),
+      alt: 'مصنع CCF لألياف الكربون في قوانغدونغ',
+      aspect: '4/3',
+    }}
+    items={[
+      {
+        title: 'CCF — منصة B2B الدولية',
+        description: 'موقع B2B للتوريد الدولي وتوريد الكتالوج وتعاون العلامة الخاصة ومشاريع OEM/ODM.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'AMXNX — علامتنا الاستهلاكية',
+        description: 'علامة ما بعد البيع للسيارات الموجهة للمستهلكين، أُطلقت في 2020.',
+        icon: 'tabler:tag',
+      },
+      {
+        title: 'المقر الرئيسي — قوانغتشو',
+        description: 'المكتب التجاري الرئيسي في قوانغتشو، قوانغدونغ، الصين.',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'قاعدة الإنتاج — تشينغيوان',
+        description: 'قاعدة تصنيع مكونات ألياف الكربون للسيارات في تشينغيوان، قوانغدونغ، الصين.',
+        icon: 'tabler:building-factory-2',
+      },
+    ]}
+  />
+
+  <!-- Production process -->
+  <Steps
+    tagline="التصنيع في قاعدة تشينغيوان"
+    title="من المادة إلى قطع كربون نهائية"
+    subtitle="يركز مقر إنتاجنا في تشينغيوان على مكونات ألياف الكربون للسيارات — فريق المصنع يدير المراحل الرئيسية من تجهيز المواد حتى التشطيب والفحص النهائي."
+    isReversed
+    image={{
+      src: img(
+        'worker in gloves laying carbon fiber fabric into car part mold in clean workshop, manufacturing photography'
+      ),
+      alt: 'قالب مغطى بغشاء تفريغ في ورشة CCF',
+    }}
+    items={[
+      {
+        title: 'إنتاج الكربون الجاف',
+        description:
+          'نسيج كربون مسبق التشريب (بريبريغ) يُعالج بالأوتوكلاف حرارياً تحت الضغط — بنية خفيفة عالية القوة تمثل التركيز الرئيسي لنطاق منتجاتنا.',
+        icon: 'tabler:layers-intersect',
+      },
+      {
+        title: 'تصنيع داخلي',
+        description:
+          'رصّ طبقات ألياف الكربون والقولبة والقص والتشطيب والتجميع — عمليات الإنتاج الرئيسية يديرها فريق مصنعنا الخاص.',
+        icon: 'tabler:building-factory-2',
+      },
+      {
+        title: 'قوالب خاصة بالمركبات',
+        description: 'قوالب وتجهيزات خاصة بكل مركبة تدعم الكتالوج ومشاريع التطوير.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'فحص يدوي نهائي',
+        description: 'المنتجات النهائية تُفحص يدوياً قبل الإرسال، ويمكن الاتفاق على صور فحص وتغليف للطلب.',
+        icon: 'tabler:clipboard-check',
+      },
+    ]}
+  />
+
+  <!-- Company timeline -->
+  <Timeline
+    tagline="قصتنا"
+    title="من المواد المركبة إلى ألياف الكربون للسيارات"
+    subtitle="تطورت خلفيتنا التصنيعية من الألياف الزجاجية وFRP إلى ألياف الكربون للسيارات وإنتاج الكربون الجاف والتوريد الدولي B2B."
+    layout="alternate"
+    items={[
+      {
+        date: '2006',
+        title: 'الألياف الزجاجية و FRP',
+        description: 'بدأت خلفيتنا التصنيعية بالألياف الزجاجية والمواد المركبة.',
+      },
+      {
+        date: '2010',
+        title: 'ألياف الكربون للسيارات',
+        description: 'دخلنا إنتاج قطع ألياف الكربون الرطب للسيارات.',
+      },
+      {
+        date: '2016',
+        title: 'التركيز على الكربون الجاف',
+        description: 'تحوّل تركيزنا الإنتاجي الرئيسي إلى قطع الكربون الجاف للسيارات.',
+      },
+      {
+        date: '2020',
+        title: 'علامة AMXNX',
+        description: 'أطلقنا علامتنا الاستهلاكية لسوق ما بعد البيع للسيارات.',
+      },
+      {
+        date: '2025',
+        title: 'أكثر من 1,500 رقم منتج',
+        description: 'توسّع نطاق منتجات ألياف الكربون للسيارات ليتجاوز 1,500 رقم منتج.',
+      },
+      {
+        date: '2026',
+        title: 'منصة CCF الدولية B2B',
+        description: 'أصبحت CCF موقعنا المخصص للتوريد الدولي وتعاون OEM/ODM.',
+        highlight: true,
+      },
+    ]}
+  />
+
+  <!-- Supplier profile for buyer verification -->
+  <Features2
+    tagline="معلومات التحقق للمشتري"
+    title="ملف المورد"
+    subtitle="معلومات أساسية يستخدمها المستوردون والموزعون وعلامات ما بعد البيع عند تقييم CCF كمورّد لقطع ألياف الكربون."
+    columns={4}
+    items={[
+      {
+        title: 'الكيان القانوني',
+        description: 'Guangzhou Chui Chui Feng Automotive Products Co., Ltd. · 广州市吹吹风汽车用品有限公司',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'نوع النشاط',
+        description: 'مصنّع قطع ألياف كربون للسيارات — تصنيع داخلي في قاعدتنا الخاصة.',
+        icon: 'tabler:building-factory-2',
+      },
+      {
+        title: 'المقر / الإنتاج',
+        description: 'المكتب التجاري في قوانغتشو وقاعدة التصنيع في تشينغيوان، قوانغدونغ، الصين.',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'نماذج التوريد',
+        description: 'توريد كتالوج · OEM · ODM · علامة خاصة.',
+        icon: 'tabler:packages',
+      },
+    ]}
+  />
+
+  <!-- Certifications & verification -->
+  <Features2
+    tagline="التحقق من المورد"
+    title="شهادات ووثائق للمشترين"
+    subtitle="تقييمات طرف ثالث ووثائق جودة وسجلات تحقق منتجات وتقدير صناعي — لكل وثيقة نطاقها، راجع الوثيقة الأصلية لمتطلبات توريدك."
+    columns={4}
+    items={[
+      {
+        title: 'Intertek — مورد موثّق',
+        description: 'تقييم مورد في الموقع والتحقق من الشركة.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'RoHS',
+        description: 'تحقق مطابقة المواد لعينة شبك سيارة.',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'ISO 9001',
+        description: 'توثيق شهادة نظام إدارة الجودة.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'جائزة قطاع تعديل السيارات',
+        description: 'تقدير صناعي من قطاع ما بعد البيع للسيارات.',
+        icon: 'tabler:medal',
+      },
+    ]}
+  />
+
+  <BuyerEvidence mode="factory" />
+
+  <!-- Company FAQ -->
+  <FAQs
+    tagline="أسئلة عن الشركة"
+    title="أسئلة حول CCF ومصنعنا"
+    subtitle="إجابات عملية للمستوردين والموزعين وعلامات السيارات الذين يراجعون مصنعنا وتوريد المنتجات والمشاريع المخصصة ومتطلبات الجودة."
+    schema
+    items={[
+      {
+        title: 'هل CCF مصنع ألياف كربون للسيارات؟',
+        description:
+          'تورّد CCF قطع ألياف الكربون للسيارات لمشتري B2B الدوليين. مقرنا الرئيسي في قوانغتشو وقاعدة إنتاجنا في تشينغيوان، قوانغدونغ، الصين، ونعمل مع المستوردين والموزعين وورش التعديل وعلامات ما بعد البيع للسيارات.',
+      },
+      {
+        title: 'منذ متى تعمل CCF مع المواد المركبة؟',
+        description:
+          'بدأت خلفيتنا في تصنيع المواد المركبة بالألياف الزجاجية وFRP في 2006. دخلنا إنتاج ألياف الكربون للسيارات في 2010، وتحوّل تركيزنا الإنتاجي الرئيسي إلى قطع الكربون الجاف في 2016.',
+      },
+      {
+        title: 'هل يمكن ترتيب زيارة للمصنع أو تدقيق مورد؟',
+        description:
+          'نعم. يمكن لعملاء الأعمال ترتيب زيارة لقاعدة الإنتاج في تشينغيوان، قوانغدونغ. تواصل معنا مسبقاً مع مواعيدك المفضلة وبيانات شركتك والمجالات التي ترغب في مراجعتها حتى نؤكد الوصول والجدولة.',
+      },
+      {
+        title: 'ما العلاقة بين CCF و AMXNX؟',
+        description:
+          'AMXNX هي علامتنا الاستهلاكية لسوق ما بعد البيع للسيارات. أما CCF فهي موقع B2B للتوريد الدولي للمنتجات والبيع بالجملة وتعاون OEM/ODM.',
+      },
+      {
+        title: 'ما الحد الأدنى لكمية الطلب؟',
+        description:
+          'يمكن طلب منتجات الكتالوج القياسية ابتداءً من وحدة مبيعات واحدة حسب التوفر — وقد تكون الوحدة قطعة أو زوجاً أو طقماً حسب المنتج. أما تطوير OEM/ODM ومتطلبات العلامة الخاصة فتُسعَّر بشكل منفصل؛ أكّد وحدة المبيعات والحد الأدنى المطبقين على العنصر الذي اخترته.',
+      },
+      {
+        title: 'هل تنطبق الشهادات على كل منتج وعملية تصنيع؟',
+        description:
+          'لكل وثيقة نطاقها الخاص. شهادة ISO 9001 تغطي أنشطة مبيعات قطع السيارات المذكورة في الشهادة، وتوثيق RoHS يخص العينة المختبرة ولا يثبت المطابقة لكل منتج في الكتالوج. راجع الوثيقة الأصلية ونطاقها وفق متطلبات توريدك.',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="تقيّم CCF كمورّد؟"
+    subtitle="أرسل اسم شركتك ومرجع المنتج وتطبيق المركبة والكمية المطلوبة وبلد الوجهة — يراجع فريقنا التوفر والعينات والمدة وخيارات الشحن."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+  <BuyerEvidence mode="feedback" />
+  <BuyerEvidence mode="documents" />
+</PageLayout>

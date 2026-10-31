@@ -1,0 +1,6 @@
+/* Keep content visible if JavaScript is disabled or unsupported. */
+[class*='intersect:'] {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}

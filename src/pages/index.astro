@@ -1,0 +1,403 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import artwork from '~/data/b2b/site-artwork.json';
+import SourceGallery from '~/components/widgets/SourceGallery.astro';
+import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
+import BuyerEvidence from '~/components/widgets/BuyerEvidence.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Timeline from '~/components/widgets/Timeline.astro';
+import Bento from '~/components/widgets/Bento.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Projects from '~/components/widgets/Projects.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { headerData } from '~/navigation';
+
+const metadata = {
+  title: 'مصنع قطع كربون فايبر للسيارات في الصين | CCF',
+  description:
+    'مصنع CCF لقطع كربون فايبر BMW ومرسيدس AMG وبورش. توريد للموزعين وورش التعديل وتطوير OEM/ODM؛ أرسل الطراز والكمية لطلب عرض سعر عبر واتساب.',
+  ignoreTitleTemplate: true,
+};
+
+import { img } from '~/utils/siteImages';
+---
+
+<PageLayout metadata={metadata}>
+  <Header slot="header" {...headerData} isSticky isDark isFullWidth showRssFeed showToggleTheme />
+
+  <!-- Hero: full-width carbon fiber imagery, white display title (RevoZport style) -->
+  <Hero
+    tagline='<span class="text-white/70">مصنع ألياف الكربون للسيارات · B2B</span>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'اطلب عرض سعر عبر واتساب',
+        href: 'https://wa.me/8613427690360',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+        class: 'bg-white text-black border-white hover:bg-neutral-200 hover:border-neutral-200',
+      },
+      {
+        variant: 'secondary',
+        text: 'ابدأ مشروع OEM',
+        href: '/grow/oem-odm',
+        class: 'border-white text-white hover:bg-white hover:text-black',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <img
+        src={img(
+          'matte black sports car with glossy carbon fiber front splitter lip and rear wing, dark studio automotive photography, dramatic low key lighting, visible carbon fiber weave texture, cinematic, photorealistic',
+          'landscape_16_9'
+        )}
+        alt="سيارة رياضية بقطع ألياف كربون"
+        sizes="100vw"
+        class="absolute inset-0 h-full w-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </Fragment>
+    <Fragment slot="title">
+      <span class="text-white font-extrabold">مصنع قطع ألياف الكربون للسيارات في الصين</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span class="text-white/85">
+        تصنع CCF في الصين قطع كربون فايبر للسيارات لموزعي قطع الغيار وورش التعديل والعلامات التجارية والمتاجر. تصفّح
+        تطبيقات BMW ومرسيدس AMG وبورش، أو ناقش تطوير OEM/ODM. أرسل الطراز ومرجع القطعة والكمية والوجهة لطلب سعر التوريد.
+      </span>
+    </Fragment>
+  </Hero>
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: '3', title: 'علامات مركبات في هذا الموقع' },
+      { amount: '95%', title: 'تركيز على الكربون الجاف' },
+      { amount: '2006', title: 'خبرة تصنيع منذ' },
+    ]}
+  />
+
+  <!-- Supplier verification trust band -->
+  <Features2
+    tagline="التحقق من المورد"
+    title="تقييمات طرف ثالث ووثائق جودة"
+    subtitle='وثائق تحقق متاحة لمراجعة المشترين قبل التوريد — <a class="text-link underline" href="/about">راجع ملف الشركة الكامل ←</a>'
+    columns={4}
+    items={[
+      {
+        title: 'Intertek — مورد موثّق',
+        description: 'تقييم مورد في الموقع والتحقق من الشركة.',
+        icon: 'tabler:certificate',
+      },
+      { title: 'ISO 9001', description: 'توثيق شهادة نظام إدارة الجودة.', icon: 'tabler:award' },
+      { title: 'RoHS', description: 'توثيق مطابقة المواد لعينة منتج.', icon: 'tabler:file-certificate' },
+      { title: 'تقدير صناعي', description: 'جائزة من قطاع ما بعد البيع للسيارات.', icon: 'tabler:medal' },
+    ]}
+  />
+
+  <!-- Company timeline -->
+  <Timeline
+    tagline="الشركة وراء CCF"
+    title="خبرة المواد المركبة منذ 2006"
+    subtitle="CCF هي المنصة الدولية B2B لشركة Guangzhou Chui Chui Feng Automotive Products المحدودة. مقرنا الرئيسي في قوانغتشو وقاعدة الإنتاج في تشينغيوان، مقاطعة قوانغدونغ، الصين."
+    items={[
+      {
+        date: '2006',
+        title: 'الألياف الزجاجية و FRP',
+        description: 'بدأت خلفيتنا التصنيعية بالألياف الزجاجية والمواد المركبة.',
+      },
+      { date: '2010', title: 'ألياف الكربون للسيارات', description: 'دخلنا إنتاج قطع ألياف الكربون الرطب للسيارات.' },
+      {
+        date: '2016',
+        title: 'التركيز على الكربون الجاف',
+        description: 'تحوّل تركيزنا الإنتاجي الرئيسي إلى قطع الكربون الجاف.',
+      },
+      {
+        date: '2020',
+        title: 'علامة AMXNX',
+        description: 'أطلقنا علامتنا الاستهلاكية لسوق ما بعد البيع للسيارات.',
+        highlight: true,
+      },
+    ]}
+  />
+
+  <!-- Find parts: dual entry (RevoZport street/race style full-bleed cards) -->
+  <section id="find-parts" class="relative not-prose">
+    <div class="grid md:grid-cols-2">
+      <a href="/vehicles" class="group relative block min-h-[420px] overflow-hidden">
+        <img
+          src={img(
+            'black luxury sports sedan with carbon fiber aero body kit parked on city street at night, wet asphalt reflections, photorealistic automotive photography',
+            'landscape_16_9'
+          )}
+          alt="اعثر على القطع حسب المركبة"
+          class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-black/50 transition group-hover:bg-black/60"></div>
+        <div class="relative flex h-full min-h-[420px] flex-col items-center justify-center p-8 text-center">
+          <p class="text-sm font-bold uppercase text-white/70">01 · حسب المركبة</p>
+          <h3 class="mt-3 text-3xl md:text-4xl font-extrabold text-white">اعثر على القطع حسب المركبة</h3>
+          <p class="mt-3 max-w-md text-white/85">
+            قطع ألياف كربون لسيارات BMW وMercedes-AMG وPorsche، مع كتالوجات حسب الطراز وتوريد B2B.
+          </p>
+          <span class="btn-primary mt-6 bg-white text-black border-white hover:bg-neutral-200">تصفح حسب المركبة</span>
+        </div>
+      </a>
+      <a href="/products" class="group relative block min-h-[420px] overflow-hidden">
+        <img
+          src={img(
+            'carbon fiber car parts collection front lip rear diffuser spoiler wing arranged in dark workshop, dramatic lighting, product photography',
+            'landscape_16_9'
+          )}
+          alt="اعثر على القطع حسب الفئة"
+          class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-black/50 transition group-hover:bg-black/60"></div>
+        <div class="relative flex h-full min-h-[420px] flex-col items-center justify-center p-8 text-center">
+          <p class="text-sm font-bold uppercase text-white/70">02 · حسب الفئة</p>
+          <h3 class="mt-3 text-3xl md:text-4xl font-extrabold text-white">اعثر على القطع حسب الفئة</h3>
+          <p class="mt-3 max-w-md text-white/85">
+            شفاه أمامية، ناشرات خلفية، تنانير جانبية، سبويلر وأجنحة، أغطية محرك، صناديق أمتعة، شبكات وأغطية مرايا.
+          </p>
+          <span class="btn-primary mt-6 bg-white text-black border-white hover:bg-neutral-200">تصفح حسب الفئة</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Product categories: 8 photo cards -->
+  <Bento
+    tagline="فئات المنتجات"
+    title="قطع ألياف الكربون حسب النوع"
+    subtitle="استكشف قطع السيارات المصنوعة من ألياف الكربون لدينا. تختلف التوفر حسب تطبيق المركبة."
+    columns={4}
+    classes={{ container: 'max-w-[1720px]' }}
+    items={[
+      {
+        title: 'الشفاه الأمامية والسبليتر',
+        image: {
+          src: img('glossy carbon fiber front lip splitter for sports car, dark studio product photography'),
+          alt: 'شفاه أمامية وسبليتر من ألياف الكربون',
+        },
+        callToAction: { text: 'عرض القطع', href: '/products/front-lips-splitters' },
+      },
+      {
+        title: 'الناشرات الخلفية',
+        image: {
+          src: img(
+            'carbon fiber rear diffuser with vertical fins on sports car rear bumper, dark studio product photography'
+          ),
+        },
+        callToAction: { text: 'عرض القطع', href: '/products/rear-diffusers' },
+      },
+      {
+        title: 'التنانير الجانبية',
+        image: { src: img('pair of carbon fiber side skirts on dark studio floor, automotive product photography') },
+        callToAction: { text: 'عرض القطع', href: '/products/side-skirts' },
+      },
+      {
+        title: 'السبويلر والأجنحة',
+        image: { src: img('carbon fiber GT rear wing spoiler with mounts, dark studio product photography') },
+        callToAction: { text: 'عرض القطع', href: '/products/spoilers-wings' },
+      },
+      {
+        title: 'أغطية المحرك',
+        image: {
+          src: img('carbon fiber car hood with air vents, glossy weave texture, dark studio product photography'),
+        },
+        callToAction: { text: 'عرض القطع', href: '/products/hoods' },
+      },
+      {
+        title: 'أغطية صندوق الأمتعة',
+        image: {
+          src: img('carbon fiber trunk lid with ducktail spoiler for sports car, dark studio product photography'),
+        },
+        callToAction: { text: 'عرض القطع', href: '/products/trunk-lids' },
+      },
+      {
+        title: 'الشبكات وفتحات التهوية',
+        image: {
+          src: img('carbon fiber front grille and air intake trim for luxury car, dark studio product photography'),
+        },
+        callToAction: { text: 'عرض القطع', href: '/products/grilles-air-intake' },
+      },
+      {
+        title: 'أغطية المرايا',
+        image: { src: img('pair of glossy carbon fiber side mirror caps, dark studio product photography') },
+        callToAction: { text: 'عرض القطع', href: '/products/mirror-caps' },
+      },
+    ]}
+  />
+
+  <!-- Vehicle brands: three selected brands -->
+  <Bento
+    tagline="تغطية المركبات"
+    title="قطع ألياف الكربون حسب العلامة"
+    subtitle="يركز هذا الموقع على BMW وMercedes-AMG وPorsche. اختر العلامة للوصول إلى كتالوجات الطرازات ومراجع القطع."
+    columns={3}
+    classes={{ container: 'max-w-[1720px]' }}
+    items={[
+      {
+        title: 'BMW',
+        image: {
+          src: img('white German sports coupe with carbon fiber front lip, studio automotive photography'),
+          alt: 'قطع ألياف كربون لمركبات BMW',
+        },
+        callToAction: { text: 'تصفح قطع BMW', href: '/vehicles/bmw' },
+      },
+      {
+        title: 'Mercedes-AMG',
+        image: {
+          src: img('silver German performance sedan with carbon aero parts, dark studio automotive photography'),
+          alt: 'قطع ألياف كربون لمركبات Mercedes-AMG',
+        },
+        callToAction: { text: 'تصفح قطع AMG', href: '/vehicles/mercedes-amg' },
+      },
+      {
+        title: 'Porsche',
+        image: {
+          src: img('yellow German sports car with carbon fiber rear wing, studio automotive photography'),
+          alt: 'قطع ألياف كربون لمركبات Porsche',
+        },
+        callToAction: { text: 'تصفح قطع Porsche', href: '/vehicles/porsche' },
+      },
+    ]}
+  />
+
+  <FeaturedProducts />
+
+  <!-- Factory process -->
+  <Steps
+    tagline="تصنيع داخلي"
+    title="من تمديد ألياف الكربون إلى الفحص النهائي"
+    isReversed
+    image={{
+      src: img(
+        'worker in gloves laying carbon fiber fabric into car part mold in clean workshop, manufacturing photography'
+      ),
+      alt: 'قالب مغطى بغشاء تفريغ في ورشة CCF',
+    }}
+    items={[
+      {
+        title: 'تمديد ألياف الكربون',
+        description: 'تمديد نسيج الكربون المحكم في قوالب مخصصة لكل مركبة.',
+        icon: 'tabler:layers-intersect',
+      },
+      {
+        title: 'المعالجة بالأوتوكلاف',
+        description: 'معالجة حرارية تحت الضغط للحصول على بنية كربون جاف خفيفة وقوية.',
+        icon: 'tabler:temperature',
+      },
+      {
+        title: 'القص والتشطيب والتجميع',
+        description: 'قص دقيق وتشطيب سطحي لامع أو مطفي وتجميع الملحقات.',
+        icon: 'tabler:cut',
+      },
+      {
+        title: 'الفحص اليدوي النهائي',
+        description: 'كل قطعة تُفحص يدوياً قبل التغليف والشحن.',
+        icon: 'tabler:checkbox',
+      },
+    ]}
+    callToAction={{ text: 'تعرّف على المصنع', href: '/about' }}
+  />
+
+  <SourceGallery />
+
+  <!-- Customer projects -->
+  <Projects
+    tagline="مشاريع العملاء"
+    title="مشاريع حقيقية. عملاء B2B حقيقيون."
+    subtitle="مشاريع ألياف كربون مختارة وزيارات عملاء من مشترين دوليين."
+    columns={2}
+    items={[
+      {
+        title: 'مناقشة مشروع OEM',
+        description: 'عميل أمريكي زار CCF لمناقشة مشروع ألياف كربون للسيارات مع فريقنا.',
+        image: {
+          src: artwork.caseUs,
+          alt: 'مناقشة مشروع OEM',
+        },
+        tags: ['الولايات المتحدة', 'زيارة عميل'],
+        href: '/cases/usa-oem-carbon-fiber',
+      },
+      {
+        title: 'مناقشة المنتجات',
+        description: 'عميل كندي زار CCF لمناقشة منتجات ألياف الكربون ومتطلبات المشروع.',
+        image: {
+          src: artwork.caseCanada,
+          alt: 'مناقشة المنتجات مع عميل كندي',
+        },
+        tags: ['كندا', 'زيارة عميل'],
+        href: '/cases/canada-distributor-visit',
+      },
+    ]}
+  />
+
+  <BuyerEvidence mode="feedback" />
+
+  <!-- FAQ -->
+  <FAQs
+    tagline="الأسئلة الشائعة"
+    title="أسئلة مشتري B2B الشائعة"
+    subtitle="إجابات سريعة للمشترين الذين يستوردون قطع ألياف الكربون للسيارات من CCF."
+    schema
+    items={[
+      {
+        title: 'ماذا تصنع CCF ولمن تورّد؟',
+        description:
+          'CCF هي المنصة الدولية B2B لشركة Guangzhou Chui Chui Feng Automotive Products المحدودة، وهي مصنع لقطع ألياف الكربون للسيارات في مقاطعة قوانغدونغ، الصين. نورّد قطع الكتالوج ومشاريع OEM/ODM للعلامات التجارية وورش التعديل والموزعين والبائعين عبر الإنترنت.',
+      },
+      {
+        title: 'ما الحد الأدنى لكمية الطلب (MOQ)؟',
+        description:
+          'يمكن طلب منتجات الكتالوج القياسية ابتداءً من وحدة مبيعات واحدة حسب التوفر — وقد تكون الوحدة قطعة أو زوجاً أو طقماً حسب المنتج. أما مشاريع OEM/ODM والعلامات الخاصة فتُحدد كمياتها الدنيا لكل مشروع على حدة.',
+      },
+      {
+        title: 'هل يمكنني طلب عينة قبل الطلب بالجملة؟',
+        description:
+          'نعم. يمكن طلب قطع الكتالوج كعينات لتقييم نسيج ألياف الكربون وتشطيب السطح والمطابقة قبل الشراء بكمية أكبر.',
+      },
+      {
+        title: 'ما المعلومات المطلوبة للحصول على عرض سعر؟',
+        description:
+          'أرسل رقم المنتج أو رابطه، وماركة المركبة وطرازها وسنتها، والكمية وبلد الوجهة. ولمشاريع OEM/ODM، أرسل أيضاً أي رسومات أو صور أو عينات أو روابط مرجعية متاحة.',
+      },
+      {
+        title: 'هل تدعمون العلامة الخاصة والتخصيص و OEM/ODM؟',
+        description:
+          'نعم. تدعم CCF العلامات الخاصة والتغليف المخصص وقطع ألياف الكربون المخصصة لمشاريع OEM/ODM المؤهلة. <a class="text-link underline" href="/grow/oem-odm">تعرّف على OEM/ODM ←</a>',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA: WhatsApp + main site contact -->
+  <CallToAction
+    layout="banner"
+    title="جاهز لبدء مشروعك؟"
+    subtitle="أرسل لنا طراز مركبتك والقطعة المطلوبة والكمية — يراجع فريقنا طلبك خلال أوقات العمل (GMT+8)."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

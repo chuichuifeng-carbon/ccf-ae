@@ -1,0 +1,131 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Footer from '~/components/widgets/Footer.astro';
+import Announcement from '~/components/widgets/Announcement.astro';
+import StickyCTA from '~/components/widgets/StickyCTA.astro';
+import { whatsappUrl } from '~/utils/inquiry';
+import StructuredData from '~/components/common/StructuredData.astro';
+import BuyerResources from '~/components/widgets/BuyerResources.astro';
+
+import { headerData, footerData } from '~/navigation';
+import { getCanonical } from '~/utils/permalinks';
+import { SITE, I18N } from 'astrowind:config';
+import { featuredProducts } from '~/data/b2b/featured';
+import { getPageSeo, normalizeSeoPath, withPageSeo } from '~/utils/seo';
+
+import type { MetaData } from '~/types';
+
+export interface Props {
+  metadata?: MetaData;
+  /** Set to false on pages that already emit their own full JSON-LD (blog posts). */
+  seoSchema?: boolean;
+  /** Visible Breadcrumbs emits its own BreadcrumbList; keep only one per page. */
+  breadcrumbSchema?: boolean;
+}
+
+const { metadata: suppliedMetadata, seoSchema = true, breadcrumbSchema = true } = Astro.props;
+const metadata = withPageSeo(Astro.url.pathname, suppliedMetadata);
+
+// Automatic per-page structured data: BreadcrumbList + a typed WebPage.
+const SEGMENT_LABELS: Record<string, string> = {
+  products: 'المنتجات',
+  vehicles: 'المركبات',
+  grow: 'الخدمات',
+  cases: 'مشاريع العملاء',
+  blog: 'المدونة',
+  category: 'الفئات',
+  tag: 'الوسوم',
+  about: 'من نحن',
+  contact: 'اتصل بنا',
+  catalogs: 'الكتالوجات',
+  terms: 'الشروط والأحكام',
+  privacy: 'سياسة الخصوصية',
+  'editorial-policy': 'مصادر المحتوى والتصحيحات',
+};
+
+const pathname = normalizeSeoPath(Astro.url.pathname);
+const segments = pathname.split('/').filter(Boolean);
+const canonical = metadata.canonical || String(getCanonical(pathname));
+
+const seoSchemas: Array<Record<string, unknown>> = [];
+
+if (seoSchema) {
+  if (segments.length > 0 && breadcrumbSchema) {
+    seoSchemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: SITE?.site },
+        ...segments.map((seg, i) => {
+          const isLast = i === segments.length - 1;
+          return {
+            '@type': 'ListItem',
+            position: i + 2,
+            name: isLast
+              ? getPageSeo(pathname)?.h1 || metadata?.title || SEGMENT_LABELS[seg] || seg
+              : SEGMENT_LABELS[seg] || seg,
+            ...(isLast ? {} : { item: String(getCanonical('/' + segments.slice(0, i + 1).join('/'))) }),
+          };
+        }),
+      ],
+    });
+  }
+
+  const pageType =
+    pathname === '/contact'
+      ? 'ContactPage'
+      : pathname === '/about'
+        ? 'AboutPage'
+        : (pathname.startsWith('/products') &&
+              !featuredProducts.some((product) => pathname.replace(/\/$/, '') === `/products/${product.slug}`)) ||
+            pathname.startsWith('/vehicles')
+          ? 'CollectionPage'
+          : 'WebPage';
+
+  seoSchemas.push({
+    '@context': 'https://schema.org',
+    '@type': pageType,
+    name: getPageSeo(pathname)?.h1 || metadata?.title,
+    description: metadata.description,
+    url: canonical,
+    inLanguage: I18N?.language,
+    isPartOf: { '@id': `${SITE?.site}/#website` },
+    publisher: { '@id': `${SITE?.site}/#organization` },
+  });
+}
+---
+
+<Layout metadata={metadata}>
+  <slot name="head" slot="head" />
+  {seoSchema && seoSchemas.length > 0 && <StructuredData slot="head" schema={seoSchemas} />}
+  {
+    /*
+    Slot fallbacks are rendered explicitly. With `<slot name="x">fallback</slot>`
+    Astro still evaluates the fallback when the page overrides the slot, and
+    astro-icon then believes the icons inside it (the RSS icon of the default
+    header, for instance) were already emitted, so their SVG sprite symbol
+    goes missing on that page.
+  */
+  }
+  {Astro.slots.has('announcement') ? <slot name="announcement" /> : <Announcement />}
+  {
+    Astro.slots.has('header') ? (
+      <slot name="header" />
+    ) : (
+      <Header {...headerData} isSticky isFullWidth showRssFeed showToggleTheme />
+    )
+  }
+  <main class="flex-1">
+    <slot />
+    <BuyerResources />
+  </main>
+  {Astro.slots.has('footer') ? <slot name="footer" /> : <Footer {...footerData} />}
+  <StickyCTA
+    text="اطلب عرض سعر عبر واتساب"
+    href={whatsappUrl(String(metadata?.title || 'استفسار B2B'), canonical)}
+    target="_blank"
+    icon="tabler:brand-whatsapp"
+    showAfter={350}
+  />
+</Layout>

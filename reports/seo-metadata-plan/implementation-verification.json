@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "pages": 43,
+  "indexable": 38,
+  "noindex": 5,
+  "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
+  "results": [
+    {
+      "route": "/",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/vehicles",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/catalogs",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/grow",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/grow/wholesale",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/grow/oem-odm",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/grow/dropshipping",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/grow/channel-partners",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/vehicles/bmw",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/vehicles/mercedes-amg",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/vehicles/porsche",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/front-lips-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/rear-diffusers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/spoilers-wings",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/hoods",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/trunk-lids",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/grilles-air-intake",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/mirror-caps",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/cases",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/cases/canada-distributor-visit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/cases/usa-oem-carbon-fiber",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/about",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/contact",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/faqs",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/editorial-policy",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/return-refund-policy",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/privacy",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/terms",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/blog",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/dry-carbon-vs-wet-carbon",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/category/adlh-almshtryn",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/tag/aljmlh",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/tag/altsnya",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/tag/alyaf-alkrbwn-aljaf",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/404.html",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/carbon-fiber-parts-fitment-check",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "status": "passed",
+      "index": true
+    }
+  ]
+}

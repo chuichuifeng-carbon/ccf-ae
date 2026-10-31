@@ -1,0 +1,124 @@
+---
+import evidence from '~/data/b2b/evidence.json';
+import Headline from '~/components/ui/Headline.astro';
+const { mode = 'factory' } = Astro.props as { mode?: 'factory' | 'feedback' | 'documents' };
+const factory = evidence.filter((item) =>
+  /production-workshop|factory-qingyuan|company-guangzhou|molding-process|trimming-polishing|parts-production/.test(
+    item.url
+  )
+);
+const documents = evidence.filter((item) => /certificate|award|verification|test-report/.test(item.url));
+const titles = ['تجربة الجودة والتغليف', 'مظهر القطع بعد التركيب', 'استلام القطع وتركيبها'];
+const factoryLabels = [
+  'ورشة الإنتاج في تشينغيوان',
+  'قاعدة الإنتاج',
+  'مكتب قوانغتشو',
+  'تجهيز المكوّنات والقوالب',
+  'القولبة والتغليف بالتفريغ',
+  'القص والتشطيب',
+];
+const documentLabels = [
+  'تقييم المورد — Intertek',
+  'جائزة قطاع تعديل السيارات',
+  'وثيقة تحقق RoHS لعينة شبك',
+  'تقرير اختبار العينة',
+  'شهادة ISO 9001',
+];
+---
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+  <Headline
+    title={mode === 'factory'
+      ? 'تعرّف على مصنعنا وفريقنا'
+      : mode === 'feedback'
+        ? 'صور التركيب ورسائل العملاء الأصلية'
+        : 'وثائق يمكن مراجعتها قبل التوريد'}
+    subtitle={mode === 'factory'
+      ? 'صور منشورة من مرافق CCF وعمليات التصنيع على موقعنا الرئيسي.'
+      : mode === 'feedback'
+        ? 'صور أرسلها العملاء مع الرسائل المرتبطة بها. افتح الرسالة للاطلاع على المصدر الأصلي.'
+        : 'افتح الوثيقة بالحجم الكامل وراجع نطاقها قبل الاعتماد عليها في قرار الشراء.'}
+  />
+  {
+    mode === 'feedback' ? (
+      <div class="grid gap-6 md:grid-cols-3">
+        {[1, 2, 3].map((number, index) => {
+          const installed = evidence.find(
+            (item) => item.url.includes(`customer-0${number}`) && item.url.includes('installed')
+          );
+          const message = evidence.find(
+            (item) => item.url.includes(`customer-0${number}`) && item.url.includes('whatsapp')
+          );
+          return (
+            installed &&
+            message && (
+              <article class="rounded-2xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+                <img
+                  src={installed.url}
+                  alt={titles[index]}
+                  width="700"
+                  height="500"
+                  loading="lazy"
+                  class="w-full h-64 object-contain bg-white"
+                />
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-3">{titles[index]}</h3>
+                  <a class="text-primary underline" href={message.url} target="_blank" rel="noopener">
+                    عرض رسالة العميل الأصلية ↗
+                  </a>
+                </div>
+              </article>
+            )
+          );
+        })}
+      </div>
+    ) : (
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {(mode === 'documents' ? documents : factory).map((item, index) => (
+          <figure class="rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700">
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener"
+              aria-label={mode === 'documents' ? documentLabels[index] : factoryLabels[index]}
+            >
+              <img
+                src={item.url}
+                alt={mode === 'documents' ? documentLabels[index] : factoryLabels[index]}
+                width="700"
+                height="500"
+                loading="lazy"
+                class:list={['w-full h-64 bg-white', mode === 'documents' ? 'object-contain' : 'object-cover']}
+              />
+            </a>
+            <figcaption class="p-4 font-semibold">
+              {mode === 'documents' ? documentLabels[index] : factoryLabels[index]}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    )
+  }
+  {
+    mode === 'factory' && (
+      <p class="mt-6">
+        <a
+          href="https://www.youtube.com/watch?v=IuinK-pei9o"
+          target="_blank"
+          rel="noopener"
+          class="text-primary underline"
+        >
+          شاهد فيديو المصنع على YouTube ↗
+        </a>
+      </p>
+    )
+  }
+  {
+    mode === 'documents' && (
+      <p class="mt-6 text-muted">
+        شهادة ISO 9001 تخص أنشطة مبيعات قطع السيارات المذكورة فيها. وثائق RoHS والاختبار تخص العينة المحددة ولا تثبت
+        المطابقة لكل منتج أو اعتماداً للاستخدام على الطرق. اطلب النسخة السارية والمواصفة المطلوبة لمنتجك قبل الطلب.
+      </p>
+    )
+  }
+</section>

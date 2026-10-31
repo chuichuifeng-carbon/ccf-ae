@@ -1,0 +1,316 @@
+{
+  "allowedBrands": ["bmw", "mercedes-amg", "porsche"],
+  "pageCount": 43,
+  "catalogEntries": 40,
+  "selectedProductImages": 108,
+  "removedPages": [
+    "/vehicles/audi",
+    "/vehicles/ferrari",
+    "/vehicles/lamborghini",
+    "/cases/european-football-player-carbon-fiber"
+  ],
+  "status": "passed",
+  "pages": [
+    {
+      "route": "/404.html",
+      "title": "الصفحة غير موجودة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "not applicable: error-page layout"
+    },
+    {
+      "route": "/",
+      "title": "مصنع قطع كربون فايبر للسيارات في الصين | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/about",
+      "title": "عن CCF: مصنع قطع الكربون في قوانغدونغ، الصين",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/blog",
+      "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/carbon-fiber-parts-fitment-check",
+      "title": "توافق قطع الكربون مع السيارة: دليل قبل الطلب | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/cases",
+      "title": "زيارات عملاء مصنع قطع الكربون ومراجعة المورد | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/catalogs",
+      "title": "كتالوج قطع كربون BMW ومرسيدس وبورش PDF | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "title": "مقارنة عروض أسعار قطع الكربون بالجملة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/contact",
+      "title": "طلب عرض سعر قطع كربون السيارات عبر واتساب | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/dry-carbon-vs-wet-carbon",
+      "title": "الفرق بين الكربون الجاف والرطب لقطع السيارات | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/editorial-policy",
+      "title": "مصادر معلومات المنتجات وسياسة التصحيح | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/faqs",
+      "title": "شراء قطع الكربون: الكمية والمطابقة والشحن والضمان | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/grow",
+      "title": "توريد قطع كربون للشركات: جملة وOEM ودروبشيبينغ | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/privacy",
+      "title": "سياسة الخصوصية واستخدام بيانات الاستفسار | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products",
+      "title": "قطع كربون فايبر للسيارات حسب نوع القطعة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/return-refund-policy",
+      "title": "سياسة الضمان والإرجاع لقطع الكربون | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/terms",
+      "title": "شروط استخدام الموقع وطلبات التوريد | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/vehicles",
+      "title": "قطع كربون BMW ومرسيدس AMG وبورش | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/cases/canada-distributor-visit",
+      "title": "زيارة عميل كندي ومراجعة قطع الكربون | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/cases/usa-oem-carbon-fiber",
+      "title": "زيارة عميل أمريكي ومناقشة مشروع كربون | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/category/adlh-almshtryn",
+      "title": "أرشيف أدلة مشتري قطع ألياف الكربون | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/grow/channel-partners",
+      "title": "شراكة توزيع قطع كربون السيارات للموزعين | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/grow/dropshipping",
+      "title": "دروبشيبينغ قطع كربون السيارات للمتاجر | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/grow/oem-odm",
+      "title": "تصنيع قطع كربون فايبر حسب الطلب OEM/ODM | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/grow/wholesale",
+      "title": "قطع كربون فايبر للسيارات بالجملة من المصنع | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم R44 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم CSL | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "title": "ديفيوزر كربون BMW M3 G80 وM4 G82 تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "title": "غطاء محرك كربون BMW M2 G87 بفتحات تهوية | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/front-lips-splitters",
+      "title": "شفة أمامية وسبليتر كربون BMW M بالجملة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/grilles-air-intake",
+      "title": "شبكات وزخارف خارجية وقطع فتحات هواء BMW | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/hoods",
+      "title": "غطاء محرك كربون BMW M2 وM3 وM5 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/mirror-caps",
+      "title": "أغطية مرايا كربون BMW F90 وF8x | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/rear-diffusers",
+      "title": "ديفيوزر خلفي كربون BMW M بالجملة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/side-skirts",
+      "title": "عتبات جانبية كربون BMW ومرسيدس G63 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/spoilers-wings",
+      "title": "سبويلر وأجنحة خلفية كربون BMW M بالجملة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/trunk-lids",
+      "title": "غطاء صندوق أمتعة كربون BMW M2 وM3 وM4 وM5 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/tag/aljmlh",
+      "title": "مقالات عن الجملة في المدونة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/tag/altsnya",
+      "title": "مقالات عن التصنيع في المدونة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/tag/alyaf-alkrbwn-aljaf",
+      "title": "مقالات عن ألياف الكربون الجاف في المدونة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/vehicles/bmw",
+      "title": "قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/vehicles/mercedes-amg",
+      "title": "قطع كربون مرسيدس AMG: G63 وGT وC63 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/vehicles/porsche",
+      "title": "قطع كربون بورش 911 و718 وكايين وتايكان | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    }
+  ]
+}

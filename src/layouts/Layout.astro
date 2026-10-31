@@ -1,0 +1,80 @@
+---
+import '~/assets/styles/tailwind.css';
+
+import { Font } from 'astro:assets';
+
+import { I18N } from 'astrowind:config';
+
+import CommonMeta from '~/components/common/CommonMeta.astro';
+import Favicons from '~/components/Favicons.astro';
+import CustomStyles from '~/components/CustomStyles.astro';
+import ApplyColorMode from '~/components/common/ApplyColorMode.astro';
+import Metadata from '~/components/common/Metadata.astro';
+import SiteVerification from '~/components/common/SiteVerification.astro';
+import Analytics from '~/components/common/Analytics.astro';
+import Intersect from '~/components/common/Intersect.astro';
+import InquiryLinks from '~/components/common/InquiryLinks.astro';
+import SiteIdentity from '~/components/common/SiteIdentity.astro';
+
+// Comment the line below to disable View Transitions
+import { ClientRouter } from 'astro:transitions';
+
+import { getCanonical } from '~/utils/permalinks';
+import { getPageSeo, withPageSeo } from '~/utils/seo';
+
+import type { MetaData as MetaDataType } from '~/types';
+
+export interface Props {
+  metadata?: MetaDataType;
+}
+
+const { metadata = {} } = Astro.props;
+const pageMetadata = withPageSeo(Astro.url.pathname, metadata);
+const { language, textDirection } = I18N;
+---
+
+<!doctype html>
+<html lang={language} dir={textDirection} class="2xl:text-[20px]">
+  <head>
+    <CommonMeta />
+    <Favicons />
+    <Font cssVariable="--font-tajawal" preload />
+    <CustomStyles />
+    <ApplyColorMode />
+    <Metadata {...pageMetadata} />
+    <SiteVerification />
+    <Analytics />
+    <SiteIdentity />
+    <!-- Reveal animations must never hide the main content when JavaScript is unavailable. -->
+    <Fragment set:html={'<noscript><link rel="stylesheet" href="/no-js.css"></noscript>'} />
+
+    <!--
+      Hreflang: each page self-references its Arabic URL. Cross-language
+      alternates are NOT declared here — a valid hreflang group requires
+      page-level, bidirectional annotations on BOTH ccfrp.com (en) and this
+      site (ar). Once the English site reciprocates per-URL, add matching
+      English and x-default alternates here.
+    -->
+    {
+      getPageSeo(Astro.url.pathname)?.canonicalPath !== null && (
+        <link
+          rel="alternate"
+          hreflang={language}
+          href={pageMetadata.canonical || String(getCanonical(String(Astro.url.pathname)))}
+        />
+      )
+    }
+
+    <!-- Comment the line below to disable View Transitions -->
+    <ClientRouter fallback="swap" />
+
+    <!-- Extra head content from pages: structured data, rel=prev/next, … -->
+    <slot name="head" />
+  </head>
+  <body class="antialiased text-default bg-page tracking-tight min-h-screen flex flex-col pb-24 md:pb-0">
+    <slot />
+
+    <Intersect />
+    <InquiryLinks />
+  </body>
+</html>

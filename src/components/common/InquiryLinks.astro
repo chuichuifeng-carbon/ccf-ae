@@ -1,0 +1,34 @@
+<script>
+  import { whatsappUrl } from '~/utils/inquiry';
+
+  function prepareInquiryLinks() {
+    const title = document.querySelector('h1')?.textContent?.trim() || document.title;
+    const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.href || location.href;
+    document.querySelectorAll<HTMLAnchorElement>('a[href*="wa.me/8613427690360"]').forEach((link) => {
+      // Educational articles provide one ready-to-send sentence without form blanks.
+      if (link.hasAttribute('data-inquiry-prefilled')) return;
+      // Explicit product links retain their product context when shown in a grid.
+      link.href = whatsappUrl(link.dataset.inquiryContext || title, link.dataset.inquiryReference || canonical);
+    });
+  }
+  document.addEventListener('astro:page-load', prepareInquiryLinks);
+  document.addEventListener('click', (event) => {
+    const link = (event.target as Element)?.closest<HTMLAnchorElement>('a[href]');
+    if (!link) return;
+    const url = new URL(link.href, location.href);
+    const kind =
+      url.hostname === 'wa.me'
+        ? 'whatsapp'
+        : url.pathname.endsWith('.pdf')
+          ? 'catalog'
+          : url.protocol === 'mailto:'
+            ? 'email'
+            : '';
+    if (!kind) return;
+    const detail = { channel: kind, page_path: location.pathname, link_url: `${url.origin}${url.pathname}` };
+    // No message, company details or other personal information is included.
+    window.dispatchEvent(new CustomEvent('ccf:inquiry-click', { detail }));
+    const analytics = window as typeof window & { gtag?: (...args: unknown[]) => void };
+    analytics.gtag?.('event', 'inquiry_click', detail);
+  });
+</script>

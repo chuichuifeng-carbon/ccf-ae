@@ -1,0 +1,201 @@
+---
+import SourceGallery from '~/components/widgets/SourceGallery.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Bento from '~/components/widgets/Bento.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'توريد قطع كربون للشركات: جملة وOEM ودروبشيبينغ | CCF',
+  description:
+    'قارن طرق التعاون مع مصنع CCF: شراء بالجملة، تصنيع OEM/ODM، دروبشيبينغ أو شراكة توزيع. اختر المسار وفق منتجاتك وحجم الطلب وقنوات البيع.',
+};
+
+import { img } from '~/utils/siteImages';
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="ألياف الكربون للسيارات · حلول B2B"
+    title="اختر طريقة توريد قطع الكربون لأعمالك"
+    subtitle="اطلب قطع ألياف الكربون مباشرة من مصنع CCF. ابدأ بالدروبشيبينغ، اشترِ بالجملة، طوّر منتجات OEM/ODM أو ابنِ شراكة قنوات — اختر نموذج التوريد الذي يناسب عملك اليوم. لعلامات ما بعد البيع والموزعين وورش التعديل والبائعين عبر الإنترنت."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <SourceGallery />
+
+  <!-- 4 supply models -->
+  <Bento
+    id="models"
+    tagline="اختر نموذج التوريد"
+    title="ابدأ من حيث يقف عملك اليوم"
+    subtitle="سواء كنت تختبر الطلب أو تشتري لإعادة البيع أو توسّع سوقاً إقليمياً أو تطوّر منتجاتك الخاصة — اختر النموذج المناسب لعملك."
+    columns={3}
+    items={[
+      {
+        span: 2,
+        title: 'OEM / ODM — ميّز منتجاتك',
+        description: 'طوّر قطع ألياف كربون مخصصة لعلامتك التجارية حول تصميمك أو تطبيق مركبتك أو فرصة سوقك.',
+        image: {
+          src: img(
+            'custom carbon fiber car part prototype and mold in engineering workshop, product development photography'
+          ),
+          alt: 'تطوير قطع ألياف كربون مخصصة OEM/ODM',
+        },
+        callToAction: { text: 'اكتشف OEM/ODM', href: '/grow/oem-odm' },
+      },
+      {
+        span: 1,
+        title: 'البيع بالجملة',
+        description: 'خزّن قطعاً مجرّبة من الكتالوج لإعادة البيع بثقة.',
+        image: {
+          src: img('carbon fiber car parts stacked in warehouse shelves, wholesale distribution photography'),
+          alt: 'قطع ألياف كربون بالجملة',
+        },
+        callToAction: { text: 'اكتشف الجملة', href: '/grow/wholesale' },
+      },
+      {
+        span: 1,
+        title: 'الدروبشيبينغ',
+        description: 'اختبر الطلب بمخاطر مخزون أقل قبل بناء المخزون.',
+        image: {
+          src: img('carbon fiber car spoiler packed in shipping box, ecommerce order fulfillment photography'),
+          alt: 'دروبشيبينغ قطع ألياف الكربون',
+        },
+        callToAction: { text: 'اكتشف الدروبشيبينغ', href: '/grow/dropshipping' },
+      },
+      {
+        span: 2,
+        title: 'شركاء القنوات — توسّع إقليمياً',
+        description: 'ابنِ تعاوناً أعمق حول سوقك المحلي ونطاق منتجاتك وقناة مبيعاتك.',
+        image: {
+          src: img(
+            'business partners reviewing automotive carbon fiber parts at warehouse meeting, partnership photography'
+          ),
+          alt: 'شراكة قنوات لقطع ألياف الكربون',
+        },
+        callToAction: { text: 'اكتشف شراكة القنوات', href: '/grow/channel-partners' },
+      },
+    ]}
+  />
+
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">مقارنة طرق توريد قطع الكربون</h2>
+    <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-slate-700">
+      <table class="w-full text-start min-w-[640px]">
+        <caption class="sr-only">اختر طريقة التعاون وفق المنتج ونمط الطلب وما تحتاج إلى تأكيده</caption>
+        <thead class="bg-gray-100 dark:bg-slate-800">
+          <tr>
+            {
+              ['طريقة التعاون', 'متى تناسبك؟', 'ما الذي تؤكده قبل البدء؟'].map((heading) => (
+                <th scope="col" class="p-4 text-start">
+                  {heading}
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            [
+              [
+                '/grow/wholesale',
+                'الجملة',
+                'شراء مراجع منشورة بكميات لإعادة البيع',
+                'المراجع والمادة والعينة والكمية والتغليف ونطاق التسليم',
+              ],
+              [
+                '/grow/oem-odm',
+                'OEM/ODM',
+                'تطوير تصميم خاص أو منتج لعلامتك',
+                'العينة أو CAD والقوالب ومعايير القبول وشروط التطوير',
+              ],
+              [
+                '/grow/dropshipping',
+                'الدروبشيبينغ',
+                'مناقشة تنفيذ الطلبات الفردية دون بناء مخزون مسبق',
+                'أهلية المنتج والوجهة والتوفر والشحن ومسار المطالبات',
+              ],
+              [
+                '/grow/channel-partners',
+                'شراكة التوزيع',
+                'تخطيط تعاون متكرر حول سوق وقنوات بيع',
+                'خطة المنتجات والشراء والمنطقة والمسؤوليات والشروط المكتوبة',
+              ],
+            ].map(([href, name, use, confirm]) => (
+              <tr class="border-t border-gray-200 dark:border-slate-700">
+                <th scope="row" class="p-4 text-start">
+                  <a href={href} class="text-primary underline">
+                    {name}
+                  </a>
+                </th>
+                <td class="p-4">{use}</td>
+                <td class="p-4">{confirm}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Common growth path -->
+  <Steps2
+    tagline="مسار نمو شائع"
+    title="ابدأ صغيراً. توسّع مع الطلب."
+    subtitle="النماذج ليست مراحل ثابتة أو التزامات دائمة — يمكنك تغيير نموذج التعاون مع نمو عملك."
+    items={[
+      {
+        title: 'اختبار — الدروبشيبينغ',
+        description: 'اختبر أي تطبيقات المركبات والمنتجات تولّد طلبات حقيقية قبل الاستثمار في المخزون.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'بيع — الجملة',
+        description: 'بعد إثبات الطلب، انتقل إلى مخزون الجملة وركّز الشراء على المنتجات الأهم لعملائك.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'توسّع — شراكة القنوات',
+        description: 'عندما تترسخ قنوات مبيعاتك، ناقش تعاوناً أعمق أو تطوير منتجات مخصصة لسوقك.',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+    callToAction={{ text: 'تعرّف على الشركة', href: '/about' }}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="لست متأكداً من أين تبدأ؟"
+    subtitle="أخبرنا أين تبيع ومن هم عملاؤك وأي المركبات أو المنتجات تهمك — سنناقش معك نموذج التوريد الأنسب لمرحلة عملك الحالية."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

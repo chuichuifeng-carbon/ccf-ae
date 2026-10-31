@@ -1,0 +1,542 @@
+{
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "image": "/images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-r44-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "image": "/images/verified/002-bmw-g80-g82-carbon-fiber-front-lip-r44-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/002-bmw-g80-g82-carbon-fiber-front-lip-r44-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-front-lip-mp-style/": {
+    "slug": "bmw-g87-m2-carbon-fiber-front-lip-mp-style",
+    "image": "/images/verified/043-bmw-g87-m2-carbon-fiber-front-lip-mp-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/043-bmw-g87-m2-carbon-fiber-front-lip-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g90-m5-carbon-fiber-front-lip-split-section/": {
+    "slug": "bmw-g90-m5-carbon-fiber-front-lip-split-section",
+    "image": "/images/verified/131-bmw-g90-m5-carbon-fiber-front-lip-split-section-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/131-bmw-g90-m5-carbon-fiber-front-lip-split-section-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-v-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-front-lip-v-style",
+    "image": "/images/verified/082-bmw-f80-f82-carbon-fiber-front-lip-v-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/082-bmw-f80-f82-carbon-fiber-front-lip-v-style-reference-01.png"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-grille-csl-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-grille-csl-style",
+    "image": "/images/verified/006-bmw-g80-g82-carbon-fiber-front-grille-csl-style-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/006-bmw-g80-g82-carbon-fiber-front-grille-csl-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-grille-v-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-grille-v-style",
+    "image": "/images/verified/008-bmw-g80-g82-carbon-fiber-front-grille-v-style-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/008-bmw-g80-g82-carbon-fiber-front-grille-v-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-front-grille-mp-style/": {
+    "slug": "bmw-g87-m2-carbon-fiber-front-grille-mp-style",
+    "image": "/images/verified/046-bmw-g87-m2-carbon-fiber-front-grille-mp-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/046-bmw-g87-m2-carbon-fiber-front-grille-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g20-kidney-grille/": {
+    "slug": "bmw-g20-kidney-grille",
+    "image": "/images/verified/153-bmw-g20-kidney-grille-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/153-bmw-g20-kidney-grille-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-g90-m5-carbon-fiber-lower-front-grille/": {
+    "slug": "bmw-g90-m5-carbon-fiber-lower-front-grille",
+    "image": "/images/verified/132-bmw-g90-m5-carbon-fiber-lower-front-grille-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/132-bmw-g90-m5-carbon-fiber-lower-front-grille-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-e92-carbon-fiber-hood/": {
+    "slug": "bmw-e92-carbon-fiber-hood",
+    "image": "/images/verified/154-bmw-e92-carbon-fiber-hood-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/154-bmw-e92-carbon-fiber-hood-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g90-m5-carbon-fiber-hood-apn-style/": {
+    "slug": "bmw-g90-m5-carbon-fiber-hood-apn-style",
+    "image": "/images/verified/135-bmw-g90-m5-carbon-fiber-hood-apn-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/135-bmw-g90-m5-carbon-fiber-hood-apn-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-hood-cs-style-forged-pattern/": {
+    "slug": "bmw-f90-m5-carbon-fiber-hood-cs-style-forged-pattern",
+    "image": "/images/verified/120-bmw-f90-m5-carbon-fiber-hood-cs-style-forged-pattern-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/120-bmw-f90-m5-carbon-fiber-hood-cs-style-forged-pattern-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-hood/": {
+    "slug": "bmw-f87-m2-carbon-fiber-hood",
+    "image": "/images/verified/098-bmw-f87-m2-carbon-fiber-hood-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/098-bmw-f87-m2-carbon-fiber-hood-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-hood/": {
+    "slug": "bmw-g87-m2-carbon-fiber-hood",
+    "image": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-g80-m3-carbon-fiber-hood-ac-style/": {
+    "slug": "bmw-g80-m3-carbon-fiber-hood-ac-style",
+    "image": "/images/verified/035-bmw-g80-m3-carbon-fiber-hood-ac-style-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/035-bmw-g80-m3-carbon-fiber-hood-ac-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-mirror-caps/": {
+    "slug": "bmw-f90-m5-carbon-fiber-mirror-caps",
+    "image": "/images/verified/118-bmw-f90-m5-carbon-fiber-mirror-caps-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/118-bmw-f90-m5-carbon-fiber-mirror-caps-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-mirror-caps-forged-pattern/": {
+    "slug": "bmw-f90-m5-mirror-caps-forged-pattern",
+    "image": "/images/verified/119-bmw-f90-m5-mirror-caps-forged-pattern-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/119-bmw-f90-m5-mirror-caps-forged-pattern-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f8x-carbon-fiber-replacement-mirror-caps/": {
+    "slug": "bmw-f8x-carbon-fiber-replacement-mirror-caps",
+    "image": "/images/verified/102-bmw-f8x-carbon-fiber-replacement-mirror-caps-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/102-bmw-f8x-carbon-fiber-replacement-mirror-caps-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "image": "/images/verified/029-bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/029-bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-center-light-design/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-center-light-design",
+    "image": "/images/verified/028-bmw-g80-g82-carbon-fiber-rear-diffuser-center-light-design-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/028-bmw-g80-g82-carbon-fiber-rear-diffuser-center-light-design-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style/": {
+    "slug": "bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style",
+    "image": "/images/verified/054-bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/054-bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-rear-diffuser-forged-pattern/": {
+    "slug": "bmw-f90-m5-carbon-fiber-rear-diffuser-forged-pattern",
+    "image": "/images/verified/115-bmw-f90-m5-carbon-fiber-rear-diffuser-forged-pattern-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/115-bmw-f90-m5-carbon-fiber-rear-diffuser-forged-pattern-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-rear-diffuser-3d-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-rear-diffuser-3d-style",
+    "image": "/images/verified/086-bmw-f80-f82-carbon-fiber-rear-diffuser-3d-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/086-bmw-f80-f82-carbon-fiber-rear-diffuser-3d-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-g83-carbon-fiber-side-skirts-mp-style/": {
+    "slug": "bmw-g80-g82-g83-carbon-fiber-side-skirts-mp-style",
+    "image": "/images/verified/024-bmw-g80-g82-g83-carbon-fiber-side-skirts-mp-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/024-bmw-g80-g82-g83-carbon-fiber-side-skirts-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g82-g83-m4-carbon-fiber-side-skirts-flat-profile/": {
+    "slug": "bmw-g82-g83-m4-carbon-fiber-side-skirts-flat-profile",
+    "image": "/images/verified/025-bmw-g82-g83-m4-carbon-fiber-side-skirts-flat-profile-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/025-bmw-g82-g83-m4-carbon-fiber-side-skirts-flat-profile-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-side-skirts-r44-style/": {
+    "slug": "bmw-g87-m2-carbon-fiber-side-skirts-r44-style",
+    "image": "/images/verified/052-bmw-g87-m2-carbon-fiber-side-skirts-r44-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/052-bmw-g87-m2-carbon-fiber-side-skirts-r44-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g90-m5-carbon-fiber-side-skirts/": {
+    "slug": "bmw-g90-m5-carbon-fiber-side-skirts",
+    "image": "/images/verified/134-bmw-g90-m5-carbon-fiber-side-skirts-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/134-bmw-g90-m5-carbon-fiber-side-skirts-reference-01.jpg"
+  },
+  "https://ccfrp.com/mercedes-benz-w465-g63-side-skirt-set/": {
+    "slug": "mercedes-benz-w465-g63-side-skirt-set",
+    "image": "/images/verified/150-mercedes-benz-w465-g63-side-skirt-set-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/150-mercedes-benz-w465-g63-side-skirt-set-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-wing-mp-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-wing-mp-style",
+    "image": "/images/verified/033-bmw-g80-g82-carbon-fiber-rear-wing-mp-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/033-bmw-g80-g82-carbon-fiber-rear-wing-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g82-m4-carbon-fiber-rear-wing-a-style/": {
+    "slug": "bmw-g82-m4-carbon-fiber-rear-wing-a-style",
+    "image": "/images/verified/034-bmw-g82-m4-carbon-fiber-rear-wing-a-style-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/034-bmw-g82-m4-carbon-fiber-rear-wing-a-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g8x-carbon-fiber-rear-wing-at-r3-style/": {
+    "slug": "bmw-g8x-carbon-fiber-rear-wing-at-r3-style",
+    "image": "/images/verified/062-bmw-g8x-carbon-fiber-rear-wing-at-r3-style-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/062-bmw-g8x-carbon-fiber-rear-wing-at-r3-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-spoiler-mp-style/": {
+    "slug": "bmw-g87-m2-carbon-fiber-rear-spoiler-mp-style",
+    "image": "/images/verified/055-bmw-g87-m2-carbon-fiber-rear-spoiler-mp-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/055-bmw-g87-m2-carbon-fiber-rear-spoiler-mp-style-reference-01.png"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-rear-spoiler-cs-style/": {
+    "slug": "bmw-f90-m5-carbon-fiber-rear-spoiler-cs-style",
+    "image": "/images/verified/116-bmw-f90-m5-carbon-fiber-rear-spoiler-cs-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/116-bmw-f90-m5-carbon-fiber-rear-spoiler-cs-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-trunk-lid-forged-pattern/": {
+    "slug": "bmw-f90-m5-carbon-fiber-trunk-lid-forged-pattern",
+    "image": "/images/verified/121-bmw-f90-m5-carbon-fiber-trunk-lid-forged-pattern-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/121-bmw-f90-m5-carbon-fiber-trunk-lid-forged-pattern-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-trunk-lid/": {
+    "slug": "bmw-f87-m2-carbon-fiber-trunk-lid",
+    "image": "/images/verified/099-bmw-f87-m2-carbon-fiber-trunk-lid-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/099-bmw-f87-m2-carbon-fiber-trunk-lid-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-trunk-lid/": {
+    "slug": "bmw-g87-m2-carbon-fiber-trunk-lid",
+    "image": "/images/verified/057-bmw-g87-m2-carbon-fiber-trunk-lid-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/057-bmw-g87-m2-carbon-fiber-trunk-lid-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-trunk-lid/": {
+    "slug": "bmw-g80-g82-carbon-fiber-trunk-lid",
+    "image": "/images/verified/037-bmw-g80-g82-carbon-fiber-trunk-lid-reference-01new.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/037-bmw-g80-g82-carbon-fiber-trunk-lid-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-g80-m3-carbon-fiber-trunk-lid-csl-style/": {
+    "slug": "bmw-g80-m3-carbon-fiber-trunk-lid-csl-style",
+    "image": "/images/verified/036-bmw-g80-m3-carbon-fiber-trunk-lid-csl-style-reference-01.webp",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/036-bmw-g80-m3-carbon-fiber-trunk-lid-csl-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-front-lip-multi-section/": {
+    "slug": "bmw-f90-m5-carbon-fiber-front-lip-multi-section",
+    "image": "/images/restored/104-bmw-f90-m5-carbon-fiber-front-lip-multi-section-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/104-bmw-f90-m5-carbon-fiber-front-lip-multi-section-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-front-lip-3d-style/": {
+    "slug": "bmw-f90-m5-carbon-fiber-front-lip-3d-style",
+    "image": "/images/restored/103-bmw-f90-m5-carbon-fiber-front-lip-3d-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/103-bmw-f90-m5-carbon-fiber-front-lip-3d-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-front-lip-mtc-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-front-lip-mtc-style",
+    "image": "/images/restored/091-bmw-f87-m2-carbon-fiber-front-lip-mtc-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/091-bmw-f87-m2-carbon-fiber-front-lip-mtc-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-front-lip-mp-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-front-lip-mp-style",
+    "image": "/images/restored/090-bmw-f87-m2-carbon-fiber-front-lip-mp-style-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/090-bmw-f87-m2-carbon-fiber-front-lip-mp-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-mp-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-front-lip-mp-style",
+    "image": "/images/restored/081-bmw-f80-f82-carbon-fiber-front-lip-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/081-bmw-f80-f82-carbon-fiber-front-lip-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-bumper-corner-splitters-mp-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-front-bumper-corner-splitters-mp-style",
+    "image": "/images/restored/083-bmw-f80-f82-carbon-fiber-front-bumper-corner-splitters-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/083-bmw-f80-f82-carbon-fiber-front-bumper-corner-splitters-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-cs-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-front-lip-cs-style",
+    "image": "/images/restored/080-bmw-f80-f82-carbon-fiber-front-lip-cs-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/080-bmw-f80-f82-carbon-fiber-front-lip-cs-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-3d-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-front-lip-3d-style",
+    "image": "/images/restored/079-bmw-f80-f82-carbon-fiber-front-lip-3d-style-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/079-bmw-f80-f82-carbon-fiber-front-lip-3d-style-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-f80-carbon-fiber-front-lip-gt4-style/": {
+    "slug": "bmw-f80-carbon-fiber-front-lip-gt4-style",
+    "image": "/images/restored/078-bmw-f80-carbon-fiber-front-lip-gt4-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/078-bmw-f80-carbon-fiber-front-lip-gt4-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-front-lip-r44-style/": {
+    "slug": "bmw-g87-m2-carbon-fiber-front-lip-r44-style",
+    "image": "/images/restored/044-bmw-g87-m2-carbon-fiber-front-lip-r44-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/044-bmw-g87-m2-carbon-fiber-front-lip-r44-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-v-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-lip-v-style",
+    "image": "/images/restored/004-bmw-g80-g82-carbon-fiber-front-lip-v-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/004-bmw-g80-g82-carbon-fiber-front-lip-v-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g81-carbon-fiber-front-lip-curved-profile/": {
+    "slug": "bmw-g80-g81-carbon-fiber-front-lip-curved-profile",
+    "image": "/images/restored/001-bmw-g80-g81-carbon-fiber-front-lip-curved-profile-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/001-bmw-g80-g81-carbon-fiber-front-lip-curved-profile-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-rear-diffuser-center-insert/": {
+    "slug": "bmw-f90-m5-carbon-fiber-rear-diffuser-center-insert",
+    "image": "/images/restored/114-bmw-f90-m5-carbon-fiber-rear-diffuser-center-insert-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/114-bmw-f90-m5-carbon-fiber-rear-diffuser-center-insert-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-rear-diffuser-mtc-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-rear-diffuser-mtc-style",
+    "image": "/images/restored/097-bmw-f87-m2-carbon-fiber-rear-diffuser-mtc-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/097-bmw-f87-m2-carbon-fiber-rear-diffuser-mtc-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-rear-diffuser-mp-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-rear-diffuser-mp-style",
+    "image": "/images/restored/096-bmw-f87-m2-carbon-fiber-rear-diffuser-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/096-bmw-f87-m2-carbon-fiber-rear-diffuser-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-rear-diffuser-v-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-rear-diffuser-v-style",
+    "image": "/images/restored/088-bmw-f80-f82-carbon-fiber-rear-diffuser-v-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/088-bmw-f80-f82-carbon-fiber-rear-diffuser-v-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-rear-diffuser-mp-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-rear-diffuser-mp-style",
+    "image": "/images/restored/087-bmw-f80-f82-carbon-fiber-rear-diffuser-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/087-bmw-f80-f82-carbon-fiber-rear-diffuser-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-diffuser/": {
+    "slug": "bmw-g87-m2-carbon-fiber-rear-diffuser",
+    "image": "/images/restored/053-bmw-g87-m2-carbon-fiber-rear-diffuser-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/053-bmw-g87-m2-carbon-fiber-rear-diffuser-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-rc-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-rc-style",
+    "image": "/images/restored/031-bmw-g80-g82-carbon-fiber-rear-diffuser-rc-style-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/031-bmw-g80-g82-carbon-fiber-rear-diffuser-rc-style-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-multi-piece/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-multi-piece",
+    "image": "/images/restored/030-bmw-g80-g82-carbon-fiber-rear-diffuser-multi-piece-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/030-bmw-g80-g82-carbon-fiber-rear-diffuser-multi-piece-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-center-exit-reference/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-center-exit-reference",
+    "image": "/images/restored/027-bmw-g80-g82-carbon-fiber-rear-diffuser-center-exit-reference-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/027-bmw-g80-g82-carbon-fiber-rear-diffuser-center-exit-reference-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-3d-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-3d-style",
+    "image": "/images/restored/026-bmw-g80-g82-carbon-fiber-rear-diffuser-3d-style-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/026-bmw-g80-g82-carbon-fiber-rear-diffuser-3d-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-side-skirts-forged-pattern/": {
+    "slug": "bmw-f90-m5-carbon-fiber-side-skirts-forged-pattern",
+    "image": "/images/restored/113-bmw-f90-m5-carbon-fiber-side-skirts-forged-pattern-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/113-bmw-f90-m5-carbon-fiber-side-skirts-forged-pattern-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-side-skirts/": {
+    "slug": "bmw-f90-m5-carbon-fiber-side-skirts",
+    "image": "/images/restored/112-bmw-f90-m5-carbon-fiber-side-skirts-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/112-bmw-f90-m5-carbon-fiber-side-skirts-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-side-skirts-mtc-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-side-skirts-mtc-style",
+    "image": "/images/restored/095-bmw-f87-m2-carbon-fiber-side-skirts-mtc-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/095-bmw-f87-m2-carbon-fiber-side-skirts-mtc-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-side-skirt-extensions-mp-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-side-skirt-extensions-mp-style",
+    "image": "/images/restored/094-bmw-f87-m2-carbon-fiber-side-skirt-extensions-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/094-bmw-f87-m2-carbon-fiber-side-skirt-extensions-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-f82-carbon-fiber-side-skirts-mp-style/": {
+    "slug": "bmw-f80-f82-carbon-fiber-side-skirts-mp-style",
+    "image": "/images/restored/085-bmw-f80-f82-carbon-fiber-side-skirts-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/085-bmw-f80-f82-carbon-fiber-side-skirts-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f80-side-skirts-psm-style/": {
+    "slug": "bmw-f80-side-skirts-psm-style",
+    "image": "/images/restored/084-bmw-f80-side-skirts-psm-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/084-bmw-f80-side-skirts-psm-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-side-skirt-extensions/": {
+    "slug": "bmw-g87-m2-carbon-fiber-side-skirt-extensions",
+    "image": "/images/restored/051-bmw-g87-m2-carbon-fiber-side-skirt-extensions-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/051-bmw-g87-m2-carbon-fiber-side-skirt-extensions-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-side-skirts-slim-profile/": {
+    "slug": "bmw-g80-g82-carbon-fiber-side-skirts-slim-profile",
+    "image": "/images/restored/023-bmw-g80-g82-carbon-fiber-side-skirts-slim-profile-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/023-bmw-g80-g82-carbon-fiber-side-skirts-slim-profile-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-side-skirts-3d-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-side-skirts-3d-style",
+    "image": "/images/restored/022-bmw-g80-g82-carbon-fiber-side-skirts-3d-style-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/022-bmw-g80-g82-carbon-fiber-side-skirts-3d-style-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-side-skirts/": {
+    "slug": "bmw-g80-g82-carbon-fiber-side-skirts",
+    "image": "/images/restored/021-bmw-g80-g82-carbon-fiber-side-skirts-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/021-bmw-g80-g82-carbon-fiber-side-skirts-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-rear-spoiler-mp-style/": {
+    "slug": "bmw-f90-m5-carbon-fiber-rear-spoiler-mp-style",
+    "image": "/images/restored/117-bmw-f90-m5-carbon-fiber-rear-spoiler-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/117-bmw-f90-m5-carbon-fiber-rear-spoiler-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-spoiler-v-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-spoiler-v-style",
+    "image": "/images/restored/032-bmw-g80-g82-carbon-fiber-rear-spoiler-v-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/032-bmw-g80-g82-carbon-fiber-rear-spoiler-v-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f30-carbon-fiber-kidney-grilles/": {
+    "slug": "bmw-f30-carbon-fiber-kidney-grilles",
+    "image": "/images/restored/152-bmw-f30-carbon-fiber-kidney-grilles-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/152-bmw-f30-carbon-fiber-kidney-grilles-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-f10-carbon-fiber-kidney-grilles/": {
+    "slug": "bmw-f10-carbon-fiber-kidney-grilles",
+    "image": "/images/restored/151-bmw-f10-carbon-fiber-kidney-grilles-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/151-bmw-f10-carbon-fiber-kidney-grilles-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-front-grille-forged-pattern/": {
+    "slug": "bmw-f90-m5-carbon-fiber-front-grille-forged-pattern",
+    "image": "/images/restored/106-bmw-f90-m5-carbon-fiber-front-grille-forged-pattern-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/106-bmw-f90-m5-carbon-fiber-front-grille-forged-pattern-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-front-grille/": {
+    "slug": "bmw-f90-m5-carbon-fiber-front-grille",
+    "image": "/images/restored/105-bmw-f90-m5-carbon-fiber-front-grille-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/105-bmw-f90-m5-carbon-fiber-front-grille-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-g8x-gloss-black-grille-inserts/": {
+    "slug": "bmw-g8x-gloss-black-grille-inserts",
+    "image": "/images/restored/058-bmw-g8x-gloss-black-grille-inserts-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/058-bmw-g8x-gloss-black-grille-inserts-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-lower-front-grille/": {
+    "slug": "bmw-g87-m2-carbon-fiber-lower-front-grille",
+    "image": "/images/restored/047-bmw-g87-m2-carbon-fiber-lower-front-grille-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/047-bmw-g87-m2-carbon-fiber-lower-front-grille-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-front-grille-cross-brace-design/": {
+    "slug": "bmw-g87-m2-carbon-fiber-front-grille-cross-brace-design",
+    "image": "/images/restored/045-bmw-g87-m2-carbon-fiber-front-grille-cross-brace-design-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/045-bmw-g87-m2-carbon-fiber-front-grille-cross-brace-design-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-gloss-black-front-grille-e-csl-style/": {
+    "slug": "bmw-g80-g82-gloss-black-front-grille-e-csl-style",
+    "image": "/images/restored/009-bmw-g80-g82-gloss-black-front-grille-e-csl-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/009-bmw-g80-g82-gloss-black-front-grille-e-csl-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-grille-st-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-grille-st-style",
+    "image": "/images/restored/007-bmw-g80-g82-carbon-fiber-front-grille-st-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/007-bmw-g80-g82-carbon-fiber-front-grille-st-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-grille/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-grille",
+    "image": "/images/restored/005-bmw-g80-g82-carbon-fiber-front-grille-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/005-bmw-g80-g82-carbon-fiber-front-grille-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g90-m5-carbon-fiber-rear-exhaust-surround-trim/": {
+    "slug": "bmw-g90-m5-carbon-fiber-rear-exhaust-surround-trim",
+    "image": "/images/restored/133-bmw-g90-m5-carbon-fiber-rear-exhaust-surround-trim-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/133-bmw-g90-m5-carbon-fiber-rear-exhaust-surround-trim-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-rear-corner-extensions-forged-pattern/": {
+    "slug": "bmw-f90-m5-rear-corner-extensions-forged-pattern",
+    "image": "/images/restored/111-bmw-f90-m5-rear-corner-extensions-forged-pattern-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/111-bmw-f90-m5-rear-corner-extensions-forged-pattern-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-fender-trim-forged-pattern/": {
+    "slug": "bmw-f90-m5-fender-trim-forged-pattern",
+    "image": "/images/restored/110-bmw-f90-m5-fender-trim-forged-pattern-reference-01new.png",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/110-bmw-f90-m5-fender-trim-forged-pattern-reference-01new.png"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-front-bumper-vent-frames/": {
+    "slug": "bmw-f90-m5-carbon-fiber-front-bumper-vent-frames",
+    "image": "/images/restored/109-bmw-f90-m5-carbon-fiber-front-bumper-vent-frames-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/109-bmw-f90-m5-carbon-fiber-front-bumper-vent-frames-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-carbon-fiber-front-bumper-corner-splitters-mp-style/": {
+    "slug": "bmw-f90-m5-carbon-fiber-front-bumper-corner-splitters-mp-style",
+    "image": "/images/restored/108-bmw-f90-m5-carbon-fiber-front-bumper-corner-splitters-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/108-bmw-f90-m5-carbon-fiber-front-bumper-corner-splitters-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f90-m5-bumper-vent-frames-forged-pattern/": {
+    "slug": "bmw-f90-m5-bumper-vent-frames-forged-pattern",
+    "image": "/images/restored/107-bmw-f90-m5-bumper-vent-frames-forged-pattern-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/107-bmw-f90-m5-bumper-vent-frames-forged-pattern-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-rear-bumper-corner-extensions-mtc-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-rear-bumper-corner-extensions-mtc-style",
+    "image": "/images/restored/093-bmw-f87-m2-carbon-fiber-rear-bumper-corner-extensions-mtc-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/093-bmw-f87-m2-carbon-fiber-rear-bumper-corner-extensions-mtc-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-f87-m2-carbon-fiber-front-bumper-canards-ac-style/": {
+    "slug": "bmw-f87-m2-carbon-fiber-front-bumper-canards-ac-style",
+    "image": "/images/restored/092-bmw-f87-m2-carbon-fiber-front-bumper-canards-ac-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/092-bmw-f87-m2-carbon-fiber-front-bumper-canards-ac-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g8x-carbon-fiber-shark-fin-antenna-cover/": {
+    "slug": "bmw-g8x-carbon-fiber-shark-fin-antenna-cover",
+    "image": "/images/restored/061-bmw-g8x-carbon-fiber-shark-fin-antenna-cover-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/061-bmw-g8x-carbon-fiber-shark-fin-antenna-cover-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g8x-carbon-fiber-rear-corner-extensions/": {
+    "slug": "bmw-g8x-carbon-fiber-rear-corner-extensions",
+    "image": "/images/restored/060-bmw-g8x-carbon-fiber-rear-corner-extensions-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/060-bmw-g8x-carbon-fiber-rear-corner-extensions-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-g80-g82-carbon-fiber-fuel-cap-trim-cover/": {
+    "slug": "bmw-g87-g80-g82-carbon-fiber-fuel-cap-trim-cover",
+    "image": "/images/restored/059-bmw-g87-g80-g82-carbon-fiber-fuel-cap-trim-cover-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/059-bmw-g87-g80-g82-carbon-fiber-fuel-cap-trim-cover-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-bumper-trim/": {
+    "slug": "bmw-g87-m2-carbon-fiber-rear-bumper-trim",
+    "image": "/images/restored/050-bmw-g87-m2-carbon-fiber-rear-bumper-trim-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/050-bmw-g87-m2-carbon-fiber-rear-bumper-trim-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-front-bumper-vent-inserts-cross-brace-design/": {
+    "slug": "bmw-g87-m2-carbon-fiber-front-bumper-vent-inserts-cross-brace-design",
+    "image": "/images/restored/049-bmw-g87-m2-carbon-fiber-front-bumper-vent-inserts-cross-brace-design-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/049-bmw-g87-m2-carbon-fiber-front-bumper-vent-inserts-cross-brace-design-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g87-m2-carbon-fiber-fender-trim-multi-fin/": {
+    "slug": "bmw-g87-m2-carbon-fiber-fender-trim-multi-fin",
+    "image": "/images/restored/048-bmw-g87-m2-carbon-fiber-fender-trim-multi-fin-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/048-bmw-g87-m2-carbon-fiber-fender-trim-multi-fin-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-surround-trim/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-diffuser-surround-trim",
+    "image": "/images/restored/020-bmw-g80-g82-carbon-fiber-rear-diffuser-surround-trim-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/020-bmw-g80-g82-carbon-fiber-rear-diffuser-surround-trim-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-bumper-corner-extensions-mp-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-rear-bumper-corner-extensions-mp-style",
+    "image": "/images/restored/019-bmw-g80-g82-carbon-fiber-rear-bumper-corner-extensions-mp-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/019-bmw-g80-g82-carbon-fiber-rear-bumper-corner-extensions-mp-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-hood-vent-trim/": {
+    "slug": "bmw-g80-g82-carbon-fiber-hood-vent-trim",
+    "image": "/images/restored/018-bmw-g80-g82-carbon-fiber-hood-vent-trim-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/018-bmw-g80-g82-carbon-fiber-hood-vent-trim-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-vent-inserts/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-bumper-vent-inserts",
+    "image": "/images/restored/017-bmw-g80-g82-carbon-fiber-front-bumper-vent-inserts-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/017-bmw-g80-g82-carbon-fiber-front-bumper-vent-inserts-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-corner-splitters/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-bumper-corner-splitters",
+    "image": "/images/restored/016-bmw-g80-g82-carbon-fiber-front-bumper-corner-splitters-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/016-bmw-g80-g82-carbon-fiber-front-bumper-corner-splitters-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-canards-vs-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-bumper-canards-vs-style",
+    "image": "/images/restored/015-bmw-g80-g82-carbon-fiber-front-bumper-canards-vs-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/015-bmw-g80-g82-carbon-fiber-front-bumper-canards-vs-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-canards-mp-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-bumper-canards-mp-style",
+    "image": "/images/restored/014-bmw-g80-g82-carbon-fiber-front-bumper-canards-mp-style-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/014-bmw-g80-g82-carbon-fiber-front-bumper-canards-mp-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-canards-ac-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-front-bumper-canards-ac-style",
+    "image": "/images/restored/013-bmw-g80-g82-carbon-fiber-front-bumper-canards-ac-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/013-bmw-g80-g82-carbon-fiber-front-bumper-canards-ac-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-fender-vent-trim-mp-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-fender-vent-trim-mp-style",
+    "image": "/images/restored/012-bmw-g80-g82-carbon-fiber-fender-vent-trim-mp-style-reference-01new.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/012-bmw-g80-g82-carbon-fiber-fender-vent-trim-mp-style-reference-01new.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-fender-vent-trim-ac-style/": {
+    "slug": "bmw-g80-g82-carbon-fiber-fender-vent-trim-ac-style",
+    "image": "/images/restored/011-bmw-g80-g82-carbon-fiber-fender-vent-trim-ac-style-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/011-bmw-g80-g82-carbon-fiber-fender-vent-trim-ac-style-reference-01.jpg"
+  },
+  "https://ccfrp.com/bmw-g80-g82-carbon-fiber-fender-vent-trim/": {
+    "slug": "bmw-g80-g82-carbon-fiber-fender-vent-trim",
+    "image": "/images/restored/010-bmw-g80-g82-carbon-fiber-fender-vent-trim-reference-01.jpg",
+    "sourceImage": "https://ccfrp.com/wp-content/uploads/2026/10/010-bmw-g80-g82-carbon-fiber-fender-vent-trim-reference-01.jpg"
+  }
+}

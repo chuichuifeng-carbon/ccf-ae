@@ -1,0 +1,352 @@
+{
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "pages": [
+    {
+      "route": "/",
+      "h1": ["مصنع قطع ألياف الكربون للسيارات في الصين"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "مصنع قطع كربون فايبر للسيارات في الصين | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products",
+      "h1": ["قطع كربون فايبر للسيارات حسب نوع القطعة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "قطع كربون فايبر للسيارات حسب نوع القطعة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/vehicles",
+      "h1": ["قطع ألياف الكربون حسب ماركة السيارة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "قطع كربون BMW ومرسيدس AMG وبورش | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/catalogs",
+      "h1": ["كتالوجات قطع ألياف الكربون PDF حسب المركبة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "كتالوج قطع كربون BMW ومرسيدس وبورش PDF | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/grow",
+      "h1": ["اختر طريقة توريد قطع الكربون لأعمالك"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "توريد قطع كربون للشركات: جملة وOEM ودروبشيبينغ | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/grow/wholesale",
+      "h1": ["توريد قطع ألياف الكربون للسيارات بالجملة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "قطع كربون فايبر للسيارات بالجملة من المصنع | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/grow/oem-odm",
+      "h1": ["تصنيع قطع ألياف الكربون حسب الطلب OEM/ODM"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "تصنيع قطع كربون فايبر حسب الطلب OEM/ODM | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/grow/dropshipping",
+      "h1": ["دروبشيبينغ قطع الكربون للمتاجر الإلكترونية"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "دروبشيبينغ قطع كربون السيارات للمتاجر | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/grow/channel-partners",
+      "h1": ["شراكة توزيع قطع الكربون للموزعين والتجار"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شراكة توزيع قطع كربون السيارات للموزعين | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/vehicles/bmw",
+      "h1": ["قطع ألياف الكربون لسيارات BMW"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/vehicles/mercedes-amg",
+      "h1": ["قطع ألياف الكربون لمرسيدس Mercedes-AMG"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "قطع كربون مرسيدس AMG: G63 وGT وC63 | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/vehicles/porsche",
+      "h1": ["قطع ألياف الكربون لبورش Porsche"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "قطع كربون بورش 911 و718 وكايين وتايكان | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/front-lips-splitters",
+      "h1": ["شفاه أمامية وسبليتر كربون لسيارات BMW M"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شفة أمامية وسبليتر كربون BMW M بالجملة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/rear-diffusers",
+      "h1": ["ديفيوزر وناشرات خلفية كربون لسيارات BMW M"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "ديفيوزر خلفي كربون BMW M بالجملة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/side-skirts",
+      "h1": ["عتبات وتنانير جانبية كربون BMW ومرسيدس G63"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "عتبات جانبية كربون BMW ومرسيدس G63 | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/spoilers-wings",
+      "h1": ["سبويلر وأجنحة خلفية كربون لسيارات BMW M"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "سبويلر وأجنحة خلفية كربون BMW M بالجملة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/hoods",
+      "h1": ["أغطية محرك كربون لسيارات BMW"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "غطاء محرك كربون BMW M2 وM3 وM5 | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/trunk-lids",
+      "h1": ["أغطية صندوق الأمتعة كربون لسيارات BMW"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "غطاء صندوق أمتعة كربون BMW M2 وM3 وM4 وM5 | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/grilles-air-intake",
+      "h1": ["شبكات أمامية وقطع فتحات هواء كربون BMW"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شبك أمامي وقطع فتحات هواء كربون BMW | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/mirror-caps",
+      "h1": ["أغطية مرايا جانبية كربون لسيارات BMW"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "أغطية مرايا كربون BMW F90 وF8x | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "h1": ["شفّة أمامية كربون BMW M3 G80 وM4 G82 — تصميم R44"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم R44 | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "h1": ["شفّة كربون BMW M3 G80 وM4 G82 — CSL من ثلاث قطع"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم CSL | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "h1": ["ديفيوزر كربون BMW M3 G80 وM4 G82 — تصميم MP"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "ديفيوزر كربون BMW M3 G80 وM4 G82 تصميم MP | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "h1": ["غطاء محرك كربون BMW M2 G87 بفتحات تهوية"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "غطاء محرك كربون BMW M2 G87 بفتحات تهوية | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/cases",
+      "h1": ["زيارات العملاء ومناقشات توريد قطع الكربون"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "زيارات عملاء مصنع قطع الكربون ومراجعة المورد | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/cases/canada-distributor-visit",
+      "h1": ["زيارة عميل كندي ومناقشة توريد قطع الكربون"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "زيارة عميل كندي ومراجعة قطع الكربون | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/cases/usa-oem-carbon-fiber",
+      "h1": ["زيارة عميل أمريكي ومناقشة مشروع كربون"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "زيارة عميل أمريكي ومناقشة مشروع كربون | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/about",
+      "h1": ["شركة CCF ومصنع قطع الكربون في الصين"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "عن CCF: مصنع قطع الكربون في قوانغدونغ، الصين",
+      "viewport": 375
+    },
+    {
+      "route": "/contact",
+      "h1": ["اطلب عرض سعر لقطع كربون السيارات من CCF"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "طلب عرض سعر قطع كربون السيارات عبر واتساب | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/faqs",
+      "h1": ["أسئلة شراء قطع ألياف الكربون بالجملة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شراء قطع الكربون: الكمية والمطابقة والشحن والضمان | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/editorial-policy",
+      "h1": ["مصادر المحتوى ومسؤولية النشر والتصحيحات"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "مصادر معلومات المنتجات وسياسة التصحيح | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/return-refund-policy",
+      "h1": ["سياسة الضمان والإرجاع والاسترداد"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "سياسة الضمان والإرجاع لقطع الكربون | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/privacy",
+      "h1": ["سياسة الخصوصية وبيانات الاستفسارات"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "سياسة الخصوصية واستخدام بيانات الاستفسار | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/terms",
+      "h1": ["شروط استخدام الموقع وطلبات التوريد"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "شروط استخدام الموقع وطلبات التوريد | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/blog",
+      "h1": ["أدلة شراء قطع ألياف الكربون للموزعين"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/dry-carbon-vs-wet-carbon",
+      "h1": ["ما الفرق بين الكربون الجاف والرطب لقطع السيارات؟"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "الفرق بين الكربون الجاف والرطب لقطع السيارات | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/category/adlh-almshtryn",
+      "h1": ["أرشيف أدلة المشترين"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "أرشيف أدلة مشتري قطع ألياف الكربون | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/tag/aljmlh",
+      "h1": ["مقالات عن الجملة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "مقالات عن الجملة في المدونة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/tag/altsnya",
+      "h1": ["مقالات عن التصنيع"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "مقالات عن التصنيع في المدونة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/tag/alyaf-alkrbwn-aljaf",
+      "h1": ["مقالات عن ألياف الكربون الجاف"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "مقالات عن ألياف الكربون الجاف في المدونة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/404.html",
+      "h1": ["الصفحة غير موجودة"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "الصفحة غير موجودة | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/carbon-fiber-parts-fitment-check",
+      "h1": ["كيف تتحقق من توافق قطع الكربون قبل الطلب؟"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "توافق قطع الكربون مع السيارة: دليل قبل الطلب | CCF",
+      "viewport": 375
+    },
+    {
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "h1": ["كيف تقارن عروض أسعار قطع الكربون بالجملة؟"],
+      "overflow": false,
+      "pageWidth": 360,
+      "title": "مقارنة عروض أسعار قطع الكربون بالجملة | CCF",
+      "viewport": 375
+    }
+  ]
+}

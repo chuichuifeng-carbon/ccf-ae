@@ -1,0 +1,51 @@
+---
+import { SITE, I18N } from 'astrowind:config';
+import StructuredData from '~/components/common/StructuredData.astro';
+import logo from '~/assets/favicons/favicon.svg';
+const base = SITE.site || Astro.site?.toString();
+const organization = SITE.organization;
+const organizationId = `${base}/#organization`;
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${base}/#website`,
+    name: SITE.name,
+    url: base,
+    inLanguage: I18N.language,
+    publisher: { '@id': organizationId },
+  },
+  ...(organization
+    ? [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          '@id': organizationId,
+          name: SITE.name,
+          legalName: organization.legalName,
+          url: base,
+          logo: new URL(logo.src, base).toString(),
+          email: organization.email,
+          telephone: organization.telephone,
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: organization.streetAddress,
+            addressLocality: organization.addressLocality,
+            addressRegion: organization.addressRegion,
+            addressCountry: organization.addressCountry,
+          },
+          contactPoint: {
+            '@type': 'ContactPoint',
+            contactType: 'sales',
+            email: organization.email,
+            telephone: organization.telephone,
+            url: new URL('/contact', base).toString(),
+          },
+          sameAs: organization.sameAs,
+        },
+      ]
+    : []),
+];
+---
+
+<StructuredData schema={schema} />

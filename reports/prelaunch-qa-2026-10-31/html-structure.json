@@ -1,0 +1,350 @@
+{
+  "pages": 43,
+  "forms": 0,
+  "results": [
+    {
+      "route": "/",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/vehicles",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/catalogs",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/grow",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/grow/wholesale",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/grow/oem-odm",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/grow/dropshipping",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/grow/channel-partners",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/vehicles/bmw",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/vehicles/mercedes-amg",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/vehicles/porsche",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/front-lips-splitters",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/rear-diffusers",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/side-skirts",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/spoilers-wings",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/hoods",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/trunk-lids",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/grilles-air-intake",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/mirror-caps",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/cases",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/cases/canada-distributor-visit",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/cases/usa-oem-carbon-fiber",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/about",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/contact",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/faqs",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/editorial-policy",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/return-refund-policy",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/privacy",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/terms",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/blog",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/dry-carbon-vs-wet-carbon",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/category/adlh-almshtryn",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/tag/aljmlh",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/tag/altsnya",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/tag/alyaf-alkrbwn-aljaf",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/404.html",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/carbon-fiber-parts-fitment-check",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    }
+  ]
+}

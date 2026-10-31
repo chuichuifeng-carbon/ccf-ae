@@ -1,0 +1,162 @@
+---
+import SourceGallery from '~/components/widgets/SourceGallery.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Note from '~/components/widgets/Note.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'دروبشيبينغ قطع كربون السيارات للمتاجر | CCF',
+  description:
+    'اختبر بيع قطع كربون مختارة بتنفيذ طلبات فردية من CCF. تحقّق من المنتج والوجهة والتغليف وتكلفة الشحن وسياسة المطالبات قبل قبول طلب عميلك.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="ألياف الكربون للسيارات · دروبشيبينغ"
+    title="دروبشيبينغ قطع الكربون للمتاجر الإلكترونية"
+    subtitle="للمتاجر الإلكترونية والبائعين: ناقش تنفيذ الطلبات الفردية لقطع كربون BMW ومرسيدس AMG وبورش المختارة قبل الالتزام بمخزون. تأكد أولاً من أهلية المنتج والمطابقة والوجهة وتكلفة الشحن وآلية معالجة المطالبات؛ الخدمة تُراجع لكل طلب."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <SourceGallery />
+
+  <!-- Why start with dropshipping -->
+  <Features
+    tagline="لماذا تبدأ بالدروبشيبينغ"
+    title="اختبر الطلب قبل الالتزام بالمخزون"
+    subtitle="يتيح لك دروبشيبينغ قطع ألياف الكربون اختبار منتجات الكتالوج المناسبة، وجمع بيانات مبيعات حقيقية، وتحديد القطع الجديرة بالتخزين محلياً."
+    columns={2}
+    items={[
+      {
+        title: 'مخاطر مخزون أقل',
+        description:
+          'قطع الكربون خاصة بمركبات محددة؛ اختبار الطلب أولاً يجنّبك شراء تطبيقات كثيرة قبل معرفة ما يريده عملاء سوقك فعلاً.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'اختبر تطبيقات أكثر',
+        description: 'جرّب تطبيقات مركبات وفئات منتجات مختلفة دون بناء مخزون عميق في كل رقم منتج منذ البداية.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'قرارات مبنية على مبيعات حقيقية',
+        description:
+          'تتبّع المركبات والمنتجات التي تولّد استفسارات وطلبات مكتملة بشكل متكرر بدلاً من الاعتماد على الافتراضات.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'انقل الرابحين إلى الجملة',
+        description:
+          'عندما يصبح الطلب متكرراً، قارن الدروبشيبينغ بشراء الجملة والمخزون المحلي والتسليم الأسرع لتلك المنتجات المثبتة.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+
+  <!-- How it works -->
+  <Steps2
+    tagline="كيف يعمل دروبشيبينغ الكربون"
+    title="من اختيار المنتج إلى التنفيذ الفردي"
+    subtitle="اختر قطع الكتالوج المناسبة، تحقق من تطبيق المركبة، بِع عبر قناتك الخاصة، ثم أرسل كل طلب مؤكد للتنفيذ الفردي."
+    items={[
+      {
+        title: 'اختر منتجات للاختبار',
+        description: 'ابدأ بقطع كتالوج تناسب المركبات والعملاء المستهدفين — نطاق اختبار مركّز.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'تحقق من الملاءمة والتوفر',
+        description: 'راجع مرجع المنتج وطراز المركبة وسنتها أو جيلها والتوفر الحالي قبل قبول الطلب.',
+        icon: 'tabler:clipboard-check',
+      },
+      {
+        title: 'بِع عبر قناتك الخاصة',
+        description: 'متجرك الإلكتروني أو المنصات أو قنوات التواصل — علاقة العميل ملكك.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'أرسل الطلب المؤكد',
+        description: 'زوّدنا بمرجع المنتج ومعلومات المركبة المؤكدة وبيانات المستلم ووجهة الشحن.',
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'ننفّذ الطلب الفردي',
+        description: 'تُجهَّز طلبات الكتالوج المؤهلة للشحن الفردي وفق المنتج وترتيب الشحن المؤكدين.',
+        icon: 'tabler:truck-delivery',
+      },
+    ]}
+  />
+
+  <Note
+    variant="info"
+    icon="tabler:bulb"
+    title="الهدف من الدروبشيبينغ"
+    description="اعثر على المنتجات الجديرة بالتخزين — لا أكبر عدد من المنتجات للعرض. عندما يثبت منتج طلباً متكرراً واقتصاديات مجدية، يكون قد حان وقت نقله إلى شراء الجملة."
+  />
+
+  <FAQs
+    title="أسئلة قبل بدء دروبشيبينغ قطع الكربون"
+    schema
+    items={[
+      {
+        title: 'هل يمكن تنفيذ أي منتج لأي وجهة؟',
+        description:
+          'تُراجع أهلية المنتج ووجهة الشحن والمطابقة والتوفر لكل طلب. أرسل مرجع القطعة والطراز والسنة والمدينة قبل نشر وعد بالتسليم لعميلك.',
+      },
+      {
+        title: 'كيف أعرف تكلفة تنفيذ الطلب الفردي؟',
+        description:
+          'اطلب عرضاً يوضح القطعة ووحدة البيع والتغليف والشحن والوجهة وما يشمله أساس التسليم. لا تفترض أن سعر المنتج يتضمن الشحن أو رسوم الاستيراد.',
+      },
+      {
+        title: 'هل أحتاج إلى عينة قبل عرض المنتج؟',
+        description:
+          'ناقش عينة للمرجع والمادة المستهدفين عند الحاجة لمراجعة التشطيب والمطابقة. صور الكتالوج وحدها لا تؤكد تطبيق القطعة على كل نسخة مركبة.',
+      },
+      {
+        title: 'من يتابع التلف أو مشكلة المطابقة؟',
+        description:
+          'اتفق على مسار التواصل والأدلة المطلوبة قبل قبول الطلب. احتفظ بالمرجع وبيانات المركبة وصور التغليف والقطعة، وراجع <a href="/return-refund-policy" class="text-link underline">سياسة الضمان والإرجاع</a> والشروط المكتوبة للطلب.',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اختبر سوقك بمخاطر أقل"
+    subtitle="أخبرنا بالمركبات والمنتجات التي تستهدفها وقناة البيع لديك — نراجع المنتجات المناسبة للدروبشيبينغ وتوفرها الحالي."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

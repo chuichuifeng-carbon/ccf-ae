@@ -1,0 +1,166 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import artwork from '~/data/b2b/site-artwork.json';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Bento from '~/components/widgets/Bento.astro';
+import Features from '~/components/widgets/Features.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'قطع كربون BMW ومرسيدس AMG وبورش | CCF',
+  description:
+    'اختر BMW أو مرسيدس AMG أو بورش للوصول إلى كتالوجات قطع الكربون حسب الطراز والجيل. أرسل مرجع القطعة وسنة المركبة والكمية لطلب التوريد.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="تصفح حسب المركبة"
+    title="قطع ألياف الكربون حسب ماركة السيارة"
+    subtitle="اختر بي إم دبليو BMW أو مرسيدس Mercedes-AMG أو بورش Porsche، ثم افتح كتالوج الطراز والجيل. يعرض هذا الموقع هذه العلامات الثلاث فقط؛ أرسل مرجع القطعة وسنة المركبة والكمية لمراجعة المطابقة والتوفر والسعر."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: '3', title: 'علامات مركبات في هذا الموقع' },
+      { amount: 'OEM/ODM', title: 'كتالوج + تطوير مخصص' },
+    ]}
+  />
+
+  <!-- Brand grid -->
+  <Bento
+    tagline="العلامات المغطاة"
+    title="اختر علامة مركبتك"
+    subtitle="صفحات العلامات تعرض الطرازات المغطاة وأنواع القطع الأكثر طلباً لكل علامة."
+    columns={3}
+    classes={{ container: 'max-w-[1720px]' }}
+    items={[
+      {
+        title: 'BMW',
+        description: 'M2 · M3 · M4 · M5 والفئات 2–5',
+        image: {
+          src: artwork.bmw,
+          alt: 'قطع ألياف كربون لمركبات BMW',
+        },
+        callToAction: { text: 'عرض القطع', href: '/vehicles/bmw' },
+      },
+      {
+        title: 'Mercedes-AMG',
+        description: 'AMG GT · G-Class · C63 · A45',
+        image: {
+          src: artwork['mercedes-amg'],
+          alt: 'قطع ألياف كربون لمركبات Mercedes-AMG',
+        },
+        callToAction: { text: 'عرض القطع', href: '/vehicles/mercedes-amg' },
+      },
+      {
+        title: 'Porsche',
+        description: '911 · 718 · Panamera · Cayenne · Taycan',
+        image: {
+          src: artwork.porsche,
+          alt: 'قطع ألياف كربون لمركبات Porsche',
+        },
+        callToAction: { text: 'عرض القطع', href: '/vehicles/porsche' },
+      },
+    ]}
+  />
+
+  <!-- Fitment note -->
+  <Features
+    tagline="ملاحظة المطابقة"
+    title="المطابقة تعتمد على أكثر من اسم الطراز"
+    columns={3}
+    defaultIcon="tabler:checkbox"
+    items={[
+      {
+        title: 'سنة الطراز والجيل',
+        description: 'نفس الطراز قد يتغير تصميم مصده وهيكله بين السنوات والأجيال — أكّد سنة مركبتك وجيلها.',
+        icon: 'tabler:calendar',
+      },
+      {
+        title: 'رمز الشاسيه',
+        description: 'رمز الشاسيه (مثل G80 أو F90) هو أدق طريقة لتحديد توافق القطعة — أرسله مع استفسارك.',
+        icon: 'tabler:barcode',
+      },
+      {
+        title: 'نمط الهيكل',
+        description: 'سيدان، كوبيه، مكشوفة أو SUV — تكوين الهيكل يغيّر القطع المتوافقة. أكّد هذه البيانات قبل الطلب.',
+        icon: 'tabler:car',
+      },
+    ]}
+  />
+
+  <!-- Vehicle FAQ -->
+  <FAQs
+    tagline="أسئلة المركبات"
+    title="الأسئلة الشائعة حول البحث بالمركبة"
+    subtitle="إجابات عن كيفية العثور على القطع المناسبة لمركبتك والتحقق من المطابقة."
+    schema
+    items={[
+      {
+        title: 'كيف أجد القطع المتوفرة لمركبتي؟',
+        description:
+          'اختر علامة مركبتك ثم حدد الطراز والجيل. اسم الطراز المشترك بين سنوات مختلفة لا يضمن المطابقة — أكّد دائماً سنة الطراز وتكوينه (مثل الشاسيه ونمط الهيكل) قبل الطلب.',
+      },
+      {
+        title: 'ما المعلومات المطلوبة لتأكيد مطابقة القطعة؟',
+        description:
+          'أرسل العلامة والطراز وسنة الطراز ورمز الشاسيه ونمط الهيكل ومرجع المنتج إن وجد. صور واضحة للمنطقة المراد تركيب القطعة فيها تساعد فريقنا على التأكيد بشكل أسرع وأدق.',
+      },
+      {
+        title: 'ماذا لو لم تكن مركبتي مدرجة في الموقع؟',
+        description:
+          'إذا كان طرازك من BMW أو Mercedes-AMG أو Porsche غير مدرج، أرسل السنة ورمز الهيكل والقطعة المطلوبة لمراجعة التطبيق ضمن نطاق العلامات الثلاث.',
+      },
+      {
+        title: 'ماذا تتضمن كتالوجات الطرازات؟',
+        description:
+          'تتضمن كتالوجات الطرازات أسماء المنتجات والتصاميم والمواد ورموز المنتجات. استخدمها لتحديد القطع المطلوبة، ثم أكّد التوفر والمواصفات النهائية قبل الطلب.',
+      },
+      {
+        title: 'هل جميع القطع من الكربون الجاف؟',
+        description:
+          'الكربون الجاف هو تركيزنا الإنتاجي الرئيسي (نحو 95% من الكتالوج)، لكن المادة تختلف حسب المنتج. أكّد عملية التصنيع والبنية والوزن الفعلي للقطعة المختارة قبل الطلب.',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="لم تجد طرازك ضمن العلامات الثلاث؟"
+    subtitle='أرسل لنا بيانات مركبتك — سنتحقق من تغطية الكتالوج أو نقيّم طلب تطوير مخصص. يمكنك أيضاً <a class="text-link underline" href="/catalogs" target="_blank" rel="noopener">تصفح كتالوجات العلامات الثلاث ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

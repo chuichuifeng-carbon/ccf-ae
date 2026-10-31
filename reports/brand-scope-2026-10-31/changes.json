@@ -1,0 +1,31 @@
+{
+  "allowedBrands": ["bmw", "mercedes-amg", "porsche"],
+  "removedRoutes": [
+    "/vehicles/audi",
+    "/vehicles/ferrari",
+    "/vehicles/lamborghini",
+    "/cases/european-football-player-carbon-fiber"
+  ],
+  "removedImages": [
+    "/images/verified/141-aston-martin-dbx-carbon-fiber-front-lip-open-center-design-reference-01.webp",
+    "/images/verified/142-aston-martin-dbx-carbon-fiber-grille-surround-reference-01.webp",
+    "/images/verified/146-aston-martin-dbx-carbon-fiber-rear-lower-lip-reference-01new.webp",
+    "/images/verified/145-aston-martin-dbx-carbon-fiber-side-skirts-reference-01new.webp",
+    "/images/verified/148-aston-martin-dbx-carbon-fiber-roof-spoiler-reference-01.webp",
+    "/images/brand-audi.webp",
+    "/images/brand-ferrari.webp",
+    "/images/brand-lamborghini.webp",
+    "/images/brand-mercedes.webp",
+    "/images/garage-custom.webp",
+    "/images/verified/bespoke-supercar-carbon-fiber-front-detail-02.webp",
+    "/images/verified/completed-bespoke-carbon-fiber-supercar-project-04.webp",
+    "/images/verified/custom-carbon-fiber-baseball-ba.webp",
+    "/images/verified/custom-carbon-fiber-helmet.webp",
+    "/images/verified/custom-carbon-fiber-mask.webp",
+    "/images/verified/custom-carbon-fiber-necklace.webp",
+    "/images/verified/custom-supercar-carbon-fiber-rear-detail-03.webp",
+    "/images/verified/european-footballer-supercar-carbon-fiber-project-01.webp"
+  ],
+  "remainingCatalogs": 40,
+  "remainingProductImages": 39
+}

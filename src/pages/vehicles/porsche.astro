@@ -1,0 +1,120 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'قطع كربون بورش 911 و718 وكايين وتايكان | CCF',
+  description:
+    'كتالوجات قطع كربون بورش Porsche 911 و718 وباناميرا وكايين وتايكان. اختر الجيل ومرجع القطعة ثم أرسل الكمية والوجهة لطلب عرض توريد من CCF.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="تصفح حسب المركبة · Porsche"
+    title="قطع ألياف الكربون لبورش Porsche"
+    subtitle="تصفّح قطع كربون فايبر بورش Porsche: 911 بأجيال 991 و992، و718 وباناميرا وكايين وتايكان. افتح كتالوج الطراز والجيل أدناه، ثم أرسل مرجع القطعة والكمية والوجهة لمراجعة المطابقة وطلب سعر التوريد."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <ModelCatalogs brand="porsche" />
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: '991 · 992', title: 'أجيال 911 مغطاة' },
+      { amount: '5', title: 'عائلات طرازات رئيسية' },
+      { amount: 'كربون جاف', title: 'تركيز الإنتاج' },
+    ]}
+  />
+
+  <!-- Covered models -->
+  <Features2
+    tagline="الطرازات المغطاة"
+    title="طرازات Porsche التي نغطيها"
+    subtitle="من 911 الأسطورية إلى Cayenne و Taycan — توفر القطع يختلف حسب الطراز والجيل."
+    columns={3}
+    items={[
+      {
+        title: '911',
+        description: '991 · 992 (بما فيها 992.1 و 992.2) · 992 Turbo و Turbo S · تصاميم بأسلوب Topcar.',
+        icon: 'tabler:car',
+      },
+      {
+        title: '718 و Cayman',
+        description: '718 بجميع نسخها · Cayman GT4 RS — قطع إيروديناميكية للاستخدام اليومي والحلبة.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'Panamera · Cayenne · Taycan',
+        description: 'Panamera (971) · Cayenne (9YA) · Taycan — شفاه أمامية، ناشرات، سبويلر وزخارف خارجية.',
+        icon: 'tabler:car',
+      },
+    ]}
+  />
+
+  <!-- Popular part types -->
+  <Features
+    tagline="القطع الأكثر طلباً"
+    title="قطع ألياف الكربون الشائعة لمركبات Porsche"
+    columns={3}
+    defaultIcon="tabler:checkbox"
+    items={[
+      {
+        title: 'الشفاه الأمامية والسبليتر',
+        description: 'شفاه أمامية لمركبات 911 و 718 — مصممة حسب نسخة المصد لكل جيل.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'الأجنحة والسبويلر',
+        description: 'أجنحة خلفية وسبويلر بأسلوب GT لمركبات 911 و Cayman GT4 RS.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'الناشرات والزخارف',
+        description: 'ناشرات خلفية، أغطية مرايا، وزخارف هيكل من ألياف الكربون.',
+        icon: 'tabler:sparkles',
+      },
+    ]}
+  />
+
+  <!-- Fitment note + Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اطلب عرض سعر لقطع Porsche"
+    subtitle='ملاحظة: قطع 992.1 و 992.2 غير قابلة للتبديل بينهما — أكّد جيل مركبتك بدقة قبل الطلب. <a class="text-link underline" href="https://ccfrp.com/vehicles/porsche/" target="_blank" rel="noopener">تصفح قطع Porsche الكاملة على الموقع الرئيسي ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

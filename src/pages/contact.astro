@@ -1,0 +1,158 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'طلب عرض سعر قطع كربون السيارات عبر واتساب | CCF',
+  description:
+    'تواصل مع مصنع CCF عبر واتساب أو البريد لطلب توريد قطع كربون أو تطوير OEM/ODM. أرسل الطراز والسنة ومرجع المنتج والكمية ومدينة التسليم.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="اتصل بـ CCF · استفسارات B2B"
+    title="اطلب عرض سعر لقطع كربون السيارات من CCF"
+    subtitle="اطلب عرض أسعار لقطع ألياف كربون موجودة أو ناقش مشروع OEM/ODM مخصصاً. أرسل مركبتك ومرجع المنتج والكمية والوجهة ليراجع فريقنا متطلباتك ويرد على استفسارك. تواصل مع فريق CCF مباشرة عبر واتساب أو البريد الإلكتروني."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'أرسل متطلباتك بالبريد',
+      href: 'mailto:info@ccfrp.com',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Contact channels -->
+  <Features2
+    tagline="تواصل مباشر مع المصنع"
+    title="تحدث مباشرة مع فريقنا في الصين"
+    subtitle="تُدار استفسارات B2B الدولية مباشرة من فريقنا — أرسل معلومات المركبة والقطعة والكمية أو المشروع لبدء المناقشة."
+    columns={3}
+    items={[
+      {
+        title: 'البريد الإلكتروني',
+        description: 'info@ccfrp.com — للاستفسارات التفصيلية والرسومات وملفات المشاريع.',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'واتساب / هاتف',
+        description: '+86 134 2769 0360 — للتواصل السريع وإرسال صور المنتجات ومعلومات المركبات.',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        title: 'ساعات العمل',
+        description: 'الاثنين–الجمعة · 09:00–18:00 (GMT+8) — نعالج الاستفسارات خلال أوقات العمل.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'المقر الرئيسي — قوانغتشو',
+        description:
+          'Room 201, No. 2 Caodi Zhongjie, Qinghe Village, Renhe Town, Baiyun District, Guangzhou, Guangdong, China — المكتب التجاري الرئيسي.',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'قاعدة الإنتاج — تشينغيوان',
+        description:
+          'B3(4), Guogangling, Xisha Village, Shantang Town, Qingxin District, Qingyuan, Guangdong, China — قاعدة تصنيع ألياف الكربون.',
+        icon: 'tabler:building-factory-2',
+      },
+      {
+        title: 'الكيان القانوني',
+        description: 'Guangzhou Chui Chui Feng Automotive Products Co., Ltd. — الشركة المسجلة وراء CCF.',
+        icon: 'tabler:file-certificate',
+      },
+    ]}
+  />
+
+  <!-- What to include in your inquiry -->
+  <Features2
+    tagline="جهّز طلب عرض السعر"
+    title="ماذا تتضمن في استفسارك"
+    subtitle="بعض التفاصيل الأساسية تساعدنا على تحديد المنتج الصحيح والتحقق من تطبيق المركبة وتقييم متطلباتك بأسئلة متابعة أقل."
+    columns={4}
+    items={[
+      {
+        title: 'المركبة',
+        description: 'الماركة والطراز والسنة ورمز الهيكل أو الجيل عند توفره.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'المنتج',
+        description: 'رمز المنتج أو رابط مرجعي أو صورة أو رسم أو وصف القطعة.',
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'الكمية',
+        description: 'طلب عينة أو كمية طلب مقدرة أو خطة شراء.',
+        icon: 'tabler:packages',
+      },
+      {
+        title: 'الوجهة',
+        description: 'بلد التسليم وأي متطلبات شحن أو توقيت ذات صلة.',
+        icon: 'tabler:world',
+      },
+    ]}
+  />
+
+  <!-- Contact FAQ -->
+  <FAQs
+    tagline="أسئلة قبل التواصل"
+    title="قبل أن تتواصل مع CCF"
+    subtitle="إجابات سريعة للمشترين الذين يبدأون محادثة توريد أو جملة أو OEM/ODM جديدة مع فريقنا."
+    schema
+    items={[
+      {
+        title: 'هل يمكن للشركات الصغيرة أو الجديدة العمل مع CCF؟',
+        description:
+          'نعم. يمكن شراء قطع الكتالوج القياسية بكميات صغيرة تشمل طلبات الوحدة الواحدة حيثما توفرت. ولمشاريع OEM/ODM، تُراجع المتطلبات والكميات الدنيا وفقاً لكل مشروع على حدة.',
+      },
+      {
+        title: 'ما سياسة ما بعد البيع للقطع المعيبة؟',
+        description:
+          'إذا استلمت منتجاً يُشتبه بوجود عيب تصنيع فيه، تواصل معنا مع معلومات الطلب ومرجع المنتج والصور والتفاصيل ذات الصلة. تُراجع التغطية والحل المناسب وفقاً لـ<a class="text-link underline" href="/return-refund-policy">سياسة الإرجاع والاسترداد</a> لدينا.',
+      },
+      {
+        title: 'كيف أصبح موزعاً لـ CCF؟',
+        description:
+          'أرسل معلومات شركتك وسوقك المستهدف وقنوات مبيعاتك وتركيزك على المركبات أو المنتجات وخطة الشراء المتوقعة. ترتيبات التوزيع وأي شروط إقليمية تُراجع بشكل فردي. <a class="text-link underline" href="/grow/channel-partners">تعرّف على شراكة القنوات ←</a>',
+      },
+      {
+        title: 'هل يمكن إرسال صور المنتجات أو معلومات المركبة عبر واتساب؟',
+        description:
+          'نعم. للتعرف السريع على المنتج أو أسئلة المطابقة، يمكنك إرسال معلومات المركبة أو صور المنتجات أو الصور المرجعية عبر واتساب. ولطلبات الأسعار التفصيلية أو الرسومات أو ملفات المشاريع الكبيرة، يُفضَّل البريد الإلكتروني.',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="أخبرنا بما تحتاجه"
+    subtitle="أرسل مركبتك والقطعة المطلوبة والكمية والوجهة — تواصل مع فريق CCF مباشرة عبر واتساب أو البريد الإلكتروني."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'أرسل متطلباتك بالبريد',
+        href: 'mailto:info@ccfrp.com',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

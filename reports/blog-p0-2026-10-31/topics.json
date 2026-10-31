@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-31",
+  "site": "https://amxnx.vip",
+  "priorityDefinition": "P0 为本项目的编辑优先级：解决询价前最关键的适配和报价比较问题，不是 Google 排名等级或流量预测。",
+  "topics": [
+    {
+      "id": "AR-P0-001",
+      "route": "/carbon-fiber-parts-fitment-check",
+      "file": "src/data/post/carbon-fiber-parts-fitment-check.md",
+      "questionCN": "采购碳纤维改装件前，如何核对适配并减少错订？",
+      "focusKeyword": "التأكد من توافق قطع الكربون",
+      "status": "implemented_locally_not_deployed",
+      "evidence": [
+        "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-r44-style/",
+        "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style/",
+        "https://ccfrp.com/bmw-g87-m2-carbon-fiber-hood/"
+      ]
+    },
+    {
+      "id": "AR-P0-002",
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "file": "src/data/post/compare-wholesale-carbon-fiber-quotes.md",
+      "questionCN": "批发商应怎样比较报价，而不是只比单价？",
+      "focusKeyword": "مقارنة عروض أسعار قطع الكربون بالجملة",
+      "status": "implemented_locally_not_deployed",
+      "evidence": [
+        "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style/",
+        "https://ccfrp.com/grow/wholesale/",
+        "https://ccfrp.com/return-refund-policy/"
+      ]
+    }
+  ]
+}

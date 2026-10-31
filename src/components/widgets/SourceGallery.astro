@@ -1,0 +1,45 @@
+---
+import pageGalleries from '~/data/b2b/page-galleries.json';
+import productGalleries from '~/data/b2b/product-galleries.json';
+import { normalizeSeoPath } from '~/utils/seo';
+import { isolateLatin } from '~/utils/bidi';
+
+interface Photo {
+  image: string;
+  alt: string;
+  source: string;
+}
+interface Gallery {
+  title: string;
+  images: Photo[];
+}
+const { productSlug } = Astro.props as { productSlug?: string };
+const data = productSlug
+  ? { title: 'صور إضافية للمنتج', images: ((productGalleries as Record<string, Photo[]>)[productSlug] || []).slice(1) }
+  : (pageGalleries as Record<string, Gallery>)[normalizeSeoPath(Astro.url.pathname)];
+---
+
+{
+  data && data.images.length > 0 && (
+    <section data-source-gallery class="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6" set:html={isolateLatin(data.title)} />
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {data.images.map((photo) => (
+          <figure class="rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-page">
+            <a href={photo.image} target="_blank" rel="noopener" aria-label={`${photo.alt} — تكبير الصورة`}>
+              <img
+                src={photo.image}
+                alt={photo.alt}
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 420px"
+                class="w-full aspect-[4/3] object-contain bg-gray-50 dark:bg-slate-900"
+              />
+            </a>
+            <figcaption class="p-4 text-sm text-muted" set:html={isolateLatin(photo.alt)} />
+          </figure>
+        ))}
+      </div>
+    </section>
+  )
+}

@@ -1,0 +1,201 @@
+---
+import SourceGallery from '~/components/widgets/SourceGallery.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'قطع كربون فايبر للسيارات بالجملة من المصنع | CCF',
+  description:
+    'توريد قطع كربون BMW ومرسيدس AMG وبورش للموزعين وورش التعديل. راجع العينة والكمية والطلبات المختلطة، وأرسل قائمة القطع والوجهة لطلب سعر الجملة.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText -->
+  <HeroText
+    tagline="CCF · مصنع مباشر في الصين"
+    title="توريد قطع ألياف الكربون للسيارات بالجملة"
+    subtitle="للموزعين والتجار وورش التعديل: اطلب قطع ألياف كربون خاصة بمركبات محددة من CCF في الصين — أرسل المركبة والقطع والكمية والوجهة للحصول على عرض أسعار الجملة."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <SourceGallery />
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: '3', title: 'علامات مركبات في هذا الموقع' },
+      { amount: '1', title: 'وحدة مبيعات للبدء' },
+    ]}
+  />
+
+  <!-- Wholesale advantages -->
+  <Features2
+    tagline="مزايا الجملة من المصنع"
+    title="توريد مرن حول طلب حقيقي"
+    subtitle="قيّم منتج الكتالوج قبل الشراء الأكبر — شارك قائمتك المختصرة لنراجع كميات الطلب والتوفر ومتطلبات التسليم."
+    columns={4}
+    items={[
+      {
+        title: 'ابدأ من وحدة مبيعات واحدة',
+        description: 'قطعة أو زوج أو طقم حسب المنتج؛ طلبات العينات تخضع للتوفر، وللمشاريع المخصصة شروط منفصلة.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'امزج منتجات الكتالوج',
+        description: 'أرسل أرقام المنتجات أو روابطها؛ خيارات الطلب المختلط تعتمد على العناصر والتوفر ومتطلبات التغليف.',
+        icon: 'tabler:packages',
+      },
+      {
+        title: 'أسعار حسب طلبك',
+        description: 'يعتمد التسعير على النسخ المختارة والكميات والمتطلبات؛ أرفق بلد الوجهة لمراجعة الشحن.',
+        icon: 'tabler:tag',
+      },
+      {
+        title: 'تحقق من التوفر والتسليم',
+        description: 'تختلف حالة المخزون والإنتاج حسب المنتج؛ أرسل تاريخك المستهدف لمراجعة المدة وخيارات الشحن.',
+        icon: 'tabler:truck-delivery',
+      },
+    ]}
+  />
+
+  <!-- What to send for a quote -->
+  <Features2
+    tagline="جهّز طلب عرض السعر"
+    title="ماذا ترسل للحصول على عرض سعر"
+    subtitle="لا تعرف أرقام المنتجات بالضبط؟ لا مشكلة — ابدأ بطرازات مركباتك المستهدفة وأنواع قطع الكربون التي يحتاجها عملك."
+    columns={4}
+    items={[
+      {
+        title: 'معلومات المركبة',
+        description: 'الماركة والطراز والسنة ورمز الهيكل.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'المنتجات المطلوبة',
+        description: 'أسماء القطع أو روابط المنتجات أو صور مرجعية.',
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'الكمية المقدرة',
+        description: 'طلب تجريبي أو حجم شراء متوقع.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'وجهة الشحن',
+        description: 'بلد ومدينة التسليم.',
+        icon: 'tabler:world',
+      },
+    ]}
+  />
+
+  <!-- Ordering steps -->
+  <Steps2
+    tagline="خطوات الطلب بالجملة"
+    title="من القائمة المختصرة إلى الطلب"
+    items={[
+      {
+        title: 'أرسل متطلباتك',
+        description: 'المركبة والقطع والكمية والوجهة.',
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'راجع الخيارات والأسعار',
+        description: 'تأكيد النسخة والمحتويات والشروط.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'رتّب عينة أو طلباً',
+        description: 'الاتفاق على المواصفة ونطاق التسليم.',
+        icon: 'tabler:circle-check',
+      },
+    ]}
+  />
+
+  <!-- Wholesale terms FAQ -->
+  <FAQs
+    tagline="شروط الجملة"
+    title="أسئلة مشتري الجملة"
+    subtitle="شروط عملية وواضحة لمشتري الكتالوج بالجملة — راجعها قبل إرسال قائمتك المختصرة."
+    schema
+    items={[
+      {
+        title: 'هل يمكنني طلب قطعة واحدة فقط؟',
+        description:
+          'نعم. منتجات الكتالوج القياسية بدون حد أدنى لكمية الطلب ويمكن طلبها من قطعة واحدة حسب التوفر — وحدة المبيعات قد تكون قطعة أو زوجاً أو طقماً حسب المنتج. مشاريع التطوير المخصص لها متطلبات طلب مختلفة.',
+      },
+      {
+        title: 'هل يمكن دمج منتجات مختلفة في طلب واحد؟',
+        description:
+          'يمكن مناقشة الطلبات المختلطة حسب المنتجات المختارة والتوفر ومتطلبات الشحن والتغليف. أرسل قائمة منتجاتك ليراجعها فريقنا.',
+      },
+      {
+        title: 'كيف أحصل على أسعار الجملة؟',
+        description:
+          'التسعير خاص بكل منتج وليس خصماً ثابتاً على كامل الكتالوج — يعتمد على المنتجات المختارة والكميات والمتطلبات التجارية. شارك طرازات مركباتك ومراجع المنتجات والكميات المقدرة لنعدّ عرض سعر خاصاً بك.',
+      },
+      {
+        title: 'هل تشحنون قطع ألياف الكربون دولياً؟',
+        description:
+          'نعم. تُرتَّب الشحنات الدولية حسب بلد الوجهة وأبعاد المنتج وكمية الطلب والشروط التجارية المطبقة. أرفق بلد ومدينة التسليم عند طلب عرض السعر لنراجع خيارات الشحن والمدة المتوقعة.',
+      },
+      {
+        title: 'كيف أتحقق من الجودة قبل الشحن؟',
+        description:
+          'كل قطعة تمر بفحص يدوي نهائي قبل الإرسال. وعند تأكيد الطلب يمكن الاتفاق على المحتويات الموردة ومتطلبات التغليف وأي صور فحص أو سجلات تحتاجها لطلبك.',
+      },
+      {
+        title: 'ما سياسة ما بعد البيع للقطع المعيبة؟',
+        description:
+          'إذا استلمت منتجاً يُشتبه بوجود عيب تصنيع فيه، تواصل معنا مع معلومات الطلب ومرجع المنتج والصور والتفاصيل ذات الصلة — تُراجع التغطية والحل المناسب وفقاً لـ<a class="text-link underline" href="/return-refund-policy">سياسة الإرجاع والاسترداد</a> لدينا.',
+      },
+    ]}
+  />
+
+  <aside class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+    <h2 class="text-2xl font-bold mb-3">قبل مقارنة عروض الموردين</h2>
+    <p class="text-lg text-muted">
+      اقرأ <a class="text-primary underline" href="/compare-wholesale-carbon-fiber-quotes"
+        >دليل مقارنة عروض أسعار قطع الكربون</a
+      > لتحديد المرجع والمادة ووحدة البيع والتغليف ونطاق الشحن في طلب واحد واضح.
+    </p>
+  </aside>
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="لديك قائمة مختصرة؟ أرسلها إلى CCF."
+    subtitle="روابط المنتجات أو الصور المرجعية تساعدنا على تحديد القطع التي تحتاجها — أرسل مركبتك والقطع والكمية والوجهة لعرض أسعار الجملة."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

@@ -1,0 +1,120 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'قطع كربون مرسيدس AMG: G63 وGT وC63 | CCF',
+  description:
+    'تصفّح كتالوجات قطع كربون مرسيدس Mercedes-AMG لطرازات G63 وAMG GT وC63 وA45 وCLA45 المختارة. أكّد الجيل ومرجع القطعة والكمية لطلب سعر التوريد.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="تصفح حسب المركبة · Mercedes-AMG"
+    title="قطع ألياف الكربون لمرسيدس Mercedes-AMG"
+    subtitle="قطع كربون فايبر لمرسيدس بنز Mercedes-AMG، تشمل تطبيقات G63 وAMG GT وC63 وA45 وCLA45 المختارة. اختر كتالوج الطراز والجيل أدناه؛ تختلف المطابقة حسب الشاسيه والمصد وتجهيزات المركبة، وتُراجع قبل عرض سعر التوريد."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <ModelCatalogs brand="mercedes-amg" />
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { amount: 'GT · G · C · A', title: 'عائلات AMG مغطاة' },
+      { amount: 'W463 – W465', title: 'أجيال G-Class' },
+      { amount: 'كربون جاف', title: 'تركيز الإنتاج' },
+    ]}
+  />
+
+  <!-- Covered models -->
+  <Features2
+    tagline="الطرازات المغطاة"
+    title="طرازات Mercedes-AMG التي نغطيها"
+    subtitle="من AMG GT الرياضية إلى G-Class والفئات المدمجة — توفر القطع يختلف حسب الطراز والجيل."
+    columns={3}
+    items={[
+      {
+        title: 'AMG GT و G-Class',
+        description: 'AMG GT و GT 4-Door (GT50/GT53) · G-Class بأجيال W463 و W464 (G350/G500/G63) بما فيها W465.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'الفئتان C و A',
+        description: 'W205 C63 و C43 · A45/A45S و A35/A35L (W177) · CLA45/CLA45S و CLA35 (W117/W118).',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'الفئات E و S والأجيال السابقة',
+        description: 'W213/W238 E-Class · W223 S-Class · إضافة إلى W176 A و W204 C و W212 E و W218 CLS.',
+        icon: 'tabler:car',
+      },
+    ]}
+  />
+
+  <!-- Popular part types -->
+  <Features
+    tagline="القطع الأكثر طلباً"
+    title="قطع ألياف الكربون الشائعة لمركبات AMG"
+    columns={3}
+    defaultIcon="tabler:checkbox"
+    items={[
+      {
+        title: 'أطقم G-Class',
+        description: 'تنانير جانبية وزخارف خارجية لمركبات W463/W464/W465 G-Class — من أكثر التطبيقات طلباً.',
+        icon: 'tabler:car-suv',
+      },
+      {
+        title: 'الشفاه الأمامية والناشرات',
+        description: 'قطع إيروديناميكية أمامية وخلفية لمركبات AMG GT و C63 والفئة A الرياضية.',
+        icon: 'tabler:wind',
+      },
+      {
+        title: 'الزخارف الخارجية',
+        description: 'شبكات أمامية، أغطية مرايا، وزخارف هيكل من ألياف الكربون بتشطيبات لامعة أو مطفية.',
+        icon: 'tabler:sparkles',
+      },
+    ]}
+  />
+
+  <!-- Fitment note + Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اطلب عرض سعر لقطع Mercedes-AMG"
+    subtitle='ملاحظة: أنظمة الرادار و Distronic قد تؤثر على مطابقة الشبكات الأمامية — أكّد تجهيزات مركبتك قبل الطلب. <a class="text-link underline" href="https://ccfrp.com/vehicles/mercedes-amg/" target="_blank" rel="noopener">تصفح قطع AMG الكاملة على الموقع الرئيسي ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+</PageLayout>

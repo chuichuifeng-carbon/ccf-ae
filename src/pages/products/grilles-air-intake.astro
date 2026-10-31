@@ -1,0 +1,87 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ProductCollection from '~/components/widgets/ProductCollection.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'شبكات وزخارف خارجية وقطع فتحات هواء BMW | CCF',
+  description:
+    'شبكات أمامية وزخارف خارجية لسيارات BMW لتطبيقات G80/G82 وG87 وG20 وG90 المختارة. أرسل صورة المصد وتجهيزاته ومرجع المنتج لتأكيد النسخة والسعر.',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero -->
+  <HeroText
+    tagline="فئة المنتجات · زخارف خارجية"
+    title="شبكات أمامية وزخارف خارجية لسيارات BMW"
+    subtitle="استعرض شبكات أمامية وقطع فتحات هواء وزخارف خارجية لسيارات BMW بأجيال G وF المختارة. راجع صور المرجع والمادة والتجهيزات المحيطة، ثم أرسل بيانات المركبة والكمية لطلب التوريد."
+    callToAction={{
+      text: 'تواصل عبر واتساب',
+      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      target: '_blank',
+      icon: 'tabler:brand-whatsapp',
+      variant: 'primary',
+    }}
+    callToAction2={{
+      text: 'اطلب عرض سعر بالجملة',
+      href: 'https://ccfrp.com/contact/',
+      target: '_blank',
+      variant: 'secondary',
+    }}
+  />
+
+  <!-- Representative products -->
+  <ProductCollection category="grilles-air-intake" title="صور وتصاميم الشبكات وفتحات الهواء" />
+
+  <!-- Buyer checks -->
+  <Features
+    tagline="دليل المشتري"
+    title="ما الذي تتحقق منه قبل اختيار شبك أمامي"
+    columns={3}
+    defaultIcon="tabler:checkbox"
+    items={[
+      {
+        title: 'أكّد نسخة المصد',
+        description:
+          'نسخة المصد وتحديث منتصف دورة الطراز (Facelift) يغيّران شكل الشبك ونقاط تثبيته — اسم الطراز وحده لا يكفي.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'أكّد أماكن المستشعرات',
+        description: 'تحقق من مواضع رادار ACC والكاميرات — بعض التصاميم تتطلب نسخ محددة تدعم هذه الأنظمة.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'أكّد المادة والتشطيب',
+        description: 'ألياف كربون كاملة أم إطار كربون مع شرائح — التشطيب اللامع أو المطفي يُحدد عند الطلب.',
+        icon: 'tabler:checkbox',
+      },
+    ]}
+  />
+
+  <!-- Closing CTA -->
+  <CallToAction
+    layout="banner"
+    title="اطلب عرض سعر للشبكات وفتحات التهوية"
+    subtitle='أرسل مرجع المنتج وطراز مركبتك وسنتها والكمية المطلوبة. <a class="text-link underline" href="https://ccfrp.com/products/grilles-exterior-trim/#grilles" target="_blank" rel="noopener">تصفح المجموعة الكاملة على الموقع الرئيسي ←</a>'
+    actions={[
+      {
+        variant: 'primary',
+        text: 'تواصل عبر واتساب',
+        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        variant: 'secondary',
+        text: 'اطلب عرض سعر بالجملة',
+        href: 'https://ccfrp.com/contact/',
+        target: '_blank',
+      },
+    ]}
+  />
+  <ProductCollection category="exterior-trim" title="صور الزخارف الخارجية وقطع زوايا الهيكل" />
+</PageLayout>
