@@ -3,6 +3,7 @@ import PageLayout from '~/layouts/PageLayout.astro';
 import artwork from '~/data/b2b/site-artwork.json';
 import SourceGallery from '~/components/widgets/SourceGallery.astro';
 import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
+import BuyerResources from '~/components/widgets/BuyerResources.astro';
 import BuyerEvidence from '~/components/widgets/BuyerEvidence.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -273,6 +274,7 @@ import { img } from '~/utils/siteImages';
   />
 
   <FeaturedProducts />
+  <BuyerResources calculatorOnly />
 
   <!-- Factory process -->
   <Steps

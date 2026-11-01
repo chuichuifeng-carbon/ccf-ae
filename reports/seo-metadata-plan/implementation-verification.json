@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "pages": 43,
-  "indexable": 38,
+  "pages": 45,
+  "indexable": 40,
   "noindex": 5,
   "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
   "results": [
@@ -217,6 +217,16 @@
     },
     {
       "route": "/compare-wholesale-carbon-fiber-quotes",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/import-cost-calculator",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/carbon-fiber-import-cost-profit-guide",
       "status": "passed",
       "index": true
     }

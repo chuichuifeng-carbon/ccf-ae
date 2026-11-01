@@ -1,0 +1,158 @@
+[
+  {
+    "route": "/",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/vehicles/bmw",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/vehicles/mercedes-amg",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/vehicles/porsche",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/catalogs",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/vehicles",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/front-lips-splitters",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/rear-diffusers",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/side-skirts",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/spoilers-wings",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/hoods",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/trunk-lids",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/grilles-air-intake",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/mirror-caps",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/grow",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/grow/wholesale",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/grow/dropshipping",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/grow/channel-partners",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/blog",
+    "h1": 1,
+    "overflow": false,
+    "panels": 1
+  },
+  {
+    "route": "/carbon-fiber-import-cost-profit-guide",
+    "h1": 1,
+    "overflow": false,
+    "panels": 0
+  },
+  {
+    "route": "/import-cost-calculator",
+    "h1": 1,
+    "overflow": false,
+    "panels": 0
+  }
+]

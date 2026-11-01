@@ -4,9 +4,9 @@ import yaml from 'js-yaml';
 
 const registry = JSON.parse(fs.readFileSync('reports/blog-p0-2026-10-31/topics.json', 'utf8'));
 const posts = fs.readdirSync('src/data/post').filter((file) => /\.mdx?$/.test(file));
-assert.equal(posts.length, 3);
+assert.ok(posts.length >= 3);
 const rss = fs.readFileSync('dist/rss.xml', 'utf8');
-assert.equal((rss.match(/<item>/g) || []).length, 3);
+assert.equal((rss.match(/<item>/g) || []).length, posts.length);
 const results = [];
 for (const topic of registry.topics) {
   const text = fs.readFileSync(topic.file, 'utf8');
@@ -40,8 +40,8 @@ for (const topic of registry.topics) {
 }
 fs.writeFileSync(
   'reports/blog-p0-2026-10-31/verification.json',
-  JSON.stringify({ posts: posts.length, rssItems: 3, results }, null, 2) + '\n'
+  JSON.stringify({ posts: posts.length, rssItems: posts.length, results }, null, 2) + '\n'
 );
 console.log(
-  'Passed: 3 blog posts; both P0 articles in blog/RSS; useful internal links, parent backlinks, linked source images and ready-to-send WhatsApp CTAs.'
+  `Passed: ${posts.length} blog posts; both P0 articles in blog/RSS; useful internal links, parent backlinks, linked source images and ready-to-send WhatsApp CTAs.`
 );

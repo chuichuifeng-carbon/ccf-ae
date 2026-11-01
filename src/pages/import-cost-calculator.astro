@@ -1,0 +1,227 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import { whatsappUrl } from '~/utils/inquiry';
+const title = 'حاسبة تكلفة استيراد قطع الكربون وهامش الربح';
+const fields = [
+  { key: 'factory', label: 'سعر المصنع', value: '250' },
+  { key: 'freight', label: 'تكلفة الشحن', value: '85' },
+  { key: 'other', label: 'تكاليف الاستيراد الأخرى', value: '110' },
+  { key: 'retail', label: 'سعر إعادة البيع', value: '599' },
+];
+---
+
+<PageLayout
+  metadata={{
+    title: `${title} | CCF`,
+    description:
+      'قدّر تكلفة وصول قطع ألياف الكربون وربح إعادة البيع بالدولار. أدخل سعر المصنع والشحن والتكاليف الأخرى وقارن هامش الربح قبل طلب عرض توريد.',
+  }}
+>
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 md:pt-20 pb-8">
+    <p class="text-sm font-bold tracking-wide text-primary mb-4">أدوات المشتري · توريد قطع ألياف الكربون</p>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-4xl">{title}</h1>
+    <p class="text-lg text-muted max-w-3xl mt-5">
+      قارن التكلفة التقديرية والربح الإجمالي قبل الشراء بالجملة. أدخل جميع المبالغ بالدولار وعلى أساس واحد: للقطعة
+      الواحدة أو للطلب كاملاً.
+    </p>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-12" aria-labelledby="calculator-title">
+    <div
+      data-import-calculator
+      class="rounded-3xl border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-900 p-5 sm:p-8 md:p-10"
+    >
+      <h2 id="calculator-title" class="text-2xl sm:text-3xl font-bold">احسب تكلفة الوصول والربح</h2>
+      <p id="calculator-help" class="text-muted mt-3 mb-7">
+        قيم المثال توضيحية بالدولار الأمريكي؛ ليست أسعار شحن أو ضرائب مباشرة. استخدم أرقامك الفعلية، ولا تكرر احتساب
+        التكلفة نفسها.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        {
+          fields.map((field) => (
+            <div>
+              <label for={`cost-${field.key}`} class="block text-base sm:text-lg font-medium mb-2">
+                {field.label} <span dir="ltr">(USD)</span>
+              </label>
+              <input
+                id={`cost-${field.key}`}
+                data-cost-field={field.key}
+                type="text"
+                inputmode="decimal"
+                autocomplete="off"
+                value={field.value}
+                maxlength="16"
+                dir="ltr"
+                aria-describedby="calculator-help calculator-error"
+                class="w-full rounded-full border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-950 px-5 py-3 text-2xl text-left focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+          ))
+        }
+      </div>
+      <p
+        id="calculator-error"
+        data-cost-error
+        class="text-red-700 dark:text-red-300 text-sm mt-4 min-h-6"
+        role="status"
+      >
+      </p>
+      <div class="border-t border-gray-200 dark:border-slate-700 mt-4 pt-7" aria-live="polite" aria-atomic="true">
+        <dl class="grid sm:grid-cols-3 gap-6">
+          <div>
+            <dt class="text-muted mb-2">تكلفة الوصول</dt><dd
+              data-cost-result="landed"
+              dir="ltr"
+              class="text-3xl font-bold text-right"
+            >
+              $445.00
+            </dd>
+          </div>
+          <div>
+            <dt class="text-muted mb-2">الربح الإجمالي</dt><dd
+              data-cost-result="profit"
+              dir="ltr"
+              class="text-3xl font-bold text-right"
+            >
+              $154.00
+            </dd>
+          </div>
+          <div>
+            <dt class="text-muted mb-2">هامش الربح الإجمالي</dt><dd
+              data-cost-result="margin"
+              dir="ltr"
+              class="text-3xl font-bold text-right"
+            >
+              25.7%
+            </dd>
+          </div>
+        </dl>
+        <p data-cost-note class="text-sm text-muted mt-5 min-h-5"></p>
+      </div>
+      <button
+        type="button"
+        data-cost-reset
+        class="w-full rounded-full border border-gray-300 dark:border-slate-600 py-3 px-5 mt-6 text-lg font-medium hover:bg-white dark:hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+        >استعادة قيم المثال</button
+      >
+      <noscript
+        ><p class="mt-4">
+          النتائج أعلاه تخص المثال فقط. فعّل JavaScript لحساب مبالغ مختلفة. يمكنك أيضاً استخدام المعادلات الموضحة أدناه.
+        </p></noscript
+      >
+    </div>
+    <div class="mt-7 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
+      <p class="text-muted max-w-xl">تحتاج أرقام توريد لطلبك؟ أرسل الطراز ومرجع القطعة والكمية ووجهة الشحن لفريقنا.</p>
+      <a
+        class="btn-primary shrink-0"
+        data-inquiry-context="طلب عرض توريد بعد استخدام حاسبة تكلفة الاستيراد"
+        href={whatsappUrl(
+          'طلب عرض توريد بعد استخدام حاسبة تكلفة الاستيراد',
+          'https://amxnx.vip/import-cost-calculator'
+        )}
+        target="_blank"
+        rel="noopener noreferrer">اطلب عرض سعر عبر واتساب</a
+      >
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-14 grid md:grid-cols-2 gap-10">
+    <div>
+      <h2 class="text-2xl font-bold mb-4">كيف تُحسب النتائج؟</h2>
+      <ul class="space-y-3 text-muted list-disc ps-5">
+        <li>تكلفة الوصول = سعر المصنع + الشحن + تكاليف الاستيراد الأخرى.</li>
+        <li>الربح الإجمالي = سعر إعادة البيع − تكلفة الوصول.</li>
+        <li>هامش الربح الإجمالي = الربح الإجمالي ÷ سعر إعادة البيع × 100. وهو يختلف عن نسبة الزيادة على التكلفة.</li>
+      </ul>
+      <p class="mt-4 text-muted">
+        في المثال: تكلفة الوصول 445 دولاراً والربح 154 دولاراً، أي هامش 25.7%. عندما يكون سعر البيع صفراً، لا يمكن حساب
+        نسبة الهامش.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">ما الذي تدخله ضمن التكاليف الأخرى؟</h2>
+      <p class="text-muted">
+        أدخل مبالغ تقدّرها أنت، مثل التخليص والرسوم والتوصيل المحلي والتغليف الإضافي، إذا لم تكن مدرجة في عرض المصنع أو
+        الشحن. لا تختار الأداة دولة أو رمزاً جمركياً ولا تحدد معدلات الضرائب أو الرسوم.
+      </p>
+      <p class="text-muted mt-4">
+        هذه نتيجة إجمالية مبسطة وليست صافي ربح. راجع عمولات البيع والإعلانات والمرتجعات والتخزين وأي مصروفات أخرى قبل
+        اتخاذ قرار الشراء. أكّد التكاليف والمعاملة الضريبية مع مقدم الخدمة المختص.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">للقطعة أم للطلب كله؟</h2>
+      <p class="text-muted">
+        اختر أساساً واحداً. إذا أدخلت سعر المصنع للقطعة، وزّع الشحن والتكاليف الأخرى على القطع وأدخل سعر بيع القطعة. إذا
+        أدخلت إجمالي الطلب، استخدم إجمالي المبيعات المتوقعة أيضاً. عند اختلاف أحجام القطع، راجع طريقة توزيع الشحن بدلاً
+        من تقسيمه بالتساوي تلقائياً.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">خطوتك التالية</h2>
+      <p class="text-muted">
+        قارن المواصفة ومحتويات التوريد وشروط التسليم قبل مقارنة السعر. الأرقام التي تدخلها لا تُحفظ ولا تُرسل إلى فريق
+        المبيعات أو أحداث Analytics؛ يبدأ التواصل فقط عندما تفتح واتساب وترسل رسالتك بنفسك.
+      </p>
+      <div class="flex flex-wrap gap-x-6 gap-y-3 mt-5 underline underline-offset-4">
+        <a href="/carbon-fiber-import-cost-profit-guide">مثال خطوة بخطوة لتكلفة الاستيراد والهامش</a>
+        <a href="/compare-wholesale-carbon-fiber-quotes">دليل مقارنة عروض الأسعار</a>
+        <a href="/catalogs">كتالوجات BMW ومرسيدس وبورش</a>
+        <a href="/grow/wholesale">شروط التوريد بالجملة</a>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<script>
+  import { calculateImportCost, parseUsd } from '~/utils/importCost';
+  function initializeCalculator() {
+    document.querySelectorAll<HTMLElement>('[data-import-calculator]').forEach((root) => {
+      if (root.dataset.ready) return;
+      root.dataset.ready = 'true';
+      const inputs = [...root.querySelectorAll<HTMLInputElement>('[data-cost-field]')];
+      const result = (name: string) => root.querySelector<HTMLElement>(`[data-cost-result="${name}"]`)!;
+      const error = root.querySelector<HTMLElement>('[data-cost-error]')!;
+      const note = root.querySelector<HTMLElement>('[data-cost-note]')!;
+      const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+      function update() {
+        const values = inputs.map((input) => {
+          const value = parseUsd(input.value);
+          input.setAttribute('aria-invalid', String(value === null));
+          return value;
+        });
+        const invalid = values.some((value) => value === null);
+        error.textContent = invalid
+          ? 'أدخل مبلغاً من صفر إلى 100,000,000، بمنزلتين عشريتين كحد أقصى، دون فواصل آلاف أو رموز عملة.'
+          : '';
+        if (invalid) {
+          ['landed', 'profit', 'margin'].forEach((key) => {
+            result(key).textContent = '—';
+          });
+          note.textContent = 'صحّح المدخلات لعرض النتائج.';
+          return;
+        }
+        const [factory, freight, other, retail] = values as number[];
+        const costs = calculateImportCost(factory, freight, other, retail);
+        result('landed').textContent = money.format(costs.landed / 100);
+        result('profit').textContent = money.format(costs.profit / 100);
+        result('margin').textContent = costs.margin === null ? '—' : `${costs.margin.toFixed(1)}%`;
+        note.textContent =
+          costs.margin === null
+            ? 'هامش الربح غير متاح عندما يكون سعر إعادة البيع صفراً.'
+            : costs.profit < 0
+              ? 'سعر البيع أقل من تكلفة الوصول؛ النتيجة خسارة إجمالية.'
+              : 'النتيجة تقدير إجمالي قبل مصروفات النشاط الأخرى.';
+      }
+      inputs.forEach((input) => input.addEventListener('input', update));
+      root.querySelector('[data-cost-reset]')?.addEventListener('click', () => {
+        inputs.forEach((input) => {
+          input.value = input.defaultValue;
+        });
+        update();
+      });
+      update();
+    });
+  }
+  document.addEventListener('astro:page-load', initializeCalculator);
+</script>

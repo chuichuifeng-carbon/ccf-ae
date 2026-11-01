@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" rx="28" fill="#f8fafc"/>
+  <g font-family="Tahoma,Arial,sans-serif" fill="#0f172a">
+    <text x="1130" y="86" text-anchor="end" font-size="36" font-weight="700">تكلفة الاستيراد وهامش الربح</text>
+    <text x="1130" y="132" text-anchor="end" font-size="22" fill="#475569">مثال توضيحي بالدولار · ليست أسعاراً أو ضرائب مباشرة</text>
+    <g fill="#fff" stroke="#cbd5e1"><rect x="70" y="180" width="330" height="155" rx="20"/><rect x="435" y="180" width="330" height="155" rx="20"/><rect x="800" y="180" width="330" height="155" rx="20"/></g>
+    <g text-anchor="middle" font-size="24" fill="#475569"><text x="965" y="223">سعر المصنع</text><text x="600" y="223">الشحن</text><text x="235" y="223">تكاليف أخرى</text></g>
+    <g text-anchor="middle" font-size="46" font-weight="700"><text x="965" y="293">$250</text><text x="600" y="293">$85</text><text x="235" y="293">$110</text></g>
+    <rect x="70" y="375" width="1060" height="180" rx="20" fill="#0f172a"/>
+    <g text-anchor="middle" font-size="23" fill="#cbd5e1"><text x="965" y="426">تكلفة الوصول</text><text x="600" y="426">الربح الإجمالي</text><text x="235" y="426">هامش الربح</text></g>
+    <g text-anchor="middle" font-size="46" fill="#fff" font-weight="700"><text x="965" y="499">$445</text><text x="600" y="499">$154</text><text x="235" y="499">25.7%</text></g>
+    <text x="1130" y="599" text-anchor="end" font-size="21" fill="#475569">سعر البيع المفترض: 599 دولاراً · CCF</text>
+  </g>
+</svg>

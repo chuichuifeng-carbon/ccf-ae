@@ -1,9 +1,9 @@
 {
   "summary": {
-    "reviewed": 43,
-    "metadataUpdated": 31,
+    "reviewed": 45,
+    "metadataUpdated": 33,
     "contextualResourceSections": 26,
-    "indexed": 38,
+    "indexed": 40,
     "noindex": 5,
     "limitation": "Editorial intent mapping, not search-volume or live-ranking evidence; no Search Console access. Local build only."
   },
@@ -17,7 +17,14 @@
       "before": {
         "title": "مصنع قطع ألياف الكربون للسيارات وتوريد B2B | CCF",
         "description": "تعرّف على CCF، مصنع قطع كربون السيارات في الصين. يركز هذا الموقع على BMW وMercedes-AMG وPorsche، مع كتالوجات وتوريد B2B واستفسارات واتساب.",
-        "h1": "مصنع قطع ألياف الكربون للسيارات"
+        "h1": "مصنع قطع ألياف الكربون للسيارات",
+        "canonicalPath": "/",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "مصنع قطع كربون فايبر للسيارات في الصين | CCF",
@@ -32,6 +39,7 @@
         "قطع ألياف الكربون حسب النوع",
         "قطع ألياف الكربون حسب العلامة",
         "منتجات مختارة بمعلومات تفصيلية",
+        "اعرف تكلفة وصول القطع قبل تحديد ميزانيتك",
         "من تمديد ألياف الكربون إلى الفحص النهائي",
         "صور من مراحل الإنتاج",
         "مشاريع حقيقية. عملاء B2B حقيقيون.",
@@ -39,7 +47,7 @@
         "أسئلة مشتري B2B الشائعة",
         "جاهز لبدء مشروعك؟"
       ],
-      "mainWords": 961,
+      "mainWords": 1002,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -53,7 +61,14 @@
       "before": {
         "title": "قطع ألياف الكربون للسيارات حسب نوع القطعة | CCF",
         "description": "تصفّح قطع كربون السيارات حسب الفئة: شفاه أمامية، ناشرات، أجنحة، أغطية محرك ومرايا. اختر المرجع وأرسل متطلبات التوريد إلى CCF عبر واتساب.",
-        "h1": "قطع ألياف الكربون حسب نوع القطعة"
+        "h1": "قطع ألياف الكربون حسب نوع القطعة",
+        "canonicalPath": "/products",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "قطع كربون فايبر للسيارات حسب نوع القطعة | CCF",
@@ -80,9 +95,10 @@
         "الأسئلة الشائعة حول قطع ألياف الكربون",
         "لم تجد القطعة التي تحتاجها؟",
         "منتجات مختارة بمعلومات تفصيلية",
-        "اختر القطعة، ثم أكّد تطبيق المركبة"
+        "اختر القطعة، ثم أكّد تطبيق المركبة",
+        "قارن التكلفة الإجمالية، لا سعر القطعة وحده"
       ],
-      "mainWords": 603,
+      "mainWords": 641,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -96,7 +112,14 @@
       "before": {
         "title": "قطع ألياف الكربون حسب ماركة السيارة | CCF",
         "description": "اختر قطع ألياف الكربون لسيارات BMW وMercedes-AMG وPorsche. تصفّح كتالوجات الطرازات وأرسل المركبة والمرجع والكمية للتحقق من المطابقة والتوفر.",
-        "h1": "اعثر على قطع الكربون حسب المركبة"
+        "h1": "اعثر على قطع الكربون حسب المركبة",
+        "canonicalPath": "/vehicles",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "قطع كربون BMW ومرسيدس AMG وبورش | CCF",
@@ -123,9 +146,10 @@
         "المطابقة تعتمد على أكثر من اسم الطراز",
         "الأسئلة الشائعة حول البحث بالمركبة",
         "لم تجد طرازك ضمن العلامات الثلاث؟",
-        "من ماركة المركبة إلى مرجع قابل للتسعير"
+        "من ماركة المركبة إلى مرجع قابل للتسعير",
+        "اختر الطراز، ثم راجع ميزانية الشراء"
       ],
-      "mainWords": 470,
+      "mainWords": 504,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -139,7 +163,14 @@
       "before": {
         "title": "كتالوجات قطع ألياف الكربون PDF حسب المركبة | CCF",
         "description": "افتح كتالوجات PDF لسيارات BMW وMercedes-AMG وPorsche حسب الطراز. أرسل اسم الكتالوج ورقم المرجع والكمية والوجهة لطلب عرض سعر عبر واتساب.",
-        "h1": "كتالوجات قطع ألياف الكربون حسب المركبة"
+        "h1": "كتالوجات قطع ألياف الكربون حسب المركبة",
+        "canonicalPath": "/catalogs",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "كتالوج قطع كربون BMW ومرسيدس وبورش PDF | CCF",
@@ -163,11 +194,12 @@
       ],
       "headings": [
         "اختر كتالوج مركبتك",
+        "حوّل مراجع الكتالوج إلى ميزانية أوضح",
         "مراجع منتجات حسب العلامة والطراز",
         "اختر كتالوج BMW أو Mercedes-AMG أو Porsche",
         "ماذا تفعل بعد اختيار مرجع الكتالوج؟"
       ],
-      "mainWords": 1020,
+      "mainWords": 1058,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -181,7 +213,14 @@
       "before": {
         "title": "حلول توريد قطع كربون السيارات للشركات | CCF",
         "description": "اختر نموذج التعاون مع CCF: توريد بالجملة، دروبشيبينغ، شراكة توزيع أو تطوير OEM/ODM. قارن الخيارات وناقش احتياجات عملك عبر واتساب.",
-        "h1": "حلول توريد قطع الكربون لأعمالك"
+        "h1": "حلول توريد قطع الكربون لأعمالك",
+        "canonicalPath": "/grow",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "توريد قطع كربون للشركات: جملة وOEM ودروبشيبينغ | CCF",
@@ -209,9 +248,10 @@
         "مقارنة طرق توريد قطع الكربون",
         "ابدأ صغيراً. توسّع مع الطلب.",
         "لست متأكداً من أين تبدأ؟",
-        "اختر مسار التوريد وفق طلبك الفعلي"
+        "اختر مسار التوريد وفق طلبك الفعلي",
+        "قارن ميزانية التوريد قبل اختيار مسار التعاون"
       ],
-      "mainWords": 411,
+      "mainWords": 450,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -225,7 +265,14 @@
       "before": {
         "title": "قطع ألياف الكربون للسيارات بالجملة | CCF",
         "description": "اطلب توريد قطع كربون السيارات من CCF للموزعين وورش التعديل والمتاجر. ناقش العينة والطلبات المختلطة، وأرسل الكمية والوجهة عبر واتساب.",
-        "h1": "توريد قطع ألياف الكربون بالجملة"
+        "h1": "توريد قطع ألياف الكربون بالجملة",
+        "canonicalPath": "/grow/wholesale",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "قطع كربون فايبر للسيارات بالجملة من المصنع | CCF",
@@ -255,9 +302,10 @@
         "أسئلة مشتري الجملة",
         "قبل مقارنة عروض الموردين",
         "لديك قائمة مختصرة؟ أرسلها إلى CCF .",
-        "جهّز مرجع المنتج قبل مناقشة سعر الجملة"
+        "جهّز مرجع المنتج قبل مناقشة سعر الجملة",
+        "اختبر ميزانية الدفعة قبل زيادة الكمية"
       ],
-      "mainWords": 581,
+      "mainWords": 619,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -271,7 +319,14 @@
       "before": {
         "title": "تصنيع قطع ألياف كربون حسب الطلب OEM/ODM | CCF",
         "description": "طوّر قطعة كربون لمركبتك أو علامتك مع CCF. ابدأ بعينة أو CAD أو صور مرجعية، وناقش الجدوى والقوالب واعتماد العينة وشروط الإنتاج عبر واتساب.",
-        "h1": "تصنيع قطع ألياف كربون حسب الطلب"
+        "h1": "تصنيع قطع ألياف كربون حسب الطلب",
+        "canonicalPath": "/grow/oem-odm",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "تصنيع قطع كربون فايبر حسب الطلب OEM/ODM | CCF",
@@ -318,7 +373,14 @@
       "before": {
         "title": "دروبشيبينغ قطع ألياف الكربون للسيارات | CCF",
         "description": "ناقش توريد قطع كربون مختارة طلباً بطلب مع CCF. تحقّق من أهلية المنتج والوجهة والتغليف وآلية التنفيذ قبل عرض الخدمة لعملائك.",
-        "h1": "دروبشيبينغ قطع الكربون لاختبار السوق"
+        "h1": "دروبشيبينغ قطع الكربون لاختبار السوق",
+        "canonicalPath": "/grow/dropshipping",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "دروبشيبينغ قطع كربون السيارات للمتاجر | CCF",
@@ -346,9 +408,10 @@
         "من اختيار المنتج إلى التنفيذ الفردي",
         "أسئلة قبل بدء دروبشيبينغ قطع الكربون",
         "اختبر سوقك بمخاطر أقل",
-        "راجع تكلفة الطلب الفردي قبل عرض المنتج"
+        "راجع تكلفة الطلب الفردي قبل عرض المنتج",
+        "تحقق مما يتبقى من سعر البيع بعد الشحن"
       ],
-      "mainWords": 503,
+      "mainWords": 543,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -362,7 +425,14 @@
       "before": {
         "title": "شراكة توزيع قطع ألياف الكربون للسيارات | CCF",
         "description": "تواصل مع CCF بشأن شراكة توزيع لقطع كربون السيارات. شارك السوق وقنوات البيع ونطاق المنتجات وخطة الشراء لمراجعة فرص التعاون.",
-        "h1": "شراكات توزيع قطع ألياف الكربون"
+        "h1": "شراكات توزيع قطع ألياف الكربون",
+        "canonicalPath": "/grow/channel-partners",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "شراكة توزيع قطع كربون السيارات للموزعين | CCF",
@@ -391,9 +461,10 @@
         "شروط أفضل تأتي من حالة عمل أقوى",
         "أسئلة شراكة توزيع قطع الكربون",
         "جاهز لشراكة أعمق؟",
-        "ابدأ بخطة منتجات وسوق محددين"
+        "ابدأ بخطة منتجات وسوق محددين",
+        "راجع هامش التوزيع بأرقامك قبل الالتزام بالمخزون"
       ],
-      "mainWords": 548,
+      "mainWords": 586,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -407,7 +478,14 @@
       "before": {
         "title": "قطع ألياف الكربون لسيارات BMW | CCF",
         "description": "تصفّح كتالوجات قطع كربون BMW لتطبيقات تشمل M2 وM3 وM4 وM5 وأجيال G وF. أرسل الطراز والسنة والمرجع والكمية لطلب التوريد من CCF.",
-        "h1": "قطع ألياف الكربون لسيارات BMW"
+        "h1": "قطع ألياف الكربون لسيارات BMW",
+        "canonicalPath": "/vehicles/bmw",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF",
@@ -431,6 +509,7 @@
       ],
       "headings": [
         "اختر كتالوج مركبتك",
+        "خطّط لميزانية قطع BMW على أساس تكلفة الوصول",
         "طرازات BMW التي نغطيها",
         "قطع ألياف الكربون الشائعة لمركبات BMW",
         "هل اخترت المرجع المناسب لمركبتك؟",
@@ -438,7 +517,7 @@
         "منتجات مختارة بمعلومات تفصيلية",
         "تبحث عن قطع BMW M3 G80 أو M4 G82 ؟"
       ],
-      "mainWords": 752,
+      "mainWords": 794,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -452,7 +531,14 @@
       "before": {
         "title": "قطع ألياف الكربون لسيارات Mercedes-AMG | CCF",
         "description": "تصفّح كتالوجات قطع كربون Mercedes-AMG لتطبيقات تشمل AMG GT وG-Class وC63 وA45 وCLA45. أرسل الطراز والسنة والمرجع والكمية لطلب التوريد من CCF.",
-        "h1": "قطع ألياف الكربون لسيارات Mercedes-AMG"
+        "h1": "قطع ألياف الكربون لسيارات Mercedes-AMG",
+        "canonicalPath": "/vehicles/mercedes-amg",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "قطع كربون مرسيدس AMG: G63 وGT وC63 | CCF",
@@ -476,12 +562,13 @@
       ],
       "headings": [
         "اختر كتالوج مركبتك",
+        "خطّط لميزانية قطع مرسيدس AMG على أساس تكلفة الوصول",
         "طرازات Mercedes-AMG التي نغطيها",
         "قطع ألياف الكربون الشائعة لمركبات AMG",
         "اطلب عرض سعر لقطع Mercedes-AMG",
         "قبل طلب قطع كاربون فايبر لمرسيدس AMG"
       ],
-      "mainWords": 675,
+      "mainWords": 719,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -495,7 +582,14 @@
       "before": {
         "title": "قطع ألياف الكربون لسيارات Porsche | CCF",
         "description": "تصفّح كتالوجات قطع كربون Porsche لتطبيقات تشمل 911 و718 وPanamera وCayenne وTaycan. أرسل الطراز والسنة والمرجع والكمية لطلب التوريد من CCF.",
-        "h1": "قطع ألياف الكربون لسيارات Porsche"
+        "h1": "قطع ألياف الكربون لسيارات Porsche",
+        "canonicalPath": "/vehicles/porsche",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "قطع كربون بورش 911 و718 وكايين وتايكان | CCF",
@@ -519,12 +613,13 @@
       ],
       "headings": [
         "اختر كتالوج مركبتك",
+        "خطّط لميزانية قطع بورش على أساس تكلفة الوصول",
         "طرازات Porsche التي نغطيها",
         "قطع ألياف الكربون الشائعة لمركبات Porsche",
         "اطلب عرض سعر لقطع Porsche",
         "قبل طلب قطع كاربون فايبر لبورش"
       ],
-      "mainWords": 538,
+      "mainWords": 580,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -538,7 +633,14 @@
       "before": {
         "title": "شفاه أمامية وسبليتر من ألياف الكربون | CCF",
         "description": "تصفّح شفاه أمامية وسبليتر كربون بتصاميم CSL وR44 وMP وغيرها. اختر المركبة والتصميم، ثم أرسل المرجع والكمية لطلب عرض سعر من CCF.",
-        "h1": "شفاه أمامية وسبليتر من ألياف الكربون"
+        "h1": "شفاه أمامية وسبليتر من ألياف الكربون",
+        "canonicalPath": "/products/front-lips-splitters",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "شفة أمامية وسبليتر كربون BMW M بالجملة | CCF",
@@ -564,9 +666,10 @@
         "صور وتصاميم الشفاه الأمامية والسبليتر",
         "ما الذي تتحقق منه قبل اختيار شفّة أمامية",
         "اطلب عرض سعر للشفاه الأمامية",
-        "كيف تطلب شفة أمامية أو سبليتر مناسباً لمركبتك؟"
+        "كيف تطلب شفة أمامية أو سبليتر مناسباً لمركبتك؟",
+        "راجع ميزانية الشفاه الأمامية قبل تحديد الكمية"
       ],
-      "mainWords": 560,
+      "mainWords": 600,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -580,7 +683,14 @@
       "before": {
         "title": "ديفيوزر وناشرات خلفية من ألياف الكربون | CCF",
         "description": "استعرض ناشرات كربون خلفية بتصاميم MP وR44 و3D وخيارات أخرى. أرسل طراز المركبة وصورة العادم والمرجع لتأكيد النسخة وطلب السعر.",
-        "h1": "ديفيوزر وناشرات خلفية من ألياف الكربون"
+        "h1": "ديفيوزر وناشرات خلفية من ألياف الكربون",
+        "canonicalPath": "/products/rear-diffusers",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "ديفيوزر خلفي كربون BMW M بالجملة | CCF",
@@ -606,9 +716,10 @@
         "صور وتصاميم الناشرات الخلفية",
         "ما الذي تتحقق منه قبل اختيار ناشر خلفي",
         "اطلب عرض سعر للناشرات الخلفية",
-        "كيف تطلب ديفيوزر خلفي مناسباً لمركبتك؟"
+        "كيف تطلب ديفيوزر خلفي مناسباً لمركبتك؟",
+        "راجع ميزانية الناشرات الخلفية قبل تحديد الكمية"
       ],
-      "mainWords": 507,
+      "mainWords": 547,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -622,7 +733,14 @@
       "before": {
         "title": "عتبات وتنانير جانبية من ألياف الكربون | CCF",
         "description": "تصفّح قطع الكربون الجانبية لسيارات BMW وMercedes-AMG. أكّد نسخة الهيكل والتصميم ومحتويات الطقم مع CCF قبل طلب التوريد.",
-        "h1": "عتبات وتنانير جانبية من ألياف الكربون"
+        "h1": "عتبات وتنانير جانبية من ألياف الكربون",
+        "canonicalPath": "/products/side-skirts",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "عتبات جانبية كربون BMW ومرسيدس G63 | CCF",
@@ -648,9 +766,10 @@
         "صور وتصاميم القطع الجانبية",
         "ما الذي تتحقق منه قبل اختيار تنانير جانبية",
         "اطلب عرض سعر للتنانير الجانبية",
-        "كيف تطلب عتبات أو تنانير جانبية مناسباً لمركبتك؟"
+        "كيف تطلب عتبات أو تنانير جانبية مناسباً لمركبتك؟",
+        "راجع ميزانية التنانير الجانبية قبل تحديد الكمية"
       ],
-      "mainWords": 509,
+      "mainWords": 549,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -664,7 +783,14 @@
       "before": {
         "title": "سبويلر وأجنحة خلفية من ألياف الكربون | CCF",
         "description": "اختر سبويلر أو جناح كربون خلفياً من تصاميم BMW M المختارة. أرسل المرجع والطراز والكمية لتأكيد التثبيت ومحتويات التوريد وطلب السعر.",
-        "h1": "سبويلر وأجنحة خلفية من ألياف الكربون"
+        "h1": "سبويلر وأجنحة خلفية من ألياف الكربون",
+        "canonicalPath": "/products/spoilers-wings",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "سبويلر وأجنحة خلفية كربون BMW M بالجملة | CCF",
@@ -690,9 +816,10 @@
         "صور وتصاميم السبويلر والأجنحة",
         "ما الذي تتحقق منه قبل اختيار سبويلر أو جناح",
         "اطلب عرض سعر للسبويلر والأجنحة",
-        "كيف تطلب سبويلر أو جناح خلفي مناسباً لمركبتك؟"
+        "كيف تطلب سبويلر أو جناح خلفي مناسباً لمركبتك؟",
+        "راجع ميزانية السبويلر والأجنحة قبل تحديد الكمية"
       ],
-      "mainWords": 369,
+      "mainWords": 409,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -706,7 +833,14 @@
       "before": {
         "title": "أغطية محرك من ألياف الكربون للسيارات | CCF",
         "description": "استعرض أغطية محرك كربون لمركبات BMW بتصاميم وفتحات مختلفة. أرسل المركبة والمرجع لتأكيد المادة والقفل والمفصلات ومحتويات الطلب.",
-        "h1": "أغطية محرك من ألياف الكربون"
+        "h1": "أغطية محرك من ألياف الكربون",
+        "canonicalPath": "/products/hoods",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "غطاء محرك كربون BMW M2 وM3 وM5 | CCF",
@@ -732,9 +866,10 @@
         "صور وتصاميم أغطية المحرك",
         "ما الذي تتحقق منه قبل اختيار غطاء محرك",
         "اطلب عرض سعر لأغطية المحرك",
-        "كيف تطلب غطاء محرك كربون مناسباً لمركبتك؟"
+        "كيف تطلب غطاء محرك كربون مناسباً لمركبتك؟",
+        "راجع ميزانية أغطية المحرك قبل تحديد الكمية"
       ],
-      "mainWords": 351,
+      "mainWords": 391,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -748,7 +883,14 @@
       "before": {
         "title": "أغطية صندوق الأمتعة من ألياف الكربون | CCF",
         "description": "تصفّح أغطية صندوق أمتعة كربون لمركبات BMW M2 وM3 وM4 وM5 المختارة. أكّد الهيكل والقفل والتجهيزات، واطلب عرض سعر عبر واتساب.",
-        "h1": "أغطية صندوق الأمتعة من ألياف الكربون"
+        "h1": "أغطية صندوق الأمتعة من ألياف الكربون",
+        "canonicalPath": "/products/trunk-lids",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "غطاء صندوق أمتعة كربون BMW M2 وM3 وM4 وM5 | CCF",
@@ -774,9 +916,10 @@
         "صور وتصاميم أغطية صندوق الأمتعة",
         "ما الذي تتحقق منه قبل اختيار غطاء صندوق أمتعة",
         "اطلب عرض سعر لأغطية صناديق الأمتعة",
-        "كيف تطلب غطاء صندوق أمتعة كربون مناسباً لمركبتك؟"
+        "كيف تطلب غطاء صندوق أمتعة كربون مناسباً لمركبتك؟",
+        "راجع ميزانية أغطية صندوق الأمتعة قبل تحديد الكمية"
       ],
-      "mainWords": 332,
+      "mainWords": 374,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -790,7 +933,14 @@
       "before": {
         "title": "شبكات أمامية وفتحات هواء من ألياف الكربون | CCF",
         "description": "استعرض شبكات كربون وقطع فتحات هواء لسيارات BMW. أرسل صورة المصد والتجهيزات والمرجع لتأكيد النسخة المطلوبة وطلب عرض سعر من CCF.",
-        "h1": "شبكات أمامية وقطع فتحات الهواء"
+        "h1": "شبكات أمامية وقطع فتحات الهواء",
+        "canonicalPath": "/products/grilles-air-intake",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "شبكات وزخارف خارجية وقطع فتحات هواء BMW | CCF",
@@ -817,9 +967,10 @@
         "ما الذي تتحقق منه قبل اختيار شبك أمامي",
         "اطلب عرض سعر للشبكات وفتحات التهوية",
         "صور الزخارف الخارجية وقطع زوايا الهيكل",
-        "كيف تطلب شبك أو قطعة فتحة هواء مناسباً لمركبتك؟"
+        "كيف تطلب شبك أو قطعة فتحة هواء مناسباً لمركبتك؟",
+        "راجع ميزانية الشبكات والزخارف قبل تحديد الكمية"
       ],
-      "mainWords": 1014,
+      "mainWords": 1054,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -833,7 +984,14 @@
       "before": {
         "title": "أغطية مرايا جانبية من ألياف الكربون | CCF",
         "description": "تصفّح أغطية مرايا كربون لمركبات BMW F90 وF8x المختارة. أرسل صور المرايا وبيانات المركبة لتأكيد شكل القطعة وطريقة تثبيتها والسعر.",
-        "h1": "أغطية مرايا جانبية من ألياف الكربون"
+        "h1": "أغطية مرايا جانبية من ألياف الكربون",
+        "canonicalPath": "/products/mirror-caps",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "أغطية مرايا كربون BMW F90 وF8x | CCF",
@@ -859,9 +1017,10 @@
         "صور وتصاميم أغطية المرايا",
         "ما الذي تتحقق منه قبل اختيار أغطية مرايا",
         "اطلب عرض سعر لأغطية المرايا",
-        "كيف تطلب أغطية مرايا كربون مناسباً لمركبتك؟"
+        "كيف تطلب أغطية مرايا كربون مناسباً لمركبتك؟",
+        "راجع ميزانية أغطية المرايا قبل تحديد الكمية"
       ],
-      "mainWords": 293,
+      "mainWords": 333,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -875,7 +1034,14 @@
       "before": {
         "title": "شفّة أمامية كربون BMW G80/G82 بتصميم R44 | CCF",
         "description": "شفّة أمامية R44 لسيارات BMW G80/G82، بمراجع DCF وWet carbon منفصلة في الكتالوج. راجع الصور وأرسل سنة المركبة والكمية لطلب السعر.",
-        "h1": "شفّة أمامية كربون BMW G80/G82 — تصميم R44"
+        "h1": "شفّة أمامية كربون BMW G80/G82 — تصميم R44",
+        "canonicalPath": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/002-bmw-g80-g82-carbon-fiber-front-lip-r44-style-reference-01.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم R44 | CCF",
@@ -902,9 +1068,10 @@
         "صور إضافية للمنتج",
         "المصدر ومسؤولية المعلومات",
         "منتجات مختارة بمعلومات تفصيلية",
-        "قارن البدائل وأكّد المادة قبل الطلب"
+        "قارن البدائل وأكّد المادة قبل الطلب",
+        "هل يناسب هذا المرجع ميزانية إعادة البيع؟"
       ],
-      "mainWords": 373,
+      "mainWords": 415,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -918,7 +1085,14 @@
       "before": {
         "title": "شفّة كربون BMW G80/G82 بتصميم CSL ثلاث قطع | CCF",
         "description": "تعرّف على شفّة CSL الأمامية من ثلاث قطع لسيارات BMW G80/G82. راجع صور المنتج ومراجع المادة، وأرسل نسخة المصد والكمية لطلب عرض سعر.",
-        "h1": "شفّة أمامية BMW G80/G82 — CSL من ثلاث قطع"
+        "h1": "شفّة أمامية BMW G80/G82 — CSL من ثلاث قطع",
+        "canonicalPath": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم CSL | CCF",
@@ -945,9 +1119,10 @@
         "صور إضافية للمنتج",
         "المصدر ومسؤولية المعلومات",
         "منتجات مختارة بمعلومات تفصيلية",
-        "قارن البدائل وأكّد المادة قبل الطلب"
+        "قارن البدائل وأكّد المادة قبل الطلب",
+        "هل يناسب هذا المرجع ميزانية إعادة البيع؟"
       ],
-      "mainWords": 376,
+      "mainWords": 418,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -961,7 +1136,14 @@
       "before": {
         "title": "ديفيوزر كربون BMW G80/G82 بتصميم MP | CCF",
         "description": "ناشر خلفي MP لسيارات BMW G80/G82، مرجع 44 في الكتالوج. راجع صورة القطعة وأرسل ترتيب مخارج العادم والكمية لتأكيد النسخة وطلب السعر.",
-        "h1": "ديفيوزر كربون BMW G80/G82 — تصميم MP"
+        "h1": "ديفيوزر كربون BMW G80/G82 — تصميم MP",
+        "canonicalPath": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/029-bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style-reference-01.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "ديفيوزر كربون BMW M3 G80 وM4 G82 تصميم MP | CCF",
@@ -988,9 +1170,10 @@
         "صور إضافية للمنتج",
         "المصدر ومسؤولية المعلومات",
         "منتجات مختارة بمعلومات تفصيلية",
-        "قارن البدائل وأكّد المادة قبل الطلب"
+        "قارن البدائل وأكّد المادة قبل الطلب",
+        "هل يناسب هذا المرجع ميزانية إعادة البيع؟"
       ],
-      "mainWords": 365,
+      "mainWords": 407,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -1004,7 +1187,14 @@
       "before": {
         "title": "غطاء محرك كربون BMW G87 M2 بفتحات تهوية | CCF",
         "description": "استعرض غطاء محرك كربون BMW G87 M2 بفتحات تهوية. أرسل صور الغطاء الحالي وسنة المركبة والكمية لتأكيد المواصفة والقفل والمفصلات والسعر.",
-        "h1": "غطاء محرك كربون BMW G87 M2"
+        "h1": "غطاء محرك كربون BMW G87 M2",
+        "canonicalPath": "/products/bmw-g87-m2-carbon-fiber-hood",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "غطاء محرك كربون BMW M2 G87 بفتحات تهوية | CCF",
@@ -1031,9 +1221,10 @@
         "صور إضافية للمنتج",
         "المصدر ومسؤولية المعلومات",
         "منتجات مختارة بمعلومات تفصيلية",
-        "قارن البدائل وأكّد المادة قبل الطلب"
+        "قارن البدائل وأكّد المادة قبل الطلب",
+        "هل يناسب هذا المرجع ميزانية إعادة البيع؟"
       ],
-      "mainWords": 322,
+      "mainWords": 364,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -1047,7 +1238,14 @@
       "before": {
         "title": "مشاريع قطع الكربون وزيارات العملاء | CCF",
         "description": "اطّلع على زيارات عملاء من الولايات المتحدة وكندا إلى CCF. شاهد صور مناقشات التوريد ومراجعة المنتجات وتعرّف على طرق تقييم المورد.",
-        "h1": "مشاريع قطع الكربون وزيارات العملاء"
+        "h1": "مشاريع قطع الكربون وزيارات العملاء",
+        "canonicalPath": "/cases",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "زيارات عملاء مصنع قطع الكربون ومراجعة المورد | CCF",
@@ -1084,7 +1282,14 @@
       "before": {
         "title": "زيارة عميل كندي ومراجعة قطع الكربون | CCF",
         "description": "اطّلع على زيارة عميل كندي إلى CCF لمراجعة منتجات الكربون ومناقشة احتياجات التوريد، وصولاً إلى طلب قطع BMW. شاهد صور الزيارة.",
-        "h1": "زيارة عميل كندي ومناقشة توريد قطع الكربون"
+        "h1": "زيارة عميل كندي ومناقشة توريد قطع الكربون",
+        "canonicalPath": "/cases/canada-distributor-visit",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/canada-customer-carbon-fiber-business-meeting.webp",
+        "imageWidth": 1074,
+        "imageHeight": 798
       },
       "after": {
         "title": "زيارة عميل كندي ومراجعة قطع الكربون | CCF",
@@ -1108,7 +1313,14 @@
       "before": {
         "title": "زيارة عميل أمريكي ومناقشة مشروع كربون | CCF",
         "description": "شاهد زيارة عميل أمريكي إلى CCF لمناقشة مشروع كربون ومراجعة المنتجات والمستودع. تعرّف على انتقال مناقشات التوريد إلى طلب حقيقي.",
-        "h1": "زيارة عميل أمريكي ومناقشة مشروع كربون"
+        "h1": "زيارة عميل أمريكي ومناقشة مشروع كربون",
+        "canonicalPath": "/cases/usa-oem-carbon-fiber",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/usa-customer-ccf-business-meeting.webp",
+        "imageWidth": 1400,
+        "imageHeight": 1050
       },
       "after": {
         "title": "زيارة عميل أمريكي ومناقشة مشروع كربون | CCF",
@@ -1136,7 +1348,14 @@
       "before": {
         "title": "عن الشركة ومصنع قطع كربون السيارات في الصين | CCF",
         "description": "تعرّف على شركة CCF ومكتب قوانغتشو وقاعدة الإنتاج في تشينغيوان. راجع تاريخ التصنيع وصور المصنع ووثائق التحقق ووسائل التواصل.",
-        "h1": "تعرّف على شركة CCF ومصنعها"
+        "h1": "تعرّف على شركة CCF ومصنعها",
+        "canonicalPath": "/about",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "عن CCF: مصنع قطع الكربون في قوانغدونغ، الصين",
@@ -1186,7 +1405,14 @@
       "before": {
         "title": "طلب عرض سعر لقطع الكربون والتواصل مع المصنع | CCF",
         "description": "أرسل المركبة والقطعة والكمية وبلد التسليم إلى CCF عبر واتساب أو البريد. ناقش توريد الكتالوج أو مشروع OEM/ODM مع فريقنا في الصين.",
-        "h1": "اطلب عرض سعر أو ناقش مشروعك مع CCF"
+        "h1": "اطلب عرض سعر أو ناقش مشروعك مع CCF",
+        "canonicalPath": "/contact",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "طلب عرض سعر قطع كربون السيارات عبر واتساب | CCF",
@@ -1215,7 +1441,14 @@
       "before": {
         "title": "أسئلة شراء قطع الكربون: التوافق والشحن والضمان | CCF",
         "description": "إجابات لمشتري قطع الكربون عن المطابقة والعينات والكميات والجملة وOEM/ODM والشحن وما بعد البيع. راجع التفاصيل قبل إرسال طلبك إلى CCF.",
-        "h1": "أسئلة مشتري قطع ألياف الكربون"
+        "h1": "أسئلة مشتري قطع ألياف الكربون",
+        "canonicalPath": "/faqs",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "شراء قطع الكربون: الكمية والمطابقة والشحن والضمان | CCF",
@@ -1248,7 +1481,14 @@
       "before": {
         "title": "مصادر معلومات المنتجات وسياسة التصحيح | CCF",
         "description": "اعرف من ينشر محتوى CCF وكيف تُستخدم الكتالوجات والصور والمراجع الفنية. راجع حدود الأدلة وطريقة الإبلاغ عن معلومة تحتاج إلى تصحيح.",
-        "h1": "مصادر المحتوى ومسؤولية النشر والتصحيحات"
+        "h1": "مصادر المحتوى ومسؤولية النشر والتصحيحات",
+        "canonicalPath": "/editorial-policy",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "مصادر معلومات المنتجات وسياسة التصحيح | CCF",
@@ -1279,7 +1519,14 @@
       "before": {
         "title": "سياسة الضمان والإرجاع لقطع الكربون | CCF",
         "description": "راجع سياسة CCF لعيوب التصنيع والتلف أثناء النقل ومشاكل المطابقة والإرجاع والاسترداد، وخطوات تقديم مطالبة مدعومة بصور ومرجع الطلب.",
-        "h1": "سياسة الضمان والإرجاع والاسترداد"
+        "h1": "سياسة الضمان والإرجاع والاسترداد",
+        "canonicalPath": "/return-refund-policy",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "سياسة الضمان والإرجاع لقطع الكربون | CCF",
@@ -1310,7 +1557,14 @@
       "before": {
         "title": "سياسة الخصوصية واستخدام بيانات الاستفسار | CCF",
         "description": "اعرف كيف تتعامل CCF مع معلومات الاستفسارات والطلبات، وكيف يعمل نموذج تجهيز رسالة واتساب، وطرق التواصل بشأن بياناتك والخصوصية.",
-        "h1": "سياسة الخصوصية وبيانات الاستفسارات"
+        "h1": "سياسة الخصوصية وبيانات الاستفسارات",
+        "canonicalPath": "/privacy",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "سياسة الخصوصية واستخدام بيانات الاستفسار | CCF",
@@ -1330,7 +1584,7 @@
         "التعديلات على هذه السياسة",
         "تواصل معنا"
       ],
-      "mainWords": 362,
+      "mainWords": 402,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -1344,7 +1598,14 @@
       "before": {
         "title": "شروط استخدام الموقع وطلبات التوريد | CCF",
         "description": "راجع شروط استخدام موقع CCF وحدود معلومات المنتجات والروابط الخارجية. تُؤكد مواصفات الطلب والأسعار والشروط التجارية باتفاق مكتوب.",
-        "h1": "شروط استخدام الموقع وطلبات التوريد"
+        "h1": "شروط استخدام الموقع وطلبات التوريد",
+        "canonicalPath": "/terms",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "شروط استخدام الموقع وطلبات التوريد | CCF",
@@ -1379,7 +1640,14 @@
       "before": {
         "title": "أدلة شراء وتوريد قطع ألياف الكربون | CCF",
         "description": "اقرأ أدلة CCF لمشتري قطع الكربون: مقارنة المواد ومراجعة المواصفات واختيار مراجع المنتجات. تعرّف على ما تؤكده قبل طلب التوريد.",
-        "h1": "أدلة شراء قطع ألياف الكربون"
+        "h1": "أدلة شراء قطع ألياف الكربون",
+        "canonicalPath": "/blog",
+        "index": true,
+        "sitemap": true,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار | CCF",
@@ -1402,13 +1670,15 @@
         }
       ],
       "headings": [
+        "كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟",
         "كيف تتحقق من توافق قطع الكربون قبل الطلب؟",
         "كيف تقارن عروض أسعار قطع الكربون بالجملة؟",
         "ما الفرق بين الكربون الجاف والرطب لقطع السيارات؟",
         "تبحث عن مورد كربون جاف موثوق؟",
-        "اختر الدليل المناسب لمرحلة الشراء"
+        "اختر الدليل المناسب لمرحلة الشراء",
+        "لديك أرقام عرض السعر؟ حوّلها إلى تقدير عملي"
       ],
-      "mainWords": 236,
+      "mainWords": 314,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -1422,7 +1692,14 @@
       "before": {
         "title": "الكربون الجاف والرطب: دليل مقارنة للمشتري | CCF",
         "description": "قارن خيارات الكربون الجاف والرطب دون افتراض وزن أو قوة ثابتة. مثال من كتالوج BMW G80/G82 يوضح ما تطلبه عن المادة والمطابقة والتوريد.",
-        "h1": "الكربون الجاف والرطب: ما الذي يؤكده المشتري؟"
+        "h1": "الكربون الجاف والرطب: ما الذي يؤكده المشتري؟",
+        "canonicalPath": "/dry-carbon-vs-wet-carbon",
+        "index": true,
+        "sitemap": true,
+        "ogType": "article",
+        "image": "/images/verified/002-bmw-g80-g82-carbon-fiber-front-lip-r44-style-reference-01.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "الفرق بين الكربون الجاف والرطب لقطع السيارات | CCF",
@@ -1439,7 +1716,7 @@
         "المصادر وحدود هذا الدليل",
         "مقالات ذات صلة"
       ],
-      "mainWords": 807,
+      "mainWords": 838,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -1453,7 +1730,14 @@
       "before": {
         "title": "أرشيف أدلة مشتري قطع ألياف الكربون | CCF",
         "description": "تصفّح مقالات CCF المصنفة ضمن أدلة المشترين، مع موضوعات تساعد على مراجعة مواد قطع الكربون ومراجعها قبل بدء طلب التوريد.",
-        "h1": "أرشيف أدلة المشترين"
+        "h1": "أرشيف أدلة المشترين",
+        "canonicalPath": "/category/adlh-almshtryn",
+        "index": false,
+        "sitemap": false,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "أرشيف أدلة مشتري قطع ألياف الكربون | CCF",
@@ -1463,11 +1747,12 @@
       "metadataChanged": false,
       "bodyResourceLinks": [],
       "headings": [
+        "كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟",
         "كيف تتحقق من توافق قطع الكربون قبل الطلب؟",
         "كيف تقارن عروض أسعار قطع الكربون بالجملة؟",
         "ما الفرق بين الكربون الجاف والرطب لقطع السيارات؟"
       ],
-      "mainWords": 138,
+      "mainWords": 179,
       "index": false,
       "sitemap": false,
       "status": "passed"
@@ -1481,7 +1766,14 @@
       "before": {
         "title": "مقالات عن الجملة في المدونة | CCF",
         "description": "أرشيف المقالات الموسومة بموضوع الجملة في مدونة CCF. استخدمه للتنقل بين أدلة شراء وتوريد قطع ألياف الكربون ذات الصلة.",
-        "h1": "مقالات عن الجملة"
+        "h1": "مقالات عن الجملة",
+        "canonicalPath": "/tag/aljmlh",
+        "index": false,
+        "sitemap": false,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "مقالات عن الجملة في المدونة | CCF",
@@ -1491,11 +1783,12 @@
       "metadataChanged": false,
       "bodyResourceLinks": [],
       "headings": [
+        "كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟",
         "كيف تتحقق من توافق قطع الكربون قبل الطلب؟",
         "كيف تقارن عروض أسعار قطع الكربون بالجملة؟",
         "ما الفرق بين الكربون الجاف والرطب لقطع السيارات؟"
       ],
-      "mainWords": 138,
+      "mainWords": 179,
       "index": false,
       "sitemap": false,
       "status": "passed"
@@ -1509,7 +1802,14 @@
       "before": {
         "title": "مقالات عن التصنيع في المدونة | CCF",
         "description": "أرشيف المقالات الموسومة بموضوع التصنيع في مدونة CCF. استخدمه للتنقل بين أدلة شراء وتوريد قطع ألياف الكربون ذات الصلة.",
-        "h1": "مقالات عن التصنيع"
+        "h1": "مقالات عن التصنيع",
+        "canonicalPath": "/tag/altsnya",
+        "index": false,
+        "sitemap": false,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "مقالات عن التصنيع في المدونة | CCF",
@@ -1518,8 +1818,12 @@
       },
       "metadataChanged": false,
       "bodyResourceLinks": [],
-      "headings": ["كيف تقارن عروض أسعار قطع الكربون بالجملة؟", "ما الفرق بين الكربون الجاف والرطب لقطع السيارات؟"],
-      "mainWords": 98,
+      "headings": [
+        "كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟",
+        "كيف تقارن عروض أسعار قطع الكربون بالجملة؟",
+        "ما الفرق بين الكربون الجاف والرطب لقطع السيارات؟"
+      ],
+      "mainWords": 139,
       "index": false,
       "sitemap": false,
       "status": "passed"
@@ -1533,7 +1837,14 @@
       "before": {
         "title": "مقالات عن ألياف الكربون الجاف في المدونة | CCF",
         "description": "أرشيف المقالات الموسومة بموضوع ألياف الكربون الجاف في مدونة CCF. استخدمه للتنقل بين أدلة شراء وتوريد قطع ألياف الكربون ذات الصلة.",
-        "h1": "مقالات عن ألياف الكربون الجاف"
+        "h1": "مقالات عن ألياف الكربون الجاف",
+        "canonicalPath": "/tag/alyaf-alkrbwn-aljaf",
+        "index": false,
+        "sitemap": false,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "مقالات عن ألياف الكربون الجاف في المدونة | CCF",
@@ -1557,7 +1868,14 @@
       "before": {
         "title": "الصفحة غير موجودة | CCF",
         "description": "تعذّر العثور على الصفحة المطلوبة. عُد إلى منتجات CCF أو كتالوجات المركبات، أو تواصل معنا للمساعدة في العثور على القطعة المناسبة.",
-        "h1": "الصفحة غير موجودة"
+        "h1": "الصفحة غير موجودة",
+        "canonicalPath": null,
+        "index": false,
+        "sitemap": false,
+        "ogType": "website",
+        "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+        "imageWidth": 1200,
+        "imageHeight": 900
       },
       "after": {
         "title": "الصفحة غير موجودة | CCF",
@@ -1581,7 +1899,14 @@
       "before": {
         "title": "توافق قطع الكربون مع السيارة: دليل قبل الطلب | CCF",
         "description": "دليل للموزعين وورش التعديل: بيانات المركبة والصور والمراجع التي تساعد على مراجعة توافق الشفّة والناشر وغطاء المحرك قبل طلب التوريد.",
-        "h1": "كيف تتحقق من توافق قطع الكربون قبل الطلب؟"
+        "h1": "كيف تتحقق من توافق قطع الكربون قبل الطلب؟",
+        "canonicalPath": "/carbon-fiber-parts-fitment-check",
+        "index": true,
+        "sitemap": true,
+        "ogType": "article",
+        "image": "/images/verified/029-bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style-reference-01.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "توافق قطع الكربون مع السيارة: دليل قبل الطلب | CCF",
@@ -1598,7 +1923,7 @@
         "المصادر ونطاق المعلومات",
         "مقالات ذات صلة"
       ],
-      "mainWords": 819,
+      "mainWords": 850,
       "index": true,
       "sitemap": true,
       "status": "passed"
@@ -1612,7 +1937,14 @@
       "before": {
         "title": "مقارنة عروض أسعار قطع الكربون بالجملة | CCF",
         "description": "قارن مرجع المنتج والمادة ووحدة البيع ومحتويات التوريد والتغليف والشحن والعينة، لتعرف ما يتضمنه عرض سعر قطع الكربون قبل الطلب.",
-        "h1": "كيف تقارن عروض أسعار قطع الكربون بالجملة؟"
+        "h1": "كيف تقارن عروض أسعار قطع الكربون بالجملة؟",
+        "canonicalPath": "/compare-wholesale-carbon-fiber-quotes",
+        "index": true,
+        "sitemap": true,
+        "ogType": "article",
+        "image": "/images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000
       },
       "after": {
         "title": "مقارنة عروض أسعار قطع الكربون بالجملة | CCF",
@@ -1630,7 +1962,73 @@
         "مصادر المثال وحدوده",
         "مقالات ذات صلة"
       ],
-      "mainWords": 847,
+      "mainWords": 916,
+      "index": true,
+      "sitemap": true,
+      "status": "passed"
+    },
+    {
+      "route": "/import-cost-calculator",
+      "intentCN": "估算碳纤维零件到岸成本、毛利润和毛利率",
+      "focusKeyword": "حاسبة تكلفة استيراد قطع الكربون",
+      "supportingKeywords": ["تكلفة الوصول", "هامش الربح الإجمالي"],
+      "assessmentCN": "承接到岸成本及毛利率估算意图；明确示例美元金额、单件/整单口径、公式和非实时运费税率边界，提供采购指南与WhatsApp入口。",
+      "before": {
+        "title": null,
+        "description": null,
+        "h1": null
+      },
+      "after": {
+        "title": "حاسبة تكلفة استيراد قطع الكربون وهامش الربح | CCF",
+        "description": "قدّر تكلفة وصول قطع ألياف الكربون وربح إعادة البيع بالدولار. أدخل سعر المصنع والشحن والتكاليف الأخرى وقارن هامش الربح قبل طلب عرض توريد.",
+        "h1": "حاسبة تكلفة استيراد قطع الكربون وهامش الربح"
+      },
+      "metadataChanged": true,
+      "bodyResourceLinks": [],
+      "headings": [
+        "احسب تكلفة الوصول والربح",
+        "كيف تُحسب النتائج؟",
+        "ما الذي تدخله ضمن التكاليف الأخرى؟",
+        "للقطعة أم للطلب كله؟",
+        "خطوتك التالية"
+      ],
+      "mainWords": 342,
+      "index": true,
+      "sitemap": true,
+      "status": "passed"
+    },
+    {
+      "route": "/carbon-fiber-import-cost-profit-guide",
+      "intentCN": "计算进口到岸成本、理解毛利率及加价率，并识别漏算费用",
+      "focusKeyword": "حساب تكلفة استيراد قطع الكربون",
+      "supportingKeywords": ["تكلفة الوصول", "هامش الربح والزيادة على التكلفة", "حساب تكلفة الشحن للقطعة"],
+      "assessmentCN": "承接进口成本计算方法和毛利率/加价率区别的教育型搜索；以可复算示例、整单/单件口径、费用核对与工具互链帮助买家制定预算，不提供实时税率或利润保证。",
+      "before": {
+        "title": null,
+        "description": null,
+        "h1": null
+      },
+      "after": {
+        "title": "حساب تكلفة استيراد قطع الكربون وهامش الربح | CCF",
+        "description": "تعلّم حساب تكلفة وصول قطع الكربون وربح بيعها بمثال رقمي، وميّز الهامش عن الزيادة على التكلفة. جرّب الحاسبة وحدّد البنود الناقصة قبل الشراء.",
+        "h1": "كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟"
+      },
+      "metadataChanged": true,
+      "bodyResourceLinks": [],
+      "headings": [
+        "ما الفرق بين سعر المصنع وتكلفة الوصول؟",
+        "ما الذي تحتاجه لتعبئة حقول الحاسبة الأربعة؟",
+        "مثال: كيف تتحول 250 دولاراً إلى تكلفة وصول قدرها 445 دولاراً؟",
+        "هل هامش الربح هو نفسه نسبة الزيادة على التكلفة؟",
+        "كيف تحسب طلب جملة دون خلط تكلفة القطعة بتكلفة الدفعة؟",
+        "ماذا يحدث للهامش إذا ارتفعت تكلفة الشحن؟",
+        "لماذا لا تعني النتيجة «صافي ربح»؟",
+        "سبعة أسئلة تحسمها قبل اعتماد ميزانية الاستيراد",
+        "أسئلة سريعة عن استخدام الحاسبة",
+        "ابدأ بأرقام واضحة، ثم اطلب البنود الناقصة",
+        "مقالات ذات صلة"
+      ],
+      "mainWords": 1474,
       "index": true,
       "sitemap": true,
       "status": "passed"

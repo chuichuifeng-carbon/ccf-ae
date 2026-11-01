@@ -514,5 +514,29 @@
     "image": "/images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp",
     "imageWidth": 1000,
     "imageHeight": 1000
+  },
+  "/import-cost-calculator": {
+    "title": "حاسبة تكلفة استيراد قطع الكربون وهامش الربح | CCF",
+    "description": "قدّر تكلفة وصول قطع ألياف الكربون وربح إعادة البيع بالدولار. أدخل سعر المصنع والشحن والتكاليف الأخرى وقارن هامش الربح قبل طلب عرض توريد.",
+    "h1": "حاسبة تكلفة استيراد قطع الكربون وهامش الربح",
+    "canonicalPath": "/import-cost-calculator",
+    "index": true,
+    "sitemap": true,
+    "ogType": "website",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  "/carbon-fiber-import-cost-profit-guide": {
+    "title": "حساب تكلفة استيراد قطع الكربون وهامش الربح | CCF",
+    "description": "تعلّم حساب تكلفة وصول قطع الكربون وربح بيعها بمثال رقمي، وميّز الهامش عن الزيادة على التكلفة. جرّب الحاسبة وحدّد البنود الناقصة قبل الشراء.",
+    "h1": "كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟",
+    "canonicalPath": "/carbon-fiber-import-cost-profit-guide",
+    "index": true,
+    "sitemap": true,
+    "ogType": "article",
+    "image": "/images/import-cost-example.webp",
+    "imageWidth": 1200,
+    "imageHeight": 630
   }
 }

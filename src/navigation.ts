@@ -24,6 +24,7 @@ export const headerData = {
       links: [
         { text: 'OEM & ODM', href: getPermalink('/grow/oem-odm') },
         { text: 'البيع بالجملة', href: getPermalink('/grow/wholesale') },
+        { text: 'حاسبة تكلفة الاستيراد', href: getPermalink('/import-cost-calculator') },
         { text: 'الدروبشيبينغ', href: getPermalink('/grow/dropshipping') },
         { text: 'شركاء القنوات', href: getPermalink('/grow/channel-partners') },
       ],
@@ -67,6 +68,7 @@ export const footerData = {
       links: [
         { text: 'OEM & ODM', href: getPermalink('/grow/oem-odm') },
         { text: 'البيع بالجملة', href: getPermalink('/grow/wholesale') },
+        { text: 'حاسبة تكلفة الاستيراد', href: getPermalink('/import-cost-calculator') },
         { text: 'الدروبشيبينغ', href: getPermalink('/grow/dropshipping') },
         { text: 'شركاء القنوات', href: getPermalink('/grow/channel-partners') },
       ],

@@ -2,6 +2,7 @@
 import catalogs from '~/data/b2b/catalogs.json';
 import Headline from '~/components/ui/Headline.astro';
 import Button from '~/components/ui/Button.astro';
+import BuyerResources from '~/components/widgets/BuyerResources.astro';
 import { whatsappUrl } from '~/utils/inquiry';
 const { brand } = Astro.props as { brand?: string };
 const names: Record<string, string> = {
@@ -17,6 +18,7 @@ const groups = brand ? catalogs.filter((group) => group.brand === brand) : catal
     title="اختر كتالوج مركبتك"
     subtitle="افتح ملف PDF مباشرة، ثم أرسل رقم المرجع واسم الكتالوج والكمية للتحقق من المطابقة والأسعار. أرقام الصفوف مراجع داخل الكتالوج وليست أرقام SKU موحّدة."
   />
+  <BuyerResources calculatorOnly />
   <div class="space-y-10">
     {
       groups.map((group) => (

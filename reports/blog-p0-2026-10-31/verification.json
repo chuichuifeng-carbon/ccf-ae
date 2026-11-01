@@ -1,6 +1,6 @@
 {
-  "posts": 3,
-  "rssItems": 3,
+  "posts": 4,
+  "rssItems": 4,
   "results": [
     {
       "topic": "AR-P0-001",
@@ -11,7 +11,7 @@
     {
       "topic": "AR-P0-002",
       "route": "/compare-wholesale-carbon-fiber-quotes",
-      "internalHtmlDestinations": 8,
+      "internalHtmlDestinations": 10,
       "status": "passed"
     }
   ]

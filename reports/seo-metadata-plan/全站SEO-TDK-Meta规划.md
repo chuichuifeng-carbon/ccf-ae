@@ -2,7 +2,7 @@
 
 当前车辆品牌范围：BMW、Mercedes-AMG、Porsche。已写入本地项目，尚未发布线上。历史审计不是当前页面范围。
 
-现有 43 个前台页面；38 页纳入站点地图，5 页排除。Meta Keywords 不输出；独立域名 canonical 自引用。
+现有 45 个前台页面；40 页纳入站点地图，5 页排除。Meta Keywords 不输出；独立域名 canonical 自引用。
 
 ## /
 
@@ -605,6 +605,34 @@
 | OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                             |
 | 图片         | /images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp                               |
 | 源文件       | src/data/post/compare-wholesale-carbon-fiber-quotes.md                                                                        |
+
+## /import-cost-calculator
+
+| 字段         | 当前值                                                                                                                                   |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | حاسبة تكلفة استيراد قطع الكربون وهامش الربح \| CCF                                                                                       |
+| Description  | قدّر تكلفة وصول قطع ألياف الكربون وربح إعادة البيع بالدولار. أدخل سعر المصنع والشحن والتكاليف الأخرى وقارن هامش الربح قبل طلب عرض توريد. |
+| H1           | حاسبة تكلفة استيراد قطع الكربون وهامش الربح                                                                                              |
+| Canonical    | https://amxnx.vip/import-cost-calculator                                                                                                 |
+| Robots       | index, follow, max-image-preview:large                                                                                                   |
+| Sitemap      | 纳入                                                                                                                                     |
+| OG / Twitter | 本页标题、描述与对应分享图；website / ar_AR / summary_large_image                                                                        |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                                    |
+| 源文件       | src/pages/import-cost-calculator.astro                                                                                                   |
+
+## /carbon-fiber-import-cost-profit-guide
+
+| 字段         | 当前值                                                                                                                                      |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | حساب تكلفة استيراد قطع الكربون وهامش الربح \| CCF                                                                                           |
+| Description  | تعلّم حساب تكلفة وصول قطع الكربون وربح بيعها بمثال رقمي، وميّز الهامش عن الزيادة على التكلفة. جرّب الحاسبة وحدّد البنود الناقصة قبل الشراء. |
+| H1           | كيف تحسب تكلفة استيراد قطع الكربون وهامش الربح قبل الطلب؟                                                                                   |
+| Canonical    | https://amxnx.vip/carbon-fiber-import-cost-profit-guide                                                                                     |
+| Robots       | index, follow, max-image-preview:large                                                                                                      |
+| Sitemap      | 纳入                                                                                                                                        |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                           |
+| 图片         | /images/import-cost-example.webp                                                                                                            |
+| 源文件       | src/data/post/carbon-fiber-import-cost-profit-guide.md                                                                                      |
 
 ## 维护与验证
 

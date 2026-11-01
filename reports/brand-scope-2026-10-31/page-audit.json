@@ -1,6 +1,6 @@
 {
   "allowedBrands": ["bmw", "mercedes-amg", "porsche"],
-  "pageCount": 43,
+  "pageCount": 45,
   "catalogEntries": 40,
   "selectedProductImages": 108,
   "removedPages": [
@@ -35,6 +35,13 @@
     {
       "route": "/blog",
       "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/carbon-fiber-import-cost-profit-guide",
+      "title": "حساب تكلفة استيراد قطع الكربون وهامش الربح | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -98,6 +105,13 @@
     {
       "route": "/grow",
       "title": "توريد قطع كربون للشركات: جملة وOEM ودروبشيبينغ | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/import-cost-calculator",
+      "title": "حاسبة تكلفة استيراد قطع الكربون وهامش الربح | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"

@@ -17,6 +17,10 @@ const clean = (text) =>
     .trim();
 const comparable = (text) => clean(text).replace(/[\s\u200e\u200f\u2066-\u2069]/g, '');
 const notes = {
+  '/carbon-fiber-import-cost-profit-guide':
+    '承接进口成本计算方法和毛利率/加价率区别的教育型搜索；以可复算示例、整单/单件口径、费用核对与工具互链帮助买家制定预算，不提供实时税率或利润保证。',
+  '/import-cost-calculator':
+    '承接到岸成本及毛利率估算意图；明确示例美元金额、单件/整单口径、公式和非实时运费税率边界，提供采购指南与WhatsApp入口。',
   '/': '首页承接中国制造商查询；首屏明确三品牌、企业买家与报价所需资料。与 wholesale 的批量采购任务分工。',
   '/products': '承接按零件类型选品；保留八类入口，与按车型选品页区分，补充目录、适配和批发内链。',
   '/vehicles': '承接按品牌和车型找碳纤维件；明确仅三品牌，补充阿拉伯语品牌表达及目录和适配下一步。',
@@ -82,6 +86,7 @@ const descriptions = new Set();
 const headings = new Set();
 const rows = [];
 for (const page of plan.pages) {
+  const baseline = before[page.route] || { title: null, description: null, h1: null };
   const html = fs.readFileSync(`dist/${page.file}`, 'utf8');
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] || html.match(/<body\b[^>]*>([\s\S]*?)<\/body>/)?.[1];
   assert.ok(main, `${page.route}: visible main content`);
@@ -147,9 +152,9 @@ for (const page of plan.pages) {
     focusKeyword: page.focusKeyword,
     supportingKeywords: page.supportingKeywords,
     assessmentCN: notes[page.route],
-    before: { title: before[page.route].title, description: before[page.route].description, h1: before[page.route].h1 },
+    before: baseline,
     after: { title: current.title, description: current.description, h1: current.h1 },
-    metadataChanged: ['title', 'description', 'h1'].some((key) => before[page.route][key] !== current[key]),
+    metadataChanged: ['title', 'description', 'h1'].some((key) => baseline[key] !== current[key]),
     bodyResourceLinks: guide?.links || [],
     headings: h2,
     mainWords: clean(main).split(/\s+/).length,
@@ -176,8 +181,7 @@ let report = '# 阿拉伯语站逐页 SEO 与搜索意图优化报告\n\n';
 report += `已复核全部 ${summary.reviewed} 个前台页面，修改 ${summary.metadataUpdated} 页的 Title、Description 或 H1，并为 ${summary.contextualResourceSections} 页补充采购指引和相关内链。保持 BMW、Mercedes-AMG、Porsche 范围及 WhatsApp 优先。\n\n`;
 report +=
   '## 结论与范围\n\n当前页面可以按“制造商 → 品牌/分类 → 具体产品或目录 → 采购核对 → WhatsApp 询价”的路径承接不同买家任务。服务页区分批发、定制、逐单履约和渠道合作；博客回答材料、适配与报价问题。Title、H1 与正文作语义对齐，而非要求字面完全一致。保留合适的政策、案例和文章标题，不为改动而改动。\n\n';
-report +=
-  '标题和描述无重复；每页一个 H1；38 页保持可索引及自引用 canonical，4 个薄归档和 404 共 5 页 noindex。目录/品牌页提供真实 PDF，产品页提供图片、参考资料和核对要点。没有虚构价格、库存、当地分支、搜索量或排名。\n\n';
+report += `标题和描述无重复；每页一个 H1；${summary.indexed} 页保持可索引及自引用 canonical，4 个薄归档和 404 共 5 页 noindex。目录/品牌页提供真实 PDF，产品页提供图片、参考资料和核对要点。没有虚构价格、库存、当地分支、搜索量或排名。\n\n`;
 report +=
   '新增四种供货模式比较表、逐单履约与渠道合作的 8 个采购问答、干碳湿碳对比表、26 个相关采购资源区块及 404 恢复入口。修正带尾斜杠路径的 ContactPage/AboutPage 类型判断，结构化数据描述同步页面 Meta，移除不使用的远程图片预连接。\n\n';
 report +=
@@ -191,7 +195,7 @@ for (const row of rows) {
 report +=
   '## 验证记录\n\n执行生产构建、Astro/ESLint/Prettier 检查，以及 SEO Meta、站内链接/资源、E-E-A-T 内容完整性、博客、三品牌范围和逐页意图一致性验证。浏览器截图与抽查结果另附；生成 HTML 的全页验证不等于每页逐屏视觉检查。尚未部署。\n';
 const browserFile = 'reports/seo-intent-2026-10-31/browser-mobile-audit.json';
-if (fs.existsSync(browserFile)) {
+if (fs.existsSync(browserFile) && read(browserFile).pages.length === rows.length) {
   const browserAudit = read(browserFile);
   assert.equal(browserAudit.pages.length, rows.length);
   assert.ok(browserAudit.pages.every((p) => !p.overflow && p.h1.length === 1));

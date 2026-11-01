@@ -1,12 +1,12 @@
 {
-  "pages": 43,
-  "indexed": 38,
-  "imagePlacements": 334,
-  "imageSitemapPages": 32,
-  "responsiveOriginals": 203,
+  "pages": 45,
+  "indexed": 40,
+  "imagePlacements": 345,
+  "imageSitemapPages": 33,
+  "responsiveOriginals": 204,
   "imageBytesComparison": {
-    "originalBytes": 13063123,
-    "width640Bytes": 5532866,
+    "originalBytes": 13092579,
+    "width640Bytes": 5543400,
     "reductionPercent": 58,
     "note": "Unique source images compared with their 640px versions; not measured total page transfer or Core Web Vitals."
   },
@@ -252,35 +252,35 @@
     {
       "route": "/blog",
       "index": true,
-      "imagePlacements": 3,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/dry-carbon-vs-wet-carbon",
       "index": true,
-      "imagePlacements": 3,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/category/adlh-almshtryn",
       "index": false,
-      "imagePlacements": 3,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/tag/aljmlh",
       "index": false,
-      "imagePlacements": 3,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/tag/altsnya",
       "index": false,
-      "imagePlacements": 2,
+      "imagePlacements": 3,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
@@ -301,14 +301,28 @@
     {
       "route": "/carbon-fiber-parts-fitment-check",
       "index": true,
-      "imagePlacements": 3,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/compare-wholesale-carbon-fiber-quotes",
       "index": true,
-      "imagePlacements": 3,
+      "imagePlacements": 4,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/import-cost-calculator",
+      "index": true,
+      "imagePlacements": 0,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/carbon-fiber-import-cost-profit-guide",
+      "index": true,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     }

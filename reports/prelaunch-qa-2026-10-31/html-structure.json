@@ -1,5 +1,5 @@
 {
-  "pages": 43,
+  "pages": 45,
   "forms": 0,
   "results": [
     {
@@ -340,6 +340,22 @@
     },
     {
       "route": "/compare-wholesale-carbon-fiber-quotes",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/import-cost-calculator",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/carbon-fiber-import-cost-profit-guide",
       "forms": 0,
       "html": "passed",
       "headPlacement": "passed",
