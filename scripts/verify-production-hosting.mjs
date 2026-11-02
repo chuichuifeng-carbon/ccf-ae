@@ -24,13 +24,28 @@ for (const page of plan.pages) {
   assert.equal(protectedLinks.length, all.length, `${page.route}: every mailto bypasses Cloudflare obfuscation`);
   mailto += all.length;
   if (page.route === '/' || /\.[a-z0-9]+$/i.test(page.route)) continue;
-  for (const alias of [`${page.route}/`, `${page.route}/index.html`, `${page.route}.html`]) {
+  assert.ok(!sources.has(`${page.route}/`), `Never reverse Pages' implicit folder redirect: ${page.route}`);
+  for (const alias of [`${page.route}/index.html`, `${page.route}.html`]) {
     assert.ok(
       rules.some(([from, to]) => from === alias && to === page.route),
       `Canonical alias: ${alias}`
     );
   }
   assert.ok(!sources.has(page.route), `Canonical URL must not redirect: ${page.route}`);
+  // Include Pages' implicit redirect, which Astro preview does not implement.
+  for (const start of [page.route, `${page.route}/`, `${page.route}/index.html`, `${page.route}.html`]) {
+    const visited = new Set();
+    let current = start;
+    while (true) {
+      assert.ok(!visited.has(current), `Hosting redirect cycle: ${start} at ${current}`);
+      visited.add(current);
+      const custom = rules.find(([from]) => from === current)?.[1];
+      const platform = current === page.route ? `${page.route}/` : undefined;
+      if (!custom && !platform) break;
+      current = custom || platform;
+    }
+    assert.equal(current, `${page.route}/`);
+  }
 }
 assert.ok(mailto > 0);
 assert.ok(!sources.has('/*'), 'Unknown URLs retain true 404s');

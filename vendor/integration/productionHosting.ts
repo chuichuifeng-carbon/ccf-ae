@@ -18,7 +18,10 @@ export default function productionHosting(): AstroIntegration {
         ];
         for (const route of Object.keys(pageSeo).sort()) {
           if (route === '/' || /\.[a-z0-9]+$/i.test(route)) continue;
-          rules.push(`${route}/ ${route} 301`, `${route}/index.html ${route} 301`, `${route}.html ${route} 301`);
+          // Pages normalizes folder/index.html assets from /route to /route/.
+          // Reversing that implicit redirect here creates an infinite 308 <-> 301 loop.
+          // Leave slash handling to the active host (Pages or Workers html_handling).
+          rules.push(`${route}/index.html ${route} 301`, `${route}.html ${route} 301`);
         }
         // These rules become reachable only after www is bound to this deployment with DNS/TLS.
         rules.push(
