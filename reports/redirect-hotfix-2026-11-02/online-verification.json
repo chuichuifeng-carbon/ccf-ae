@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-02T09:09:12.221Z",
+  "commit": "cc98341ee8b4353fe937c08f79d2476786d370d7",
+  "publishedPages": 45,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/"
+    },
+    {
+      "route": "/vehicles",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/vehicles/"
+    },
+    {
+      "route": "/products",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/"
+    },
+    {
+      "route": "/grow",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/grow/"
+    },
+    {
+      "route": "/catalogs",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/catalogs/"
+    },
+    {
+      "route": "/grow/wholesale",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/grow/wholesale/"
+    },
+    {
+      "route": "/grow/oem-odm",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/grow/oem-odm/"
+    },
+    {
+      "route": "/grow/dropshipping",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/grow/dropshipping/"
+    },
+    {
+      "route": "/grow/channel-partners",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/grow/channel-partners/"
+    },
+    {
+      "route": "/vehicles/bmw",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/vehicles/bmw/"
+    },
+    {
+      "route": "/products/front-lips-splitters",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/front-lips-splitters/"
+    },
+    {
+      "route": "/vehicles/porsche",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/vehicles/porsche/"
+    },
+    {
+      "route": "/vehicles/mercedes-amg",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/vehicles/mercedes-amg/"
+    },
+    {
+      "route": "/products/rear-diffusers",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/rear-diffusers/"
+    },
+    {
+      "route": "/products/side-skirts",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/side-skirts/"
+    },
+    {
+      "route": "/products/hoods",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/hoods/"
+    },
+    {
+      "route": "/products/spoilers-wings",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/spoilers-wings/"
+    },
+    {
+      "route": "/products/trunk-lids",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/trunk-lids/"
+    },
+    {
+      "route": "/products/grilles-air-intake",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/grilles-air-intake/"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style/"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style/"
+    },
+    {
+      "route": "/products/mirror-caps",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/mirror-caps/"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style/"
+    },
+    {
+      "route": "/cases",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/cases/"
+    },
+    {
+      "route": "/cases/canada-distributor-visit",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/cases/canada-distributor-visit/"
+    },
+    {
+      "route": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/products/bmw-g87-m2-carbon-fiber-hood/"
+    },
+    {
+      "route": "/cases/usa-oem-carbon-fiber",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/cases/usa-oem-carbon-fiber/"
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/about/"
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/contact/"
+    },
+    {
+      "route": "/faqs",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/faqs/"
+    },
+    {
+      "route": "/editorial-policy",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/editorial-policy/"
+    },
+    {
+      "route": "/return-refund-policy",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/return-refund-policy/"
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/privacy/"
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/blog/"
+    },
+    {
+      "route": "/dry-carbon-vs-wet-carbon",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/dry-carbon-vs-wet-carbon/"
+    },
+    {
+      "route": "/terms",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/terms/"
+    },
+    {
+      "route": "/category/adlh-almshtryn",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/category/adlh-almshtryn/"
+    },
+    {
+      "route": "/tag/aljmlh",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/tag/aljmlh/"
+    },
+    {
+      "route": "/tag/altsnya",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/tag/altsnya/"
+    },
+    {
+      "route": "/tag/alyaf-alkrbwn-aljaf",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/tag/alyaf-alkrbwn-aljaf/"
+    },
+    {
+      "route": "/404.html",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/404"
+    },
+    {
+      "route": "/compare-wholesale-carbon-fiber-quotes",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/compare-wholesale-carbon-fiber-quotes/"
+    },
+    {
+      "route": "/carbon-fiber-parts-fitment-check",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/carbon-fiber-parts-fitment-check/"
+    },
+    {
+      "route": "/import-cost-calculator",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/import-cost-calculator/"
+    },
+    {
+      "route": "/carbon-fiber-import-cost-profit-guide",
+      "status": 200,
+      "finalUrl": "https://amxnx.vip/carbon-fiber-import-cost-profit-guide/"
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "route": "/products/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "route": "/vehicles/bmw/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "route": "/grow/wholesale/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "route": "/import-cost-calculator/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "route": "/redirect-fix-missing-page",
+      "status": 404,
+      "location": null
+    }
+  ]
+}

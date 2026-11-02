@@ -35,12 +35,13 @@ for (const target of [
   '/carbon-fiber-parts-fitment-check',
 ])
   assert.ok(html.includes(`href="${target}"`));
-for (const file of [
-  'dist/blog/index.html',
-  'dist/rss.xml',
-  'dist/sitemap-0.xml',
-  'dist/import-cost-calculator/index.html',
-])
+const blogPages = fs
+  .readdirSync('dist/blog', { recursive: true })
+  .filter((file) => file.endsWith('.html'))
+  .map((file) => fs.readFileSync(`dist/blog/${file}`, 'utf8'))
+  .join('');
+assert.ok(blogPages.includes(article), 'Guide remains discoverable across blog pagination');
+for (const file of ['dist/rss.xml', 'dist/sitemap-0.xml', 'dist/import-cost-calculator/index.html'])
   assert.ok(fs.readFileSync(file, 'utf8').includes(article), `Guide discovery: ${file}`);
 assert.ok(html.includes('application/ld+json'));
 assert.equal(Math.round((154 / 599) * 100 * 10) / 10, 25.7);

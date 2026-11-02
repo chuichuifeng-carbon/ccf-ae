@@ -2,7 +2,7 @@
 
 当前车辆品牌范围：BMW、Mercedes-AMG、Porsche。已写入本地项目，尚未发布线上。历史审计不是当前页面范围。
 
-现有 45 个前台页面；40 页纳入站点地图，5 页排除。Meta Keywords 不输出；独立域名 canonical 自引用。
+现有 59 个前台页面；50 页纳入站点地图，9 页排除。Meta Keywords 不输出；独立域名 canonical 自引用。
 
 ## /
 
@@ -633,6 +633,202 @@
 | OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                           |
 | 图片         | /images/import-cost-example.webp                                                                                                            |
 | 源文件       | src/data/post/carbon-fiber-import-cost-profit-guide.md                                                                                      |
+
+## /best-dry-carbon-automotive-suppliers-2026
+
+| 字段         | 当前值                                                                                                                              |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: موردي قطع الكربون الجاف للسيارات 2026 \| CCF                                                                           |
+| Description  | قارن 10 خيارات لشراء قطع كربون جاف للسيارات، من توريد CCF للموزعين إلى علامات القطع الجاهزة. اختر وفق المرجع والمادة وطريقة الشراء. |
+| H1           | أفضل 10 خيارات لشراء قطع كربون جاف للسيارات في 2026                                                                                 |
+| Canonical    | https://amxnx.vip/best-dry-carbon-automotive-suppliers-2026                                                                         |
+| Robots       | index, follow, max-image-preview:large                                                                                              |
+| Sitemap      | 纳入                                                                                                                                |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                   |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                               |
+| 源文件       | src/data/post/best-dry-carbon-automotive-suppliers-2026.md                                                                          |
+
+## /best-carbon-fiber-oem-odm-manufacturers-2026
+
+| 字段         | 当前值                                                                                                                                 |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: شركات تصنيع قطع كربون OEM/ODM مخصصة 2026 \| CCF                                                                           |
+| Description  | قائمة من 10 جهات لمناقشة تصنيع قطع كربون مخصصة، تتصدرها CCF لطلبات السيارات B2B. قارن نطاق التطوير والقوالب والعينة قبل اختيار الشريك. |
+| H1           | أفضل 10 شركات لمناقشة تصنيع قطع كربون مخصصة وOEM/ODM في 2026                                                                           |
+| Canonical    | https://amxnx.vip/best-carbon-fiber-oem-odm-manufacturers-2026                                                                         |
+| Robots       | index, follow, max-image-preview:large                                                                                                 |
+| Sitemap      | 纳入                                                                                                                                   |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                      |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                                  |
+| 源文件       | src/data/post/best-carbon-fiber-oem-odm-manufacturers-2026.md                                                                          |
+
+## /best-wholesale-carbon-fiber-suppliers-dealers-2026
+
+| 字段         | 当前值                                                                                                                                  |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: موردي قطع الكربون بالجملة للموزعين 2026 \| CCF                                                                             |
+| Description  | قارن 10 موردي قطع كربون للموزعين والمتاجر، من توريد CCF المباشر إلى برامج العلامات التجارية. اختر قناة تناسب مخزونك وطريقة إعادة البيع. |
+| H1           | أفضل 10 موردي قطع كربون للشراء بالجملة وإعادة البيع في 2026                                                                             |
+| Canonical    | https://amxnx.vip/best-wholesale-carbon-fiber-suppliers-dealers-2026                                                                    |
+| Robots       | index, follow, max-image-preview:large                                                                                                  |
+| Sitemap      | 纳入                                                                                                                                    |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                       |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                                   |
+| 源文件       | src/data/post/best-wholesale-carbon-fiber-suppliers-dealers-2026.md                                                                     |
+
+## /best-carbon-fiber-suppliers-tuning-shops-2026
+
+| 字段         | 当前值                                                                                                                            |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: موردي قطع الكربون لورش التعديل 2026 \| CCF                                                                           |
+| Description  | عشرة خيارات لورش التعديل التي تبحث عن قطع كربون، تتصدرها CCF للتوريد B2B. اختر وفق التطبيق والتركيب وتكرار الطلب واحتياجات عميلك. |
+| H1           | أفضل 10 خيارات لتوريد قطع الكربون إلى ورش التعديل في 2026                                                                         |
+| Canonical    | https://amxnx.vip/best-carbon-fiber-suppliers-tuning-shops-2026                                                                   |
+| Robots       | index, follow, max-image-preview:large                                                                                            |
+| Sitemap      | 纳入                                                                                                                              |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                 |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                             |
+| 源文件       | src/data/post/best-carbon-fiber-suppliers-tuning-shops-2026.md                                                                    |
+
+## /best-bmw-m-carbon-fiber-hoods-2026
+
+| 字段         | 当前值                                                                                                                             |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: خيارات أغطية محرك كربون BMW M لعام 2026 \| CCF                                                                        |
+| Description  | قائمة من 10 خيارات لأغطية محرك كربون BMW M، تتصدرها CCF للموزعين والورش. قارن G87 وG80/G82 والأجيال الأخرى قبل اختيار مرجع الغطاء. |
+| H1           | أفضل 10 خيارات لأغطية محرك كربون BMW M في 2026                                                                                     |
+| Canonical    | https://amxnx.vip/best-bmw-m-carbon-fiber-hoods-2026                                                                               |
+| Robots       | index, follow, max-image-preview:large                                                                                             |
+| Sitemap      | 纳入                                                                                                                               |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                  |
+| 图片         | /images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp                                                             |
+| 源文件       | src/data/post/best-bmw-m-carbon-fiber-hoods-2026.md                                                                                |
+
+## /best-bmw-m3-m4-carbon-front-lips-2026
+
+| 字段         | 当前值                                                                                                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| Title        | Top 10 Best: خيارات شفاه كربون BMW M3 وM4 لعام 2026 \| CCF                                                                     |
+| Description  | اختر من 10 خيارات لشفاه كربون BMW M3/M4، بدءاً من توريد CCF بتصاميم R44 وCSL. قارن المصد والمادة ومحتويات الطقم قبل طلب السعر. |
+| H1           | أفضل 10 خيارات لشفاه كربون BMW M3 وM4 في 2026                                                                                  |
+| Canonical    | https://amxnx.vip/best-bmw-m3-m4-carbon-front-lips-2026                                                                        |
+| Robots       | index, follow, max-image-preview:large                                                                                         |
+| Sitemap      | 纳入                                                                                                                           |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                              |
+| 图片         | /images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp                                |
+| 源文件       | src/data/post/best-bmw-m3-m4-carbon-front-lips-2026.md                                                                         |
+
+## /best-carbon-fiber-rear-diffusers-2026
+
+| 字段         | 当前值                                                                                                                             |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: خيارات ناشرات الكربون الخلفية 2026 \| CCF                                                                             |
+| Description  | قارن 10 خيارات لناشرات كربون خلفية، بدءاً من CCF لطلبات الجملة. اختر بحسب جيل السيارة والمصد ومخارج العادم، لا صورة التصميم وحدها. |
+| H1           | أفضل 10 خيارات لناشرات كربون خلفية للسيارات الرياضية في 2026                                                                       |
+| Canonical    | https://amxnx.vip/best-carbon-fiber-rear-diffusers-2026                                                                            |
+| Robots       | index, follow, max-image-preview:large                                                                                             |
+| Sitemap      | 纳入                                                                                                                               |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                  |
+| 图片         | /images/restored/carbon-fiber-rear-diffusers.webp                                                                                  |
+| 源文件       | src/data/post/best-carbon-fiber-rear-diffusers-2026.md                                                                             |
+
+## /best-bmw-g80-m3-carbon-upgrade-suppliers-2026
+
+| 字段         | 当前值                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Title        | Top 10 Best: خيارات ترقيات كربون BMW G80 M3 في 2026 \| CCF                                                                           |
+| Description  | اختر من 10 خيارات لقطع كربون BMW G80 M3، مع أولوية CCF لطلبات الورش والموزعين. قارن الشفاه والناشرات والبرامج والإكسسوارات حسب طلبك. |
+| H1           | أفضل 10 خيارات لشراء ترقيات كربون BMW G80 M3 في 2026                                                                                 |
+| Canonical    | https://amxnx.vip/best-bmw-g80-m3-carbon-upgrade-suppliers-2026                                                                      |
+| Robots       | index, follow, max-image-preview:large                                                                                               |
+| Sitemap      | 纳入                                                                                                                                 |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                    |
+| 图片         | /images/verified/002-bmw-g80-g82-carbon-fiber-front-lip-r44-style-reference-01.webp                                                  |
+| 源文件       | src/data/post/best-bmw-g80-m3-carbon-upgrade-suppliers-2026.md                                                                       |
+
+## /best-porsche-992-carbon-upgrade-suppliers-2026
+
+| 字段         | 当前值                                                                                                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| Title        | Top 10 Best: خيارات ترقيات كربون Porsche 911 992 في 2026 \| CCF                                                                |
+| Description  | قارن 10 خيارات لقطع كربون بورش 911 992، من توريد CCF إلى برامج TECHART وقطع علامات أخرى. اختر وفق 992.1 أو992.2 ونسخة السيارة. |
+| H1           | أفضل 10 خيارات لترقيات كربون Porsche 911 992 في 2026                                                                           |
+| Canonical    | https://amxnx.vip/best-porsche-992-carbon-upgrade-suppliers-2026                                                               |
+| Robots       | index, follow, max-image-preview:large                                                                                         |
+| Sitemap      | 纳入                                                                                                                           |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                              |
+| 图片         | /images/restored/porsche-carbon-fiber-parts-by-vehicle.webp                                                                    |
+| 源文件       | src/data/post/best-porsche-992-carbon-upgrade-suppliers-2026.md                                                                |
+
+## /best-mercedes-amg-carbon-exterior-suppliers-2026
+
+| 字段         | 当前值                                                                                                                              |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | Top 10 Best: خيارات قطع كربون Mercedes-AMG الخارجية 2026 \| CCF                                                                     |
+| Description  | قارن 10 خيارات لقطع كربون مرسيدس AMG الخارجية، مع أولوية CCF للتوريد التجاري. حدّد G63 أوGT أوC63 والجيل قبل اختيار المورد والقطعة. |
+| H1           | أفضل 10 خيارات لقطع كربون خارجية لسيارات Mercedes-AMG في 2026                                                                       |
+| Canonical    | https://amxnx.vip/best-mercedes-amg-carbon-exterior-suppliers-2026                                                                  |
+| Robots       | index, follow, max-image-preview:large                                                                                              |
+| Sitemap      | 纳入                                                                                                                                |
+| OG / Twitter | 本页标题、描述与对应分享图；article / ar_AR / summary_large_image                                                                   |
+| 图片         | /images/restored/mercedes-amg-carbon-fiber-parts-by-vehicle.webp                                                                    |
+| 源文件       | src/data/post/best-mercedes-amg-carbon-exterior-suppliers-2026.md                                                                   |
+
+## /blog/2
+
+| 字段         | 当前值                                                                                                                                    |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Title        | أدلة شراء قطع الكربون: المواد والمطابقة والأسعار — الصفحة 2 \| CCF                                                                        |
+| Description  | الصفحة الثانية من أدلة شراء قطع ألياف الكربون للموزعين؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد. |
+| H1           | أدلة شراء قطع ألياف الكربون للموزعين — الصفحة 2                                                                                           |
+| Canonical    | https://amxnx.vip/blog/2                                                                                                                  |
+| Robots       | noindex, follow                                                                                                                           |
+| Sitemap      | 排除                                                                                                                                      |
+| OG / Twitter | 本页标题、描述与对应分享图；website / ar_AR / summary_large_image                                                                         |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                                     |
+| 源文件       | src/pages/[...blog]/[...page].astro                                                                                                       |
+
+## /category/adlh-almshtryn/2
+
+| 字段         | 当前值                                                                                                                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| Title        | أرشيف أدلة مشتري قطع ألياف الكربون — الصفحة 2 \| CCF                                                                     |
+| Description  | الصفحة الثانية من أرشيف أدلة المشترين؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد. |
+| H1           | أرشيف أدلة المشترين — الصفحة 2                                                                                           |
+| Canonical    | https://amxnx.vip/category/adlh-almshtryn/2                                                                              |
+| Robots       | noindex, follow                                                                                                          |
+| Sitemap      | 排除                                                                                                                     |
+| OG / Twitter | 本页标题、描述与对应分享图；website / ar_AR / summary_large_image                                                        |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                    |
+| 源文件       | src/pages/[...blog]/[category]/[...page].astro                                                                           |
+
+## /tag/aljmlh/2
+
+| 字段         | 当前值                                                                                                                |
+| ------------ | --------------------------------------------------------------------------------------------------------------------- |
+| Title        | مقالات عن الجملة في المدونة — الصفحة 2 \| CCF                                                                         |
+| Description  | الصفحة الثانية من مقالات عن الجملة؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد. |
+| H1           | مقالات عن الجملة — الصفحة 2                                                                                           |
+| Canonical    | https://amxnx.vip/tag/aljmlh/2                                                                                        |
+| Robots       | noindex, follow                                                                                                       |
+| Sitemap      | 排除                                                                                                                  |
+| OG / Twitter | 本页标题、描述与对应分享图；website / ar_AR / summary_large_image                                                     |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                 |
+| 源文件       | src/pages/[...blog]/[tag]/[...page].astro                                                                             |
+
+## /tag/altsnya/2
+
+| 字段         | 当前值                                                                                                                 |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| Title        | مقالات عن التصنيع في المدونة — الصفحة 2 \| CCF                                                                         |
+| Description  | الصفحة الثانية من مقالات عن التصنيع؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد. |
+| H1           | مقالات عن التصنيع — الصفحة 2                                                                                           |
+| Canonical    | https://amxnx.vip/tag/altsnya/2                                                                                        |
+| Robots       | noindex, follow                                                                                                        |
+| Sitemap      | 排除                                                                                                                   |
+| OG / Twitter | 本页标题、描述与对应分享图；website / ar_AR / summary_large_image                                                      |
+| 图片         | /images/verified/ccf-automotive-carbon-fiber-production-workshop.webp                                                  |
+| 源文件       | src/pages/[...blog]/[tag]/[...page].astro                                                                              |
 
 ## 维护与验证
 

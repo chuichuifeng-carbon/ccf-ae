@@ -23,6 +23,7 @@
     "check:analytics": "node scripts/verify-analytics.mjs",
     "check:calculator": "node scripts/verify-import-calculator.mjs",
     "check:cost-content": "node scripts/verify-cost-content.mjs",
+    "check:listicles": "node scripts/verify-listicle-batch.mjs",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w ."

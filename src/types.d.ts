@@ -19,6 +19,7 @@ export interface Post {
   image?: ImageMetadata | string;
   /** Alternative text for the cover image. */
   imageAlt?: string;
+  listItems?: string[];
   imageLink?: string;
 
   category?: Taxonomy;

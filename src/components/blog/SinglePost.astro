@@ -116,10 +116,14 @@ const Cover = post.imageLink ? 'a' : 'div';
     </div>
     <aside class="max-w-3xl mx-auto px-6 mt-8 text-sm text-muted">
       <p>
-        تنشر CCF هذا الدليل لمساعدة مشتري الأعمال. مصادر المواصفات مذكورة في المحتوى؛ المقال ليس تقرير اختبار للمنتج. <a
+        {
+          !post.listItems?.length &&
+            'تنشر CCF هذا الدليل لمساعدة مشتري الأعمال. مصادر المواصفات مذكورة في المحتوى؛ المقال ليس تقرير اختبار للمنتج. '
+        }
+        <a class="underline" href="/editorial-policy">منهج المحتوى والمصادر</a> · <a
           class="underline"
-          href="/editorial-policy">منهج المحتوى والمصادر</a
-        > · <a class="underline" href="mailto:info@ccfrp.com?subject=Content%20correction">الإبلاغ عن تصحيح</a>
+          href="mailto:info@ccfrp.com?subject=Content%20correction">الإبلاغ عن تصحيح</a
+        >
       </p>
     </aside>
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">

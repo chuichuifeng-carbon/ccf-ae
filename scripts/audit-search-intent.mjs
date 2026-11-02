@@ -82,6 +82,15 @@ for (const [slug, note] of details)
   notes[`/products/${slug}`] = `补齐具体车型与部件/设计的长尾意图：${note} 增加返回分类比较与材料/适配内链。`;
 
 const titles = new Set();
+if (fs.existsSync('reports/listicles-2026-11-02/registry.json')) {
+  for (const post of read('reports/listicles-2026-11-02/registry.json'))
+    notes[post.route] =
+      `${post.intentCN}；10项榜单，CCF为首项，区分企业采购渠道和具体产品。其他公司为纯文本，未虚构背书。`;
+}
+for (const page of plan.pages) {
+  if (/\/(?:blog|category\/[^/]+|tag\/[^/]+)\/\d+$/.test(page.route))
+    notes[page.route] = '分页承接继续浏览文章的导航意图；独立标题/H1/self-canonical，保持noindex，不与专题文章竞争。';
+}
 const descriptions = new Set();
 const headings = new Set();
 const rows = [];

@@ -21,15 +21,21 @@ const rtl = I18N.textDirection === 'rtl';
   (prevUrl || nextUrl) && (
     <div class="container flex">
       <div class="flex flex-row mx-auto container justify-between">
-        <Button variant="tertiary" class={`md:px-3 px-3 me-2 ${!prevUrl ? 'invisible' : ''}`} href={prevUrl}>
-          <Icon name={rtl ? 'tabler:chevron-right' : 'tabler:chevron-left'} class="w-6 h-6" />
-          <p class="ms-2">{prevText}</p>
-        </Button>
+        {prevUrl ? (
+          <Button variant="tertiary" class="md:px-3 px-3 me-2" href={prevUrl}>
+            <Icon name={rtl ? 'tabler:chevron-right' : 'tabler:chevron-left'} class="w-6 h-6" />
+            <p class="ms-2">{prevText}</p>
+          </Button>
+        ) : (
+          <span aria-hidden="true" />
+        )}
 
-        <Button variant="tertiary" class={`md:px-3 px-3 ${!nextUrl ? 'invisible' : ''}`} href={nextUrl}>
-          <span class="me-2">{nextText}</span>
-          <Icon name={rtl ? 'tabler:chevron-left' : 'tabler:chevron-right'} class="w-6 h-6" />
-        </Button>
+        {nextUrl && (
+          <Button variant="tertiary" class="md:px-3 px-3" href={nextUrl}>
+            <span class="me-2">{nextText}</span>
+            <Icon name={rtl ? 'tabler:chevron-left' : 'tabler:chevron-right'} class="w-6 h-6" />
+          </Button>
+        )}
       </div>
     </div>
   )

@@ -60,6 +60,7 @@ const postCollection = defineCollection({
     /** Alternative text for the cover image. Leave empty for decorative stock photos. */
     imageAlt: z.string().optional(),
     imageLink: z.string().optional(),
+    listItems: z.array(z.string()).optional(),
 
     category: z.string().optional(),
     tags: z.array(z.string()).optional(),

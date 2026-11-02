@@ -8,6 +8,11 @@ assert.ok(posts.length >= 3);
 const rss = fs.readFileSync('dist/rss.xml', 'utf8');
 assert.equal((rss.match(/<item>/g) || []).length, posts.length);
 const results = [];
+const blogPages = fs
+  .readdirSync('dist/blog', { recursive: true })
+  .filter((file) => file.endsWith('.html'))
+  .map((file) => fs.readFileSync(`dist/blog/${file}`, 'utf8'))
+  .join('');
 for (const topic of registry.topics) {
   const text = fs.readFileSync(topic.file, 'utf8');
   const parts = text.split(/^---\s*$/m);
@@ -32,7 +37,7 @@ for (const topic of registry.topics) {
   assert.ok(!/\.pdf|\[|\]|_{2,}/.test(message));
   assert.ok(html.includes(`href="${data.imageLink}"`));
   assert.ok(rss.includes(topic.route));
-  assert.ok(fs.readFileSync('dist/blog/index.html', 'utf8').includes(topic.route));
+  assert.ok(blogPages.includes(topic.route));
   assert.ok(fs.readFileSync('dist/dry-carbon-vs-wet-carbon/index.html', 'utf8').includes(topic.route));
   const upstream = topic.id === 'AR-P0-001' ? 'dist/vehicles/bmw/index.html' : 'dist/grow/wholesale/index.html';
   assert.ok(fs.readFileSync(upstream, 'utf8').includes(topic.route));

@@ -86,6 +86,20 @@ const articleSchema = {
   ...(post.category ? { articleSection: post.category.title } : {}),
   ...(post.tags?.length ? { keywords: post.tags.map((tag) => tag.title).join(', ') } : {}),
   mainEntityOfPage: String(url),
+  ...(post.listItems?.length
+    ? {
+        mainEntity: {
+          '@type': 'ItemList',
+          name: post.title,
+          numberOfItems: post.listItems.length,
+          itemListElement: post.listItems.map((name, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name,
+          })),
+        },
+      }
+    : {}),
 };
 
 const breadcrumbs = [
