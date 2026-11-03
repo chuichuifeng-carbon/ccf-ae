@@ -54,6 +54,9 @@ export interface MetaData {
 
   description?: string;
 
+  /** Arabic or English keywords for `<meta name="keywords">`. Optional. */
+  keywords?: string[] | string;
+
   openGraph?: MetaDataOpenGraph;
   twitter?: MetaDataTwitter;
 }

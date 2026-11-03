@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-03",
+  "scope": "Static audit of the current local working tree",
+  "builtPages": 120,
+  "productPages": 61,
+  "oldDetailRoutes": [
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "/products/bmw-g87-m2-carbon-fiber-hood"
+  ],
+  "missingOldDetails": [],
+  "planPagesMissingFromBuild": [],
+  "productDuplicateTitles": [],
+  "productDuplicateH1": [],
+  "productDuplicateDescriptions": [],
+  "productGenericTitles": [],
+  "sourceTruncatedDescriptions": 0,
+  "productTitlesOverriddenByLegacySeo": [],
+  "productCountMissingSitemap": 0,
+  "productsAbsentFromOwnCategory": [],
+  "productsWithoutNonProductIncoming": [],
+  "h1Errors": [],
+  "canonicalErrors": [],
+  "forms": 0,
+  "missingImagePlacements": 0,
+  "invalidSchemas": [],
+  "escapedBdiProducts": 0,
+  "productDuplicateOrganizations": 0,
+  "brokenDestinations": []
+}

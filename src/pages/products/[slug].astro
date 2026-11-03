@@ -1,132 +1,273 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import SourceGallery from '~/components/widgets/SourceGallery.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
 import Button from '~/components/ui/Button.astro';
-import { featuredProducts } from '~/data/b2b/featured';
-import images from '~/data/b2b/product-images.json';
+import StructuredData from '~/components/common/StructuredData.astro';
+import { allProducts, getRelatedProducts } from '~/data/b2b/all-products';
+import { SITE } from 'astrowind:config';
+import { getCanonical } from '~/utils/permalinks';
 import { whatsappUrl } from '~/utils/inquiry';
+import { isolateLatin } from '~/utils/bidi';
 export function getStaticPaths() {
-  return featuredProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+  return allProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
 }
 const { product } = Astro.props;
-const original = `https://ccfrp.com/${product.slug}/`;
-const photo = (images as Record<string, { image: string }>)[original];
-const catalog = `https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-g80-m4-g82-carbon-fiber-parts-catalog.pdf#page=${product.page}`;
+const related = getRelatedProducts(product, 4);
+const canonical = String(getCanonical(`/products/${product.slug}`));
+const photo = product.images[0].lg;
+const categoryUrl = `/products/${product.categorySlug}`;
+const metadata = {
+  title: product.seoTitle,
+  description: product.seoDescription,
+  ignoreTitleTemplate: true,
+  canonical,
+  openGraph: { images: [{ url: photo.url, width: photo.width, height: photo.height }] },
+};
+const faq = [
+  { q: 'كيف أتأكد من المطابقة؟', a: `${product.checks[0]} ${product.checks[1]}` },
+  {
+    q: 'ما المادة ومحتويات التوريد؟',
+    a: 'اطلب تأكيد بنية الكربون والتشطيب ووحدة البيع والأقسام والمثبتات المشمولة للمرجع نفسه. صور المركبة قد تعرض إضافات لا تدخل في الطلب.',
+  },
+  {
+    q: 'كيف أطلب سعر التوريد؟',
+    a: 'أرسل اسم القطعة وسنة المركبة وصور الجزء الحالي والكمية وبلد ومدينة التسليم. تُؤكّد الكمية الدنيا والتكلفة ومدة التجهيز والشحن وفق الطلب.',
+  },
+  {
+    q: 'ما الضمان وشروط الإرجاع؟',
+    a: 'تطبّق سياسة ما بعد البيع والشروط المؤكدة للطلب. فترة الإبلاغ عن التلف لا تعني حق إرجاع تلقائياً؛ راجع سياسة الضمان والإرجاع قبل الشراء.',
+  },
+];
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    '@id': `${canonical}#product`,
+    name: product.title,
+    description: product.description,
+    url: canonical,
+    image: product.images.map((image) => new URL(image.lg.url, SITE.site).toString()),
+    brand: { '@type': 'Brand', name: 'CCF' },
+    manufacturer: { '@id': `${SITE.site}/#organization` },
+    category: product.categoryAr,
+    mainEntityOfPage: { '@id': `${canonical}#webpage` },
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'مرجع المركبة؛ المطابقة تحتاج تأكيداً',
+        value: product.chassisCodes.join(' / '),
+      },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${canonical}#webpage`,
+    name: product.title,
+    url: canonical,
+    inLanguage: 'ar',
+    isPartOf: { '@id': `${SITE.site}/#website` },
+    publisher: { '@id': `${SITE.site}/#organization` },
+    mainEntity: { '@id': `${canonical}#product` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: SITE.site },
+      { '@type': 'ListItem', position: 2, name: 'المنتجات', item: `${SITE.site}/products` },
+      { '@type': 'ListItem', position: 3, name: product.categoryAr, item: `${SITE.site}${categoryUrl}` },
+      { '@type': 'ListItem', position: 4, name: product.title, item: canonical },
+    ],
+  },
+];
 ---
 
-<PageLayout
-  metadata={{ title: product.title, description: product.description, openGraph: { images: [{ url: photo.image }] } }}
->
-  <HeroText
-    title={product.title}
-    tagline="تفاصيل المنتج · توريد B2B"
-    subtitle={product.description}
-    callToAction={{
-      text: 'اطلب سعر هذا المنتج عبر واتساب',
-      href: whatsappUrl(product.title, original),
-      target: '_blank',
-      icon: 'tabler:brand-whatsapp',
-    }}
-    callToAction2={{ text: 'البريد وبيانات التواصل', href: '/contact' }}
-  />
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10 grid gap-10 md:grid-cols-2">
-    <a href={photo.image} target="_blank" rel="noopener"
-      ><img
-        src={photo.image}
-        alt={product.title}
-        width="900"
-        height="750"
-        fetchpriority="high"
-        class="w-full rounded-2xl bg-white object-contain"
-      /></a
-    >
-    <div class="space-y-5">
-      <h2 class="text-2xl font-bold">المواصفات ومراجعة المطابقة</h2>
-      <p>تطبيق المركبة المنشور: <bdi dir="ltr">{product.model}</bdi></p>
-      {
-        product.rows.length > 0 && (
-          <div class="overflow-x-auto">
-            <>
-              <table class="w-full text-start border-collapse">
-                <>
-                  <caption class="text-start text-sm text-muted mb-3">مراجع الكتالوج — ليست أرقام SKU للمصنع</caption>
-                  <thead>
-                    <tr>
-                      {['رقم المرجع', 'التطبيق المدرج', 'تسمية المادة'].map((label) => (
-                        <th class="text-start p-3 border-b border-gray-300 dark:border-slate-600">{label}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {product.rows.map((row) => (
-                      <tr>
-                        {row.map((value) => (
-                          <td class="p-3 border-b border-gray-200 dark:border-slate-700">
-                            <bdi dir="ltr">{value}</bdi>
-                          </td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </>
-              </table>
-              <p class="mt-3 text-sm text-muted">
-                DCF تسمية واردة في الكتالوج؛ أكّد بنية المادة المطلوبة في عرض السعر.
-              </p>
-            </>
-          </div>
-        )
-      }
-      <ul class="list-disc ps-5 space-y-3">{product.checks.map((check) => <li>{check}</li>)}</ul>
-      {
-        product.page > 0 && (
-          <Button
-            href={catalog}
-            target="_blank"
-            text={`عرض صفحة ${product.page} من الكتالوج`}
-            icon="tabler:file-type-pdf"
-          />
-        )
-      }
-      <p class="text-sm text-muted">
-        صور المركبة قد تعرض تجهيزات إضافية. اتفق على المادة والتشطيب ومحتويات التوريد والكمية والوجهة قبل تأكيد الطلب.
-      </p>
-      <a href={original} target="_blank" rel="noopener" class="text-primary underline"
-        >صور إضافية والمصدر الأصلي على ccfrp.com ↗</a
+<PageLayout metadata={metadata} seoSchema={false} breadcrumbSchema={false}>
+  <StructuredData slot="head" schema={schemas} />
+  <nav aria-label="مسار التنقل" class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-sm text-muted flex flex-wrap gap-2">
+    <a href="/">الرئيسية</a><span aria-hidden="true">/</span><a href="/products">المنتجات</a><span aria-hidden="true"
+      >/</span
+    ><a href={categoryUrl}>{product.categoryAr}</a>
+  </nav>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12 grid gap-8 lg:grid-cols-2 items-start">
+    <div>
+      <a
+        href={photo.url}
+        target="_blank"
+        rel="noopener"
+        aria-label="عرض الصورة بالحجم الكامل"
+        class="block rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-black"
       >
+        <img
+          src={photo.url}
+          alt={product.title}
+          width={photo.width}
+          height={photo.height}
+          loading="eager"
+          fetchpriority="high"
+          sizes="(max-width: 1023px) 100vw, 50vw"
+          class="w-full aspect-square object-contain"
+        />
+      </a>
+      <p class="text-sm text-muted mt-3">اضغط على الصورة لتكبيرها. قد تظهر إضافات غير مشمولة في طلب القطعة.</p>
     </div>
-  </section>
-  <SourceGallery productSlug={product.slug} />
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-8">
-    <div class="rounded-2xl border border-gray-200 dark:border-slate-700 p-6 space-y-3">
-      <h2 class="text-xl font-bold">المصدر ومسؤولية المعلومات</h2>
-      <p>
-        الجهة الناشرة: <a class="text-primary underline" href="/about#publisher">CCF</a>. تعتمد معلومات هذه الصفحة
-        وصورتها على صفحة المنتج الأصلية المنشورة على ccfrp.com{
-          product.page > 0 ? ` ومرجع الكتالوج في الصفحة ${product.page}` : ''
-        }.
-      </p>
-      <p class="text-sm text-muted">
-        آخر تحقق من المصدر المنشور: <time datetime="2026-10-30">30 أكتوبر 2026</time>. هذا تاريخ فحص المصدر، وليس فحص
-        قطعة أو تأكيداً للمخزون. لا تُعرض في هذه الصفحة نتائج اختبار مستقل للوزن أو القوة.
-      </p>
-      <div class="flex flex-wrap gap-4 text-primary underline">
-        <a href="/editorial-policy">منهج المصادر والتصحيحات</a><a href="/return-refund-policy"
-          >الضمان ومعالجة المطالبات</a
-        ><a href="mailto:info@ccfrp.com?subject=Product%20information%20correction">الإبلاغ عن اختلاف في المعلومات</a>
+    <div class="space-y-5">
+      <p class="text-primary font-semibold">{product.categoryAr} · توريد للموزعين وورش التعديل</p>
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight" set:html={isolateLatin(product.title)} />
+      <p class="text-lg text-muted" set:html={isolateLatin(product.description)} />
+      <div class="flex flex-wrap gap-3">
+        <Button
+          href={whatsappUrl(product.title, canonical)}
+          target="_blank"
+          text="أرسل صور سيارتك واطلب سعر القطعة"
+          icon="tabler:brand-whatsapp"
+        /><Button href="/contact" variant="secondary" text="تواصل مع المبيعات" />
+      </div>
+      <p class="text-sm text-muted">السعر والتوفر وموعد التجهيز تُؤكّد حسب المرجع والكمية ووجهة الشحن.</p>
+      <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
+        <h2 class="font-bold mb-2">تحقّق من المرجع قبل الطلب</h2>
+        <p class="text-sm text-muted mb-3">
+          تطبيق المركبة مرجع للاختيار، والمطابقة النهائية تُؤكّد بصور السيارة وتجهيزاتها.
+        </p>
+        <table class="w-full text-sm text-start">
+          <tbody
+            >{
+              product.specs.map(([label, value]) => (
+                <tr>
+                  <>
+                    <th class="text-start py-2 pe-3 border-b border-gray-200 dark:border-slate-700 font-medium">
+                      {label}
+                    </th>
+                    <td class="py-2 border-b border-gray-200 dark:border-slate-700" set:html={isolateLatin(value)} />
+                  </>
+                </tr>
+              ))
+            }</tbody
+          >
+        </table>
       </div>
     </div>
   </section>
-
-  <nav
-    aria-label="روابط توريد ذات صلة"
-    class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex flex-wrap gap-5 text-primary underline"
-  >
-    <a href={`/products/${product.category}`}>{product.categoryName}</a><a href="/vehicles/bmw">كتالوجات BMW</a><a
-      href="/grow/wholesale">التوريد بالجملة</a
-    ><a href="/grow/oem-odm">تطوير OEM/ODM</a><a href="/catalogs">جميع الكتالوجات</a>
-  </nav>
-  <FeaturedProducts />
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <h2 class="text-2xl font-bold mb-4">المطابقة ومحتويات التوريد</h2>
+    <ul class="list-disc ps-6 space-y-3">{product.checks.map((check) => <li set:html={isolateLatin(check)} />)}</ul>
+    <p class="mt-4 text-muted">
+      يوصى بالتركيب لدى فني مختص. قد يلزم ضبط أو تجهيز حسب السيارة والقطعة؛ لا تعتمد وعداً بالتركيب دون تعديل قبل تأكيد
+      المرجع.
+    </p>
+  </section>
+  {
+    product.images.length > 1 && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <h2 class="text-2xl font-bold mb-5">صور المنتج وتفاصيله</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {product.images.slice(1).map((image, i) => (
+            <a
+              href={image.lg.url}
+              target="_blank"
+              rel="noopener"
+              aria-label={`عرض صورة المنتج ${i + 2} بالحجم الكامل`}
+              class="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-black"
+            >
+              <img
+                src={image.md.url}
+                alt={`${product.title} — صورة ${i + 2}`}
+                width={image.md.width}
+                height={image.md.height}
+                loading="lazy"
+                sizes="(max-width: 767px) 50vw, 25vw"
+                class="w-full aspect-square object-contain"
+              />
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <h2 class="text-2xl font-bold mb-5">أسئلة المشتري قبل التأكيد</h2>
+    <div class="space-y-3">
+      {
+        faq.map((entry) => (
+          <details class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
+            <>
+              <summary class="font-semibold cursor-pointer">{entry.q}</summary>
+              <p class="text-muted pt-3" set:html={isolateLatin(entry.a)} />
+            </>
+          </details>
+        ))
+      }
+    </div>
+    <a href="/return-refund-policy" class="inline-block mt-4 text-primary underline">سياسة الضمان والإرجاع والاسترداد</a
+    >
+  </section>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <h2 class="text-2xl font-bold mb-5">جهّز طلباً أوضح قبل مقارنة السعر</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <a
+        href="/carbon-fiber-parts-fitment-check"
+        class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
+        >ما الصور وبيانات المركبة التي تساعد على تأكيد المطابقة؟</a
+      >
+      <a
+        href="/dry-carbon-vs-wet-carbon"
+        class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
+        >كيف تراجع مادة الكربون الجاف والرطب للمرجع المطلوب؟</a
+      >
+      <a
+        href="/import-cost-calculator"
+        class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
+        >قدّر تكلفة الوصول والربح بأرقام عرض السعر والشحن</a
+      >
+    </div>
+    <p class="mt-4 text-muted">
+      للمخزون وإعادة الطلب راجع <a class="text-primary underline" href="/grow/wholesale">التوريد بالجملة</a>؛ ولتصميم
+      جديد راجع <a class="text-primary underline" href="/grow/oem-odm">تطوير OEM/ODM</a>.
+    </p>
+  </section>
+  {
+    related.length > 0 && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <h2 class="text-2xl font-bold mb-5">قارن مراجع قريبة أو أكمل قائمة سيارتك</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          {related.map((item) => (
+            <a
+              href={`/products/${item.slug}`}
+              class="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700"
+            >
+              <img
+                src={item.featuredSm}
+                alt={item.title}
+                width={item.images[0].sm.width}
+                height={item.images[0].sm.height}
+                loading="lazy"
+                sizes="(max-width: 767px) 50vw, 25vw"
+                class="w-full aspect-square object-contain bg-black"
+              />
+              <h3 class="font-semibold p-4" set:html={isolateLatin(item.title)} />
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 text-sm text-muted space-y-3">
+    <h2 class="text-lg font-bold">المصدر ومسؤولية المعلومات</h2>
+    <p>
+      الجهة الناشرة: <a href="/about#publisher" class="text-primary underline">CCF</a>. الصور والمرجع تساعد على اختيار
+      القطعة، والمادة والمطابقة ومحتويات الطلب تُؤكّد قبل الشراء. آخر مراجعة: <time datetime="2026-11-03"
+        >2026-11-03</time
+      >.
+    </p>
+    <p>BMW وMercedes-Benz وPorsche علامات لأصحابها. تستخدم الأسماء لتحديد تطبيق المركبة؛ لا تدل على شراكة مع CCF.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="/editorial-policy" class="text-primary underline">المصادر والتصحيحات</a><a
+        href="/catalogs"
+        class="text-primary underline">كتالوجات المركبات</a
+      ><a href={categoryUrl} class="text-primary underline">جميع مراجع هذه الفئة</a><a
+        href="/vehicles/bmw"
+        class="text-primary underline">اختيار قطع BMW حسب الشاسيه</a
+      >
+    </div>
+  </section>
 </PageLayout>

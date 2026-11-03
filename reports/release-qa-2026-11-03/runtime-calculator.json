@@ -1,0 +1,23 @@
+[
+  {
+    "case": "calculator-default",
+    "values": ["$445.00", "$154.00", "25.7%"]
+  },
+  {
+    "case": "arabic-decimal",
+    "values": ["$445.50", "$153.50", "25.6%"]
+  },
+  {
+    "case": "zero-retail",
+    "values": ["$445.50", "-$445.50", "—"]
+  },
+  {
+    "case": "invalid-negative",
+    "values": ["—", "—", "—"],
+    "invalid": "true"
+  },
+  {
+    "case": "reset",
+    "values": ["$445.00", "$154.00", "25.7%"]
+  }
+]

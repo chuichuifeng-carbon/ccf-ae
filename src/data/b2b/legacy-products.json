@@ -1,0 +1,109 @@
+[
+  {
+    "slug": "bmw-g87-m2-carbon-fiber-hood",
+    "productDirName": "G87-Hood",
+    "title": "غطاء محرك كربون BMW G87",
+    "description": "غطاء محرك ضمن مراجع BMW G87. أكّد القفل والمفصلات وفتحات التهوية ومحتويات التوريد قبل الطلب. أرسل سنة السيارة وصور الجزء الحالي والكمية والوجهة لتأكيد المواصفة وطلب السعر.",
+    "seoTitle": "غطاء محرك كربون BMW G87 | CCF",
+    "seoDescription": "غطاء محرك كربون BMW G87. راجع الصور والمطابقة والمادة ومحتويات التوريد، وأرسل الكمية والوجهة لعرض سعر عبر واتساب.",
+    "keywords": [],
+    "categorySlug": "hoods",
+    "categoryAr": "أغطية المحرك",
+    "categoryArShort": "غطاء محرك",
+    "partType": "hood",
+    "chassisCodes": ["G87"],
+    "model": "BMW G87",
+    "yearStart": 2023,
+    "yearEnd": 9999,
+    "material": "ألياف كربون؛ تُؤكّد البنية والمادة للمرجع المطلوب",
+    "manufacturing": "تُؤكّد طريقة التصنيع والتشطيب في عرض السعر",
+    "images": [
+      {
+        "lg": {
+          "url": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+          "width": 1000,
+          "height": 1000
+        },
+        "md": {
+          "url": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+          "width": 1000,
+          "height": 1000
+        },
+        "sm": {
+          "url": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+          "width": 1000,
+          "height": 1000
+        }
+      },
+      {
+        "lg": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-02new.png",
+          "width": 1000,
+          "height": 1000
+        },
+        "md": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-02new.png",
+          "width": 1000,
+          "height": 1000
+        },
+        "sm": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-02new.png",
+          "width": 1000,
+          "height": 1000
+        }
+      },
+      {
+        "lg": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-03new.png",
+          "width": 1000,
+          "height": 1000
+        },
+        "md": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-03new.png",
+          "width": 1000,
+          "height": 1000
+        },
+        "sm": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-03new.png",
+          "width": 1000,
+          "height": 1000
+        }
+      },
+      {
+        "lg": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-04new.png",
+          "width": 1000,
+          "height": 1000
+        },
+        "md": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-04new.png",
+          "width": 1000,
+          "height": 1000
+        },
+        "sm": {
+          "url": "/images/restored/056-bmw-g87-m2-carbon-fiber-hood-reference-04new.png",
+          "width": 1000,
+          "height": 1000
+        }
+      }
+    ],
+    "imageCount": 4,
+    "featuredImage": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+    "featuredSm": "/images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp",
+    "checks": [
+      "المطابقة النهائية تتطلب تأكيد السنة ونسخة الهيكل وصور الجزء الحالي؛ رمز الشاسيه وحده لا يثبت التوافق.",
+      "أكّد القفل والمفصلات وفتحات التهوية ومحتويات التوريد قبل الطلب.",
+      "أكّد المادة والتشطيب ووحدة البيع والمثبتات المشمولة كتابةً.",
+      "تُحدّد الكمية الدنيا ومدة التجهيز والشحن بحسب المرجع والطلب."
+    ],
+    "specs": [
+      ["نوع القطعة", "غطاء محرك"],
+      ["مرجع المركبة", "BMW G87"],
+      ["التصميم أو النسخة", "حسب الصور والمرجع"],
+      ["المادة والتشطيب", "يُؤكّدان للمرجع قبل الطلب"],
+      ["محتويات التوريد", "تُحدّد في عرض السعر"],
+      ["التوريد", "جملة؛ تطوير OEM/ODM حسب المشروع"]
+    ],
+    "intentSegments": ["غطاء محرك BMW G87", ""]
+  }
+]

@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-03",
+  "scope": "Current local working tree; no source fixes applied",
+  "builtPages": 115,
+  "productPages": 60,
+  "oldDetailRoutes": [
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "/products/bmw-g87-m2-carbon-fiber-hood"
+  ],
+  "missingOldDetails": [
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "/products/bmw-g87-m2-carbon-fiber-hood"
+  ],
+  "planPagesMissingFromBuild": [
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "/products/bmw-g87-m2-carbon-fiber-hood"
+  ],
+  "productDuplicateTitles": [
+    {
+      "value": "شبكة كلوية كربون جاف — BMW M3 وM4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc"
+      ]
+    },
+    {
+      "value": "قطعة زخرفية خارجية كربون جاف — BMW M3 وM4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
+        "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim"
+      ]
+    },
+    {
+      "value": "ناشر خلفي كربون جاف — BMW M3 وM4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
+        "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame"
+      ]
+    },
+    {
+      "value": "قطعة كربون مخصصة كربون جاف — BMW M3 وM4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+        "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+        "/products/bmw-g80-g82-carbon-fiber-m4-doors"
+      ]
+    },
+    {
+      "value": "شفّة أمامية كربون جاف — BMW M5 G90",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-ax-front-lip",
+        "/products/bmw-g90-carbon-fiber-mp-front-lip"
+      ]
+    },
+    {
+      "value": "ناشر خلفي كربون جاف — BMW M5 G90",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
+        "/products/bmw-g90-carbon-fiber-mp-rear-diffuser"
+      ]
+    },
+    {
+      "value": "قطعة كربون مخصصة كربون جاف — BMW M5 G90",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-battery-cover",
+        "/products/bmw-g90-carbon-fiber-engine-cover",
+        "/products/bmw-g90-carbon-fiber-radiator-cover"
+      ]
+    }
+  ],
+  "productDuplicateH1": [
+    {
+      "value": "شبكة كلوية كربون جاف BMW M3 و M4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc"
+      ]
+    },
+    {
+      "value": "قطعة زخرفية خارجية كربون جاف BMW M3 و M4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
+        "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim"
+      ]
+    },
+    {
+      "value": "ناشر خلفي كربون جاف BMW M3 و M4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
+        "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame"
+      ]
+    },
+    {
+      "value": "قطعة كربون مخصصة كربون جاف BMW M3 و M4 G80 / G82",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+        "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+        "/products/bmw-g80-g82-carbon-fiber-m4-doors"
+      ]
+    },
+    {
+      "value": "شفّة أمامية كربون جاف BMW M5 G90",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-ax-front-lip",
+        "/products/bmw-g90-carbon-fiber-mp-front-lip"
+      ]
+    },
+    {
+      "value": "ناشر خلفي كربون جاف BMW M5 G90",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
+        "/products/bmw-g90-carbon-fiber-mp-rear-diffuser"
+      ]
+    },
+    {
+      "value": "قطعة كربون مخصصة كربون جاف BMW M5 G90",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-battery-cover",
+        "/products/bmw-g90-carbon-fiber-engine-cover",
+        "/products/bmw-g90-carbon-fiber-radiator-cover"
+      ]
+    }
+  ],
+  "productDuplicateDescriptions": [
+    {
+      "value": "شبكة كلوية كربون جاف لـ BMW M3 سيدان (2021-الآن) وBMW M4 كوبيه (2021-الآن). سنة 2021-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض سعر.",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
+        "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc"
+      ]
+    },
+    {
+      "value": "قطعة زخرفية خارجية كربون جاف لـ BMW M3 سيدان (2021-الآن) وBMW M4 كوبيه (2021-الآن). سنة 2021-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض …",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
+        "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim"
+      ]
+    },
+    {
+      "value": "ناشر خلفي كربون جاف لـ BMW M3 سيدان (2021-الآن) وBMW M4 كوبيه (2021-الآن). سنة 2021-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض سعر.",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
+        "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame"
+      ]
+    },
+    {
+      "value": "قطعة كربون مخصصة كربون جاف لـ BMW M3 سيدان (2021-الآن) وBMW M4 كوبيه (2021-الآن). سنة 2021-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض سعر.",
+      "routes": [
+        "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+        "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+        "/products/bmw-g80-g82-carbon-fiber-m4-doors"
+      ]
+    },
+    {
+      "value": "شفّة أمامية كربون جاف لـ BMW M5 سيدان (2024-الآن). سنة 2024-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض سعر.",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-ax-front-lip",
+        "/products/bmw-g90-carbon-fiber-mp-front-lip"
+      ]
+    },
+    {
+      "value": "ناشر خلفي كربون جاف لـ BMW M5 سيدان (2024-الآن). سنة 2024-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض سعر.",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
+        "/products/bmw-g90-carbon-fiber-mp-rear-diffuser"
+      ]
+    },
+    {
+      "value": "قطعة كربون مخصصة كربون جاف لـ BMW M5 سيدان (2024-الآن). سنة 2024-الآن. توريد B2B — Wholesale / OEM / ODM. تواصل عبر واتساب +86 134 2769 0360 لطلب عرض سعر.",
+      "routes": [
+        "/products/bmw-g90-carbon-fiber-battery-cover",
+        "/products/bmw-g90-carbon-fiber-engine-cover",
+        "/products/bmw-g90-carbon-fiber-radiator-cover"
+      ]
+    }
+  ],
+  "productGenericTitles": [
+    "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+    "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+    "/products/bmw-g80-g82-carbon-fiber-m4-doors",
+    "/products/bmw-g90-carbon-fiber-battery-cover",
+    "/products/bmw-g90-carbon-fiber-engine-cover",
+    "/products/bmw-g90-carbon-fiber-radiator-cover"
+  ],
+  "sourceTruncatedDescriptions": 38,
+  "productTitlesOverriddenByLegacySeo": [],
+  "productCountMissingSitemap": 0,
+  "productsAbsentFromOwnCategory": [
+    "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+    "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+    "/products/bmw-g90-carbon-fiber-mp-front-lip",
+    "/products/bmw-g90-carbon-fiber-engine-cover",
+    "/products/bmw-g90-carbon-fiber-radiator-cover"
+  ],
+  "productsWithoutNonProductIncoming": [
+    "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+    "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+    "/products/bmw-g90-carbon-fiber-engine-cover",
+    "/products/bmw-g90-carbon-fiber-radiator-cover"
+  ],
+  "h1Errors": [],
+  "canonicalErrors": [],
+  "forms": 0,
+  "missingImagePlacements": 0,
+  "invalidSchemas": [],
+  "escapedBdiProducts": 60,
+  "productDuplicateOrganizations": 60,
+  "brokenDestinations": [
+    {
+      "href": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "placements": 6,
+      "pageCount": 6
+    },
+    {
+      "href": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "placements": 3,
+      "pageCount": 2
+    },
+    {
+      "href": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "placements": 7,
+      "pageCount": 5
+    },
+    {
+      "href": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "placements": 4,
+      "pageCount": 3
+    },
+    {
+      "href": "/blog/dry-carbon-vs-wet-carbon",
+      "placements": 180,
+      "pageCount": 60
+    },
+    {
+      "href": "/blog/best-wholesale-carbon-fiber-suppliers-dealers-2026",
+      "placements": 60,
+      "pageCount": 60
+    },
+    {
+      "href": "/blog/carbon-fiber-parts-fitment-check",
+      "placements": 120,
+      "pageCount": 60
+    },
+    {
+      "href": "/blog/carbon-fiber-import-cost-profit-guide",
+      "placements": 60,
+      "pageCount": 60
+    }
+  ]
+}

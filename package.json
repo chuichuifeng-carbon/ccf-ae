@@ -24,6 +24,7 @@
     "check:calculator": "node scripts/verify-import-calculator.mjs",
     "check:cost-content": "node scripts/verify-cost-content.mjs",
     "check:listicles": "node scripts/verify-listicle-batch.mjs",
+    "check:products": "node scripts/verify-product-pages.mjs",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w ."

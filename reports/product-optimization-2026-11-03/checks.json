@@ -1,0 +1,67 @@
+[
+  {
+    "script": "verify-product-pages.mjs",
+    "status": 0,
+    "output": "Passed product QA: 61 unique products, preserved URLs, no broken links or orphan products, truthful schema and image sitemap coverage.\n"
+  },
+  {
+    "script": "verify-seo-metadata.mjs",
+    "status": 0,
+    "output": "Passed: 120 pages match the SEO plan; 111 indexed in sitemap; 9 excluded.\n"
+  },
+  {
+    "script": "verify-technical-seo.mjs",
+    "status": 0,
+    "output": "Passed technical SEO: 120 pages; 1277 image placements; 103 image-sitemap URLs; 0 HTTP checks.\n"
+  },
+  {
+    "script": "verify-prelaunch.mjs",
+    "status": 0,
+    "output": "Passed prelaunch HTML QA: 120 pages, JS/no-JS parsing, metadata in head, unique IDs, accessible controls and zero local forms.\n"
+  },
+  {
+    "script": "verify-production-hosting.mjs",
+    "status": 0,
+    "output": "Passed: 239 redirect rules, no canonical redirect cycles; 140 protected mailto links across 120 pages.\n"
+  },
+  {
+    "script": "verify-analytics.mjs",
+    "status": 0,
+    "output": "Passed GA4: 120 pages, one loader/config, initial + Astro navigation views, duplicate-event guard, query filtering.\n"
+  },
+  {
+    "script": "verify-cost-content.mjs",
+    "status": 0,
+    "output": "Passed: 24 contextual calculator panels, exclusions, article examples, internal discovery and tool/guide backlinks.\n"
+  },
+  {
+    "script": "verify-listicle-batch.mjs",
+    "status": 0,
+    "output": "Passed 10 listicles: Top 10/Best titles, 10 items each, CCF first, no competitor hyperlinks, matching Article/ItemList, parent links and source records.\n"
+  },
+  {
+    "script": "verify-b2b.mjs",
+    "status": 0,
+    "output": "Passed: 120 HTML files; local links/assets; Arabic RTL; one H1; 40 catalog placements; contextual WhatsApp and RFQ attribution.\n"
+  },
+  {
+    "script": "verify-eeat.mjs",
+    "status": 0,
+    "output": "Passed E-E-A-T integrity checks across 120 HTML pages: organization identity, source/author attribution, no fabricated founding date or aggregate ratings, article corrections and product provenance.\n"
+  },
+  {
+    "script": "verify-brand-scope.mjs",
+    "status": 0,
+    "output": "Passed: all 120 front-end pages checked; only BMW, Mercedes-AMG and Porsche vehicle content; removed pages/assets absent; links, metadata, schemas, RSS and sitemap clean.\n"
+  },
+  {
+    "script": "verify-import-calculator.mjs",
+    "status": 0,
+    "output": "Passed calculator: example, integer-cent precision, loss, zero revenue, Arabic/Persian digits, invalid/large input, static accessibility and no form.\n"
+  },
+  {
+    "script": "verify-p0-blogs.mjs",
+    "status": 0,
+    "output": "Passed: 14 blog posts; both P0 articles in blog/RSS; useful internal links, parent backlinks, linked source images and ready-to-send WhatsApp CTAs.\n"
+  }
+]

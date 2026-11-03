@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "status": 200
+  },
+  {
+    "path": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "status": 200
+  },
+  {
+    "path": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "status": 200
+  },
+  {
+    "path": "/products/bmw-g87-m2-carbon-fiber-hood",
+    "status": 200
+  },
+  {
+    "path": "/products/engine-bay",
+    "status": 200
+  },
+  {
+    "path": "/products/body-panels",
+    "status": 200
+  },
+  {
+    "path": "/products/interior-trim",
+    "status": 200
+  },
+  {
+    "path": "/products/exterior-trim",
+    "status": 200
+  },
+  {
+    "path": "/product-qa-missing-page",
+    "status": 404
+  }
+]

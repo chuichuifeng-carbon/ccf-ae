@@ -42,7 +42,7 @@ for (const file of files) {
   if (file.includes('products') && /bmw-.*index\.html$/.test(file)) {
     assert.ok(!blocks.some((block) => block['@type'] === 'CollectionPage'), `${file}: detail page is not a collection`);
     assert.ok(html.includes('/editorial-policy'));
-    assert.ok(html.includes('2026-10-30'));
+    assert.ok(/<time\b[^>]*datetime="\d{4}-\d{2}-\d{2}"/.test(html), `${file}: product review date`);
     assert.ok(html.includes('/return-refund-policy'));
   }
 }

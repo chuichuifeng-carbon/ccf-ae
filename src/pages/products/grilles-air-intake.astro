@@ -1,4 +1,5 @@
 ---
+import { getPageSeo } from '~/utils/seo';
 import PageLayout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import ProductCollection from '~/components/widgets/ProductCollection.astro';
@@ -16,8 +17,8 @@ const metadata = {
   <!-- Hero -->
   <HeroText
     tagline="فئة المنتجات · زخارف خارجية"
-    title="شبكات أمامية وزخارف خارجية لسيارات BMW"
-    subtitle="استعرض شبكات أمامية وقطع فتحات هواء وزخارف خارجية لسيارات BMW بأجيال G وF المختارة. راجع صور المرجع والمادة والتجهيزات المحيطة، ثم أرسل بيانات المركبة والكمية لطلب التوريد."
+    title={getPageSeo(Astro.url.pathname)?.h1}
+    subtitle={getPageSeo(Astro.url.pathname)?.description}
     callToAction={{
       text: 'تواصل عبر واتساب',
       href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',

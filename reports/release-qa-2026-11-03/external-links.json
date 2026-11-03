@@ -1,0 +1,621 @@
+{
+  "checkedAt": "2026-11-03T14:51:13.003Z",
+  "results": [
+    {
+      "url": "https://ccfrp.com/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/about/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/about/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f80-carbon-fiber-front-lip-gt4-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f80-carbon-fiber-front-lip-gt4-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-cs-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-cs-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-mp-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f80-f82-carbon-fiber-front-lip-mp-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f80-f82-carbon-fiber-rear-diffuser-3d-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f80-f82-carbon-fiber-rear-diffuser-3d-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f87-m2-carbon-fiber-hood/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f87-m2-carbon-fiber-hood/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f87-m2-carbon-fiber-rear-diffuser-mtc-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f87-m2-carbon-fiber-rear-diffuser-mtc-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f90-m5-carbon-fiber-hood-cs-style-forged-pattern/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f90-m5-carbon-fiber-hood-cs-style-forged-pattern/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-f90-m5-carbon-fiber-rear-diffuser-center-insert/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-f90-m5-carbon-fiber-rear-diffuser-center-insert/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-vent-inserts/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-bumper-vent-inserts/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-r44-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-r44-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-v-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-front-lip-v-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-hood-vent-trim/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-hood-vent-trim/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-center-light-design/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-center-light-design/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g80-m3-carbon-fiber-hood-ac-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g80-m3-carbon-fiber-hood-ac-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g87-g80-g82-carbon-fiber-fuel-cap-trim-cover/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g87-g80-g82-carbon-fiber-fuel-cap-trim-cover/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-hood/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-hood/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g87-m2-carbon-fiber-rear-diffuser-r44-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/bmw-g90-m5-carbon-fiber-hood-apn-style/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/bmw-g90-m5-carbon-fiber-hood-apn-style/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/contact/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/contact/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/grow/wholesale/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/grow/wholesale/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/aero-parts/#front-lips",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/aero-parts/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/aero-parts/#rear-diffusers",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/aero-parts/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/aero-parts/#side-skirts",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/aero-parts/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/aero-parts/#spoilers-wings",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/aero-parts/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/grilles-exterior-trim/#grilles",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/grilles-exterior-trim/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/grilles-exterior-trim/#mirror-caps",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/grilles-exterior-trim/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/hoods-trunk-lids/#hoods",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/hoods-trunk-lids/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/products/hoods-trunk-lids/#trunk-lids",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/products/hoods-trunk-lids/",
+      "fragment": "passed",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/vehicles/bmw/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/vehicles/bmw/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/vehicles/mercedes-amg/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/vehicles/mercedes-amg/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/vehicles/porsche/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "finalUrl": "https://ccfrp.com/vehicles/porsche/",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-2-series-g42-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-2-series-g42-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-3-series-f30-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-3-series-f30-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-3-series-g20-g28-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-3-series-g20-g28-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-4-series-g22-g23-g26-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-4-series-g22-g23-g26-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-5-series-g30-g38-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-5-series-g30-g38-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-5-series-g60-g68-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-5-series-g60-g68-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m2-f87-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m2-f87-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m2-g87-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m2-g87-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-f80-m4-f82-f83-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-f80-m4-f82-f83-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-g80-m4-g82-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-g80-m4-g82-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-g80-m4-g82-carbon-fiber-parts-catalog.pdf#page=3",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m3-g80-m4-g82-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m5-f90-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m5-f90-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m5-g90-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/bmw-m5-g90-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a-class-w176-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a-class-w176-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a35-a45-w177-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a35-a45-w177-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a35l-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a35l-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a45-a45s-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-a45-a45s-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-amg-gt-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-amg-gt-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-amg-gt50-gt53-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-amg-gt50-gt53-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-c43-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-c43-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-c63-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-c63-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cla-w117-w118-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cla-w117-w118-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cla35-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cla35-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cla45-cla45s-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cla45-cla45s-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cls-w218-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-cls-w218-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-g-class-w463-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-g-class-w463-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-g350-g500-g63-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-g350-g500-g63-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-s-class-w223-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-s-class-w223-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-w204-w205-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-w204-w205-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-w212-w213-w238-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/mercedes-benz-w212-w213-w238-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-718-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-718-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-718-cayman-gt4-rs-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-718-cayman-gt4-rs-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-991-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-991-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-1-992-2-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-1-992-2-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-topcar-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-topcar-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-turbo-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-turbo-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-turbo-s-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-911-992-turbo-s-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-cayenne-9ya-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-cayenne-9ya-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-panamera-971-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-panamera-971-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    },
+    {
+      "url": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-taycan-carbon-fiber-parts-catalog.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://ccfrp.com/wp-content/uploads/2026/09/porsche-taycan-carbon-fiber-parts-catalog.pdf",
+      "fragment": "not applicable",
+      "result": "passed"
+    }
+  ]
+}

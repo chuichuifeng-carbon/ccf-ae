@@ -49,9 +49,10 @@ await Promise.all(
   })
 );
 results.sort((a, b) => a.url.localeCompare(b.url));
-fs.mkdirSync('reports/prelaunch-qa-2026-10-31', { recursive: true });
+const output = process.argv.find((arg) => arg.startsWith('--out='))?.slice(6) || 'reports/prelaunch-qa-2026-10-31';
+fs.mkdirSync(output, { recursive: true });
 fs.writeFileSync(
-  'reports/prelaunch-qa-2026-10-31/external-links.json',
+  `${output}/external-links.json`,
   JSON.stringify({ checkedAt: new Date().toISOString(), results }, null, 2) + '\n'
 );
 console.log(

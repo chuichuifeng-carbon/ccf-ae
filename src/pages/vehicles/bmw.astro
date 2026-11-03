@@ -1,18 +1,41 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
-import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import ProductCollection from '~/components/widgets/ProductCollection.astro';
+import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import { allProducts, groupByChassis } from '~/data/b2b/all-products';
 
 const metadata = {
   title: 'قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF',
   description:
     'كتالوجات قطع كربون بي إم دبليو BMW M2 وM3 وM4 وM5 وأجيال G وF المختارة. حدّد الطراز والشاسيه ومرجع القطعة لطلب عرض توريد من المصنع.',
 };
+
+// 按底盘分组，每个底盘最多取 6 个代表产品
+const chassisGroups = groupByChassis(allProducts);
+const CHASSIS_INFO_AR: Record<string, string> = {
+  G80: 'M3 سيدان 2021-الآن',
+  G82: 'M4 كوبيه 2021-الآن',
+  G83: 'M4 كابريوليه 2022-الآن',
+  G87: 'M2 كوبيه 2023-الآن',
+  G90: 'M5 سيدان 2024-الآن',
+  F80: 'M3 سيدان 2014-2020',
+  F82: 'M4 كوبيه 2014-2020',
+  F87: 'M2 كوبيه 2016-2021',
+  F90: 'M5 سيدان 2017-2023',
+};
+const chassisCards = Object.entries(chassisGroups)
+  .map(([code, products]) => ({
+    code,
+    label: CHASSIS_INFO_AR[code] || code,
+    count: products.length,
+    sample: products,
+  }))
+  .sort((a, b) => b.count - a.count);
 ---
 
 <PageLayout metadata={metadata}>
@@ -37,6 +60,28 @@ const metadata = {
   />
 
   <ModelCatalogs brand="bmw" />
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <h2 class="text-2xl font-bold mb-4">اختر شاسيه سيارتك للوصول إلى مراجع القطع</h2>
+    <nav aria-label="اختيار الشاسيه" class="flex flex-wrap gap-3">
+      {
+        chassisCards.map((card) => (
+          <a class="text-primary underline" href={`#bmw-${card.code}`}>
+            <bdi dir="ltr">BMW {card.code}</bdi>
+          </a>
+        ))
+      }
+    </nav>
+    <p class="text-muted mt-4">
+      راجع صور السيارة وتجهيزاتها قبل اعتماد المطابقة؛ أسماء الشاسيهات مراجع للاختيار وليست ضماناً لتوافق كل نسخة.
+    </p>
+  </section>
+  {
+    chassisCards.map((card) => (
+      <section id={`bmw-${card.code}`} class="scroll-mt-24">
+        <ProductCollection chassis={card.code} title={`قطع كربون BMW ${card.code}`} />
+      </section>
+    ))
+  }
 
   <!-- Stats -->
   <Stats
@@ -142,5 +187,4 @@ const metadata = {
       },
     ]}
   />
-  <FeaturedProducts />
 </PageLayout>

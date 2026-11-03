@@ -1,6 +1,7 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
 import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
+import { productCategories } from '~/data/b2b/product-content';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Bento from '~/components/widgets/Bento.astro';
@@ -17,6 +18,15 @@ import { img } from '~/utils/siteImages';
 ---
 
 <PageLayout metadata={metadata}>
+  <nav aria-label="فئات القطع المصورة" class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 flex flex-wrap gap-4">
+    {
+      Object.entries(productCategories).map(([slug, label]) => (
+        <a class="text-primary underline" href={`/products/${slug}`}>
+          {label}
+        </a>
+      ))
+    }
+  </nav>
   <!-- Hero -->
   <HeroText
     tagline="منتجات ألياف الكربون للسيارات"

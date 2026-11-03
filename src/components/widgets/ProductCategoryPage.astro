@@ -1,0 +1,24 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import ProductCollection from './ProductCollection.astro';
+import { productCategories } from '~/data/b2b/product-content';
+const { category } = Astro.props as { category: keyof typeof productCategories };
+const title = productCategories[category];
+---
+
+<PageLayout>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
+    <h1 class="text-3xl md:text-4xl font-bold">{title} كربون لسيارات BMW</h1>
+    <p class="text-lg text-muted mt-4">
+      اختر مرجع القطعة المصور، ثم أرسل سنة السيارة وصور الجزء الحالي والكمية. تُؤكّد المادة والتشطيب ومحتويات التوريد
+      والمطابقة قبل اعتماد الطلب.
+    </p>
+  </section>
+  <ProductCollection category={category} />
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex gap-5">
+    <a class="text-primary underline" href="/products">جميع فئات المنتجات</a><a
+      class="text-primary underline"
+      href="/vehicles/bmw">مراجع BMW حسب الشاسيه</a
+    >
+  </nav>
+</PageLayout>

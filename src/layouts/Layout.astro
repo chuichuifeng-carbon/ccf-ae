@@ -45,23 +45,25 @@ const { language, textDirection } = I18N;
     <SiteVerification />
     <Analytics />
     <SiteIdentity />
+    <!-- 资源提示: WhatsApp (wa.me) 预连接 — 用户点 FAB 时省 200-500ms DNS/TCP 延迟 -->
+    <link rel="preconnect" href="https://wa.me" />
+    <link rel="dns-prefetch" href="https://wa.me" />
     <!-- Reveal animations must never hide the main content when JavaScript is unavailable. -->
     <Fragment set:html={'<noscript><link rel="stylesheet" href="/no-js.css"></noscript>'} />
 
     <!--
-      Hreflang: each page self-references its Arabic URL. Cross-language
-      alternates are NOT declared here — a valid hreflang group requires
-      page-level, bidirectional annotations on BOTH ccfrp.com (en) and this
-      site (ar). Once the English site reciprocates per-URL, add matching
-      English and x-default alternates here.
+      Arabic self reference. Add cross-language alternates only when exact
+      counterpart pages have reciprocal annotations on both domains.
     -->
     {
       getPageSeo(Astro.url.pathname)?.canonicalPath !== null && (
-        <link
-          rel="alternate"
-          hreflang={language}
-          href={pageMetadata.canonical || String(getCanonical(String(Astro.url.pathname)))}
-        />
+        <>
+          <link
+            rel="alternate"
+            hreflang={language}
+            href={pageMetadata.canonical || String(getCanonical(String(Astro.url.pathname)))}
+          />
+        </>
       )
     }
 

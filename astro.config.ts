@@ -52,10 +52,11 @@ export default defineConfig({
 
   integrations: [
     // Keep sitemap membership aligned with the same records used by page metadata.
+    // Product imports synchronize their records with scripts/sync-product-seo.mjs.
     sitemap({
       filter: (page) => {
         const pathname = new URL(page).pathname.replace(/\/+$/, '') || '/';
-        const record = (pageSeo as Record<string, { sitemap: boolean }>)[pathname];
+        const record = (pageSeo as Record<string, { sitemap?: boolean }>)[pathname];
         return record?.sitemap === true;
       },
     }),

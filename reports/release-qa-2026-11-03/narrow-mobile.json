@@ -1,0 +1,32 @@
+[
+  {
+    "contentWidth": 305,
+    "route": "/",
+    "width": 320
+  },
+  {
+    "contentWidth": 305,
+    "route": "/vehicles/bmw",
+    "width": 320
+  },
+  {
+    "contentWidth": 305,
+    "route": "/products/front-lips-splitters",
+    "width": 320
+  },
+  {
+    "contentWidth": 305,
+    "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+    "width": 320
+  },
+  {
+    "contentWidth": 305,
+    "route": "/import-cost-calculator",
+    "width": 320
+  },
+  {
+    "contentWidth": 305,
+    "route": "/blog",
+    "width": 320
+  }
+]

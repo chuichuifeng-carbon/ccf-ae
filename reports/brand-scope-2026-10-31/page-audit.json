@@ -1,6 +1,6 @@
 {
   "allowedBrands": ["bmw", "mercedes-amg", "porsche"],
-  "pageCount": 59,
+  "pageCount": 120,
   "catalogEntries": 40,
   "selectedProductImages": 108,
   "removedPages": [
@@ -34,70 +34,70 @@
     },
     {
       "route": "/best-bmw-g80-m3-carbon-upgrade-suppliers-2026",
-      "title": "Top 10 Best: خيارات ترقيات كربون BMW G80 M3 في 2026 | CCF",
+      "title": "Top 10 Best: ترقيات كربون BMW G80 M3 في 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-bmw-m-carbon-fiber-hoods-2026",
-      "title": "Top 10 Best: خيارات أغطية محرك كربون BMW M لعام 2026 | CCF",
+      "title": "Top 10 Best: أغطية محرك كربون BMW M في 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-bmw-m3-m4-carbon-front-lips-2026",
-      "title": "Top 10 Best: خيارات شفاه كربون BMW M3 وM4 لعام 2026 | CCF",
+      "title": "Top 10 Best: شفاه كربون BMW M3 وM4 في 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-carbon-fiber-oem-odm-manufacturers-2026",
-      "title": "Top 10 Best: شركات تصنيع قطع كربون OEM/ODM مخصصة 2026 | CCF",
+      "title": "Top 10 Best: شركات تطوير قطع كربون OEM/ODM في 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-carbon-fiber-rear-diffusers-2026",
-      "title": "Top 10 Best: خيارات ناشرات الكربون الخلفية 2026 | CCF",
+      "title": "Top 10 Best: ناشرات كربون خلفية للسيارات 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-carbon-fiber-suppliers-tuning-shops-2026",
-      "title": "Top 10 Best: موردي قطع الكربون لورش التعديل 2026 | CCF",
+      "title": "Top 10 Best: موردو كربون لمشروعات ورش التعديل 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-dry-carbon-automotive-suppliers-2026",
-      "title": "Top 10 Best: موردي قطع الكربون الجاف للسيارات 2026 | CCF",
+      "title": "Top 10 Best: موردو قطع الكربون الجاف للسيارات 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-mercedes-amg-carbon-exterior-suppliers-2026",
-      "title": "Top 10 Best: خيارات قطع كربون Mercedes-AMG الخارجية 2026 | CCF",
+      "title": "Top 10 Best: قطع كربون Mercedes-AMG الخارجية 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-porsche-992-carbon-upgrade-suppliers-2026",
-      "title": "Top 10 Best: خيارات ترقيات كربون Porsche 911 992 في 2026 | CCF",
+      "title": "Top 10 Best: ترقيات كربون Porsche 911 992 في 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/best-wholesale-carbon-fiber-suppliers-dealers-2026",
-      "title": "Top 10 Best: موردي قطع الكربون بالجملة للموزعين 2026 | CCF",
+      "title": "Top 10 Best: موردو كربون بالجملة للموزعين 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -278,78 +278,505 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/products/bmw-g80-g82-carbon-fiber-2021-up-flat-side-skirts",
+      "title": "تنانير جانبية مسطحة كربون BMW M4 G82/M4 G83 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-3d-style-side-skirts",
+      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم 3D | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-fender-vent-trim",
+      "title": "زخارف فتحات الرفارف كربون BMW M3 G80/M4 G82 — تصميم AC | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-front-canards",
+      "title": "كانارد أمامي كربون BMW M3 G80/M4 G82 — تصميم AC | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-hood",
+      "title": "غطاء محرك كربون BMW M3 G80 — تصميم AC | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-adr1-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M4 G82 — تصميم ADR1 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-adr3-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M4 G82 — تصميم ADR3 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+      "title": "طقم سحب هواء كربون BMW M3 G80 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-grille",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-lip",
+      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-rear-bumper-extensions",
+      "title": "امتدادات المصد الخلفي كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-side-skirts",
+      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
+      "title": "طقم ناشر للعادم المركزي كربون BMW M3 G80/M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-cs-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم CS | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، بدون ACC | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، بدون ACC، كربون أحمر | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، كربون أحمر | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، مع ACC | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-style-hood",
+      "title": "غطاء محرك كربون BMW M3 G80/M4 G82 — تصميم CSL | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
+      "title": "زخارف فتحات المصد الأمامي كربون BMW M3 G80/M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-fenders",
+      "title": "رفارف أمامية كربون BMW M3 G80/M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
-      "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم R44 | CCF",
+      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم R44 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
-      "title": "شفة كربون BMW M3 G80 وM4 G82 تصميم CSL | CCF",
+      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم CSL، ثلاث قطع | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim",
+      "title": "زخارف فتحات غطاء المحرك كربون BMW M3 G80/M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW G20/M3 G80/G22/M4 G82 — تصميم M | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M3 G80 — مرجع M3 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m4-doors",
+      "title": "أبواب M4 كوبيه كربون BMW M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m4-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW F30/M3 F80/G20/M3 G80 — تصميم M4 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-bumper-vent-trim",
+      "title": "زخارف فتحات المصد الأمامي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-canards",
+      "title": "كانارد أمامي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-lip",
+      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-bumper-corner-trim",
+      "title": "زخارف زوايا المصد الخلفي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-side-skirts",
+      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82/M4 G83 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim",
+      "title": "زخارف زوايا المصد الأمامي كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-bumper-corner-trim",
+      "title": "زخارف زوايا المصد الخلفي كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-diffuser",
+      "title": "ناشر خلفي كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-side-skirts",
+      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-psm-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم PSM | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-side-skirts",
+      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم R44 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rcs-style-rear-diffuser",
+      "title": "ناشر خلفي كربون BMW M3 G80/M4 G82 — تصميم RCS | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
-      "title": "ديفيوزر كربون BMW M3 G80 وM4 G82 تصميم MP | CCF",
+      "title": "ناشر خلفي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame",
+      "title": "إطار ناشر خلفي كربون BMW M3 G80/M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+      "title": "أغطية ظهر المقاعد كربون BMW M3 G80/M4 G82 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-st-style-grille",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم ST | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-tk-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم TK | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-v-style-3-piece-front-lip",
+      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم V، ثلاث قطع | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-v-style-grille",
+      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم V | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-v-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم V | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-vs-style-front-canards",
+      "title": "كانارد أمامي كربون BMW M3 G80/M4 G82 — تصميم VS | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g87-m2-carbon-fiber-hood",
-      "title": "غطاء محرك كربون BMW M2 G87 بفتحات تهوية | CCF",
+      "title": "غطاء محرك كربون BMW M2 G87 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-ax-front-lip",
+      "title": "شفّة أمامية كربون BMW M5 G90 — تصميم AX | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
+      "title": "ناشر خلفي كربون BMW M5 G90 — تصميم AX | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-battery-cover",
+      "title": "غطاء البطارية كربون BMW M5 G90 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-engine-cover",
+      "title": "غطاء تجميلي للمحرك كربون BMW M5 G90 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-hood",
+      "title": "غطاء محرك كربون BMW M5 G90 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mirror-caps",
+      "title": "أغطية مرايا كربون BMW M5 G90 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mp-front-lip",
+      "title": "شفّة أمامية كربون BMW M5 G90 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mp-rear-diffuser",
+      "title": "ناشر خلفي كربون BMW M5 G90 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mp-side-skirts",
+      "title": "تنانير جانبية كربون BMW M5 G90 — تصميم MP | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-radiator-cover",
+      "title": "غطاء منطقة الردياتير كربون BMW M5 G90 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/body-panels",
+      "title": "الأبواب والرفارف كربون لسيارات BMW | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/engine-bay",
+      "title": "أغطية حجرة المحرك كربون لسيارات BMW | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/exterior-trim",
+      "title": "زخارف الفتحات الخارجية كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/front-lips-splitters",
-      "title": "شفة أمامية وسبليتر كربون BMW M بالجملة | CCF",
+      "title": "الشفاه الأمامية والكانارد كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/grilles-air-intake",
-      "title": "شبكات وزخارف خارجية وقطع فتحات هواء BMW | CCF",
+      "title": "الشبكات وأنظمة سحب الهواء كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/hoods",
-      "title": "غطاء محرك كربون BMW M2 وM3 وM5 | CCF",
+      "title": "أغطية المحرك كربون لسيارات BMW | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/interior-trim",
+      "title": "أغطية المقاعد الداخلية كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/mirror-caps",
-      "title": "أغطية مرايا كربون BMW F90 وF8x | CCF",
+      "title": "أغطية المرايا كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/rear-diffusers",
-      "title": "ديفيوزر خلفي كربون BMW M بالجملة | CCF",
+      "title": "الناشرات وملحقات المصد الخلفي كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/side-skirts",
-      "title": "عتبات جانبية كربون BMW ومرسيدس G63 | CCF",
+      "title": "التنانير الجانبية كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/spoilers-wings",
-      "title": "سبويلر وأجنحة خلفية كربون BMW M بالجملة | CCF",
+      "title": "السبويلر والأجنحة كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"

@@ -1,13 +1,13 @@
 {
-  "pages": 59,
-  "indexed": 50,
-  "imagePlacements": 439,
-  "imageSitemapPages": 43,
-  "responsiveOriginals": 204,
+  "pages": 120,
+  "indexed": 111,
+  "imagePlacements": 1277,
+  "imageSitemapPages": 103,
+  "responsiveOriginals": 710,
   "imageBytesComparison": {
-    "originalBytes": 13092579,
-    "width640Bytes": 5543400,
-    "reductionPercent": 58,
+    "originalBytes": 58087402,
+    "width640Bytes": 22441308,
+    "reductionPercent": 61,
     "note": "Unique source images compared with their 640px versions; not measured total page transfer or Core Web Vitals."
   },
   "results": [
@@ -77,7 +77,7 @@
     {
       "route": "/vehicles/bmw",
       "index": true,
-      "imagePlacements": 16,
+      "imagePlacements": 122,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
@@ -98,84 +98,84 @@
     {
       "route": "/products/front-lips-splitters",
       "index": true,
-      "imagePlacements": 17,
+      "imagePlacements": 10,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/rear-diffusers",
       "index": true,
-      "imagePlacements": 15,
+      "imagePlacements": 10,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/side-skirts",
       "index": true,
-      "imagePlacements": 15,
+      "imagePlacements": 7,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/spoilers-wings",
       "index": true,
-      "imagePlacements": 7,
+      "imagePlacements": 10,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/hoods",
       "index": true,
-      "imagePlacements": 6,
+      "imagePlacements": 4,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/trunk-lids",
       "index": true,
-      "imagePlacements": 5,
+      "imagePlacements": 0,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/grilles-air-intake",
       "index": true,
-      "imagePlacements": 40,
+      "imagePlacements": 13,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/mirror-caps",
       "index": true,
-      "imagePlacements": 3,
+      "imagePlacements": 1,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
       "index": true,
-      "imagePlacements": 8,
+      "imagePlacements": 12,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
       "index": true,
-      "imagePlacements": 8,
+      "imagePlacements": 16,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
       "index": true,
-      "imagePlacements": 8,
+      "imagePlacements": 16,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
     {
       "route": "/products/bmw-g87-m2-carbon-fiber-hood",
       "index": true,
-      "imagePlacements": 8,
+      "imagePlacements": 7,
       "breadcrumbGraphs": 1,
       "status": "passed"
     },
@@ -423,8 +423,956 @@
       "imagePlacements": 5,
       "breadcrumbGraphs": 1,
       "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-lip",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-lip",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-v-style-3-piece-front-lip",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-front-canards",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-canards",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-vs-style-front-canards",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-grille",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+      "index": true,
+      "imagePlacements": 13,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
+      "index": true,
+      "imagePlacements": 12,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-st-style-grille",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-v-style-grille",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-3d-style-side-skirts",
+      "index": true,
+      "imagePlacements": 10,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-side-skirts",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-side-skirts",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-side-skirts",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-side-skirts",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-2021-up-flat-side-skirts",
+      "index": true,
+      "imagePlacements": 11,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-fenders",
+      "index": true,
+      "imagePlacements": 7,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-fender-vent-trim",
+      "index": true,
+      "imagePlacements": 14,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-bumper-vent-trim",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-hood",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-csl-style-hood",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m4-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-cs-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 9,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-psm-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 11,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-tk-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-v-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-rear-spoiler",
+      "index": true,
+      "imagePlacements": 9,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-adr1-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 13,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-adr3-style-rear-spoiler",
+      "index": true,
+      "imagePlacements": 9,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-rear-bumper-extensions",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-diffuser",
+      "index": true,
+      "imagePlacements": 15,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rcs-style-rear-diffuser",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame",
+      "index": true,
+      "imagePlacements": 14,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-bumper-corner-trim",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-bumper-corner-trim",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+      "index": true,
+      "imagePlacements": 6,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+      "index": true,
+      "imagePlacements": 6,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m4-doors",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-ax-front-lip",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mp-front-lip",
+      "index": true,
+      "imagePlacements": 7,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mp-side-skirts",
+      "index": true,
+      "imagePlacements": 6,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-hood",
+      "index": true,
+      "imagePlacements": 8,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
+      "index": true,
+      "imagePlacements": 16,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mp-rear-diffuser",
+      "index": true,
+      "imagePlacements": 12,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-mirror-caps",
+      "index": true,
+      "imagePlacements": 11,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-battery-cover",
+      "index": true,
+      "imagePlacements": 11,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-engine-cover",
+      "index": true,
+      "imagePlacements": 10,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-radiator-cover",
+      "index": true,
+      "imagePlacements": 7,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/engine-bay",
+      "index": true,
+      "imagePlacements": 3,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/body-panels",
+      "index": true,
+      "imagePlacements": 2,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/interior-trim",
+      "index": true,
+      "imagePlacements": 1,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
+    },
+    {
+      "route": "/products/exterior-trim",
+      "index": true,
+      "imagePlacements": 5,
+      "breadcrumbGraphs": 1,
+      "status": "passed"
     }
   ],
-  "http": [],
+  "http": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/products",
+      "status": 200
+    },
+    {
+      "path": "/vehicles",
+      "status": 200
+    },
+    {
+      "path": "/catalogs",
+      "status": 200
+    },
+    {
+      "path": "/grow",
+      "status": 200
+    },
+    {
+      "path": "/grow/wholesale",
+      "status": 200
+    },
+    {
+      "path": "/grow/oem-odm",
+      "status": 200
+    },
+    {
+      "path": "/grow/dropshipping",
+      "status": 200
+    },
+    {
+      "path": "/grow/channel-partners",
+      "status": 200
+    },
+    {
+      "path": "/vehicles/bmw",
+      "status": 200
+    },
+    {
+      "path": "/vehicles/mercedes-amg",
+      "status": 200
+    },
+    {
+      "path": "/vehicles/porsche",
+      "status": 200
+    },
+    {
+      "path": "/products/front-lips-splitters",
+      "status": 200
+    },
+    {
+      "path": "/products/rear-diffusers",
+      "status": 200
+    },
+    {
+      "path": "/products/side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/spoilers-wings",
+      "status": 200
+    },
+    {
+      "path": "/products/hoods",
+      "status": 200
+    },
+    {
+      "path": "/products/trunk-lids",
+      "status": 200
+    },
+    {
+      "path": "/products/grilles-air-intake",
+      "status": 200
+    },
+    {
+      "path": "/products/mirror-caps",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g87-m2-carbon-fiber-hood",
+      "status": 200
+    },
+    {
+      "path": "/cases",
+      "status": 200
+    },
+    {
+      "path": "/cases/canada-distributor-visit",
+      "status": 200
+    },
+    {
+      "path": "/cases/usa-oem-carbon-fiber",
+      "status": 200
+    },
+    {
+      "path": "/about",
+      "status": 200
+    },
+    {
+      "path": "/contact",
+      "status": 200
+    },
+    {
+      "path": "/faqs",
+      "status": 200
+    },
+    {
+      "path": "/editorial-policy",
+      "status": 200
+    },
+    {
+      "path": "/return-refund-policy",
+      "status": 200
+    },
+    {
+      "path": "/privacy",
+      "status": 200
+    },
+    {
+      "path": "/terms",
+      "status": 200
+    },
+    {
+      "path": "/blog",
+      "status": 200
+    },
+    {
+      "path": "/dry-carbon-vs-wet-carbon",
+      "status": 200
+    },
+    {
+      "path": "/category/adlh-almshtryn",
+      "status": 200
+    },
+    {
+      "path": "/tag/aljmlh",
+      "status": 200
+    },
+    {
+      "path": "/tag/altsnya",
+      "status": 200
+    },
+    {
+      "path": "/tag/alyaf-alkrbwn-aljaf",
+      "status": 200
+    },
+    {
+      "path": "/404.html",
+      "status": 200
+    },
+    {
+      "path": "/carbon-fiber-parts-fitment-check",
+      "status": 200
+    },
+    {
+      "path": "/compare-wholesale-carbon-fiber-quotes",
+      "status": 200
+    },
+    {
+      "path": "/import-cost-calculator",
+      "status": 200
+    },
+    {
+      "path": "/carbon-fiber-import-cost-profit-guide",
+      "status": 200
+    },
+    {
+      "path": "/best-dry-carbon-automotive-suppliers-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-carbon-fiber-oem-odm-manufacturers-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-wholesale-carbon-fiber-suppliers-dealers-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-carbon-fiber-suppliers-tuning-shops-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-bmw-m-carbon-fiber-hoods-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-bmw-m3-m4-carbon-front-lips-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-carbon-fiber-rear-diffusers-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-bmw-g80-m3-carbon-upgrade-suppliers-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-porsche-992-carbon-upgrade-suppliers-2026",
+      "status": 200
+    },
+    {
+      "path": "/best-mercedes-amg-carbon-exterior-suppliers-2026",
+      "status": 200
+    },
+    {
+      "path": "/blog/2",
+      "status": 200
+    },
+    {
+      "path": "/category/adlh-almshtryn/2",
+      "status": 200
+    },
+    {
+      "path": "/tag/aljmlh/2",
+      "status": 200
+    },
+    {
+      "path": "/tag/altsnya/2",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-lip",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-lip",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-v-style-3-piece-front-lip",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ac-style-front-canards",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-canards",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-vs-style-front-canards",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-grille",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-st-style-grille",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-v-style-grille",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-3d-style-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ax-style-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-mp-style-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-oem-style-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-r44-style-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-2021-up-flat-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-front-fenders",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ac-style-fender-vent-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-bumper-vent-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ac-style-hood",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-csl-style-hood",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-m4-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-m-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-cs-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-psm-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-tk-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-v-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-m3-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-adr1-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-adr3-style-rear-spoiler",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-ax-style-rear-bumper-extensions",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-diffuser",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-rcs-style-rear-diffuser",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-bumper-corner-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-bumper-corner-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g80-g82-carbon-fiber-m4-doors",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-ax-front-lip",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-mp-front-lip",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-mp-side-skirts",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-hood",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-mp-rear-diffuser",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-mirror-caps",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-battery-cover",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-engine-cover",
+      "status": 200
+    },
+    {
+      "path": "/products/bmw-g90-carbon-fiber-radiator-cover",
+      "status": 200
+    },
+    {
+      "path": "/products/engine-bay",
+      "status": 200
+    },
+    {
+      "path": "/products/body-panels",
+      "status": 200
+    },
+    {
+      "path": "/products/interior-trim",
+      "status": 200
+    },
+    {
+      "path": "/products/exterior-trim",
+      "status": 200
+    },
+    {
+      "path": "/technical-seo-missing-page",
+      "status": 404
+    },
+    {
+      "path": "/vehicles/audi",
+      "status": 404
+    },
+    {
+      "path": "/vehicles/ferrari",
+      "status": 404
+    },
+    {
+      "path": "/vehicles/lamborghini",
+      "status": 404
+    },
+    {
+      "path": "/cases/european-football-player-carbon-fiber",
+      "status": 404
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-index.xml",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-0.xml",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-images.xml",
+      "status": 200
+    },
+    {
+      "path": "/rss.xml",
+      "status": 200
+    }
+  ],
   "limits": "Local preview does not execute hosting-platform redirect/header rules. Validate production HTTP, CDN caching, Search Console indexing and field CWV after deployment."
 }
