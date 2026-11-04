@@ -1,0 +1,41 @@
+{
+  "articles": [
+    {
+      "route": "/best-bmw-carbon-fiber-small-accessories",
+      "items": 10,
+      "intent": "BMW小件采购：按装饰位置、覆盖件/替换件及配置选择；不替代整车升级榜单"
+    },
+    {
+      "route": "/best-private-label-carbon-fiber-partners",
+      "items": 3,
+      "intent": "私标商业采购：logo、包装、图片使用权、模具/设计权及独家条件；区分已宣称私标与待确认定制渠道"
+    },
+    {
+      "route": "/best-china-factory-direct-carbon-fiber-suppliers",
+      "items": 4,
+      "intent": "中国工厂直供采购：核对制造主体、交货地、样件、材料和商业条款；不重复泛批发账户榜单"
+    }
+  ],
+  "sources": [
+    {
+      "company": "CCF",
+      "url": "https://ccfrp.com/"
+    },
+    {
+      "company": "JCSPORTLINE",
+      "url": "https://jcsportline.com/carbon-automotive/"
+    },
+    {
+      "company": "JC AUTOCARBON",
+      "url": "https://jcautocarbon.com/services/oem-odm-private-label"
+    },
+    {
+      "company": "CMST",
+      "url": "https://www.cmstauto.com/about"
+    },
+    {
+      "company": "JSKRACING",
+      "url": "https://www.jskracing.com/about.aspx"
+    }
+  ]
+}

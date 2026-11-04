@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "pages": 129,
-  "indexable": 116,
+  "pages": 132,
+  "indexable": 119,
   "noindex": 13,
   "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
   "results": [
@@ -649,6 +649,21 @@
       "route": "/tag/altsnya/3",
       "status": "passed",
       "index": false
+    },
+    {
+      "route": "/best-bmw-carbon-fiber-small-accessories",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-private-label-carbon-fiber-partners",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-china-factory-direct-carbon-fiber-suppliers",
+      "status": "passed",
+      "index": true
     }
   ]
 }
