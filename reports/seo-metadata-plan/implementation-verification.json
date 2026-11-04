@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "pages": 120,
-  "indexable": 111,
-  "noindex": 9,
+  "pages": 129,
+  "indexable": 116,
+  "noindex": 13,
   "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
   "results": [
     {
@@ -604,6 +604,51 @@
       "route": "/products/exterior-trim",
       "status": "passed",
       "index": true
+    },
+    {
+      "route": "/best-bmw-g90-m5-carbon-fiber-upgrades",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-bmw-g82-m4-carbon-fiber-upgrades",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-bmw-carbon-fiber-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-bmw-m3-m4-carbon-fiber-spoilers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-bmw-g80-g82-carbon-fiber-grilles",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/blog/3",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/category/adlh-almshtryn/3",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/tag/aljmlh/3",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/tag/altsnya/3",
+      "status": "passed",
+      "index": false
     }
   ]
 }
