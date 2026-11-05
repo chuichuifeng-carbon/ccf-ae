@@ -1,0 +1,44 @@
+---
+import content from '~/data/procurement-help.json';
+import { whatsappUrl } from '~/utils/inquiry';
+import { getCanonical } from '~/utils/permalinks';
+import { isolateLatin } from '~/utils/bidi';
+const help = (
+  content as Record<
+    string,
+    { title: string; sections: Array<{ title: string; text: string }>; guide: string; guideText: string }
+  >
+)[Astro.url.pathname.replace(/\/$/, '') || '/'];
+---
+
+{
+  help && (
+    <section data-procurement-help class="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6" set:html={isolateLatin(help.title)} />
+      <div class="grid gap-5 md:grid-cols-3">
+        {help.sections.map((item) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+            <h3 class="font-bold mb-3" set:html={isolateLatin(item.title)} />
+            <p class="text-muted leading-relaxed" set:html={isolateLatin(item.text)} />
+          </div>
+        ))}
+      </div>
+      <div class="flex flex-wrap gap-5 items-center mt-6">
+        <>
+          <a href={help.guide} class="text-primary underline">
+            {help.guideText}
+          </a>
+          <a
+            class="btn-primary"
+            href={whatsappUrl(help.title, String(getCanonical(Astro.url.pathname)))}
+            data-inquiry-context={help.title}
+            target="_blank"
+            rel="noopener"
+          >
+            أرسل متطلبات طلبك عبر واتساب
+          </a>
+        </>
+      </div>
+    </section>
+  )
+}

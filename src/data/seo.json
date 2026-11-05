@@ -1,7 +1,7 @@
 {
   "/": {
     "title": "مصنع قطع كربون فايبر للسيارات في الصين | CCF",
-    "description": "مصنع CCF لقطع كربون فايبر BMW ومرسيدس AMG وبورش. توريد للموزعين وورش التعديل وتطوير OEM/ODM؛ أرسل الطراز والكمية لطلب عرض سعر عبر واتساب.",
+    "description": "مصنع CCF في الصين لقطع كربون BMW ومرسيدس AMG وبورش. توريد للموزعين والورش وتطوير حسب الطلب؛ أرسل المرجع والكمية والوجهة لعرض سعر واتساب.",
     "h1": "مصنع قطع ألياف الكربون للسيارات في الصين",
     "canonicalPath": "/",
     "index": true,
@@ -61,7 +61,7 @@
   },
   "/grow/wholesale": {
     "title": "قطع كربون فايبر للسيارات بالجملة من المصنع | CCF",
-    "description": "توريد قطع كربون BMW ومرسيدس AMG وبورش للموزعين وورش التعديل. راجع العينة والكمية والطلبات المختلطة، وأرسل قائمة القطع والوجهة لطلب سعر الجملة.",
+    "description": "اطلب توريد قطع كربون للمخزون والورش من CCF. أكّد المراجع والكميات والعينة والتغليف ونطاق الشحن، وناقش إعادة الطلب حسب المواصفة.",
     "h1": "توريد قطع ألياف الكربون للسيارات بالجملة",
     "canonicalPath": "/grow/wholesale",
     "index": true,
@@ -73,7 +73,7 @@
   },
   "/grow/oem-odm": {
     "title": "تصنيع قطع كربون فايبر حسب الطلب OEM/ODM | CCF",
-    "description": "طوّر قطع كربون لعلامتك مع مصنع CCF. ابدأ بعينة أو CAD أو صور مرجعية؛ ناقش القوالب والنموذج الأولي واعتماد العينة قبل تحديد الإنتاج والسعر.",
+    "description": "ناقش تصنيع قطع كربون حسب الطلب مع CCF: مرجع قائم أو تصميم جديد، قالب وعينة وشعار وتغليف. تُراجع المواصفة والكمية والتكلفة حسب المشروع.",
     "h1": "تصنيع قطع ألياف الكربون حسب الطلب OEM/ODM",
     "canonicalPath": "/grow/oem-odm",
     "index": true,
@@ -109,7 +109,7 @@
   },
   "/vehicles/bmw": {
     "title": "قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF",
-    "description": "كتالوجات قطع كربون بي إم دبليو BMW M2 وM3 وM4 وM5 وأجيال G وF المختارة. حدّد الطراز والشاسيه ومرجع القطعة لطلب عرض توريد من المصنع.",
+    "description": "اختر قطع كربون متوافقة مع BMW حسب الشاسيه والجزء. راجع الصور والكتالوجات، وأكّد تجهيزات السيارة والكمية لعرض توريد من CCF المستقلة.",
     "h1": "قطع ألياف الكربون لسيارات BMW",
     "canonicalPath": "/vehicles/bmw",
     "index": true,
@@ -336,8 +336,8 @@
     "imageHeight": 900
   },
   "/contact": {
-    "title": "طلب عرض سعر قطع كربون السيارات عبر واتساب | CCF",
-    "description": "تواصل مع مصنع CCF عبر واتساب أو البريد لطلب توريد قطع كربون أو تطوير OEM/ODM. أرسل الطراز والسنة ومرجع المنتج والكمية ومدينة التسليم.",
+    "title": "اطلب عرض سعر قطع كربون للسيارات | CCF",
+    "description": "اطلب عرض سعر قطع كربون من CCF عبر واتساب أو البريد. أرسل المرجع وبيانات السيارة وصورها والكمية والوجهة لتأكيد المطابقة ونطاق التوريد.",
     "h1": "اطلب عرض سعر لقطع كربون السيارات من CCF",
     "canonicalPath": "/contact",
     "index": true,
@@ -1582,5 +1582,77 @@
     "image": "/images/products/bmw-g90-carbon-fiber-mirror-caps/bmw-g90-carbon-fiber-mirror-caps-01.webp",
     "imageWidth": 1706,
     "imageHeight": 1279
+  },
+  "/carbon-fiber-parts-rfq-checklist": {
+    "title": "كيف تطلب عرض سعر لقطع كربون السيارات من CCF؟ | CCF",
+    "description": "جهّز مرجع القطعة وبيانات المركبة والكمية والوجهة لعرض سعر أوضح من CCF. تعرّف إلى المعلومات التي تساعد على تأكيد المطابقة ونطاق التوريد.",
+    "h1": "كيف تطلب عرض سعر لقطع كربون السيارات من CCF؟",
+    "canonicalPath": "/carbon-fiber-parts-rfq-checklist",
+    "index": true,
+    "sitemap": true,
+    "ogType": "article",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  "/carbon-fiber-parts-moq-guide": {
+    "title": "ما الحد الأدنى لطلب قطع الكربون؟ دليل MOQ للموزعين والورش | CCF",
+    "description": "افهم اختلاف MOQ بين مرجع جاهز وعينة وطلب بعلامة خاصة وتطوير قالب. جهّز الكمية لكل منتج واسأل CCF عن شروط طلبك الفعلي.",
+    "h1": "ما الحد الأدنى لطلب قطع الكربون؟ دليل MOQ للموزعين والورش",
+    "canonicalPath": "/carbon-fiber-parts-moq-guide",
+    "index": true,
+    "sitemap": true,
+    "ogType": "article",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  "/oem-vs-aftermarket-carbon-fiber-parts": {
+    "title": "قطع الكربون الأصلية وقطع ما بعد البيع وخدمة OEM: ما الفرق؟ | CCF",
+    "description": "ميّز بين قطعة أصلية من علامة السيارة، وقطعة كربون متوافقة لما بعد البيع، وخدمة تصنيع OEM/ODM. اعرف ما تطلب تأكيده من CCF.",
+    "h1": "قطع الكربون الأصلية وقطع ما بعد البيع وخدمة OEM: ما الفرق؟",
+    "canonicalPath": "/oem-vs-aftermarket-carbon-fiber-parts",
+    "index": true,
+    "sitemap": true,
+    "ogType": "article",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  "/blog/4": {
+    "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار — الصفحة 4 | CCF",
+    "description": "الصفحة الرابعة من أدلة شراء قطع ألياف الكربون للموزعين؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد.",
+    "h1": "أدلة شراء قطع ألياف الكربون للموزعين — الصفحة 4",
+    "canonicalPath": "/blog/4",
+    "index": false,
+    "sitemap": false,
+    "ogType": "website",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  "/category/adlh-almshtryn/4": {
+    "title": "أرشيف أدلة مشتري قطع ألياف الكربون — الصفحة 4 | CCF",
+    "description": "الصفحة الرابعة من أرشيف أدلة المشترين؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد.",
+    "h1": "أرشيف أدلة المشترين — الصفحة 4",
+    "canonicalPath": "/category/adlh-almshtryn/4",
+    "index": false,
+    "sitemap": false,
+    "ogType": "website",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
+  },
+  "/tag/aljmlh/4": {
+    "title": "مقالات عن الجملة في المدونة — الصفحة 4 | CCF",
+    "description": "الصفحة الرابعة من مقالات عن الجملة؛ تابع المقالات وأدلة الشراء السابقة حول المواد والمطابقة والتكلفة قبل طلب التوريد.",
+    "h1": "مقالات عن الجملة — الصفحة 4",
+    "canonicalPath": "/tag/aljmlh/4",
+    "index": false,
+    "sitemap": false,
+    "ogType": "website",
+    "image": "/images/verified/ccf-automotive-carbon-fiber-production-workshop.webp",
+    "imageWidth": 1200,
+    "imageHeight": 900
   }
 }

@@ -1,5 +1,5 @@
 {
-  "pages": 132,
+  "pages": 138,
   "forms": 0,
   "results": [
     {
@@ -1052,6 +1052,54 @@
     },
     {
       "route": "/best-china-factory-direct-carbon-fiber-suppliers",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/carbon-fiber-parts-rfq-checklist",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/carbon-fiber-parts-moq-guide",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/oem-vs-aftermarket-carbon-fiber-parts",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/blog/4",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/category/adlh-almshtryn/4",
+      "forms": 0,
+      "html": "passed",
+      "headPlacement": "passed",
+      "duplicateIds": 0,
+      "controls": "passed"
+    },
+    {
+      "route": "/tag/aljmlh/4",
       "forms": 0,
       "html": "passed",
       "headPlacement": "passed",

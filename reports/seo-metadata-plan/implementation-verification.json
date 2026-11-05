@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "pages": 132,
-  "indexable": 119,
-  "noindex": 13,
+  "pages": 138,
+  "indexable": 122,
+  "noindex": 16,
   "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
   "results": [
     {
@@ -664,6 +664,36 @@
       "route": "/best-china-factory-direct-carbon-fiber-suppliers",
       "status": "passed",
       "index": true
+    },
+    {
+      "route": "/carbon-fiber-parts-rfq-checklist",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/carbon-fiber-parts-moq-guide",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/oem-vs-aftermarket-carbon-fiber-parts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/blog/4",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/category/adlh-almshtryn/4",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/tag/aljmlh/4",
+      "status": "passed",
+      "index": false
     }
   ]
 }

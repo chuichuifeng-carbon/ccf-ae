@@ -1,0 +1,58 @@
+[
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/",
+    "procurement": 1
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/grow/wholesale",
+    "procurement": 1
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/grow/oem-odm",
+    "procurement": 1
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/contact",
+    "procurement": 1
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/vehicles/bmw",
+    "procurement": 1
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/carbon-fiber-parts-rfq-checklist",
+    "procurement": 0
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/carbon-fiber-parts-moq-guide",
+    "procurement": 0
+  },
+  {
+    "forms": 0,
+    "h1": 1,
+    "overflow": false,
+    "path": "/oem-vs-aftermarket-carbon-fiber-parts",
+    "procurement": 0
+  }
+]
