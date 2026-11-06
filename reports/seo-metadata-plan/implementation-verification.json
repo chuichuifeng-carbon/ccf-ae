@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "pages": 138,
-  "indexable": 122,
-  "noindex": 16,
+  "pages": 142,
+  "indexable": 125,
+  "noindex": 17,
   "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
   "results": [
     {
@@ -692,6 +692,26 @@
     },
     {
       "route": "/tag/aljmlh/4",
+      "status": "passed",
+      "index": false
+    },
+    {
+      "route": "/best-mercedes-c63-w205-carbon-fiber-upgrades",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-porsche-992-carbon-fiber-front-lips",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/best-mercedes-w223-carbon-fiber-exterior-parts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/tag/altsnya/4",
       "status": "passed",
       "index": false
     }
