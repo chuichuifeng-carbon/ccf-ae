@@ -12,17 +12,20 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const relatedPosts = post.tags ? await getRelatedPosts(post, 4) : [];
+const relatedPosts = APP_BLOG.isRelatedPostsEnabled
+  ? await getRelatedPosts(post, Math.max(5, APP_BLOG.relatedPostsCount))
+  : [];
 ---
 
 {
-  APP_BLOG.isRelatedPostsEnabled ? (
+  relatedPosts.length > 0 ? (
     <BlogHighlightedPosts
+      id="related-posts"
       classes={{
         container:
           'pt-0 lg:pt-0 md:pt-0 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade',
       }}
-      title="مقالات ذات صلة"
+      title="قد يعجبك أيضًا"
       linkText="عرض جميع المقالات"
       linkUrl={getBlogPermalink()}
       postIds={relatedPosts.map((post) => post.id)}
