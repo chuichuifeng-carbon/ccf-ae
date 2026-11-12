@@ -1,5 +1,6 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
+import ProductGallery from '~/components/widgets/ProductGallery.astro';
 import Button from '~/components/ui/Button.astro';
 import StructuredData from '~/components/common/StructuredData.astro';
 import { allProducts, getRelatedProducts } from '~/data/b2b/all-products';
@@ -132,31 +133,17 @@ const schemas = [
       >/</span
     ><a href={categoryUrl}>{product.categoryAr}</a>
   </nav>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12 grid gap-8 lg:grid-cols-2 items-start">
-    <div>
-      <a
-        href={photo.url}
-        target="_blank"
-        rel="noopener"
-        aria-label="عرض الصورة بالحجم الكامل"
-        class="block rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-black"
-      >
-        <img
-          src={photo.url}
-          alt={product.title}
-          width={photo.width}
-          height={photo.height}
-          loading="eager"
-          fetchpriority="high"
-          sizes="(max-width: 1023px) 100vw, 50vw"
-          class="w-full aspect-square object-contain"
-        />
-      </a>
-      <p class="text-sm text-muted mt-3">اضغط على الصورة لتكبيرها. قد تظهر إضافات غير مشمولة في طلب القطعة.</p>
-    </div>
-    <div class="space-y-5">
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 py-6 md:py-10 grid gap-x-10 gap-y-5 lg:grid-cols-[minmax(0,1.18fr)_minmax(0,1fr)] lg:items-start"
+  >
+    <div class="lg:col-start-2 lg:row-start-1">
       <p class="text-primary font-semibold">{product.categoryAr} · توريد للموزعين وورش التعديل</p>
       <h1 class="text-3xl md:text-4xl font-bold leading-tight" set:html={isolateLatin(product.title)} />
+    </div>
+    <div class="min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-24">
+      <ProductGallery product={product} />
+    </div>
+    <div class="min-w-0 space-y-5 lg:col-start-2 lg:row-start-2">
       <p class="text-lg text-muted" set:html={isolateLatin(product.description)} />
       <div class="flex flex-wrap gap-3">
         <Button
@@ -249,34 +236,6 @@ const schemas = [
       المرجع.
     </p>
   </section>
-  {
-    product.images.length > 1 && (
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-        <h2 class="text-2xl font-bold mb-5">صور المنتج وتفاصيله</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {product.images.slice(1).map((image, i) => (
-            <a
-              href={image.lg.url}
-              target="_blank"
-              rel="noopener"
-              aria-label={`عرض صورة المنتج ${i + 2} بالحجم الكامل`}
-              class="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-black"
-            >
-              <img
-                src={image.md.url}
-                alt={`${product.title} — صورة ${i + 2}`}
-                width={image.md.width}
-                height={image.md.height}
-                loading="lazy"
-                sizes="(max-width: 767px) 50vw, 25vw"
-                class="w-full aspect-square object-contain"
-              />
-            </a>
-          ))}
-        </div>
-      </section>
-    )
-  }
   <section id="faq" class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
     <h2 class="text-2xl font-bold mb-5">أسئلة المشتري قبل التأكيد</h2>
     <div class="space-y-3">
