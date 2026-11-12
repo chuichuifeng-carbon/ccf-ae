@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "pages": 142,
-  "indexable": 125,
+  "pages": 392,
+  "indexable": 375,
   "noindex": 17,
   "checks": "Title, description, H1, canonical, robots, sitemap, OG, Twitter, article dates/author and no keywords tag",
   "results": [
@@ -87,11 +87,6 @@
     },
     {
       "route": "/products/hoods",
-      "status": "passed",
-      "index": true
-    },
-    {
-      "route": "/products/trunk-lids",
       "status": "passed",
       "index": true
     },
@@ -714,6 +709,1261 @@
       "route": "/tag/altsnya/4",
       "status": "passed",
       "index": false
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-kb-style-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-03-front-grilles",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-fender-vent-trim-style-1",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-fender-vent-trim-style-2",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-08-rear-spoilers-wings",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-3d-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-rear-bumper-corner-trim",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-11-trunk-lids",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-12-mirror-caps",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-body-kit-02",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-od-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-mp-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-r44-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-front-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-ax-front-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-cs-one-piece-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-csl-front-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-lower-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-mp-front-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-slash-style-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-double-bar-air-vent",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-single-bar-air-vent",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-ae-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-od-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-r44-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-side-skirt-extensions",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-od-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-r44-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-diffuser-style-1-2",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-sq-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-ak-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-dual-layer-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-mp-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-od-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-od-style-2",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-v-style",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-standard-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v1-style-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-n-style-fenders",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-fenders",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-wheel-arch-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-style-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-bumper-corner-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-oil-cooler-protection-plate",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-bumper-trim",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-trunk-lid",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-3d-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-cs-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-v-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-front-corner-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-3d-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-v-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-m3-psm-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-rear-bumper-corner-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-v-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-ac-style-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-front-bumper",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2c-forged-carbon-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mp-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2-m2c-front-fenders",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mp-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mp-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-rear-bumper-corner-trim",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-rear-bumper",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-trunk-lid",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-fog-light-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-m5-kidney-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-front-lip-with-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-rear-lip-with-rear-bumper-corner-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-d-style-rear-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-g30-carbon-fiber-psm-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip-with-led-light",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-f90-carbon-fiber-v-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-f90-carbon-fiber-shark-fin-antenna-cover",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-front-lip-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-rear-lip-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-side-skirts-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-body-kit-installed-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-bumper-corner-trims-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-front-lip-with-canards-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-front-grille-front-grille-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-rear-spoiler-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip-rear-lip-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-side-mirror-covers-2017-2020",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3-piece-front-lip-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-rear-lip-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-side-skirts-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-fog-light-trims-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-front-grille-front-grille-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-rear-spoiler-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip-rear-lip-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-side-mirror-covers-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g82-g80-carbon-fiber-adr01-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-front-bumper-and-fenders",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-front-fog-light-corner-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-hm-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-oem-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-side-skirt-extensions",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-front-lip-splitter",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-gt4-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-front-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-gts-style-front-bumper-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-ak-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-crt-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-m3-gt4-style-front-bumper-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-m3-rear-bumper-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-m3-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-fog-light-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-front-grille-with-mesh",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-side-winglets",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-vk-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-mesh-debris-guard",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-m4-engine-bay-strut-brace-2-piece-set",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-d-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-d-style-rear-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-front-fog-light-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-max-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-max-style-rear-bumper-corner-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-sd-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f95-f96-carbon-fiber-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f95-f96-carbon-fiber-sd-style-front-fog-light-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f95-f96-carbon-fiber-v-style-rear-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-fender-vents",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-bumper-air-intake-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-grille-with-mesh",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-roof-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-3-piece-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-g22-g23-g26-carbon-fiber-vk-style-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-double-slat-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-fog-light-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-front-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-1st-gen-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-canards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-double-slat-grille",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-rear-diffuser-with-side-extensions",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g22-g23-carbon-fiber-vk-style-rear-diffuser-with-led",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g22-g23-carbon-fiber-vk-style-rear-diffuser-without-led",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g22-g23-carbon-fiber-vk-style-rear-wing",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g22-g82-carbon-fiber-csl-style-tail-lights",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g22-g82-carbon-fiber-dragon-scale-daytime-running-lights",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g26-g22-g23-carbon-fiber-vk-style-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g26-carbon-fiber-vk-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g26-carbon-fiber-vk-style-rear-bumper-trim",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g26-carbon-fiber-vk-style-rear-diffuser-with-side-splitters",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g28-carbon-fiber-lwb-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g28-carbon-fiber-vk-style-long-wheelbase-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-d-style-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-d-style-rear-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-racing-style-rear-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-fender-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-front-bumper-air-intake-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-rear-diffuser",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-side-skirts",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-vk-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-ix2-carbon-fiber-fd-style-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-ix3-carbon-fiber-front-lip",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-ix3-carbon-fiber-rear-lip-with-corner-trims",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-m3-m4-oil-pan-guard",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2-competition-oil-pan-guard",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-m5-oil-pan-guard",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f97-f98-carbon-fiber-x3m-x4m-oil-pan-guard",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-carbon-fiber-3-series-m3-rear-spoilers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-carbon-fiber-m3-psm-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-carbon-fiber-smp-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-carbon-fiber-sp-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g42-carbon-fiber-v-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-psm-style-rear-spoiler",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-ld-style-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-style-01-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-style-02-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-style-03-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-m5-cds-style-full-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-side-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-fender-side-vent-set",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-fenders",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-rear-diffuser-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-m3-m4-m2-engine-cover",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-m4-battery-cover",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-m4-engine-bay-cover-set",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-g80-g82-carbon-fiber-m2-m3-m4-radiator-cover-set",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2-competition-kidney-grille-trim",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-d-style-hood",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-mirror-covers",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set-2020-2023",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set-2023-2024",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set-2025-onwards",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g87-g80-g82-carbon-fiber-replacement-seat-back-panel-set",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/bmw-g29-carbon-fiber-z4-m40i-full-body-kit",
+      "status": "passed",
+      "index": true
+    },
+    {
+      "route": "/products/trunk-lids",
+      "status": "passed",
+      "index": true
     }
   ]
 }

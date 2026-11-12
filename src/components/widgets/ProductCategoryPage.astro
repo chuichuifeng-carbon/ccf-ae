@@ -4,14 +4,14 @@ import ProductCollection from './ProductCollection.astro';
 import { productCategories } from '~/data/b2b/product-content';
 const { category } = Astro.props as { category: keyof typeof productCategories };
 const title = productCategories[category];
+import categorySeo from '~/data/b2b/category-seo.json';
 ---
 
 <PageLayout>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
-    <h1 class="text-3xl md:text-4xl font-bold">{title} كربون لسيارات BMW</h1>
+    <h1 class="text-3xl md:text-4xl font-bold">{title}{category === 'lighting' ? '' : ' كربون'} لسيارات BMW</h1>
     <p class="text-lg text-muted mt-4">
-      اختر مرجع القطعة المصور، ثم أرسل سنة السيارة وصور الجزء الحالي والكمية. تُؤكّد المادة والتشطيب ومحتويات التوريد
-      والمطابقة قبل اعتماد الطلب.
+      {categorySeo[category].description}
     </p>
   </section>
   <ProductCollection category={category} />

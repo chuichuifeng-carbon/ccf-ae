@@ -29,7 +29,7 @@ if (filtered.length === 0) {
           <a href={`/products/${product.slug}`} aria-label={product.title} class="block bg-black">
             <img
               src={product.featuredSm}
-              alt={product.seoTitle || product.title}
+              alt={product.title}
               width="400"
               height="300"
               loading="lazy"
@@ -42,7 +42,11 @@ if (filtered.length === 0) {
             <p class="text-xs text-muted mb-1">
               <bdi dir="ltr">{product.model}</bdi>
             </p>
-            <h3 class="font-bold mb-3 leading-snug">{product.seoTitle || product.title}</h3>
+            <h3 class="font-bold mb-3 leading-snug">
+              <a href={`/products/${product.slug}`} class="hover:underline">
+                {product.title}
+              </a>
+            </h3>
             <div class="mt-auto flex flex-wrap gap-3">
               <Button variant="primary" text="عرض التفاصيل" href={`/products/${product.slug}`} class="text-sm" />
               <Button

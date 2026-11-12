@@ -19,6 +19,9 @@ export default function technicalSeo(): AstroIntegration {
         origin = String(config.site).replace(/\/$/, '');
       },
       'astro:build:done': async ({ dir, logger }) => {
+        // Keep libvips memory flat: thousands of product photos are processed in one pass.
+        sharp.cache(false);
+        sharp.concurrency(1);
         const root = fileURLToPath(dir);
         const files = (await fs.readdir(root, { recursive: true })).filter(
           (file) => file.endsWith('.html') && !file.startsWith('decapcms')
@@ -35,10 +38,13 @@ export default function technicalSeo(): AstroIntegration {
         ];
         const assets = new Map<string, { width: number; height: number; srcset: string }>();
         await fs.mkdir(path.join(root, '_astro'), { recursive: true });
+        // Content-addressed variants are cached between builds so repeat builds skip encoding.
+        const cacheDir = path.resolve(process.cwd(), 'node_modules/.cache/ccf-image-variants');
+        await fs.mkdir(cacheDir, { recursive: true });
         // Limit processing concurrency to avoid excessive memory use on CI.
         const queue = [...sources];
         await Promise.all(
-          Array.from({ length: 4 }, async () => {
+          Array.from({ length: 2 }, async () => {
             let src: string | undefined;
             while ((src = queue.shift())) {
               const absolute = path.resolve(root, `.${src}`);
@@ -53,10 +59,16 @@ export default function technicalSeo(): AstroIntegration {
               const variants: string[] = [];
               for (const width of widths) {
                 const name = `${stem}.${hash}-${width}w.webp`;
-                await sharp(buffer)
-                  .resize({ width, withoutEnlargement: true })
-                  .webp({ quality: 80 })
-                  .toFile(path.join(root, '_astro', name));
+                const cached = path.join(cacheDir, name);
+                const target = path.join(root, '_astro', name);
+                const encoded = await fs.access(cached).then(
+                  () => true,
+                  () => false
+                );
+                if (!encoded) {
+                  await sharp(buffer).resize({ width, withoutEnlargement: true }).webp({ quality: 80 }).toFile(cached);
+                }
+                await fs.copyFile(cached, target);
                 variants.push(`/_astro/${name} ${width}w`);
               }
               variants.push(`${src} ${info.width}w`);

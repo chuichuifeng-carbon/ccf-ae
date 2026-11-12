@@ -67,7 +67,11 @@ const imageUrl = typeof image === 'string' ? image : image?.src;
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
+  '@id': `${url}#article`,
+  url: String(url),
+  isPartOf: { '@id': `${SITE.site}/#website` },
   headline: post.title,
+  ...(post.catalogCitations?.length ? { citation: post.catalogCitations } : {}),
   description: post.excerpt,
   datePublished: post.publishDate.toISOString(),
   dateModified: (post.updateDate ?? post.publishDate).toISOString(),
@@ -76,6 +80,9 @@ const articleSchema = {
         author: {
           '@type': post.authorType || 'Person',
           name: post.author,
+          ...(post.author === SITE.name && post.authorType === 'Organization'
+            ? { '@id': `${SITE.site}/#organization` }
+            : {}),
           ...(post.authorUrl ? { url: new URL(post.authorUrl, SITE.site).toString() } : {}),
         },
       }
@@ -119,5 +126,5 @@ const breadcrumbs = [
     {post.Content && <post.Content />}
   </SinglePost>
   <ToBlogLink />
-  <RelatedPosts post={post} />
+  <RelatedPosts slot="after-resources" post={post} />
 </Layout>

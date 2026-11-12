@@ -20,6 +20,7 @@ export interface Post {
   /** Alternative text for the cover image. */
   imageAlt?: string;
   listItems?: string[];
+  catalogCitations?: string[];
   imageLink?: string;
 
   category?: Taxonomy;

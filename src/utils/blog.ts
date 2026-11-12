@@ -2,6 +2,7 @@ import type { PaginateFunction } from 'astro';
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { Post, Taxonomy } from '~/types';
+import catalogs from '~/data/b2b/catalogs.json';
 import { APP_BLOG } from 'astrowind:config';
 import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
 
@@ -39,6 +40,8 @@ const generatePermalink = async ({
     .filter((el) => !!el)
     .join('/');
 };
+
+const catalogUrls = new Set(catalogs.flatMap((group) => group.entries.map((entry) => entry.url)));
 
 const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> => {
   const { id, data } = post;
@@ -82,6 +85,13 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     id: id,
     slug: slug,
     permalink: await generatePermalink({ id, slug, publishDate, category: category?.slug }),
+    catalogCitations: [
+      ...new Set(
+        Array.from((post.body ?? '').matchAll(/\]\((https:\/\/[^\s)]+)\)/g), (match) => match[1]).filter((url) =>
+          catalogUrls.has(url)
+        )
+      ),
+    ],
 
     publishDate: publishDate,
     updateDate: updateDate,
@@ -258,10 +268,19 @@ export async function getRelatedPosts(originalPost: Post, maxResults: number = 4
   const allPosts = await fetchPosts();
   const originalTagsSet = new Set(originalPost.tags ? originalPost.tags.map((tag) => tag.slug) : []);
 
+  // Shared category and wholesale tags alone cannot distinguish model-specific guides.
+  const topics = originalPost.slug
+    .split('-')
+    .filter(
+      (word) =>
+        !['best', 'carbon', 'fiber', 'parts', 'guide', 'guides', 'and', 'vs'].includes(word) && !/^\d{4}$/.test(word)
+    );
+
   const postsWithScores = allPosts.reduce((acc: { post: Post; score: number }[], iteratedPost: Post) => {
     if (iteratedPost.slug === originalPost.slug) return acc;
 
-    let score = 0;
+    const candidateTopics = new Set(iteratedPost.slug.split('-'));
+    let score = topics.reduce((sum, topic) => sum + (candidateTopics.has(topic) ? 2 : 0), 0);
     if (iteratedPost.category && originalPost.category && iteratedPost.category.slug === originalPost.category.slug) {
       score += 5;
     }

@@ -22,8 +22,11 @@ const groups = brand ? catalogs.filter((group) => group.brand === brand) : catal
   <div class="space-y-10">
     {
       groups.map((group) => (
-        <div>
+        <div id={`catalogs-${group.brand}`}>
           <h3 class="text-2xl font-bold mb-4">{names[group.brand]}</h3>
+          <a class="text-primary underline inline-block mb-4" href={group.source}>
+            مصدر كتالوجات {names[group.brand]} على موقع CCF الرئيسي
+          </a>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {group.entries.map((entry) => (
               <article

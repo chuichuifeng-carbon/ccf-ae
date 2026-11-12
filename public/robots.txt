@@ -1,8 +1,12 @@
 User-agent: *
 Disallow: /decapcms/
 
-# AI search & answer-engine crawlers are explicitly welcome (GEO).
+# Public search, retrieval and existing AI crawler policies.
 # Each group keeps the /decapcms/ exclusion; everything else is allowed.
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /decapcms/
+
 User-agent: GPTBot
 Allow: /
 Disallow: /decapcms/

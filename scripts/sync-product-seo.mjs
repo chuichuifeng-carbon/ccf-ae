@@ -9,6 +9,7 @@ const seo = JSON.parse(fs.readFileSync(seoPath, 'utf8'));
 const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
 const base = 'https://amxnx.vip';
 const exemplar = plan.pages.find((p) => p.route === '/products/hoods');
+const categorySeo = JSON.parse(fs.readFileSync('src/data/b2b/category-seo.json', 'utf8'));
 const records = allProducts.map((p) => ({
   route: `/products/${p.slug}`,
   title: p.seoTitle,
@@ -23,12 +24,12 @@ const records = allProducts.map((p) => ({
 }));
 for (const slug of Object.keys(productCategories)) {
   const p = allProducts.find((p) => p.categorySlug === slug);
-  const h1 = `${productCategories[slug]} كربون لسيارات BMW`;
+  const h1 = `${productCategories[slug]}${slug === 'lighting' ? '' : ' كربون'} لسيارات BMW`;
   records.push({
     route: `/products/${slug}`,
-    title: `${h1} | CCF`,
+    title: `${categorySeo[slug].title} | CCF`,
     h1,
-    description: `تصفّح ${productCategories[slug]} لسيارات BMW. راجع صور المراجع، وأكّد التجهيزات والمادة ومحتويات التوريد قبل طلب عرض سعر عبر واتساب.`,
+    description: categorySeo[slug].description,
     image: p.featuredImage,
     imageWidth: p.images[0].lg.width,
     imageHeight: p.images[0].lg.height,
@@ -37,6 +38,13 @@ for (const slug of Object.keys(productCategories)) {
     intentCN: '按部件类型浏览并进入具体产品，确认车型与采购条件',
   });
 }
+// Drop metadata for products whose slug changed, so the plan stays in sync with the build.
+const validRoutes = new Set(records.map((r) => r.route));
+for (const route of Object.keys(seo)) {
+  if (route.startsWith('/products/') && !validRoutes.has(route)) delete seo[route];
+}
+plan.pages = plan.pages.filter((page) => !(page.route.startsWith('/products/') && !validRoutes.has(page.route)));
+
 for (const r of records) {
   seo[r.route] = {
     title: r.title,

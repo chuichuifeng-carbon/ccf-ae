@@ -86,6 +86,7 @@ if (seoSchema) {
   seoSchemas.push({
     '@context': 'https://schema.org',
     '@type': pageType,
+    '@id': `${canonical}#webpage`,
     name: getPageSeo(pathname)?.h1 || metadata?.title,
     description: metadata.description,
     url: canonical,
@@ -120,6 +121,7 @@ if (seoSchema) {
     <slot />
     <ProcurementHelp />
     <BuyerResources />
+    <slot name="after-resources" />
   </main>
   {Astro.slots.has('footer') ? <slot name="footer" /> : <Footer {...footerData} />}
   <WhatsAppFAB context={String(metadata?.title || 'استفسار B2B')} reference={canonical} />

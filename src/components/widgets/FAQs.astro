@@ -61,6 +61,7 @@ const faqSchema = schema
       <div class:list={['mx-auto max-w-3xl divide-y divide-gray-200 dark:divide-slate-700', classes?.list ?? '']}>
         {items.map(({ title: itemTitle, description, icon, callToAction }, index) => (
           <details
+            id={id ? `${id}-${index + 1}` : undefined}
             class="group intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
             name={groupName}
             open={index === defaultOpen}

@@ -4,6 +4,19 @@ import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import StructuredData from '~/components/common/StructuredData.astro';
+import catalogs from '~/data/b2b/catalogs.json';
+import { getCanonical } from '~/utils/permalinks';
+
+const url = String(getCanonical('/catalogs'));
+const documents = catalogs.flatMap((group) =>
+  group.entries.map((entry) => ({
+    '@type': 'DigitalDocument',
+    name: `${group.brand.toUpperCase()} ${entry.model}`,
+    url: entry.url,
+    encodingFormat: 'application/pdf',
+  }))
+);
 
 const metadata = {
   title: 'كتالوج قطع كربون BMW ومرسيدس وبورش PDF | CCF',
@@ -13,6 +26,18 @@ const metadata = {
 ---
 
 <PageLayout metadata={metadata}>
+  <StructuredData
+    slot="head"
+    schema={{
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      '@id': url + '#model-catalogs',
+      mainEntityOfPage: { '@id': url + '#webpage' },
+      name: 'كتالوجات المركبات',
+      numberOfItems: documents.length,
+      itemListElement: documents.map((item, i) => ({ '@type': 'ListItem', position: i + 1, item })),
+    }}
+  />
   <!-- HeroText -->
   <HeroText
     tagline="BMW · Mercedes-AMG · Porsche · كتالوجات PDF"

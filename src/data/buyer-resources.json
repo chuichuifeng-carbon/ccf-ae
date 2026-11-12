@@ -572,6 +572,158 @@
       {
         "href": "/carbon-fiber-parts-rfq-checklist",
         "text": "جهّز معلومات طلب السعر"
+      },
+      {
+        "href": "/vehicles/bmw",
+        "text": "اختر قطع BMW المصوّرة حسب الشاسيه"
+      },
+      {
+        "href": "/catalogs#model-catalogs",
+        "text": "ابحث عن مرجع مرسيدس أو بورش في كتالوجات PDF"
+      },
+      {
+        "href": "/grow/oem-odm",
+        "text": "أرسل مواصفات مشروع OEM/ODM لتطوير قطعة خاصة"
+      }
+    ]
+  },
+  "/best-mercedes-c63-w205-carbon-fiber-upgrades": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/vehicles/mercedes-amg#model-catalogs",
+        "text": "كتالوج مرسيدس لتحديد مرجع C63 حسب الهيكل"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-mercedes-w223-carbon-fiber-exterior-parts": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/vehicles/mercedes-amg#model-catalogs",
+        "text": "راجع صور مراجع مرسيدس S-Class W223 في الكتالوج"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-porsche-992-carbon-fiber-front-lips": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/vehicles/porsche#model-catalogs",
+        "text": "اختر مرجع الشفة الأمامية لبورش 911 من كتالوج الطراز"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-g80-g82-carbon-fiber-grilles": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/products/grilles-air-intake",
+        "text": "قارن صور الشبكات الأمامية ومراجع BMW"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-m3-m4-carbon-fiber-spoilers": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/products/spoilers-wings",
+        "text": "تصفّح السبويلر والأجنحة حسب تصميم التثبيت"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-carbon-fiber-side-skirts": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/products/side-skirts",
+        "text": "قارن التنانير والامتدادات الجانبية حسب الشاسيه"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-m-carbon-fiber-hoods-2026": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/products/hoods",
+        "text": "تصفّح أغطية المحرك المصوّرة حسب الطراز"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-m3-m4-carbon-front-lips-2026": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/products/front-lips-splitters",
+        "text": "تصفّح صور الشفاه الأمامية والسبليتر حسب المصد"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-g90-m5-carbon-fiber-upgrades": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/vehicles/bmw#bmw-G90",
+        "text": "تصفّح مراجع BMW M5 G90 المصوّرة"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
+      }
+    ]
+  },
+  "/best-bmw-g82-m4-carbon-fiber-upgrades": {
+    "title": "من دليل الاختيار إلى طلب السعر",
+    "text": "اختر المرجع أو صورة التصميم، ثم أرفق سنة السيارة والكمية ومدينة التسليم ليتمكن فريق المبيعات من تسعير طلبك.",
+    "links": [
+      {
+        "href": "/vehicles/bmw#bmw-G82",
+        "text": "افتح قائمة القطع المصوّرة لـ BMW M4 G82"
+      },
+      {
+        "href": "/carbon-fiber-parts-rfq-checklist",
+        "text": "راجع البيانات اللازمة لعرض سعر الجملة"
       }
     ]
   }

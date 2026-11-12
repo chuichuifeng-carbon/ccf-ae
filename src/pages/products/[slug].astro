@@ -7,14 +7,19 @@ import { SITE } from 'astrowind:config';
 import { getCanonical } from '~/utils/permalinks';
 import { whatsappUrl } from '~/utils/inquiry';
 import { isolateLatin } from '~/utils/bidi';
+import { TRADE_TERMS } from '~/data/b2b/trade-terms';
 export function getStaticPaths() {
   return allProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
 }
 const { product } = Astro.props;
+const standardCarbon = Boolean(product.manufacturing);
+const warranty = !standardCarbon ? 'اطلب تأكيد شروط ضمان هذا المرجع في عرض السعر.' : TRADE_TERMS.warranty;
 const related = getRelatedProducts(product, 4);
 const canonical = String(getCanonical(`/products/${product.slug}`));
 const photo = product.images[0].lg;
 const categoryUrl = `/products/${product.categorySlug}`;
+const lastReviewed = product.reviewedAt;
+const summary = `${product.categoryArShort} من الكربون الجاف الحقيقي لسيارات ${product.model}: تصميم أكثر عدوانية، وتوريد مباشر من مصنع CCF بالجملة أو OEM/ODM. تُؤكَّد المطابقة النهائية بصور سيارتك قبل عرض السعر.`;
 const metadata = {
   title: product.seoTitle,
   description: product.seoDescription,
@@ -26,7 +31,9 @@ const faq = [
   { q: 'كيف أتأكد من المطابقة؟', a: `${product.checks[0]} ${product.checks[1]}` },
   {
     q: 'ما المادة ومحتويات التوريد؟',
-    a: 'اطلب تأكيد بنية الكربون والتشطيب ووحدة البيع والأقسام والمثبتات المشمولة للمرجع نفسه. صور المركبة قد تعرض إضافات لا تدخل في الطلب.',
+    a: !standardCarbon
+      ? product.checks[2]
+      : 'اطلب تأكيد بنية الكربون والتشطيب ووحدة البيع والأقسام والمثبتات المشمولة للمرجع نفسه. صور المركبة قد تعرض إضافات لا تدخل في الطلب.',
   },
   {
     q: 'كيف أطلب سعر التوريد؟',
@@ -34,8 +41,16 @@ const faq = [
   },
   {
     q: 'ما الضمان وشروط الإرجاع؟',
-    a: 'تطبّق سياسة ما بعد البيع والشروط المؤكدة للطلب. فترة الإبلاغ عن التلف لا تعني حق إرجاع تلقائياً؛ راجع سياسة الضمان والإرجاع قبل الشراء.',
+    a: !standardCarbon
+      ? warranty
+      : 'قطع الكربون الجاف مشمولة بضمان سنة واحدة ضد عيوب التصنيع من تاريخ التسليم، ونتحمّل مسؤولية التلف أثناء النقل بالاستبدال أو إعادة الشحن بعد تأكيده بالصور. راجع سياسة الضمان والإرجاع للتفاصيل.',
   },
+];
+const commercialTerms = [
+  ['الحد الأدنى للطلب', TRADE_TERMS.moq],
+  ['مدة التجهيز', TRADE_TERMS.leadTime],
+  ['التلف أثناء النقل', TRADE_TERMS.shippingDamage],
+  ['الضمان', warranty],
 ];
 const schemas = [
   {
@@ -49,6 +64,13 @@ const schemas = [
     brand: { '@type': 'Brand', name: 'CCF' },
     manufacturer: { '@id': `${SITE.site}/#organization` },
     category: product.categoryAr,
+    material: !standardCarbon ? product.material || undefined : 'كربون جاف حقيقي (Dry Carbon Fiber)',
+    keywords: product.keywords.join(', '),
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'موزعو قطع تعديل السيارات وورش التعديل ومشترو الجملة',
+    },
+    dateModified: lastReviewed,
     mainEntityOfPage: { '@id': `${canonical}#webpage` },
     additionalProperty: [
       {
@@ -56,7 +78,28 @@ const schemas = [
         name: 'مرجع المركبة؛ المطابقة تحتاج تأكيداً',
         value: product.chassisCodes.join(' / '),
       },
+      ...(!standardCarbon ? [] : [{ '@type': 'PropertyValue', name: 'المادة', value: 'كربون جاف حقيقي — Dry Carbon' }]),
+      { '@type': 'PropertyValue', name: 'التوريد', value: 'مصنع CCF — جملة / OEM-ODM' },
+      { '@type': 'PropertyValue', name: 'بلد المنشأ', value: 'الصين — مصنع CCF' },
+      ...(!standardCarbon ? [] : [{ '@type': 'PropertyValue', name: 'التصميم', value: 'تصميم أكثر عدوانية' }]),
+      { '@type': 'PropertyValue', name: 'الحد الأدنى للطلب', value: TRADE_TERMS.moq },
+      { '@type': 'PropertyValue', name: 'مدة التجهيز', value: TRADE_TERMS.leadTime },
+      { '@type': 'PropertyValue', name: 'الضمان', value: warranty },
+      { '@type': 'PropertyValue', name: 'التلف أثناء النقل', value: TRADE_TERMS.shippingDamage },
     ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${canonical}#faq`,
+    mainEntity: faq.map((entry) => ({
+      '@type': 'Question',
+      name: entry.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: entry.a.replace(/\s+/g, ' ').trim(),
+      },
+    })),
   },
   {
     '@context': 'https://schema.org',
@@ -123,7 +166,20 @@ const schemas = [
           icon="tabler:brand-whatsapp"
         /><Button href="/contact" variant="secondary" text="تواصل مع المبيعات" />
       </div>
-      <p class="text-sm text-muted">السعر والتوفر وموعد التجهيز تُؤكّد حسب المرجع والكمية ووجهة الشحن.</p>
+      <p class="text-sm text-muted">السعر والتوفر يُؤكّدان حسب المرجع والكمية ووجهة الشحن.</p>
+      <div id="trade-terms" class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
+        <h2 class="font-bold mb-2">شروط التوريد</h2>
+        <dl class="grid gap-3 sm:grid-cols-2 text-sm">
+          {
+            commercialTerms.map(([label, value]) => (
+              <div>
+                <dt class="font-medium mb-1">{label}</dt>
+                <dd class="text-muted" set:html={isolateLatin(value)} />
+              </div>
+            ))
+          }
+        </dl>
+      </div>
       <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
         <h2 class="font-bold mb-2">تحقّق من المرجع قبل الطلب</h2>
         <p class="text-sm text-muted mb-3">
@@ -148,6 +204,43 @@ const schemas = [
       </div>
     </div>
   </section>
+  {
+    standardCarbon && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+        <div class="rounded-2xl border border-gray-200 dark:border-slate-700 p-5 md:p-6">
+          <h2 class="text-xl font-bold mb-3">ملخص سريع</h2>
+          <p class="text-muted" set:html={isolateLatin(summary)} />
+          <ul class="list-disc ps-6 mt-3 text-sm text-muted space-y-1">
+            <li>المادة: كربون جاف حقيقي — Dry Carbon؛ تُؤكَّد البنية والتشطيب للمرجع المطلوب.</li>
+            <li>التوافق: مصمم لسيارات {product.model}؛ المطابقة النهائية تُؤكَّد بصور سيارتك وتجهيزاتها.</li>
+            <li>التوريد: مصنع CCF — جملة أو OEM/ODM، مع تأكيد الكمية الدنيا والتغليف ووجهة الشحن.</li>
+            <li>الطلب: أرسل سنة السيارة وصور الجزء الحالي والكمية ومدينة التسليم للحصول على عرض سعر.</li>
+          </ul>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 mt-4">
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+            <h3 class="font-bold mb-2">كربون جاف حقيقي</h3>
+            <p class="text-sm text-muted">
+              نبدأ من بنية كربون جاف حقيقية لا من طبقة زخرفية؛ تُؤكَّد البنية والتشطيب والوزن للمرجع قبل العرض.
+            </p>
+          </div>
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+            <h3 class="font-bold mb-2">التحقّق من المطابقة</h3>
+            <p class="text-sm text-muted">
+              خطوط مستوحاة من المرجع الأصلي مع حضور أكثر عدوانية؛ تُؤكَّد نسخة المصد أو الرفرف ونقاط التثبيت بصور
+              سيارتك.
+            </p>
+          </div>
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+            <h3 class="font-bold mb-2">مصنع CCF بالجملة</h3>
+            <p class="text-sm text-muted">
+              توريد مباشر من المصنع للموزعين وورش التعديل، مع مسار OEM/ODM وتأكيد الكمية الدنيا والتغليف قبل الشحن.
+            </p>
+          </div>
+        </div>
+      </section>
+    )
+  }
   <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
     <h2 class="text-2xl font-bold mb-4">المطابقة ومحتويات التوريد</h2>
     <ul class="list-disc ps-6 space-y-3">{product.checks.map((check) => <li set:html={isolateLatin(check)} />)}</ul>
@@ -184,7 +277,7 @@ const schemas = [
       </section>
     )
   }
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+  <section id="faq" class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
     <h2 class="text-2xl font-bold mb-5">أسئلة المشتري قبل التأكيد</h2>
     <div class="space-y-3">
       {
@@ -255,9 +348,13 @@ const schemas = [
     <h2 class="text-lg font-bold">المصدر ومسؤولية المعلومات</h2>
     <p>
       الجهة الناشرة: <a href="/about#publisher" class="text-primary underline">CCF</a>. الصور والمرجع تساعد على اختيار
-      القطعة، والمادة والمطابقة ومحتويات الطلب تُؤكّد قبل الشراء. آخر مراجعة: <time datetime="2026-11-03"
-        >2026-11-03</time
-      >.
+      القطعة، والمادة والمطابقة ومحتويات الطلب تُؤكّد قبل الشراء. {
+        lastReviewed && (
+          <span>
+            آخر مراجعة: <time datetime={lastReviewed}>{lastReviewed}</time>.
+          </span>
+        )
+      }
     </p>
     <p>BMW وMercedes-Benz وPorsche علامات لأصحابها. تستخدم الأسماء لتحديد تطبيق المركبة؛ لا تدل على شراكة مع CCF.</p>
     <div class="flex flex-wrap gap-4">

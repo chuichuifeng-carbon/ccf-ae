@@ -1,6 +1,6 @@
 export function whatsappUrl(context = '', reference = ''): string {
   const message = [
-    'مرحباً، أود الاستفسار عن توريد قطع ألياف الكربون من CCF.',
+    'مرحباً، أود الاستفسار عن توريد قطع السيارات من CCF.',
     context ? `المنتج / الموضوع: ${context}` : '',
     reference ? `المرجع: ${reference}` : '',
     'الشركة / نوع النشاط: ',

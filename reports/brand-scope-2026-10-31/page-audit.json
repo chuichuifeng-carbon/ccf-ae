@@ -1,6 +1,10 @@
 {
-  "allowedBrands": ["bmw", "mercedes-amg", "porsche"],
-  "pageCount": 120,
+  "allowedBrands": [
+    "bmw",
+    "mercedes-amg",
+    "porsche"
+  ],
+  "pageCount": 392,
   "catalogEntries": 40,
   "selectedProductImages": 108,
   "removedPages": [
@@ -33,6 +37,27 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/best-bmw-carbon-fiber-side-skirts",
+      "title": "Best 7: التنانير الجانبية الكربون لسيارات BMW 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-bmw-carbon-fiber-small-accessories",
+      "title": "Top 10 Best: إضافات كربون صغيرة لسيارات BMW 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-bmw-g80-g82-carbon-fiber-grilles",
+      "title": "Best 7: شبكات كربون BMW G80 M3 وG82 M4 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/best-bmw-g80-m3-carbon-upgrade-suppliers-2026",
       "title": "Top 10 Best: ترقيات كربون BMW G80 M3 في 2026 | CCF",
       "excludedBrandScan": "passed",
@@ -40,8 +65,29 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/best-bmw-g82-m4-carbon-fiber-upgrades",
+      "title": "Top 10 Best: ترقيات كربون BMW G82 M4 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-bmw-g90-m5-carbon-fiber-upgrades",
+      "title": "Top 10 Best: ترقيات كربون BMW G90 M5 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/best-bmw-m-carbon-fiber-hoods-2026",
       "title": "Top 10 Best: أغطية محرك كربون BMW M في 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-bmw-m3-m4-carbon-fiber-spoilers",
+      "title": "Top 10 Best: سبويلر كربون BMW M3 وM4 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -75,6 +121,13 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/best-china-factory-direct-carbon-fiber-suppliers",
+      "title": "Best 4: موردي قطع الكربون من مصانع في الصين 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/best-dry-carbon-automotive-suppliers-2026",
       "title": "Top 10 Best: موردو قطع الكربون الجاف للسيارات 2026 | CCF",
       "excludedBrandScan": "passed",
@@ -89,8 +142,36 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/best-mercedes-c63-w205-carbon-fiber-upgrades",
+      "title": "Top 8 Best: قطع كربون Mercedes C63 W205 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-mercedes-w223-carbon-fiber-exterior-parts",
+      "title": "Top 9 Best: قطع كربون Mercedes W223 الخارجية | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-porsche-992-carbon-fiber-front-lips",
+      "title": "Top 5 Best: شفة أمامية كربون Porsche 992 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/best-porsche-992-carbon-upgrade-suppliers-2026",
       "title": "Top 10 Best: ترقيات كربون Porsche 911 992 في 2026 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/best-private-label-carbon-fiber-partners",
+      "title": "Best 3: خيارات لمناقشة توريد قطع كربون بعلامتك الخاصة 2026 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -124,6 +205,20 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/carbon-fiber-parts-moq-guide",
+      "title": "ما الحد الأدنى لطلب قطع الكربون؟ دليل MOQ للموزعين والورش | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/carbon-fiber-parts-rfq-checklist",
+      "title": "كيف تطلب عرض سعر لقطع كربون السيارات من CCF؟ | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/cases",
       "title": "زيارات عملاء مصنع قطع الكربون ومراجعة المورد | CCF",
       "excludedBrandScan": "passed",
@@ -146,7 +241,7 @@
     },
     {
       "route": "/contact",
-      "title": "طلب عرض سعر قطع كربون السيارات عبر واتساب | CCF",
+      "title": "اطلب عرض سعر قطع كربون للسيارات | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -182,6 +277,13 @@
     {
       "route": "/import-cost-calculator",
       "title": "حاسبة تكلفة استيراد قطع الكربون وهامش الربح | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/oem-vs-aftermarket-carbon-fiber-parts",
+      "title": "قطع الكربون الأصلية وقطع ما بعد البيع وخدمة OEM: ما الفرق؟ | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -224,6 +326,20 @@
     {
       "route": "/blog/2",
       "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار — الصفحة 2 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/blog/3",
+      "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار — الصفحة 3 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/blog/4",
+      "title": "أدلة شراء قطع الكربون: المواد والمطابقة والأسعار — الصفحة 4 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -278,428 +394,2178 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series E90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-front-bumper-and-fenders",
+      "title": "طقم مصد أمامي ورفارف كربون جاف حقيقي BMW 3 Series E90/E92/E93 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-front-fog-light-corner-trims",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW 3 Series E90/E92/E93 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-front-lip-splitter",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series E90/E92 — تصميم M3، سبليتر سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-gt4-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series E90/E92 — تصميم GT4، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-hm-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 3 Series E90/E92/E93 — تصميم HM، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-hood",
+      "title": "غطاء محرك كربون جاف حقيقي BMW 3 Series E90/E92/E93 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-oem-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 3 Series E90/E92/E93 — تصميم OEM، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-side-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW 3 Series E90/E92 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-m3-side-skirt-extensions",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 3 Series E90/E92/E93 — تصميم M3، امتداد سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e90-e92-e93-carbon-fiber-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series E90/E92/E93 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-carbon-fiber-m3-psm-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series E92 — تصميم PSM، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-m3-gt4-style-front-bumper-trims",
+      "title": "زخارف المصد الأمامي كربون جاف حقيقي BMW 3 Series E92 — تصميم GT4، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-m3-rear-bumper-splitters",
+      "title": "زخارف المصد الخلفي كربون جاف حقيقي BMW 3 Series E92 — تصميم M3، سبليتر سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-m3-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 3 Series E92 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e90-e93-carbon-fiber-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series E92 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-front-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW 3 Series E92/E93 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-gts-style-front-bumper-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series E92/E93 — تصميم GTS | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-ak-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series E92/E93 — تصميم AK، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-crt-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series E92/E93 — تصميم CRT، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-fender-side-vent-set",
+      "title": "زخارف فتحات الرفارف كربون جاف حقيقي BMW 3 Series E92/E93 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-fenders",
+      "title": "رفارف كربون جاف حقيقي BMW 3 Series E92/E93 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-m3-rear-diffuser-kit",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 3 Series E92/E93 — تصميم M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-e92-e93-e90-carbon-fiber-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series E92/E93 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-d-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 1 Series F20 — تصميم D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-d-style-rear-lip",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW 1 Series F20 — تصميم D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-front-fog-light-trims",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW 1 Series F20 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-max-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 1 Series F20 — تصميم MAX | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-max-style-rear-bumper-corner-splitters",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW 1 Series F20 — تصميم MAX، سبليتر سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f20-carbon-fiber-sd-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW 1 Series F20 — تصميم SD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-3d-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-3d-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-cs-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم CS | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-m3-m4-oil-pan-guard",
+      "title": "حماية حوض الزيت كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم M3 M4 OIL PAN | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-m3-psm-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 F80 — تصميم PSM، مرجع M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-front-corner-splitters",
+      "title": "سبليترات زوايا المصد الأمامي كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم MP، سبليتر سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-mp-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-rear-bumper-corner-trims",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW M3 F80 / M4 F82 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-v-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-v-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f80-f82-carbon-fiber-v-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 F80 / M4 F82 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-ac-style-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M2 F87 — تصميم AC | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-front-bumper",
+      "title": "مصد أمامي كربون جاف حقيقي BMW M2 F87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-hood",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M2 F87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2-competition-kidney-grille-trim",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 F87 — تصميم M2 COMPETITION، نسخة Competition | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2-competition-oil-pan-guard",
+      "title": "حماية حوض الزيت كربون جاف حقيقي BMW M2 F87 — تصميم M2 COMPETITION OIL PAN، نسخة Competition | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2-m2c-front-fenders",
+      "title": "رفارف كربون جاف حقيقي BMW M2 F87 — تصميم M2 M2C | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-m2c-forged-carbon-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 F87 — تصميم M2C FORGED | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mp-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 F87 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mp-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 F87 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mp-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 F87 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 F87 — تصميم MTC | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-rear-bumper-corner-trim",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW M2 F87 — تصميم MTC | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 F87 — تصميم MTC | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-mtc-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 F87 — تصميم MTC | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-rear-bumper",
+      "title": "مصد خلفي كربون جاف حقيقي BMW M2 F87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f87-carbon-fiber-trunk-lid",
+      "title": "غطاء صندوق خلفي كربون جاف حقيقي BMW M2 F87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3-piece-front-lip-2020-2023",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 — ثلاث قطع، طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-front-lip-2017-2020",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 — تصميم 3D، طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW M5 F90 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-rear-lip-2017-2020",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 — تصميم 3D، طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-rear-lip-2020-2023",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 — تصميم 3D، طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-rear-lip-with-rear-bumper-corner-splitters",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 — تصميم 3D، سبليتر سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M5 F90 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-side-skirts-2017-2020",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M5 F90 — تصميم 3D، طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-3d-style-side-skirts-2020-2023",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M5 F90 — تصميم 3D، طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-body-kit-installed-2017-2020",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW M5 F90 — صور تركيب، طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-bumper-corner-trims-2017-2020",
+      "title": "زخارف زوايا المصد كربون جاف حقيقي BMW M5 F90 — طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-d-style-rear-lip",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 — تصميم D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-fog-light-trims",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW M5 F90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-fog-light-trims-2020-2023",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW M5 F90 — طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-front-grille-front-grille-2017-2020",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M5 F90 — طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-front-grille-front-grille-2020-2023",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M5 F90 — طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-m5-kidney-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M5 F90 — تصميم M5 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-m5-oil-pan-guard",
+      "title": "حماية حوض الزيت كربون جاف حقيقي BMW M5 F90 — تصميم M5 OIL PAN | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-front-lip-with-canards",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 — تصميم MP، مع كانارد | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-front-lip-with-canards-2017-2020",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 — تصميم MP، مع كانارد، طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M5 F90 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-rear-spoiler-2017-2020",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M5 F90 — تصميم MP، طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-mp-style-rear-spoiler-2020-2023",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M5 F90 — تصميم MP، طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M5 F90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip-rear-lip-2017-2020",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 — طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip-rear-lip-2020-2023",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW M5 F90 — طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-rear-lip-with-led-light",
+      "title": "شفّة خلفية مع إضاءة LED كربون جاف حقيقي BMW M5 F90 — مع إضاءة LED | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-side-mirror-covers-2017-2020",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW M5 F90 — طراز 2017–2020 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-side-mirror-covers-2020-2023",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW M5 F90 — طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M5 F90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M5 F90 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 F90 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW M5 F90 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M5 F90 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-carbon-fiber-vk-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M5 F90 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f90-g30-carbon-fiber-psm-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M5 F90 / 5 Series G30 — تصميم PSM | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f95-f96-carbon-fiber-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW X5 M F95 / X6 M F96 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f95-f96-carbon-fiber-sd-style-front-fog-light-trims",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW X5 M F95 / X6 M F96 — تصميم SD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f95-f96-carbon-fiber-v-style-rear-lip",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW X5 M F95 / X6 M F96 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-f97-f98-carbon-fiber-x3m-x4m-oil-pan-guard",
+      "title": "حماية حوض الزيت كربون جاف حقيقي BMW — تصميم X3M X4M OIL PAN | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-fender-vents",
+      "title": "زخارف فتحات الرفارف كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-bumper-air-intake-trims",
+      "title": "زخارف فتحات المصد الأمامي كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-grille-with-mesh",
+      "title": "شبك أمامي كربون جاف حقيقي BMW X5 G05 — تصميم VK، مع شبكة | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g05-carbon-fiber-vk-style-roof-spoiler",
+      "title": "سبويلر سقف كربون جاف حقيقي BMW X5 G05 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-ld-style-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW X6 G06 — تصميم LD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-style-01-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW X6 G06 — تصميم G06، الإصدار 1 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-style-02-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW X6 G06 — تصميم G06، الإصدار 2 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g06-carbon-fiber-x6-style-03-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW X6 G06 — تصميم G06، الإصدار 3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-3-piece-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 8 Series G14/G15 — تصميم VK، ثلاث قطع | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 8 Series G14/G15 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW 8 Series G14/G15 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 8 Series G14/G15 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 8 Series G14/G15 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g14-g15-carbon-fiber-vk-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 8 Series G14/G15 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-carbon-fiber-smp-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series G20 — تصميم SMP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-carbon-fiber-sp-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series G20 — تصميم SP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-double-slat-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم SLAT، نسخة LCI، قضبان مزدوجة | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-fog-light-trims",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW 3 Series G20/G28 — نسخة LCI | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW 3 Series G20/G28 — نسخة LCI | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-lci-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series G20/G28 — نسخة LCI | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-1st-gen-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم VK، الجيل الأول، الإصدار 1 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-double-slat-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم VK، قضبان مزدوجة | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-carbon-fiber-vk-style-rear-diffuser-with-side-extensions",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 3 Series G20/G28 — تصميم VK، امتداد سفلي، مع امتدادات جانبية | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g20-g28-g22-g23-g26-carbon-fiber-vk-style-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW 3 Series G20/G28 / 4 Series G22/G23/G26 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g22-g23-carbon-fiber-vk-style-rear-diffuser-with-led",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 4 Series G22/G23 — تصميم VK، مع إضاءة LED | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g22-g23-carbon-fiber-vk-style-rear-diffuser-without-led",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 4 Series G22/G23 — تصميم VK، بدون إضاءة LED | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g22-g23-carbon-fiber-vk-style-rear-wing",
+      "title": "جناح خلفي كربون جاف حقيقي BMW 4 Series G22/G23 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g22-g82-carbon-fiber-csl-style-tail-lights",
+      "title": "إضاءة خلفية كربون جاف حقيقي BMW 4 Series G22 / M4 G82 — تصميم CSL | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g22-g82-carbon-fiber-dragon-scale-daytime-running-lights",
+      "title": "إضاءة نهارية كربون جاف حقيقي BMW 4 Series G22 / M4 G82 — تصميم DAYTIME RUNNING، حراشف التنين | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g26-carbon-fiber-vk-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 4 Series G26 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g26-carbon-fiber-vk-style-rear-bumper-trim",
+      "title": "زخارف المصد الخلفي كربون جاف حقيقي BMW 4 Series G26 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g26-carbon-fiber-vk-style-rear-diffuser-with-side-splitters",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 4 Series G26 — تصميم VK، سبليتر سفلي، مع شفرات جانبية | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g26-g22-g23-carbon-fiber-vk-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 4 Series G26/G22/G23 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g28-carbon-fiber-lwb-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 3 Series G28 — قاعدة عجلات طويلة | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g28-carbon-fiber-vk-style-long-wheelbase-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 3 Series G28 — تصميم VK، قاعدة عجلات طويلة | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g29-carbon-fiber-z4-m40i-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW Z4 G29 — تصميم Z4 M40I، نسخة M40i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-fog-light-trims",
+      "title": "زخارف مصابيح الضباب كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-front-grille-with-mesh",
+      "title": "شبك أمامي كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، مع شبكة، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-side-winglets",
+      "title": "زعانف جانبية كربون جاف حقيقي BMW 5 Series G30 — تصميم SERIES 540I WINGLETS، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-carbon-fiber-5-series-lci-540i-vk-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW 5 Series G30 — تصميم VK، نسخة LCI، نسخة 540i | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-f90-carbon-fiber-shark-fin-antenna-cover",
+      "title": "غطاء هوائي زعنفة القرش كربون جاف حقيقي BMW 5 Series G30 / M5 F90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-f90-carbon-fiber-v-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 5 Series G30 / M5 F90 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-d-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 5 Series G30/G38 — تصميم D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-d-style-hood",
+      "title": "غطاء محرك كربون جاف حقيقي BMW 5 Series G30/G38 — تصميم D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-d-style-rear-lip",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW 5 Series G30/G38 — تصميم D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g30-g38-carbon-fiber-racing-style-rear-lip",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW 5 Series G30/G38 — تصميم RACING | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g42-carbon-fiber-v-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 2 Series G42 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-fender-trims",
+      "title": "زخارف فتحات الرفارف كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-front-bumper-air-intake-trims",
+      "title": "زخارف فتحات المصد الأمامي كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-mirror-covers",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-psm-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 5 Series G60/G68 — تصميم PSM | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW 5 Series G60/G68 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g60-g68-carbon-fiber-vk-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW 5 Series G60/G68 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-carbon-fiber-3-series-m3-rear-spoilers",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 — تصميم SERIES M3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-03-front-grilles",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-08-rear-spoilers-wings",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-11-trunk-lids",
+      "title": "غطاء صندوق خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-12-mirror-caps",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/products/bmw-g80-g82-carbon-fiber-2021-up-flat-side-skirts",
-      "title": "تنانير جانبية مسطحة كربون BMW M4 G82/M4 G83 | CCF",
+      "title": "تنانير جانبية مسطحة كربون جاف حقيقي BMW M4 G82/G83 — تصميم مسطح، طراز 2021–Up | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-3d-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم 3D | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-3d-style-side-skirts",
-      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم 3D | CCF",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم 3D | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-fender-vent-trim",
-      "title": "زخارف فتحات الرفارف كربون BMW M3 G80/M4 G82 — تصميم AC | CCF",
+      "title": "زخارف فتحات الرفارف كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم AC | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-front-canards",
-      "title": "كانارد أمامي كربون BMW M3 G80/M4 G82 — تصميم AC | CCF",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم AC | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ac-style-hood",
-      "title": "غطاء محرك كربون BMW M3 G80 — تصميم AC | CCF",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M3 G80 — تصميم AC | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-adr1-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M4 G82 — تصميم ADR1 | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M4 G82 — تصميم ADR1 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-adr3-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M4 G82 — تصميم ADR3 | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M4 G82 — تصميم ADR3 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-air-intake-kit",
-      "title": "طقم سحب هواء كربون BMW M3 G80 | CCF",
+      "title": "طقم سحب هواء كربون جاف حقيقي BMW M3 G80 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-grille",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم AX | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-front-lip",
-      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم AX | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-rear-bumper-extensions",
-      "title": "امتدادات المصد الخلفي كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "title": "امتدادات المصد الخلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم AX، امتداد سفلي | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-ax-style-side-skirts",
-      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم AX | CCF",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم AX | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-center-exit-rear-diffuser-kit",
-      "title": "طقم ناشر للعادم المركزي كربون BMW M3 G80/M4 G82 | CCF",
+      "title": "طقم ناشر للعادم المركزي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CENTER EXIT | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-cs-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم CS | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CS | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، بدون ACC | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CSL، بدون ACC | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-no-acc-red",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، بدون ACC، كربون أحمر | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CSL RED، بدون ACC، كربون أحمر | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-red-carbon",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، كربون أحمر | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CSL RED، كربون أحمر | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-csl-grille-with-acc",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم CSL، مع ACC | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CSL، مع ACC | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-csl-style-hood",
-      "title": "غطاء محرك كربون BMW M3 G80/M4 G82 — تصميم CSL | CCF",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CSL | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-fender-vent-trim-style-1",
+      "title": "زخارف فتحات الرفارف كربون جاف حقيقي BMW M3 G80 / M4 G82 — الإصدار 1 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-fender-vent-trim-style-2",
+      "title": "زخارف فتحات الرفارف كربون جاف حقيقي BMW M3 G80 / M4 G82 — الإصدار 2 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents",
-      "title": "زخارف فتحات المصد الأمامي كربون BMW M3 G80/M4 G82 | CCF",
+      "title": "زخارف فتحات المصد الأمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-fenders",
-      "title": "رفارف أمامية كربون BMW M3 G80/M4 G82 | CCF",
+      "title": "رفارف كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
-      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم R44 | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم R44 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
-      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم CSL، ثلاث قطع | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم CSL، ثلاث قطع | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-hood-vent-trim",
-      "title": "زخارف فتحات غطاء المحرك كربون BMW M3 G80/M4 G82 | CCF",
+      "title": "زخارف فتحات غطاء المحرك كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-kb-style-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم KB | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-m-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW G20/M3 G80/G22/M4 G82 — تصميم M | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW 3 Series G20 / M3 G80 / 4 Series G22 / M4 G82 — تصميم M | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-m4-battery-cover",
+      "title": "غطاء البطارية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم M3 M4 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-m4-engine-bay-cover-set",
+      "title": "طقم أغطية حجرة المحرك كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم M3 M4 BAY | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-m3-m4-engine-bay-strut-brace-2-piece-set",
+      "title": "دعامة حجرة المحرك كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم M3 M4 BAY STRUT | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-m3-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M3 G80 — مرجع M3 | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 — تصميم M3 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-m4-doors",
-      "title": "أبواب M4 كوبيه كربون BMW M4 G82 | CCF",
+      "title": "أبواب كربون جاف حقيقي BMW M4 G82 — تصميم M4 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-m4-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW F30/M3 F80/G20/M3 G80 — تصميم M4 | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 F80/G80 / 3 Series G20 — تصميم M4 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-bumper-vent-trim",
-      "title": "زخارف فتحات المصد الأمامي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "title": "زخارف فتحات المصد الأمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-canards",
-      "title": "كانارد أمامي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-front-lip",
-      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-bumper-corner-trim",
-      "title": "زخارف زوايا المصد الخلفي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-mp-style-side-skirts",
-      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82/M4 G83 — تصميم MP | CCF",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M3 G80 / M4 G82/G83 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim",
-      "title": "زخارف زوايا المصد الأمامي كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "title": "زخارف زوايا المصد الأمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم OEM | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-bumper-corner-trim",
-      "title": "زخارف زوايا المصد الخلفي كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم OEM | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-rear-diffuser",
-      "title": "ناشر خلفي كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم OEM | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-oem-style-side-skirts",
-      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم OEM | CCF",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم OEM | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-psm-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم PSM | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم PSM | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-rear-bumper-corner-trim",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم R44 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم R44 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-r44-style-side-skirts",
-      "title": "تنانير جانبية كربون BMW M3 G80/M4 G82 — تصميم R44 | CCF",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم R44 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-rcs-style-rear-diffuser",
-      "title": "ناشر خلفي كربون BMW M3 G80/M4 G82 — تصميم RCS | CCF",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم RCS | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
-      "title": "ناشر خلفي كربون BMW M3 G80/M4 G82 — تصميم MP | CCF",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-outer-frame",
-      "title": "إطار ناشر خلفي كربون BMW M3 G80/M4 G82 | CCF",
+      "title": "إطار ناشر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — إطار خارجي | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-seat-back-covers",
-      "title": "أغطية ظهر المقاعد كربون BMW M3 G80/M4 G82 | CCF",
+      "title": "أغطية ظهر المقاعد كربون جاف حقيقي BMW M3 G80 / M4 G82 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-st-style-grille",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم ST | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم ST | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-tk-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم TK | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم TK | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-v-style-3-piece-front-lip",
-      "title": "شفّة أمامية كربون BMW M3 G80/M4 G82 — تصميم V، ثلاث قطع | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم V، ثلاث قطع | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-v-style-grille",
-      "title": "شبك أمامي كربون BMW M3 G80/M4 G82 — تصميم V | CCF",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم V | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-v-style-rear-spoiler",
-      "title": "سبويلر خلفي كربون BMW M3 G80/M4 G82 — تصميم V | CCF",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم V | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g80-g82-carbon-fiber-vs-style-front-canards",
-      "title": "كانارد أمامي كربون BMW M3 G80/M4 G82 — تصميم VS | CCF",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M3 G80 / M4 G82 — تصميم VS | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-m3-m4-m2-engine-cover",
+      "title": "غطاء محرك تجميلي كربون جاف حقيقي BMW M3 G80 / M4 G82 / M2 G87 — تصميم M3 M4 M2 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-mesh-debris-guard",
+      "title": "حماية شبكية من الحطام كربون جاف حقيقي BMW M3 G80 / M4 G82 / M2 G87 — تصميم DEBRIS | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set",
+      "title": "طقم زخارف داخلية كربون جاف حقيقي BMW M3 G80 / M4 G82 / M2 G87 — استبدال مباشر | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set-2020-2023",
+      "title": "طقم زخارف داخلية كربون جاف حقيقي BMW M3 G80 / M4 G82 / M2 G87 — استبدال مباشر، طراز 2020–2023 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set-2023-2024",
+      "title": "طقم زخارف داخلية كربون جاف حقيقي BMW M3 G80 / M4 G82 / M2 G87 — استبدال مباشر، طراز 2023–2024 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g80-g82-g87-carbon-fiber-replacement-interior-trim-set-2025-onwards",
+      "title": "طقم زخارف داخلية كربون جاف حقيقي BMW M3 G80 / M4 G82 / M2 G87 — استبدال مباشر، طراز 2025–Onwards | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g82-g80-carbon-fiber-adr01-style-rear-spoiler",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M4 G82 — تصميم ADR01 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-style-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M2 G87 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-3d-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — تصميم 3D | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-front-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 G87 — تصميم ADRO | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم ADRO | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم ADRO | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-adro-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — تصميم ADRO | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-ae-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — تصميم AE | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-ax-front-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 G87 — تصميم AX | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-cs-one-piece-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 G87 — تصميم CS | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-csl-front-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 G87 — تصميم CSL | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-double-bar-air-vent",
+      "title": "فتحة هواء كربون جاف حقيقي BMW M2 G87 — قضبان مزدوجة | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-lower-grille",
+      "title": "شبك سفلي كربون جاف حقيقي BMW M2 G87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-mp-front-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 G87 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-mp-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-n-style-fenders",
+      "title": "رفارف كربون جاف حقيقي BMW M2 G87 — تصميم N | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-od-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم OD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-od-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم OD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-od-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — تصميم OD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-r44-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم R44 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-r44-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم R44 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-r44-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — تصميم R44 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-bumper-corner-splitters",
+      "title": "زخارف زوايا المصد الخلفي كربون جاف حقيقي BMW M2 G87 — سبليتر سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-bumper-trim",
+      "title": "زخارف المصد الخلفي كربون جاف حقيقي BMW M2 G87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-diffuser-style-1-2",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — الإصدار 1 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-ak-style",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم AK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-dual-layer-style",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم LAYER | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-mp-style",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم MP | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-od-style",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم OD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-od-style-2",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم OD، الإصدار 2 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-rear-spoiler-v-style",
+      "title": "سبويلر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-side-skirt-extensions",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — امتداد سفلي | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-single-bar-air-vent",
+      "title": "فتحة هواء كربون جاف حقيقي BMW M2 G87 — تصميم SINGLE | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-slash-style-grille",
+      "title": "شبك أمامي كربون جاف حقيقي BMW M2 G87 — تصميم SLASH | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-sq-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم SQ | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-standard-hood",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M2 G87 — تصميم STANDARD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-trunk-lid",
+      "title": "غطاء صندوق خلفي كربون جاف حقيقي BMW M2 G87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-fenders",
+      "title": "رفارف كربون جاف حقيقي BMW M2 G87 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-hood",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M2 G87 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v-style-side-skirts",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M2 G87 — تصميم V | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-v1-style-hood",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M2 G87 — تصميم V1 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-front-canards",
+      "title": "كانارد أمامي كربون جاف حقيقي BMW M2 G87 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M2 G87 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW M2 G87 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-oil-cooler-protection-plate",
+      "title": "لوح حماية مبرد الزيت كربون جاف حقيقي BMW M2 G87 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-vk-style-rear-diffuser",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M2 G87 — تصميم VK | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-carbon-fiber-wheel-arch-trims",
+      "title": "زخارف أقواس العجلات كربون جاف حقيقي BMW M2 G87 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-g80-g82-carbon-fiber-m2-m3-m4-radiator-cover-set",
+      "title": "غطاء منطقة الردياتير كربون جاف حقيقي BMW M2 G87 / M3 G80 / M4 G82 — تصميم M2 M3 M4 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g87-g80-g82-carbon-fiber-replacement-seat-back-panel-set",
+      "title": "أغطية ظهر المقاعد كربون جاف حقيقي BMW M2 G87 / M3 G80 / M4 G82 — استبدال مباشر | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g87-m2-carbon-fiber-hood",
-      "title": "غطاء محرك كربون BMW M2 G87 | CCF",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M2 G87 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-ax-front-lip",
-      "title": "شفّة أمامية كربون BMW M5 G90 — تصميم AX | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 G90 — تصميم AX | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-ax-rear-diffuser",
-      "title": "ناشر خلفي كربون BMW M5 G90 — تصميم AX | CCF",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M5 G90 — تصميم AX | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-battery-cover",
-      "title": "غطاء البطارية كربون BMW M5 G90 | CCF",
+      "title": "غطاء البطارية كربون جاف حقيقي BMW M5 G90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-body-kit-02",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW M5 G90 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-engine-cover",
-      "title": "غطاء تجميلي للمحرك كربون BMW M5 G90 | CCF",
+      "title": "غطاء محرك تجميلي كربون جاف حقيقي BMW M5 G90 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-hood",
-      "title": "غطاء محرك كربون BMW M5 G90 | CCF",
+      "title": "غطاء محرك كربون جاف حقيقي BMW M5 G90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-g90-carbon-fiber-m5-cds-style-full-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW M5 G90 — تصميم CDS، مرجع M5 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-mirror-caps",
-      "title": "أغطية مرايا كربون BMW M5 G90 | CCF",
+      "title": "أغطية مرايا كربون جاف حقيقي BMW M5 G90 | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-mp-front-lip",
-      "title": "شفّة أمامية كربون BMW M5 G90 — تصميم MP | CCF",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW M5 G90 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-mp-rear-diffuser",
-      "title": "ناشر خلفي كربون BMW M5 G90 — تصميم MP | CCF",
+      "title": "ناشر خلفي كربون جاف حقيقي BMW M5 G90 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-mp-side-skirts",
-      "title": "تنانير جانبية كربون BMW M5 G90 — تصميم MP | CCF",
+      "title": "تنانير جانبية كربون جاف حقيقي BMW M5 G90 — تصميم MP | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
     },
     {
       "route": "/products/bmw-g90-carbon-fiber-radiator-cover",
-      "title": "غطاء منطقة الردياتير كربون BMW M5 G90 | CCF",
+      "title": "غطاء منطقة الردياتير كربون جاف حقيقي BMW M5 G90 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-ix2-carbon-fiber-fd-style-full-body-kit",
+      "title": "طقم هيكل كامل كربون جاف حقيقي BMW iX2 IX2 — تصميم FD | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-ix3-carbon-fiber-front-lip",
+      "title": "شفّة أمامية كربون جاف حقيقي BMW iX3 IX3 | مصنع CCF بالجملة",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/products/bmw-ix3-carbon-fiber-rear-lip-with-corner-trims",
+      "title": "شفّة خلفية كربون جاف حقيقي BMW iX3 IX3 — مع زخارف زوايا | مصنع CCF بالجملة",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -783,7 +2649,7 @@
     },
     {
       "route": "/products/trunk-lids",
-      "title": "غطاء صندوق أمتعة كربون BMW M2 وM3 وM4 وM5 | CCF",
+      "title": "أغطية صندوق الأمتعة كربون لسيارات BMW | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
@@ -838,6 +2704,20 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/category/adlh-almshtryn/3",
+      "title": "أرشيف أدلة مشتري قطع ألياف الكربون — الصفحة 3 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/category/adlh-almshtryn/4",
+      "title": "أرشيف أدلة مشتري قطع ألياف الكربون — الصفحة 4 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/tag/aljmlh/2",
       "title": "مقالات عن الجملة في المدونة — الصفحة 2 | CCF",
       "excludedBrandScan": "passed",
@@ -845,8 +2725,36 @@
       "brandNavigation": "passed"
     },
     {
+      "route": "/tag/aljmlh/3",
+      "title": "مقالات عن الجملة في المدونة — الصفحة 3 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/tag/aljmlh/4",
+      "title": "مقالات عن الجملة في المدونة — الصفحة 4 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
       "route": "/tag/altsnya/2",
       "title": "مقالات عن التصنيع في المدونة — الصفحة 2 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/tag/altsnya/3",
+      "title": "مقالات عن التصنيع في المدونة — الصفحة 3 | CCF",
+      "excludedBrandScan": "passed",
+      "linksAndImages": "passed",
+      "brandNavigation": "passed"
+    },
+    {
+      "route": "/tag/altsnya/4",
+      "title": "مقالات عن التصنيع في المدونة — الصفحة 4 | CCF",
       "excludedBrandScan": "passed",
       "linksAndImages": "passed",
       "brandNavigation": "passed"
