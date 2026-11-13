@@ -7,6 +7,7 @@ import Features from '~/components/widgets/Features.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import ProductCollection from '~/components/widgets/ProductCollection.astro';
 import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import { productCategories } from '~/data/b2b/product-content';
 import { allProducts, groupByChassis } from '~/data/b2b/all-products';
 
 const metadata = {
@@ -63,7 +64,34 @@ const chassisCards = Object.entries(chassisGroups)
     }}
   />
 
-  <ModelCatalogs brand="bmw" />
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-label="بحث المنتجات">
+    <div class="grid gap-4 sm:grid-cols-3">
+      <label
+        >الشاسيه<select data-filter-chassis class="mt-2 block w-full rounded-lg border p-3 bg-page"
+          ><option value="">جميع الشاسيهات</option>{
+            chassisCards.map((c) => <option value={c.code}>{c.code}</option>)
+          }</select
+        ></label
+      >
+      <label
+        >نوع القطعة<select data-filter-category class="mt-2 block w-full rounded-lg border p-3 bg-page"
+          ><option value="">جميع القطع</option>{
+            Object.entries(productCategories).map(([code, title]) => <option value={code}>{title}</option>)
+          }</select
+        ></label
+      >
+      <label
+        >ابحث باسم القطعة<input
+          data-filter-search
+          type="search"
+          placeholder="G87، CSL، شفة أمامية"
+          class="mt-2 block w-full rounded-lg border p-3 bg-page"
+        /></label
+      >
+    </div>
+    <p data-filter-status aria-live="polite" class="text-muted mt-3"></p>
+  </section>
+
   <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
     <h2 class="text-2xl font-bold mb-4">اختر شاسيه سيارتك للوصول إلى مراجع القطع</h2>
     <nav aria-label="اختيار الشاسيه" class="flex flex-wrap gap-3">
@@ -86,6 +114,8 @@ const chassisCards = Object.entries(chassisGroups)
       </section>
     ))
   }
+
+  <ModelCatalogs brand="bmw" />
 
   <!-- Stats -->
   <Stats
@@ -192,3 +222,48 @@ const chassisCards = Object.entries(chassisGroups)
     ]}
   />
 </PageLayout>
+
+<script>
+  function setupFilters() {
+    const chassis = document.querySelector<HTMLSelectElement>('[data-filter-chassis]');
+    const category = document.querySelector<HTMLSelectElement>('[data-filter-category]');
+    const search = document.querySelector<HTMLInputElement>('[data-filter-search]');
+    if (!chassis || !category || !search) return;
+    const update = () => {
+      const matches = new Set<string>();
+      document.querySelectorAll<HTMLElement>('section[id^="bmw-"]').forEach((section) => {
+        let count = 0;
+        section.querySelectorAll<HTMLElement>('article[data-category]').forEach((card) => {
+          const match =
+            (!chassis.value || section.id === 'bmw-' + chassis.value) &&
+            (!category.value || card.dataset.category === category.value) &&
+            (card.dataset.search + ' ' + section.id).toLowerCase().includes(search.value.trim().toLowerCase());
+          card.hidden = !match;
+          card.style.display = match ? '' : 'none';
+          if (match) {
+            count++;
+            const href = card.querySelector<HTMLAnchorElement>('a')?.href;
+            if (href) matches.add(href);
+          }
+        });
+        section.hidden = count === 0;
+      });
+      document.querySelector('[data-filter-status]')!.textContent = matches.size
+        ? 'منتجات مطابقة: ' + matches.size
+        : 'لا توجد نتائج. جرّب شاسيه أو نوع قطعة آخر.';
+    };
+    chassis.addEventListener('change', update);
+    category.addEventListener('change', update);
+    search.addEventListener('input', update);
+    document.querySelectorAll<HTMLAnchorElement>('a[href^="#bmw-"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        chassis.value = link.hash.slice('#bmw-'.length);
+        category.value = '';
+        search.value = '';
+        update();
+      });
+    });
+    update();
+  }
+  document.addEventListener('astro:page-load', setupFilters);
+</script>

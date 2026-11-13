@@ -2,7 +2,10 @@
   import { whatsappUrl } from '~/utils/inquiry';
 
   function prepareInquiryLinks() {
-    const title = document.querySelector('h1')?.textContent?.trim() || document.title;
+    const title =
+      document.querySelector<HTMLElement>('[data-inquiry-title]')?.dataset.inquiryTitle ||
+      document.querySelector('h1')?.textContent?.trim() ||
+      document.title;
     const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.href || location.href;
     document.querySelectorAll<HTMLAnchorElement>('a[href*="wa.me/8613427690360"]').forEach((link) => {
       // Educational articles provide one ready-to-send sentence without form blanks.

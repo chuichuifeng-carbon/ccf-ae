@@ -138,7 +138,10 @@ const schemas = [
   >
     <div class="lg:col-start-2 lg:row-start-1">
       <p class="text-primary font-semibold">{product.categoryAr} · توريد للموزعين وورش التعديل</p>
-      <h1 class="text-3xl md:text-4xl font-bold leading-tight" set:html={isolateLatin(product.title)} />
+      <h1 data-inquiry-title={product.title} class="text-2xl md:text-3xl font-bold leading-snug">
+        <span set:html={isolateLatin(product.title.replace(` لسيارات ${product.model}`, ''))} />
+        <span class="block mt-3 text-lg font-medium"><bdi dir="ltr">{product.model}</bdi></span>
+      </h1>
     </div>
     <div class="min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-24">
       <ProductGallery product={product} />
@@ -262,9 +265,11 @@ const schemas = [
         >ما الصور وبيانات المركبة التي تساعد على تأكيد المطابقة؟</a
       >
       <a
-        href="/dry-carbon-vs-wet-carbon"
+        href={standardCarbon ? '/dry-carbon-vs-wet-carbon' : '/carbon-fiber-parts-rfq-checklist'}
         class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
-        >كيف تراجع مادة الكربون الجاف والرطب للمرجع المطلوب؟</a
+        >{
+          standardCarbon ? 'كيف تراجع مادة الكربون الجاف والرطب للمرجع المطلوب؟' : 'ما المعلومات اللازمة لطلب عرض سعر؟'
+        }</a
       >
       <a
         href="/import-cost-calculator"
@@ -326,4 +331,14 @@ const schemas = [
       >
     </div>
   </section>
+  <style>
+    :global(body:has(ccf-product-gallery)) {
+      padding-bottom: calc(72px + env(safe-area-inset-bottom));
+    }
+    @media (min-width: 768px) {
+      :global(body:has(ccf-product-gallery)) {
+        padding-bottom: 0;
+      }
+    }
+  </style>
 </PageLayout>

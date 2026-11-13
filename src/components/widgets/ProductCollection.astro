@@ -25,7 +25,11 @@ if (filtered.length === 0) {
   <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {
       filtered.map((product) => (
-        <article class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-700 bg-page group">
+        <article
+          data-category={product.categorySlug}
+          data-search={product.title.toLowerCase()}
+          class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-700 bg-page group"
+        >
           <a href={`/products/${product.slug}`} aria-label={product.title} class="block bg-black">
             <img
               src={product.featuredSm}

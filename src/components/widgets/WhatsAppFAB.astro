@@ -7,6 +7,7 @@
 import { whatsappUrl } from '~/utils/inquiry';
 
 const { context = '', reference = '' } = Astro.props;
+const productPage = /^\/products\/bmw-/.test(Astro.url.pathname);
 const href = whatsappUrl(context, reference);
 ---
 
@@ -40,13 +41,19 @@ const href = whatsappUrl(context, reference);
 <!-- 移动端: 底部展开条 (比现有 StickyCTA 更显眼) -->
 <div
   id="whatsapp-mobile-bar"
+  data-immediate={productPage || undefined}
   class="fixed bottom-0 inset-x-0 z-40
          bg-[#25D366] text-white
          transform translate-y-full transition-transform duration-300
          md:hidden
          shadow-[0_-4px_20px_rgba(37,211,102,0.3)]"
 >
-  <a href={href} target="_blank" rel="noopener" class="flex items-center justify-between px-4 py-3">
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener"
+    class="flex items-center justify-between px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]"
+  >
     <div class="flex items-center gap-3">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-7 h-7 shrink-0">
         <path
@@ -80,6 +87,7 @@ const href = whatsappUrl(context, reference);
     const fab = document.getElementById('whatsapp-fab');
     const bar = document.getElementById('whatsapp-mobile-bar');
     const show = y > threshold;
+    const showBar = show || Boolean(bar?.hasAttribute('data-immediate'));
     if (fab) {
       fab.classList.toggle('translate-y-2', !show);
       fab.classList.toggle('opacity-0', !show);
@@ -89,8 +97,8 @@ const href = whatsappUrl(context, reference);
       fab.classList.toggle('pointer-events-auto', show);
     }
     if (bar) {
-      bar.classList.toggle('translate-y-full', !show);
-      bar.classList.toggle('translate-y-0', show);
+      bar.classList.toggle('translate-y-full', !showBar);
+      bar.classList.toggle('translate-y-0', showBar);
     }
     ticking = false;
   };

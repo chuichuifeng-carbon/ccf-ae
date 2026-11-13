@@ -105,7 +105,15 @@ const first = images[0].lg;
         )
       }
     </div>
-    <div data-view class="grid h-[min(76dvh,900px)] place-items-center"></div>
+    <button
+      data-zoom
+      aria-label="تكبير الصورة"
+      aria-pressed="false"
+      class="rounded-lg border border-white/30 px-4 py-2 mb-2">تكبير ×2</button
+    >
+    <div data-view dir="ltr" class="h-[min(70dvh,900px)] overflow-auto overscroll-contain">
+      <div data-canvas class="h-full w-full"></div>
+    </div>
   </dialog>
 </ccf-product-gallery>
 
@@ -120,10 +128,47 @@ const first = images[0].lg;
       const dialog = this.querySelector<HTMLDialogElement>('dialog')!;
       const enlarged = new Image();
       enlarged.className = 'h-full max-h-full w-full object-contain';
-      this.querySelector('[data-view]')!.append(enlarged);
+      const canvas = this.querySelector<HTMLElement>('[data-canvas]')!;
+      const view = this.querySelector<HTMLElement>('[data-view]')!;
+      const zoomButton = this.querySelector<HTMLButtonElement>('[data-zoom]')!;
+      canvas.append(enlarged);
+      let zoomed = false;
+      const setZoom = (value: boolean) => {
+        zoomed = value;
+        canvas.style.width = value ? '200%' : '100%';
+        canvas.style.height = value ? '200%' : '100%';
+        zoomButton.textContent = value ? 'تصغير ×1' : 'تكبير ×2';
+        zoomButton.setAttribute('aria-pressed', String(value));
+        if (!value) {
+          view.scrollLeft = 0;
+          view.scrollTop = 0;
+        }
+      };
+      zoomButton.addEventListener('click', () => setZoom(!zoomed));
+      enlarged.addEventListener('dblclick', () => setZoom(!zoomed));
+      enlarged.draggable = false;
+      let drag: { x: number; y: number; left: number; top: number } | undefined;
+      view.addEventListener('pointerdown', (event) => {
+        if (!zoomed || event.pointerType !== 'mouse' || event.button !== 0) return;
+        drag = { x: event.clientX, y: event.clientY, left: view.scrollLeft, top: view.scrollTop };
+        view.setPointerCapture(event.pointerId);
+      });
+      view.addEventListener('pointermove', (event) => {
+        if (!drag) return;
+        view.scrollLeft = drag.left + drag.x - event.clientX;
+        view.scrollTop = drag.top + drag.y - event.clientY;
+      });
+      view.addEventListener('pointerup', () => {
+        drag = undefined;
+      });
+      view.addEventListener('lostpointercapture', () => {
+        drag = undefined;
+      });
+      dialog.addEventListener('close', () => setZoom(false));
       let current = 0;
       const select = (index: number) => {
         if (!thumbs.length) return;
+        setZoom(false);
         current = (index + thumbs.length) % thumbs.length;
         const active = thumbs[current];
         const preview = active.querySelector('img')!;

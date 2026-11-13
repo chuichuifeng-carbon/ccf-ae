@@ -65304,7 +65304,9 @@ export function getRelatedProducts(product: ProductDetail, count = 4): ProductDe
   const related = allProducts.filter(
     (p) =>
       p.slug !== product.slug &&
-      (p.categorySlug === product.categorySlug || p.chassisCodes.some((c) => product.chassisCodes.includes(c)))
+      (product.categorySlug === 'lighting'
+        ? p.categorySlug === 'lighting'
+        : p.categorySlug === product.categorySlug || p.chassisCodes.some((c) => product.chassisCodes.includes(c)))
   );
   return related
     .sort((a, b) => {
