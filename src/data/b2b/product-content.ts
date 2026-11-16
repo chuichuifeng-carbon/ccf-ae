@@ -50,16 +50,23 @@ type Rule = {
  */
 const PART_RULES: Rule[] = [
   {
-    test: /Full[- ]?Body[- ]?Kit|Full[- ]?Carbon[- ]?Fiber[- ]?(?:Body[- ]?)?Kit|Body[- ]?Kit|Complete[- ]Kit/i,
-    part: 'طقم هيكل كامل',
-    kind: 'body-kit',
-    category: 'body-panels',
-  },
-  {
     test: /Engine[- ]Bay[- ]Cover[- ]Set|Engine[- ]Bay[- ]Complete[- ]Kit/i,
     part: 'طقم أغطية حجرة المحرك',
     kind: 'engine-cover',
     category: 'engine-bay',
+  },
+  {
+    // Sits inside a "…-Body-Kit" folder in the sheet, so the leaf name must win over the parent.
+    test: /Center[- ]Console(?:[- ]Trim)?/i,
+    part: 'زخرفة الكونسول الوسطي',
+    kind: 'interior-trim',
+    category: 'interior-trim',
+  },
+  {
+    test: /Full[- ]?Body[- ]?Kit|Full[- ]?Carbon[- ]?Fiber[- ]?(?:Body[- ]?)?Kit|Body[- ]?Kit|Complete[- ]Kit/i,
+    part: 'طقم هيكل كامل',
+    kind: 'body-kit',
+    category: 'body-panels',
   },
   { test: /Oil[- ]Pan[- ]Guard/i, part: 'حماية حوض الزيت', kind: 'oil-pan-guard', category: 'engine-bay' },
   {

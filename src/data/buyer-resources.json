@@ -176,15 +176,15 @@
     "text": "تتضمن الصفحات التفصيلية التالية صور القطعة ومراجع المادة ونقاط مراجعة المطابقة. اختيار تصميم R44 أو CSL لا يثبت توافقه مع كل نسخة مصد؛ أرسل بيانات مركبتك قبل الطلب.",
     "links": [
       {
-        "href": "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+        "href": "/products/bmw-g80-g82-r44-style-front-lip",
         "text": "شفة أمامية BMW M3 G80 وM4 G82 بتصميم R44"
       },
       {
-        "href": "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+        "href": "/products/bmw-g80-g82-csl-style-3-piece-front-lip",
         "text": "شفة CSL من ثلاث قطع لـ BMW G80/G82"
       },
       {
-        "href": "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+        "href": "/products/bmw-g80-g82-mp-style-rear-diffuser",
         "text": "ديفيوزر خلفي BMW G80/G82 بتصميم MP"
       },
       {
@@ -429,7 +429,7 @@
       }
     ]
   },
-  "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style": {
+  "/products/bmw-g80-g82-r44-style-front-lip": {
     "title": "قارن البدائل وأكّد المادة قبل الطلب",
     "text": "إذا كنت تقارن هذا المرجع بتصميم آخر، راجع فئة المنتج أولاً. اطلب تأكيد بنية المادة والمطابقة ومحتويات التوريد كتابةً للنسخة التي تريد شراءها.",
     "links": [
@@ -447,7 +447,7 @@
       }
     ]
   },
-  "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style": {
+  "/products/bmw-g80-g82-csl-style-3-piece-front-lip": {
     "title": "قارن البدائل وأكّد المادة قبل الطلب",
     "text": "إذا كنت تقارن هذا المرجع بتصميم آخر، راجع فئة المنتج أولاً. اطلب تأكيد بنية المادة والمطابقة ومحتويات التوريد كتابةً للنسخة التي تريد شراءها.",
     "links": [
@@ -465,31 +465,13 @@
       }
     ]
   },
-  "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style": {
+  "/products/bmw-g80-g82-mp-style-rear-diffuser": {
     "title": "قارن البدائل وأكّد المادة قبل الطلب",
     "text": "إذا كنت تقارن هذا المرجع بتصميم آخر، راجع فئة المنتج أولاً. اطلب تأكيد بنية المادة والمطابقة ومحتويات التوريد كتابةً للنسخة التي تريد شراءها.",
     "links": [
       {
         "href": "/products/rear-diffusers",
         "text": "قارن تصاميم الديفيوزر والناشرات الخلفية"
-      },
-      {
-        "href": "/dry-carbon-vs-wet-carbon",
-        "text": "الفرق بين الكربون الجاف والرطب"
-      },
-      {
-        "href": "/carbon-fiber-parts-fitment-check",
-        "text": "دليل التحقق من توافق القطعة قبل الطلب"
-      }
-    ]
-  },
-  "/products/bmw-g87-m2-carbon-fiber-hood": {
-    "title": "قارن البدائل وأكّد المادة قبل الطلب",
-    "text": "إذا كنت تقارن هذا المرجع بتصميم آخر، راجع فئة المنتج أولاً. اطلب تأكيد بنية المادة والمطابقة ومحتويات التوريد كتابةً للنسخة التي تريد شراءها.",
-    "links": [
-      {
-        "href": "/products/hoods",
-        "text": "قارن تصاميم أغطية المحرك الكربون"
       },
       {
         "href": "/dry-carbon-vs-wet-carbon",

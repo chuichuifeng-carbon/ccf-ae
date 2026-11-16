@@ -3,24 +3,27 @@ import PageLayout from '~/layouts/PageLayout.astro';
 import ProductGallery from '~/components/widgets/ProductGallery.astro';
 import Button from '~/components/ui/Button.astro';
 import StructuredData from '~/components/common/StructuredData.astro';
+import { Icon } from 'astro-icon/components';
 import { allProducts, getRelatedProducts } from '~/data/b2b/all-products';
+import type { ProductSpecs16 } from '~/data/b2b/all-products-types';
+import { packagingGallery, customizationGallery } from '~/data/b2b/shared-assets';
 import { SITE } from 'astrowind:config';
 import { getCanonical } from '~/utils/permalinks';
 import { whatsappUrl } from '~/utils/inquiry';
 import { isolateLatin } from '~/utils/bidi';
-import { TRADE_TERMS } from '~/data/b2b/trade-terms';
+
 export function getStaticPaths() {
   return allProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
 }
+
 const { product } = Astro.props;
-const standardCarbon = Boolean(product.manufacturing);
-const warranty = !standardCarbon ? 'اطلب تأكيد شروط ضمان هذا المرجع في عرض السعر.' : TRADE_TERMS.warranty;
-const related = getRelatedProducts(product, 4);
 const canonical = String(getCanonical(`/products/${product.slug}`));
-const photo = product.images[0].lg;
 const categoryUrl = `/products/${product.categorySlug}`;
-const lastReviewed = product.reviewedAt;
-const summary = `${product.categoryArShort} من الكربون الجاف الحقيقي لسيارات ${product.model}: تصميم أكثر عدوانية، وتوريد مباشر من مصنع CCF بالجملة أو OEM/ODM. تُؤكَّد المطابقة النهائية بصور سيارتك قبل عرض السعر.`;
+const related = getRelatedProducts(product, 4);
+const photo = product.images[0].lg;
+const videoId =
+  product.youtube?.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w-]{11})/)?.[1] || '';
+
 const metadata = {
   title: product.seoTitle,
   description: product.seoDescription,
@@ -28,31 +31,115 @@ const metadata = {
   canonical,
   openGraph: { images: [{ url: photo.url, width: photo.width, height: photo.height }] },
 };
-const faq = [
-  { q: 'كيف أتأكد من المطابقة؟', a: `${product.checks[0]} ${product.checks[1]}` },
+
+const specs: ProductSpecs16 =
+  product.specs16 ??
+  ({
+    productType: product.partTypeEn ?? product.partType,
+    fitment: product.model,
+    material: product.material,
+    weave: 'نسج 3K — Twill 2×2 أو Plain 1×1 حسب الطلب.',
+    finish: 'لامع (Gloss) أو مطفي (Matte) عند الطلب.',
+    process: product.manufacturing,
+    weight: 'يُوزَن المرجع المحدد ويُثبَّت في عرض السعر.',
+    thickness: 'تُقاس نقاط التثبيت والحواف وتُثبَّت في عرض السعر.',
+    installation: 'تركيب مباشر على نقاط التثبيت الأصلية بعد تأكيد المطابقة.',
+    moq: 'عينة واحدة (MOQ = 1).',
+    sampleLeadTime: 'تُؤكَّد بعد اعتماد المرجع.',
+    bulkLeadTime: '25–30 يوماً من تأكيد الطلب.',
+    customization: 'شعار مخصص، ألوان، تغليف مخصص، وقالب خاص (OEM/ODM).',
+    packaging: 'كيس هوائي وإسفنج، ثم كرتون مقوّى، ثم صندوق خشبي للشحنات الكبيرة.',
+    warranty: 'ضمان سنة واحدة على عيوب التصنيع.',
+    damage: 'استبدال أو إعادة شحن بعد تأكيد التلف بالصور.',
+  } satisfies ProductSpecs16);
+
+type SpecKey = keyof ProductSpecs16;
+const specGroups: Array<{ title: string; rows: Array<[SpecKey, string, string]> }> = [
   {
-    q: 'ما المادة ومحتويات التوريد؟',
-    a: !standardCarbon
-      ? product.checks[2]
-      : 'اطلب تأكيد بنية الكربون والتشطيب ووحدة البيع والأقسام والمثبتات المشمولة للمرجع نفسه. صور المركبة قد تعرض إضافات لا تدخل في الطلب.',
+    title: 'المواصفات الفنية والمواد',
+    rows: [
+      ['productType', 'نوع المنتج', 'Product Type'],
+      ['material', 'المادة', 'Material'],
+      ['weave', 'نمط النسج', 'Weave'],
+      ['finish', 'التشطيب', 'Finish'],
+      ['process', 'عملية التصنيع', 'Manufacturing Process'],
+      ['weight', 'الوزن', 'Weight'],
+      ['thickness', 'السماكة', 'Thickness'],
+    ],
   },
   {
-    q: 'كيف أطلب سعر التوريد؟',
-    a: 'أرسل اسم القطعة وسنة المركبة وصور الجزء الحالي والكمية وبلد ومدينة التسليم. تُؤكّد الكمية الدنيا والتكلفة ومدة التجهيز والشحن وفق الطلب.',
+    title: 'التوافق والتركيب',
+    rows: [
+      ['fitment', 'التوافق', 'Fitment'],
+      ['installation', 'التركيب', 'Installation'],
+    ],
   },
   {
-    q: 'ما الضمان وشروط الإرجاع؟',
-    a: !standardCarbon
-      ? warranty
-      : 'قطع الكربون الجاف مشمولة بضمان سنة واحدة ضد عيوب التصنيع من تاريخ التسليم، ونتحمّل مسؤولية التلف أثناء النقل بالاستبدال أو إعادة الشحن بعد تأكيده بالصور. راجع سياسة الضمان والإرجاع للتفاصيل.',
+    title: 'التوريد والتخصيص والضمان',
+    rows: [
+      ['moq', 'الحد الأدنى للطلب', 'MOQ'],
+      ['sampleLeadTime', 'مدة العينة', 'Sample Lead Time'],
+      ['bulkLeadTime', 'مدة الإنتاج بالجملة', 'Bulk Lead Time'],
+      ['customization', 'التخصيص', 'Customization'],
+      ['packaging', 'التغليف', 'Packaging'],
+      ['warranty', 'الضمان', 'Warranty'],
+      ['damage', 'التلف أثناء النقل', 'Transport Damage'],
+    ],
   },
 ];
-const commercialTerms = [
-  ['الحد الأدنى للطلب', TRADE_TERMS.moq],
-  ['مدة التجهيز', TRADE_TERMS.leadTime],
-  ['التلف أثناء النقل', TRADE_TERMS.shippingDamage],
-  ['الضمان', warranty],
+
+const quickFacts = [
+  { icon: 'tabler:package', label: 'الحد الأدنى', value: 'عينة واحدة (MOQ = 1)' },
+  { icon: 'tabler:clock-hour-4', label: 'عينة', value: 'تُؤكَّد بعد اعتماد المرجع' },
+  { icon: 'tabler:truck-delivery', label: 'إنتاج بالجملة', value: '25–30 يوماً' },
+  { icon: 'tabler:shield-check', label: 'الضمان', value: 'سنة واحدة' },
 ];
+
+const highlights = product.highlights?.length
+  ? product.highlights
+  : [
+      'كربون جاف حقيقي (DCF) وليس طبقة زخرفية',
+      `مطابقة مصممة لهيكل ${product.model}`,
+      'تشطيب لامع أو مطفي حسب الطلب',
+      'توريد بالجملة مع شعار وتغليف مخصص',
+    ];
+
+const packagingSteps = [
+  { icon: 'tabler:box-seam', title: 'حماية فردية', text: 'كيس هوائي أو إسفنج لكل قطعة لمنع الاحتكاك.' },
+  { icon: 'tabler:package-export', title: 'كرتون مقوّى', text: 'كرتون تصدير بزوايا حماية وجدران مزدوجة.' },
+  { icon: 'tabler:stack-2', title: 'تثبيت داخلي', text: 'فواصل وتثبيت يمنع حركة القطع داخل الكرتون.' },
+  { icon: 'tabler:building-factory-2', title: 'شحن بحري', text: 'صندوق خشبي أو منصة نقالة للشحنات الكبيرة.' },
+];
+
+const isAbsPart = /ABS/i.test(product.materialEn ?? '');
+const customizationOptions = [
+  { icon: 'tabler:brand-whatsapp', title: 'شعار مخصص', text: 'شعار علامتك على القطعة أو التغليف أو كيس الغبار.' },
+  {
+    icon: 'tabler:palette',
+    title: 'لون وتشطيب',
+    text: isAbsPart
+      ? 'أسود لامع قياسي؛ يُؤكَّد التشطيب المطفي واللون قبل الطلب.'
+      : 'لامع أو مطفي، ولمسات لون مخصصة حسب الطلب.',
+  },
+  ...(isAbsPart
+    ? []
+    : [{ icon: 'tabler:grid-dots', title: 'نمط النسج', text: 'Twill 2×2 أو Plain 1×1 — يُؤكَّد للمرجع.' }]),
+  { icon: 'tabler:box', title: 'تغليف مخصص', text: 'كرتون بطباعة علامتك وملصقات ومعلومات توريد.' },
+  { icon: 'tabler:tool', title: 'قالب خاص', text: 'تطوير قالب لموديل جديد ضمن OEM/ODM.' },
+];
+
+const faq = product.faq?.length
+  ? product.faq
+  : [
+      { q: 'كيف أتأكد من المطابقة؟', a: product.checks[0] },
+      { q: 'ما المادة ومحتويات التوريد؟', a: product.checks[2] },
+      {
+        q: 'كيف أطلب سعر التوريد؟',
+        a: 'أرسل اسم القطعة وسنة المركبة وصور الجزء الحالي والكمية وبلد ومدينة التسليم.',
+      },
+      { q: 'ما الضمان وشروط الإرجاع؟', a: specs.warranty },
+    ];
+
 const schemas = [
   {
     '@context': 'https://schema.org',
@@ -65,29 +152,36 @@ const schemas = [
     brand: { '@type': 'Brand', name: 'CCF' },
     manufacturer: { '@id': `${SITE.site}/#organization` },
     category: product.categoryAr,
-    material: !standardCarbon ? product.material || undefined : 'كربون جاف حقيقي (Dry Carbon Fiber)',
+    material: product.materialEn,
     keywords: product.keywords.join(', '),
     audience: {
       '@type': 'BusinessAudience',
       audienceType: 'موزعو قطع تعديل السيارات وورش التعديل ومشترو الجملة',
     },
-    dateModified: lastReviewed,
+    dateModified: product.reviewedAt,
     mainEntityOfPage: { '@id': `${canonical}#webpage` },
     additionalProperty: [
-      {
-        '@type': 'PropertyValue',
-        name: 'مرجع المركبة؛ المطابقة تحتاج تأكيداً',
-        value: product.chassisCodes.join(' / '),
-      },
-      ...(!standardCarbon ? [] : [{ '@type': 'PropertyValue', name: 'المادة', value: 'كربون جاف حقيقي — Dry Carbon' }]),
-      { '@type': 'PropertyValue', name: 'التوريد', value: 'مصنع CCF — جملة / OEM-ODM' },
-      { '@type': 'PropertyValue', name: 'بلد المنشأ', value: 'الصين — مصنع CCF' },
-      ...(!standardCarbon ? [] : [{ '@type': 'PropertyValue', name: 'التصميم', value: 'تصميم أكثر عدوانية' }]),
-      { '@type': 'PropertyValue', name: 'الحد الأدنى للطلب', value: TRADE_TERMS.moq },
-      { '@type': 'PropertyValue', name: 'مدة التجهيز', value: TRADE_TERMS.leadTime },
-      { '@type': 'PropertyValue', name: 'الضمان', value: warranty },
-      { '@type': 'PropertyValue', name: 'التلف أثناء النقل', value: TRADE_TERMS.shippingDamage },
+      { '@type': 'PropertyValue', name: 'Fitment', value: product.model },
+      { '@type': 'PropertyValue', name: 'Material', value: product.materialEn },
+      ...specGroups.flatMap((group) =>
+        group.rows.map(([key, label]) => ({
+          '@type': 'PropertyValue',
+          name: label,
+          value: specs[key],
+        }))
+      ),
     ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${canonical}#webpage`,
+    url: canonical,
+    name: product.title,
+    inLanguage: 'ar',
+    isPartOf: { '@id': `${SITE.site}/#website` },
+    publisher: { '@id': `${SITE.site}/#organization` },
+    mainEntity: { '@id': `${canonical}#product` },
   },
   {
     '@context': 'https://schema.org',
@@ -96,22 +190,8 @@ const schemas = [
     mainEntity: faq.map((entry) => ({
       '@type': 'Question',
       name: entry.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: entry.a.replace(/\s+/g, ' ').trim(),
-      },
+      acceptedAnswer: { '@type': 'Answer', text: entry.a },
     })),
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    '@id': `${canonical}#webpage`,
-    name: product.title,
-    url: canonical,
-    inLanguage: 'ar',
-    isPartOf: { '@id': `${SITE.site}/#website` },
-    publisher: { '@id': `${SITE.site}/#organization` },
-    mainEntity: { '@id': `${canonical}#product` },
   },
   {
     '@context': 'https://schema.org',
@@ -128,217 +208,312 @@ const schemas = [
 
 <PageLayout metadata={metadata} seoSchema={false} breadcrumbSchema={false}>
   <StructuredData slot="head" schema={schemas} />
+
   <nav aria-label="مسار التنقل" class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-sm text-muted flex flex-wrap gap-2">
     <a href="/">الرئيسية</a><span aria-hidden="true">/</span><a href="/products">المنتجات</a><span aria-hidden="true"
       >/</span
     ><a href={categoryUrl}>{product.categoryAr}</a>
   </nav>
+
   <section
-    class="max-w-7xl mx-auto px-4 sm:px-6 py-6 md:py-10 grid gap-x-10 gap-y-5 lg:grid-cols-[minmax(0,1.18fr)_minmax(0,1fr)] lg:items-start"
+    class="max-w-7xl mx-auto px-4 sm:px-6 py-6 md:py-10 grid gap-x-10 gap-y-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-start"
   >
     <div class="lg:col-start-2 lg:row-start-1">
-      <p class="text-primary font-semibold">{product.categoryAr} · توريد للموزعين وورش التعديل</p>
-      <h1 data-inquiry-title={product.title} class="text-2xl md:text-3xl font-bold leading-snug">
-        <span set:html={isolateLatin(product.title.replace(` لسيارات ${product.model}`, ''))} />
-        <span class="block mt-3 text-lg font-medium"><bdi dir="ltr">{product.model}</bdi></span>
-      </h1>
+      <p class="text-primary font-semibold">
+        {product.categoryAr} · توريد للموزعين وورش التعديل
+      </p>
+      <h1 class="text-2xl md:text-3xl font-bold leading-snug mt-1" set:html={isolateLatin(product.title)} />
+      <p class="mt-2 text-lg font-medium text-muted" dir="ltr"><bdi>{product.model}</bdi></p>
     </div>
+
     <div class="min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-24">
       <ProductGallery product={product} />
     </div>
+
     <div class="min-w-0 space-y-5 lg:col-start-2 lg:row-start-2">
       <p class="text-lg text-muted" set:html={isolateLatin(product.description)} />
+
+      <ul class="grid gap-2 sm:grid-cols-2">
+        {
+          highlights.map((item) => (
+            <li class="flex items-start gap-2 text-sm">
+              <Icon name="tabler:circle-check" class="size-5 shrink-0 text-primary" />
+              <span set:html={isolateLatin(item)} />
+            </li>
+          ))
+        }
+      </ul>
+
       <div class="flex flex-wrap gap-3">
         <Button
           href={whatsappUrl(product.title, canonical)}
           target="_blank"
           text="أرسل صور سيارتك واطلب سعر القطعة"
           icon="tabler:brand-whatsapp"
-        /><Button href="/contact" variant="secondary" text="تواصل مع المبيعات" />
+        />
+        <Button href="/contact" variant="secondary" text="طلب عرض سعر رسمي" />
       </div>
       <p class="text-sm text-muted">السعر والتوفر يُؤكّدان حسب المرجع والكمية ووجهة الشحن.</p>
-      <div id="trade-terms" class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
-        <h2 class="font-bold mb-2">شروط التوريد</h2>
-        <dl class="grid gap-3 sm:grid-cols-2 text-sm">
-          {
-            commercialTerms.map(([label, value]) => (
-              <div>
-                <dt class="font-medium mb-1">{label}</dt>
-                <dd class="text-muted" set:html={isolateLatin(value)} />
-              </div>
-            ))
-          }
-        </dl>
-      </div>
-      <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
-        <h2 class="font-bold mb-2">تحقّق من المرجع قبل الطلب</h2>
-        <p class="text-sm text-muted mb-3">
-          تطبيق المركبة مرجع للاختيار، والمطابقة النهائية تُؤكّد بصور السيارة وتجهيزاتها.
-        </p>
-        <table class="w-full text-sm text-start">
-          <tbody
-            >{
-              product.specs.map(([label, value]) => (
-                <tr>
-                  <>
-                    <th class="text-start py-2 pe-3 border-b border-gray-200 dark:border-slate-700 font-medium">
-                      {label}
-                    </th>
-                    <td class="py-2 border-b border-gray-200 dark:border-slate-700" set:html={isolateLatin(value)} />
-                  </>
-                </tr>
-              ))
-            }</tbody
-          >
-        </table>
-      </div>
+
+      <dl class="grid grid-cols-2 gap-3 rounded-xl border border-gray-200 dark:border-slate-700 p-4 text-sm">
+        {
+          quickFacts.map((fact) => (
+            <div>
+              <dt class="flex items-center gap-1.5 text-muted">
+                <Icon name={fact.icon} class="size-4" />
+                {fact.label}
+              </dt>
+              <dd class="font-medium mt-0.5" set:html={isolateLatin(fact.value)} />
+            </div>
+          ))
+        }
+      </dl>
     </div>
   </section>
+
   {
-    standardCarbon && (
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-        <div class="rounded-2xl border border-gray-200 dark:border-slate-700 p-5 md:p-6">
-          <h2 class="text-xl font-bold mb-3">ملخص سريع</h2>
-          <p class="text-muted" set:html={isolateLatin(summary)} />
-          <ul class="list-disc ps-6 mt-3 text-sm text-muted space-y-1">
-            <li>المادة: كربون جاف حقيقي — Dry Carbon؛ تُؤكَّد البنية والتشطيب للمرجع المطلوب.</li>
-            <li>التوافق: مصمم لسيارات {product.model}؛ المطابقة النهائية تُؤكَّد بصور سيارتك وتجهيزاتها.</li>
-            <li>التوريد: مصنع CCF — جملة أو OEM/ODM، مع تأكيد الكمية الدنيا والتغليف ووجهة الشحن.</li>
-            <li>الطلب: أرسل سنة السيارة وصور الجزء الحالي والكمية ومدينة التسليم للحصول على عرض سعر.</li>
-          </ul>
-        </div>
-        <div class="grid md:grid-cols-3 gap-4 mt-4">
-          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
-            <h3 class="font-bold mb-2">كربون جاف حقيقي</h3>
-            <p class="text-sm text-muted">
-              نبدأ من بنية كربون جاف حقيقية لا من طبقة زخرفية؛ تُؤكَّد البنية والتشطيب والوزن للمرجع قبل العرض.
-            </p>
+    videoId && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="video-title">
+        <div class="rounded-2xl border border-gray-200 dark:border-slate-700 p-5 md:p-7 grid gap-6 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] lg:items-center">
+          <div class="overflow-hidden rounded-xl bg-black aspect-video">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+              title={`فيديو المنتج — ${product.title}`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="h-full w-full border-0"
+            />
           </div>
-          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
-            <h3 class="font-bold mb-2">التحقّق من المطابقة</h3>
-            <p class="text-sm text-muted">
-              خطوط مستوحاة من المرجع الأصلي مع حضور أكثر عدوانية؛ تُؤكَّد نسخة المصد أو الرفرف ونقاط التثبيت بصور
-              سيارتك.
+          <div>
+            <h2 id="video-title" class="text-xl md:text-2xl font-bold mb-2">
+              فيديو المنتج
+            </h2>
+            <p class="text-muted mb-3">
+              شاهد القطعة على السيارة قبل الطلب: التصميم والتشطيب والمطابقة على هيكل {product.model}.
             </p>
-          </div>
-          <div class="rounded-xl border border-gray-200 dark:border-slate-700 p-5">
-            <h3 class="font-bold mb-2">مصنع CCF بالجملة</h3>
-            <p class="text-sm text-muted">
-              توريد مباشر من المصنع للموزعين وورش التعديل، مع مسار OEM/ODM وتأكيد الكمية الدنيا والتغليف قبل الشحن.
-            </p>
+            <ul class="text-sm text-muted space-y-1 list-disc ps-5">
+              <li>الفيديو مرجع بصري؛ المطابقة النهائية تُؤكَّد بصور سيارتك.</li>
+              <li>التشطيب الظاهر في الفيديو قد يختلف حسب الطلب (لامع أو مطفي).</li>
+              <li>اطلب صوراً ومقاطع إضافية للمرجع نفسه عبر واتساب.</li>
+            </ul>
           </div>
         </div>
       </section>
     )
   }
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-    <h2 class="text-2xl font-bold mb-4">المطابقة ومحتويات التوريد</h2>
-    <ul class="list-disc ps-6 space-y-3">{product.checks.map((check) => <li set:html={isolateLatin(check)} />)}</ul>
-    <p class="mt-4 text-muted">
-      يوصى بالتركيب لدى فني مختص. قد يلزم ضبط أو تجهيز حسب السيارة والقطعة؛ لا تعتمد وعداً بالتركيب دون تعديل قبل تأكيد
-      المرجع.
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="specs-title">
+    <h2 id="specs-title" class="text-xl md:text-2xl font-bold mb-1">المواصفات الكاملة</h2>
+    <p class="text-muted mb-5">
+      الحقول التي لا ترد في ملف المرجع تُطلب تأكيدها قبل عرض السعر — لا نعتمد أرقاماً تقديرية.
     </p>
-  </section>
-  <section id="faq" class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-    <h2 class="text-2xl font-bold mb-5">أسئلة المشتري قبل التأكيد</h2>
-    <div class="space-y-3">
-      {
-        faq.map((entry) => (
-          <details class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
-            <>
-              <summary class="font-semibold cursor-pointer">{entry.q}</summary>
-              <p class="text-muted pt-3" set:html={isolateLatin(entry.a)} />
-            </>
-          </details>
-        ))
-      }
+    <div class="rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+      <table class="w-full text-sm text-start">
+        <tbody>
+          {
+            specGroups.map((group) => (
+              <>
+                <tr class="bg-gray-50 dark:bg-slate-800/60">
+                  <th colspan="2" class="text-start px-4 py-2 font-semibold">
+                    {group.title}
+                  </th>
+                </tr>
+                {group.rows.map(([key, labelAr, labelEn]) => (
+                  <tr class="border-t border-gray-200 dark:border-slate-700">
+                    <th scope="row" class="align-top text-start px-4 py-3 w-[34%] font-medium">
+                      {labelAr}
+                      <span class="block text-xs font-normal text-muted" dir="ltr">
+                        {labelEn}
+                      </span>
+                    </th>
+                    <td class="px-4 py-3 text-muted" set:html={isolateLatin(specs[key])} />
+                  </tr>
+                ))}
+              </>
+            ))
+          }
+        </tbody>
+      </table>
     </div>
-    <a href="/return-refund-policy" class="inline-block mt-4 text-primary underline">سياسة الضمان والإرجاع والاسترداد</a
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="packaging-title">
+    <div class="rounded-2xl border border-gray-200 dark:border-slate-700 p-5 md:p-7">
+      <h2 id="packaging-title" class="text-xl md:text-2xl font-bold mb-2">التغليف وحماية الشحن</h2>
+      <p class="text-muted mb-5">
+        تُغلَّف كل قطعة بشكل فردي قبل التصدير، لأن القطع مصقولة ومعرّضة للخدش. التغليف القياسي يشمل حماية فردية وكرتوناً
+        مقوّى، ويُرقّى إلى صندوق خشبي أو منصة نقالة للشحنات الكبيرة.
+      </p>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          packagingGallery.map((image) => (
+            <figure class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-900">
+              <img
+                src={image.url}
+                width={image.width}
+                height={image.height}
+                alt={image.captionAr}
+                loading="lazy"
+                class="block w-full aspect-[4/3] object-cover"
+              />
+              <figcaption class="px-3 py-2 text-xs text-muted">{image.captionAr}</figcaption>
+            </figure>
+          ))
+        }
+      </div>
+      <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 mt-5">
+        {
+          packagingSteps.map((step) => (
+            <li class="rounded-xl border border-gray-200 dark:border-slate-700 p-4">
+              <Icon name={step.icon} class="size-6 text-primary mb-2" />
+              <h3 class="font-semibold text-sm">{step.title}</h3>
+              <p class="text-sm text-muted mt-1">{step.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="text-sm text-muted mt-4">
+        للإنتاج بالجملة يمكن طباعة شعار علامتك على الكرتون وإضافة ملصقات التوريد — راجع قسم التخصيص أدناه.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="customization-title">
+    <div
+      class="rounded-2xl border border-gray-200 dark:border-slate-700 p-5 md:p-7 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center"
     >
-  </section>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-    <h2 class="text-2xl font-bold mb-5">جهّز طلباً أوضح قبل مقارنة السعر</h2>
-    <div class="grid md:grid-cols-3 gap-4">
-      <a
-        href="/carbon-fiber-parts-fitment-check"
-        class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
-        >ما الصور وبيانات المركبة التي تساعد على تأكيد المطابقة؟</a
-      >
-      <a
-        href={standardCarbon ? '/dry-carbon-vs-wet-carbon' : '/carbon-fiber-parts-rfq-checklist'}
-        class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
-        >{
-          standardCarbon ? 'كيف تراجع مادة الكربون الجاف والرطب للمرجع المطلوب؟' : 'ما المعلومات اللازمة لطلب عرض سعر؟'
-        }</a
-      >
-      <a
-        href="/import-cost-calculator"
-        class="rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-primary underline"
-        >قدّر تكلفة الوصول والربح بأرقام عرض السعر والشحن</a
-      >
+      <div class="grid gap-3 content-start sm:grid-cols-2">
+        {
+          customizationGallery.map((image) => (
+            <figure class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-900">
+              <img
+                src={image.url}
+                width={image.width}
+                height={image.height}
+                alt={image.captionAr}
+                loading="lazy"
+                class="block w-full aspect-[4/3] object-cover"
+              />
+              <figcaption class="px-3 py-2 text-xs text-muted">{image.captionAr}</figcaption>
+            </figure>
+          ))
+        }
+        <p class="text-xs text-muted sm:col-span-2">
+          صور توضيحية لخدمة الشعار المخصص على القطعة وكيس الغبار والتغليف — يمكن طلب عينات إضافية.
+        </p>
+      </div>
+      <div>
+        <h2 id="customization-title" class="text-xl md:text-2xl font-bold mb-2">شعارك وتخصيصك — OEM / ODM</h2>
+        <p class="text-muted mb-4">
+          نورد لعلامات خاصة وموزعين: نطبع شعارك على القطعة أو كيس الغبار أو الكرتون، ونخصص اللون والتشطيب والتغليف. الحد
+          الأدنى للتخصيص يُؤكَّد حسب نوع الشعار وعدد القطع.
+        </p>
+        <ul class="grid gap-3 sm:grid-cols-2">
+          {
+            customizationOptions.map((option) => (
+              <li class="rounded-xl border border-gray-200 dark:border-slate-700 p-3">
+                <div class="flex items-center gap-2 font-semibold text-sm">
+                  <Icon name={option.icon} class="size-5 text-primary" />
+                  {option.title}
+                </div>
+                <p class="text-sm text-muted mt-1">{option.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="mt-4">
+          <Button
+            href={whatsappUrl(`طلب عينة بشعار مخصص — ${product.title}`, canonical)}
+            target="_blank"
+            text="اطلب عينة بشعارك"
+            icon="tabler:brand-whatsapp"
+          />
+        </div>
+      </div>
     </div>
-    <p class="mt-4 text-muted">
-      للمخزون وإعادة الطلب راجع <a class="text-primary underline" href="/grow/wholesale">التوريد بالجملة</a>؛ ولتصميم
-      جديد راجع <a class="text-primary underline" href="/grow/oem-odm">تطوير OEM/ODM</a>.
-    </p>
   </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="faq-title">
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:items-start">
+      <div>
+        <h2 id="faq-title" class="text-xl md:text-2xl font-bold mb-2">أسئلة مشترو الجملة</h2>
+        <p class="text-muted mb-4">
+          المطابقة تُؤكَّد بصور السيارة قبل عرض السعر. أرسل سنة الصنع وإصدار السيارة والكمية ومدينة التسليم لتسريع
+          العرض.
+        </p>
+        <ul class="text-sm text-muted space-y-1 list-disc ps-5">
+          <li>عينة واحدة متاحة قبل الإنتاج بالجملة.</li>
+          <li>تغليف تصدير مع حماية فردية لكل قطعة.</li>
+          <li>ضمان سنة واحدة ضد عيوب التصنيع.</li>
+          <li>استبدال أو إعادة شحن عند التلف أثناء النقل.</li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        {
+          faq.map((entry) => (
+            <details class="group rounded-xl border border-gray-200 dark:border-slate-700 p-4">
+              <summary class="flex cursor-pointer items-center justify-between gap-3 font-semibold">
+                <span set:html={isolateLatin(entry.q)} />
+                <Icon
+                  name="tabler:chevron-down"
+                  class="size-5 shrink-0 text-muted transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <p class="mt-2 text-sm text-muted" set:html={isolateLatin(entry.a)} />
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
   {
     related.length > 0 && (
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-        <h2 class="text-2xl font-bold mb-5">قارن مراجع قريبة أو أكمل قائمة سيارتك</h2>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {related.map((item) => (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="related-title">
+        <h2 id="related-title" class="text-xl md:text-2xl font-bold mb-4">
+          قطع أخرى من نفس العائلة
+        </h2>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {related.map((entry) => (
             <a
-              href={`/products/${item.slug}`}
-              class="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700"
+              href={`/products/${entry.slug}`}
+              class="group rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden hover:border-primary"
             >
               <img
-                src={item.featuredSm}
-                alt={item.title}
-                width={item.images[0].sm.width}
-                height={item.images[0].sm.height}
+                src={entry.featuredImage}
+                alt={entry.title}
+                width={600}
+                height={450}
                 loading="lazy"
-                sizes="(max-width: 767px) 50vw, 25vw"
-                class="w-full aspect-square object-contain bg-black"
+                class="block w-full aspect-[4/3] object-contain bg-slate-100 dark:bg-slate-900"
               />
-              <h3 class="font-semibold p-4" set:html={isolateLatin(item.title)} />
+              <div class="p-3">
+                <p class="text-xs text-muted">{entry.categoryAr}</p>
+                <p class="font-medium text-sm mt-1 group-hover:text-primary" set:html={isolateLatin(entry.title)} />
+              </div>
             </a>
           ))}
         </div>
       </section>
     )
   }
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 text-sm text-muted space-y-3">
-    <h2 class="text-lg font-bold">المصدر ومسؤولية المعلومات</h2>
-    <p>
-      الجهة الناشرة: <a href="/about#publisher" class="text-primary underline">CCF</a>. الصور والمرجع تساعد على اختيار
-      القطعة، والمادة والمطابقة ومحتويات الطلب تُؤكّد قبل الشراء. {
-        lastReviewed && (
-          <span>
-            آخر مراجعة: <time datetime={lastReviewed}>{lastReviewed}</time>.
-          </span>
-        )
-      }
-    </p>
-    <p>BMW وMercedes-Benz وPorsche علامات لأصحابها. تستخدم الأسماء لتحديد تطبيق المركبة؛ لا تدل على شراكة مع CCF.</p>
-    <div class="flex flex-wrap gap-4">
-      <a href="/editorial-policy" class="text-primary underline">المصادر والتصحيحات</a><a
-        href="/catalogs"
-        class="text-primary underline">كتالوجات المركبات</a
-      ><a href={categoryUrl} class="text-primary underline">جميع مراجع هذه الفئة</a><a
-        href="/vehicles/bmw"
-        class="text-primary underline">اختيار قطع BMW حسب الشاسيه</a
-      >
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <div class="rounded-2xl bg-primary/5 border border-primary/20 p-6 md:p-8 text-center">
+      <h2 class="text-xl md:text-2xl font-bold mb-2">اطلب عرض سعر لهذا المرجع</h2>
+      <p class="text-muted mb-4">
+        أرسل صور سيارتك وسنة الصنع والكمية وبلد التسليم، وسنؤكد المطابقة والسعر ومدة الإنتاج عبر واتساب.
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <Button
+          href={whatsappUrl(product.title, canonical)}
+          target="_blank"
+          text="واتساب المبيعات"
+          icon="tabler:brand-whatsapp"
+        />
+        <Button href="/contact" variant="secondary" text="نموذج طلب رسمي" />
+      </div>
     </div>
   </section>
-  <style>
-    :global(body:has(ccf-product-gallery)) {
-      padding-bottom: calc(72px + env(safe-area-inset-bottom));
-    }
-    @media (min-width: 768px) {
-      :global(body:has(ccf-product-gallery)) {
-        padding-bottom: 0;
-      }
-    }
-  </style>
 </PageLayout>

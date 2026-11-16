@@ -5,9 +5,9 @@ excerpt: >-
   قارن 10 إضافات كربون صغيرة لسيارات BMW مع أولوية CCF. حدّد احتياجك وأكّد المادة والمطابقة وشروط التوريد قبل
   إرسال طلب السعر.
 image: >-
-  /images/products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim-01.webp
+  /images/products/bmw-g80-g82-oem-style-front-bumper-corner-trim/bmw-g80-g82-oem-style-front-bumper-corner-trim-01.webp
 imageAlt: زخارف زوايا المصد الأمامي كربون BMW M3 G80/M4 G82 — تصميم OEM
-imageLink: /products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim
+imageLink: /products/bmw-g80-g82-oem-style-front-bumper-corner-trim
 category: أدلة المشترين
 tags:
   - الجملة
@@ -40,61 +40,61 @@ listItems:
 
 أرسل صور المصد والعادم لتأكيد الأقسام والمخارج المطلوبة. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-carbon-fiber-oem-style-front-bumper-corner-trim)
+[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-oem-style-front-bumper-corner-trim)
 
 ## 2. CCF — زخارف فتحات الرفارف كربون BMW M3 G80/M4 G82 — تصميم AC
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-carbon-fiber-ac-style-fender-vent-trim)
+[راجع التفاصيل لدى CCF](/products/exterior-trim)
 
 ## 3. CCF — زخارف فتحات المصد الأمامي كربون BMW M3 G80/M4 G82
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-carbon-fiber-front-bumper-air-vents)
+[راجع التفاصيل لدى CCF](/products/grilles-air-intake)
 
 ## 4. CCF — زخارف فتحات غطاء المحرك كربون BMW M3 G80/M4 G82
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-carbon-fiber-hood-vent-trim)
+[راجع التفاصيل لدى CCF](/products/hoods)
 
 ## 5. CCF — زخارف فتحات المصد الأمامي كربون BMW M3 G80/M4 G82 — تصميم MP
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-carbon-fiber-mp-style-front-bumper-vent-trim)
+[راجع التفاصيل لدى CCF](/products/exterior-trim)
 
 ## 6. CCF — أغطية ظهر المقاعد كربون BMW M3 G80/M4 G82
 
 أرسل صورة المقاعد؛ تصميم المقعد وتجهيزاته يحددان المطابقة وطريقة التثبيت. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-carbon-fiber-seat-back-covers)
+[راجع التفاصيل لدى CCF](/products/bmw-g80-g82-seat-back-covers)
 
 ## 7. CCF — أغطية مرايا كربون BMW M5 G90
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. اختره عندما تريد إضافة محددة بدلاً من طقم هيكل كامل.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g90-carbon-fiber-mirror-caps)
+[راجع التفاصيل لدى CCF](/products/bmw-g90-mirror-caps)
 
 ## 8. CCF — غطاء البطارية كربون BMW M5 G90
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. هذا غطاء داخل حجرة المحرك، وليس بديلاً للغطاء الخارجي.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g90-carbon-fiber-battery-cover)
+[راجع التفاصيل لدى CCF](/products/bmw-g90-battery-cover)
 
 ## 9. CCF — غطاء تجميلي للمحرك كربون BMW M5 G90
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. هذا غطاء داخل حجرة المحرك، وليس بديلاً للغطاء الخارجي.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g90-carbon-fiber-engine-cover)
+[راجع التفاصيل لدى CCF](/products/bmw-g90-engine-cover)
 
 ## 10. CCF — غطاء منطقة الردياتير كربون BMW M5 G90
 
 أكّد ما إذا كانت القطعة غطاءً إضافياً أو بديلاً، وعدد الأقسام وطريقة التثبيت. هذا غطاء داخل حجرة المحرك، وليس بديلاً للغطاء الخارجي.
 
-[راجع التفاصيل لدى CCF](/products/bmw-g90-carbon-fiber-radiator-cover)
+[راجع التفاصيل لدى CCF](/products/bmw-g90-radiator-cover)
 
 ابدأ من [المراجع المصورة](/vehicles/bmw) و[كتالوجات المركبات](/catalogs). قارن [محتويات عروض الأسعار](/compare-wholesale-carbon-fiber-quotes) ثم [قدّر تكلفة الوصول](/import-cost-calculator) بأرقام الشحن والمصاريف المؤكدة. الكمية الدنيا والمادة والتوفر والتغليف والموعد تُؤكّد بحسب المرجع والمشروع.
 

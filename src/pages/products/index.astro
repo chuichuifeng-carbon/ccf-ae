@@ -14,7 +14,31 @@ const metadata = {
     'اختر قطع ألياف الكربون حسب النوع: شفة أمامية، ديفيوزر، سبويلر، غطاء محرك ومرايا. راجع التطبيقات المختارة واطلب عرض توريد للموزعين وورش التعديل.',
 };
 
-import { img } from '~/utils/siteImages';
+import { allProducts } from '~/data/b2b/all-products';
+
+// One hand-picked catalog photo per category: `categorySlug: productSlug`.
+const categoryShowcase: Record<string, string> = {
+  'front-lips-splitters': 'bmw-g80-g82-csl-style-3-piece-front-lip',
+  'rear-diffusers': 'bmw-g80-g82-adro-style-3-piece-rear-diffuser',
+  'side-skirts': 'bmw-g80-g82-3d-style-side-skirts',
+  'spoilers-wings': 'bmw-g80-g82-adro-v2-style-rear-wing',
+  hoods: 'bmw-g80-g82-n-style-csl-hood',
+  'trunk-lids': 'bmw-g80-csl-style-trunk-lid',
+  'grilles-air-intake': 'bmw-g80-g82-csl-front-grille-with-acc',
+  'mirror-caps': 'bmw-g80-g82-mp-style-forged-carbon-mirror-caps',
+  'exterior-trim': 'bmw-g80-g82-ae-style-fender-trim',
+  'body-panels': 'bmw-g82-m4-doors',
+  'engine-bay': 'bmw-g80-g82-g87-m3-m4-m2-carbon-fiber-engine-cover',
+  'interior-trim': 'bmw-g80-g82-bucket-seat-trim-covers',
+};
+
+// Real catalog photo of the chosen product, with the first product of the category as fallback.
+const categoryImage = (slug: string) => {
+  const product =
+    allProducts.find((item) => item.slug === categoryShowcase[slug]) ??
+    allProducts.find((item) => item.categorySlug === slug && item.images?.length);
+  return product ? { src: product.images[0].lg.url, alt: product.title } : undefined;
+};
 ---
 
 <PageLayout metadata={metadata}>
@@ -66,108 +90,62 @@ import { img } from '~/utils/siteImages';
     items={[
       {
         title: 'الشفاه الأمامية والسبليتر',
-        image: {
-          src: img(
-            'glossy carbon fiber front lip splitter for sports car bumper, dark studio product photography, visible weave'
-          ),
-          alt: 'شفاه أمامية وسبليتر من ألياف الكربون',
-        },
+        image: categoryImage('front-lips-splitters'),
         callToAction: { text: 'عرض الفئة', href: '/products/front-lips-splitters' },
       },
       {
         title: 'الناشرات الخلفية',
-        image: {
-          src: img(
-            'carbon fiber rear diffuser with vertical fins mounted on sports car rear bumper, dark studio product photography'
-          ),
-          alt: 'ناشرات خلفية من ألياف الكربون',
-        },
+        image: categoryImage('rear-diffusers'),
         callToAction: { text: 'عرض الفئة', href: '/products/rear-diffusers' },
       },
       {
         title: 'التنانير الجانبية',
-        image: {
-          src: img('pair of glossy carbon fiber side skirts on dark studio floor, automotive product photography'),
-          alt: 'تنانير جانبية من ألياف الكربون',
-        },
+        image: categoryImage('side-skirts'),
         callToAction: { text: 'عرض الفئة', href: '/products/side-skirts' },
       },
       {
         title: 'السبويلر والأجنحة',
-        image: {
-          src: img('carbon fiber GT rear wing spoiler with aluminum mounts, dark studio product photography'),
-          alt: 'سبويلر وأجنحة من ألياف الكربون',
-        },
+        image: categoryImage('spoilers-wings'),
         callToAction: { text: 'عرض الفئة', href: '/products/spoilers-wings' },
       },
       {
         title: 'أغطية المحرك',
-        image: {
-          src: img('carbon fiber car hood with air vents, glossy weave texture, dark studio product photography'),
-          alt: 'أغطية محرك من ألياف الكربون',
-        },
+        image: categoryImage('hoods'),
         callToAction: { text: 'عرض الفئة', href: '/products/hoods' },
       },
       {
         title: 'أغطية صندوق الأمتعة',
-        image: {
-          src: img(
-            'carbon fiber trunk lid with integrated ducktail spoiler for sports sedan, dark studio product photography'
-          ),
-          alt: 'أغطية صندوق أمتعة من ألياف الكربون',
-        },
+        image: categoryImage('trunk-lids'),
         callToAction: { text: 'عرض الفئة', href: '/products/trunk-lids' },
       },
       {
         title: 'الشبكات وفتحات التهوية',
-        image: {
-          src: img(
-            'carbon fiber front kidney grille and air intake trim for luxury car, dark studio product photography'
-          ),
-          alt: 'شبكات وفتحات تهوية من ألياف الكربون',
-        },
+        image: categoryImage('grilles-air-intake'),
         callToAction: { text: 'عرض الفئة', href: '/products/grilles-air-intake' },
       },
       {
         title: 'أغطية المرايا',
-        image: {
-          src: img('pair of glossy carbon fiber side mirror caps, dark studio product photography, visible weave'),
-          alt: 'أغطية مرايا من ألياف الكربون',
-        },
+        image: categoryImage('mirror-caps'),
         callToAction: { text: 'عرض الفئة', href: '/products/mirror-caps' },
       },
       {
         title: 'الزخارف الخارجية',
-        image: {
-          src: img(
-            'carbon fiber exterior trim set with fender vents and antenna cover, dark studio product photography'
-          ),
-          alt: 'زخارف خارجية من ألياف الكربون',
-        },
+        image: categoryImage('exterior-trim'),
         callToAction: { text: 'عرض الفئة', href: '/products/exterior-trim' },
       },
       {
         title: 'الأبواب والرفارف',
-        image: {
-          src: img('carbon fiber car door and fender panels, dark studio product photography, visible weave'),
-          alt: 'أبواب ورفارف من ألياف الكربون',
-        },
+        image: categoryImage('body-panels'),
         callToAction: { text: 'عرض الفئة', href: '/products/body-panels' },
       },
       {
         title: 'أغطية حجرة المحرك',
-        image: {
-          src: img('carbon fiber engine bay cover set, dark studio product photography, visible weave'),
-          alt: 'أغطية حجرة محرك من ألياف الكربون',
-        },
+        image: categoryImage('engine-bay'),
         callToAction: { text: 'عرض الفئة', href: '/products/engine-bay' },
       },
       {
         title: 'زخارف المقاعد الداخلية',
-        image: {
-          src: img('carbon fiber seat back covers, dark studio product photography, visible weave'),
-          alt: 'أغطية مقاعد داخلية من ألياف الكربون',
-        },
+        image: categoryImage('interior-trim'),
         callToAction: { text: 'عرض الفئة', href: '/products/interior-trim' },
       },
     ]}

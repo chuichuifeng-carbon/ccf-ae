@@ -41,6 +41,11 @@ const chassisCards = Object.entries(chassisGroups)
     sample: products,
   }))
   .sort((a, b) => b.count - a.count);
+
+// 50 chassis codes exist in the sheet; only the 12 with the largest coverage get image cards,
+// the rest stay as a compact index so the page stays light on mobile.
+const primaryChassis = chassisCards.slice(0, 12);
+const otherChassis = chassisCards.slice(12);
 ---
 
 <PageLayout metadata={metadata}>
@@ -69,7 +74,7 @@ const chassisCards = Object.entries(chassisGroups)
       <label
         >الشاسيه<select data-filter-chassis class="mt-2 block w-full rounded-lg border p-3 bg-page"
           ><option value="">جميع الشاسيهات</option>{
-            chassisCards.map((c) => <option value={c.code}>{c.code}</option>)
+            primaryChassis.map((c) => <option value={c.code}>{c.code}</option>)
           }</select
         ></label
       >
@@ -96,7 +101,7 @@ const chassisCards = Object.entries(chassisGroups)
     <h2 class="text-2xl font-bold mb-4">اختر شاسيه سيارتك للوصول إلى مراجع القطع</h2>
     <nav aria-label="اختيار الشاسيه" class="flex flex-wrap gap-3">
       {
-        chassisCards.map((card) => (
+        primaryChassis.map((card) => (
           <a class="text-primary underline" href={`#bmw-${card.code}`}>
             <bdi dir="ltr">BMW {card.code}</bdi>
           </a>
@@ -108,12 +113,23 @@ const chassisCards = Object.entries(chassisGroups)
     </p>
   </section>
   {
-    chassisCards.map((card) => (
+    primaryChassis.map((card) => (
       <section id={`bmw-${card.code}`} class="scroll-mt-24">
-        <ProductCollection chassis={card.code} title={`قطع كربون BMW ${card.code}`} />
+        <ProductCollection chassis={card.code} title={`قطع كربون BMW ${card.code}`} limit={8} />
       </section>
     ))
   }
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="other-chassis">
+    <h2 id="other-chassis" class="text-2xl font-bold mb-4">شاسيهات أخرى مغطاة بالكتالوج</h2>
+    <p class="text-muted leading-relaxed">
+      {otherChassis.map((c) => `BMW ${c.code} (${c.count})`).join(' · ')}
+    </p>
+    <p class="text-muted mt-3">
+      تُعرض الشاسيهات أعلاه بأمثلة مصورة. أرسل رمز الشاسيه والقطعة المطلوبة للحصول على القائمة الكاملة والصور المطابقة
+      للمرجع.
+    </p>
+  </section>
 
   <ModelCatalogs brand="bmw" />
 

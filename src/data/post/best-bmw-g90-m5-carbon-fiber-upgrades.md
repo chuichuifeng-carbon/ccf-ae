@@ -4,9 +4,9 @@ title: أفضل 10 خيارات ترقيات كربون BMW G90 M5 في 2026
 excerpt: >-
   قارن 10 خيارات ترقيات كربون BMW G90 M5 من CCF. راجع اختلاف التصميم والمطابقة ومحتويات التوريد قبل طلب السعر
   للورشة أو التوزيع.
-image: /images/products/bmw-g90-carbon-fiber-ax-front-lip/bmw-g90-carbon-fiber-ax-front-lip-01.webp
+image: /images/products/bmw-g90-ax-front-lip/bmw-g90-ax-front-lip-01.webp
 imageAlt: شفّة أمامية كربون BMW M5 G90 — تصميم AX
-imageLink: /products/bmw-g90-carbon-fiber-ax-front-lip
+imageLink: /products/bmw-g90-ax-front-lip
 category: أدلة المشترين
 tags:
   - الجملة
@@ -39,61 +39,61 @@ listItems:
 
 ابدأ بمراجعة شكل المقدمة وصورة المصد الحالي؛ هذا أحد بدائل الشفّة، وليس جزءاً يضاف فوق شفّة MP.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-ax-front-lip)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-ax-front-lip)
 
 ## 2. CCF — شفّة أمامية — BMW M5 G90 — تصميم MP
 
 بديل أمامي لتصميم AX. اطلب صورة الأقسام ووحدة البيع قبل اختيار أحد التصميمين.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-mp-front-lip)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-mp-front-lip)
 
 ## 3. CCF — تنانير جانبية — BMW M5 G90 — تصميم MP
 
 لمن يريد تنسيق الجوانب مع المقدمة والخلف. أكّد اليمين واليسار ونقاط التثبيت قبل احتساب تكلفة التركيب.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-mp-side-skirts)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-mp-side-skirts)
 
 ## 4. CCF — غطاء محرك — BMW M5 G90
 
 خيار أكبر ضمن ميزانية المشروع. أكّد القفل والمفصلات وبنية الغطاء وفتحات التهوية قبل اعتماده.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-hood)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-hood)
 
 ## 5. CCF — ناشر خلفي — BMW M5 G90 — تصميم AX
 
 لإكمال الخلفية بتصميم AX. أرسل صورة المصد ومخارج العادم؛ الشكل وحده لا يثبت المطابقة.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-ax-rear-diffuser)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-ax-rear-diffuser)
 
 ## 6. CCF — ناشر خلفي — BMW M5 G90 — تصميم MP
 
 بديل خلفي لتصميم AX. قارن الأقسام المشمولة ومخارج العادم قبل اختيار النسخة التي تريدها.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-mp-rear-diffuser)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-mp-rear-diffuser)
 
 ## 7. CCF — أغطية مرايا — BMW M5 G90
 
 إضافة أصغر من تغيير أجزاء الهيكل. أكّد ما إذا كانت الأغطية بديلة أو فوق الأصل وتجهيزات المرآة.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-mirror-caps)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-mirror-caps)
 
 ## 8. CCF — غطاء البطارية — BMW M5 G90
 
 خيار داخل حجرة المحرك. راجع موضع الغطاء وطريقة تثبيته ولا تتعامل معه كغطاء محرك خارجي.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-battery-cover)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-battery-cover)
 
 ## 9. CCF — غطاء تجميلي للمحرك — BMW M5 G90
 
 لمن يركز على تفاصيل حجرة المحرك. أكّد نطاق القطعة والأجزاء المحيطة قبل إضافتها إلى الطلب.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-engine-cover)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-engine-cover)
 
 ## 10. CCF — غطاء منطقة الردياتير — BMW M5 G90
 
 إضافة لمنطقة الردياتير. أرسل صورة الموضع الحالي لتحديد المحتويات والمثبتات المطلوبة.
 
-[راجع صور المنتج وتفاصيله](/products/bmw-g90-carbon-fiber-radiator-cover)
+[راجع صور المنتج وتفاصيله](/products/bmw-g90-radiator-cover)
 
 ابدأ بمرجع أو بديلين، ثم أرسل سنة السيارة وصور الجزء الحالي والكمية والوجهة. راجع [مجموعة القطع](/vehicles/bmw) و[دليل تأكيد المطابقة](/carbon-fiber-parts-fitment-check)، واستخدم [حاسبة تكلفة الوصول](/import-cost-calculator) بعد الحصول على أسعار وشحن مؤكدين. المادة والتوفر والتشطيب ومدة التجهيز تُؤكّد للطلب المحدد.
 

@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
 import pageSeo from '../../src/data/seo.json';
+import legacyRedirects from '../../src/data/legacy-redirects.json';
 
 /** Static hosting rules and public contact links, applied after HTML compression. */
 export default function productionHosting(): AstroIntegration {
@@ -22,6 +23,11 @@ export default function productionHosting(): AstroIntegration {
           // Reversing that implicit redirect here creates an infinite 308 <-> 301 loop.
           // Leave slash handling to the active host (Pages or Workers html_handling).
           rules.push(`${route}/index.html ${route} 301`, `${route}.html ${route} 301`);
+        }
+        // Retired product URLs (old `-carbon-fiber-` slug convention) permanently point at their successor.
+        for (const [from, to] of Object.entries(legacyRedirects)) {
+          if (from === to) continue;
+          rules.push(`${from} ${to} 301`);
         }
         // These rules become reachable only after www is bound to this deployment with DNS/TLS.
         rules.push(

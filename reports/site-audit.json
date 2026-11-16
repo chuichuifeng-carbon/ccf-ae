@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-11-16T10:32:57.648Z",
+  "totals": {
+    "htmlPages": 646,
+    "indexable": 628,
+    "noindex": 18,
+    "sitemapUrls": 630,
+    "brokenInternalLinks": 0,
+    "brokenTargets": 0,
+    "affectedPages": 0,
+    "missingImageRefs": 0,
+    "missingImageTargets": 0
+  },
+  "brokenLinks": [],
+  "missingImages": [],
+  "duplicates": {
+    "title": [],
+    "description": [],
+    "h1": []
+  },
+  "noH1": [],
+  "multiH1": [],
+  "overlongTitles": [],
+  "shortTitles": [
+    {
+      "route": "/products/bmw-f90-m5-front-grille-overview/",
+      "title": "شبك أمامي — BMW F90"
+    }
+  ],
+  "overlongDescriptions": [],
+  "noTitle": [],
+  "noDescription": [],
+  "noCanonical": [],
+  "canonicalMismatch": [],
+  "badLang": [],
+  "noDir": [],
+  "sitemapMissingPage": [],
+  "indexableMissingFromSitemap": []
+}

@@ -4,9 +4,9 @@ title: أفضل 3 خيارات لمناقشة توريد قطع كربون بع�
 excerpt: >-
   قارن 3 خيارات لمناقشة توريد قطع كربون بعلامتك الخاصة مع أولوية CCF. حدّد احتياجك وأكّد المادة والمطابقة
   وشروط التوريد قبل إرسال طلب السعر.
-image: /images/products/bmw-g90-carbon-fiber-mirror-caps/bmw-g90-carbon-fiber-mirror-caps-01.webp
+image: /images/products/bmw-g90-mirror-caps/bmw-g90-mirror-caps-01.webp
 imageAlt: أغطية مرايا كربون BMW M5 G90
-imageLink: /products/bmw-g90-carbon-fiber-mirror-caps
+imageLink: /products/bmw-g90-mirror-caps
 category: أدلة المشترين
 tags:
   - الجملة

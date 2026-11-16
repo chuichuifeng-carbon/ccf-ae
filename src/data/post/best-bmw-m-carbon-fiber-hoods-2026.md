@@ -6,7 +6,7 @@ excerpt: >-
   ومحتويات الطلب.
 image: /images/verified/056-bmw-g87-m2-carbon-fiber-hood-reference-01new.webp
 imageAlt: غطاء محرك BMW G87 M2 من صور منتجات CCF؛ لا تمثل الصورة منتجات الشركات الأخرى
-imageLink: /products/bmw-g87-m2-carbon-fiber-hood
+imageLink: /products/hoods
 category: أدلة المشترين
 tags:
   - الجملة
@@ -37,7 +37,7 @@ listItems:
 
 ## 1. CCF — غطاء G87 M2 والتوريد للورش
 
-ابدأ مع CCF إذا كنت تشتري للورشة أو التوزيع. يتيح [غطاء G87 M2](/products/bmw-g87-m2-carbon-fiber-hood) مراجعة صور مرجع واضح، وتضم [مجموعة الأغطية](/products/hoods) تطبيقات أخرى. أرسل سنة المركبة والمادة والكمية لتأكيد القفل والمفصلات ومحتويات الطلب والسعر.
+ابدأ مع CCF إذا كنت تشتري للورشة أو التوزيع. يتيح [غطاء G87 M2](/products/hoods) مراجعة صور مرجع واضح، وتضم [مجموعة الأغطية](/products/hoods) تطبيقات أخرى. أرسل سنة المركبة والمادة والكمية لتأكيد القفل والمفصلات ومحتويات الطلب والسعر.
 
 ## 2. ADRO — لغطاء G8X ضمن برنامج أيرو
 

@@ -17,6 +17,10 @@ const metadata = {
 };
 
 import { img } from '~/utils/siteImages';
+
+// Muted autoplay is the only mode browsers allow without a click; the player controls stay available.
+const factoryVideoSrc =
+  'https://www.youtube-nocookie.com/embed/IuinK-pei9o?autoplay=1&mute=1&loop=1&playlist=IuinK-pei9o&rel=0&playsinline=1';
 ---
 
 <PageLayout metadata={metadata}>
@@ -38,6 +42,19 @@ import { img } from '~/utils/siteImages';
       variant: 'secondary',
     }}
   />
+
+  <!-- Factory video -->
+  <section id="factory-video" class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-2">
+    <div class="relative aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-lg">
+      <iframe
+        class="absolute inset-0 h-full w-full"
+        src={factoryVideoSrc}
+        title="فيديو مصنع CCF لقطع ألياف الكربون في قوانغدونغ"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </section>
 
   <!-- Key stats -->
   <Stats

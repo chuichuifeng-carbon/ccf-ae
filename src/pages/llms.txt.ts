@@ -3,10 +3,12 @@ import { SITE } from 'astrowind:config';
 import guide from '~/data/site-guide.md?raw';
 import catalogs from '~/data/b2b/catalogs.json';
 import { productCategories } from '~/data/b2b/product-content';
+import { allProducts } from '~/data/b2b/all-products';
 
 export const GET: APIRoute = () => {
   const categories = Object.entries(productCategories).map(
-    ([slug, name]) => `- [${name}](${SITE.site}/products/${slug})`
+    ([slug, name]) =>
+      `- [${name}](${SITE.site}/products/${slug}) — ${allProducts.filter((product) => product.categorySlug === slug).length} product records`
   );
   const documents = catalogs.map(
     ({ brand, entries }) =>

@@ -4,12 +4,19 @@ import Button from '~/components/ui/Button.astro';
 import { whatsappUrl } from '~/utils/inquiry';
 import { getCanonical } from '~/utils/permalinks';
 
-const { category, chassis, title } = Astro.props as { category?: string; chassis?: string; title?: string };
+const { category, chassis, title, limit } = Astro.props as {
+  category?: string;
+  chassis?: string;
+  title?: string;
+  limit?: number;
+};
 
 // 核心：从 all-products 按 categorySlug 过滤 + 排序（优先多图）
 const filtered = allProducts
   .filter((p) => (!category || p.categorySlug === category) && (!chassis || p.chassisCodes.includes(chassis)))
   .sort((a, b) => b.imageCount - a.imageCount);
+const shown = limit ? filtered.slice(0, limit) : filtered;
+const truncated = shown.length < filtered.length;
 
 if (filtered.length === 0) {
   return null;
@@ -19,18 +26,19 @@ if (filtered.length === 0) {
 <section data-product-collection={category} class="max-w-[1720px] mx-auto px-4 sm:px-6 py-12 md:py-16">
   {title && <h2 class="text-3xl md:text-4xl font-bold mb-4">{title}</h2>}
   <p class="text-lg text-muted max-w-4xl mb-8">
-    تصفّح {filtered.length} مرجعاً مصوراً. افتح تفاصيل القطعة لمراجعة التطبيق؛ المادة والمطابقة والتوفر تُؤكّد للطلب المحدد.
+    تصفّح {shown.length}{truncated ? ` من ${filtered.length}` : ''} مرجعاً مصوراً. افتح تفاصيل القطعة لمراجعة التطبيق؛ المادة
+    والمطابقة والتوفر تُؤكّد للطلب المحدد.
   </p>
 
   <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {
-      filtered.map((product) => (
+      shown.map((product) => (
         <article
           data-category={product.categorySlug}
           data-search={product.title.toLowerCase()}
           class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-700 bg-page group"
         >
-          <a href={`/products/${product.slug}`} aria-label={product.title} class="block bg-black">
+          <a href={`/products/${product.slug}`} aria-label={product.title} class="block bg-white">
             <img
               src={product.featuredSm}
               alt={product.title}
@@ -39,7 +47,7 @@ if (filtered.length === 0) {
               loading="lazy"
               decoding="async"
               sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 25vw"
-              class="w-full aspect-square object-contain bg-black group-hover:scale-[1.02] transition"
+              class="w-full aspect-square object-contain bg-white group-hover:scale-[1.02] transition"
             />
           </a>
           <div class="p-5 flex flex-col flex-1">
@@ -69,6 +77,14 @@ if (filtered.length === 0) {
       ))
     }
   </div>
+
+  {
+    truncated && (
+      <div class="mt-8">
+        <Button variant="secondary" text={`عرض جميع المنتجات (${allProducts.length})`} href="/products" />
+      </div>
+    )
+  }
 
   <p class="text-sm text-muted mt-6">
     قد تعرض صور التركيب أجزاء أخرى غير مشمولة. أكّد المرجع والمادة والتشطيب والقطع المتضمنة لطلبك المحدد.

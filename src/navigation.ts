@@ -9,6 +9,15 @@ export const headerData = {
     {
       text: 'المنتجات',
       href: getPermalink('/products'),
+      links: [
+        { text: 'الشفاه الأمامية والكانارد', href: getPermalink('/products/front-lips-splitters') },
+        { text: 'الناشرات وملحقات المصد الخلفي', href: getPermalink('/products/rear-diffusers') },
+        { text: 'السبويلر والأجنحة', href: getPermalink('/products/spoilers-wings') },
+        { text: 'التنانير الجانبية', href: getPermalink('/products/side-skirts') },
+        { text: 'أغطية المحرك', href: getPermalink('/products/hoods') },
+        { text: 'الشبكات وأنظمة سحب الهواء', href: getPermalink('/products/grilles-air-intake') },
+        { text: 'جميع الفئات', href: getPermalink('/products') },
+      ],
     },
     {
       text: 'المركبات',
@@ -58,6 +67,11 @@ export const footerData = {
       title: 'المنتجات',
       links: [
         { text: 'جميع المنتجات', href: getPermalink('/products') },
+        { text: 'الشفاه الأمامية والكانارد', href: getPermalink('/products/front-lips-splitters') },
+        { text: 'الناشرات وملحقات المصد الخلفي', href: getPermalink('/products/rear-diffusers') },
+        { text: 'السبويلر والأجنحة', href: getPermalink('/products/spoilers-wings') },
+        { text: 'التنانير الجانبية', href: getPermalink('/products/side-skirts') },
+        { text: 'أغطية المحرك', href: getPermalink('/products/hoods') },
         { text: 'القطع حسب المركبة', href: getPermalink('/vehicles') },
         { text: 'عرض الكتالوجات', href: getPermalink('/catalogs') },
         { text: 'المدونة', href: getBlogPermalink() },

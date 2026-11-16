@@ -1,9 +1,14 @@
 ---
 import { Icon } from 'astro-icon/components';
-import type { ProductDetail } from '~/data/b2b/all-products';
+
+interface GalleryImage {
+  lg: { url: string; width: number; height: number };
+  md: { url: string; width: number; height: number };
+  sm: { url: string; width: number; height: number };
+}
 
 interface Props {
-  product: ProductDetail;
+  product: { title: string; images: GalleryImage[] };
 }
 const { product } = Astro.props;
 const images = product.images;

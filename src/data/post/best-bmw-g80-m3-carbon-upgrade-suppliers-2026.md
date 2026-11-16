@@ -6,7 +6,7 @@ excerpt: >-
   الميزانية والمطابقة.
 image: /images/verified/002-bmw-g80-g82-carbon-fiber-front-lip-r44-style-reference-01.webp
 imageAlt: شفّة R44 من مجموعة CCF لسيارات BMW G80/G82
-imageLink: /products/bmw-g80-g82-carbon-fiber-front-lip-r44-style
+imageLink: /products/bmw-g80-g82-r44-style-front-lip
 category: أدلة المشترين
 tags:
   - الجملة

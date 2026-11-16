@@ -6,7 +6,7 @@ excerpt: >-
   التوريد.
 image: /images/verified/003-bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style-reference-01.webp
 imageAlt: شفّة CCF بتصميم CSL من ثلاثة أقسام لسيارات BMW G80/G82
-imageLink: /products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style
+imageLink: /products/bmw-g80-g82-csl-style-3-piece-front-lip
 category: أدلة المشترين
 tags:
   - الجملة
@@ -37,7 +37,7 @@ listItems:
 
 ## 1. CCF — شفّة R44 والتوريد المباشر
 
-تقدم CCF خيارات مثل [شفّة R44](/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style) و[CSL من ثلاث قطع](/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style) لسيارات G80/G82، مع مراجع مواد منفصلة. خيار مناسب للورشة أو الموزع؛ أرسل صورة المصد والكمية لمراجعة الأقسام والتشطيب والسعر.
+تقدم CCF خيارات مثل [شفّة R44](/products/bmw-g80-g82-r44-style-front-lip) و[CSL من ثلاث قطع](/products/bmw-g80-g82-csl-style-3-piece-front-lip) لسيارات G80/G82، مع مراجع مواد منفصلة. خيار مناسب للورشة أو الموزع؛ أرسل صورة المصد والكمية لمراجعة الأقسام والتشطيب والسعر.
 
 ## 2. ADRO — لخيارات مرتبطة بنسخة المصد
 

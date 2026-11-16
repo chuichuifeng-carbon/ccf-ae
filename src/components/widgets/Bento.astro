@@ -57,7 +57,8 @@ const spanClass = (span?: number, rowSpan?: number) =>
                   ) : (
                     <Image
                       class={
-                        typeof image.src === 'string' && image.src.startsWith('/images/verified/')
+                        typeof image.src === 'string' &&
+                        (image.src.startsWith('/images/verified/') || image.src.startsWith('/images/products/'))
                           ? 'absolute inset-0 h-full w-full object-contain bg-white transition duration-500 group-hover:scale-[1.03]'
                           : 'absolute inset-0 h-full w-full object-cover object-top transition duration-500 group-hover:scale-[1.03]'
                       }
@@ -86,7 +87,8 @@ const spanClass = (span?: number, rowSpan?: number) =>
                   typeof image !== 'string' &&
                   typeof image.src === 'string' &&
                   image.src.startsWith('/images/') &&
-                  !image.src.startsWith('/images/verified/') && (
+                  !image.src.startsWith('/images/verified/') &&
+                  !image.src.startsWith('/images/products/') && (
                     <p class="text-xs text-muted mb-2">
                       صورة توضيحية للفئة، وليست صورة موثقة للمنتج المحدد. اطلب الصور المطابقة قبل الطلب.
                     </p>

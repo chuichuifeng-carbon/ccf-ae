@@ -1,15 +1,20 @@
 {
   "date": "2026-11-03",
   "scope": "Static audit of the current local working tree",
-  "builtPages": 393,
-  "productPages": 311,
+  "builtPages": 645,
+  "productPages": 563,
   "oldDetailRoutes": [
     "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
     "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
     "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
     "/products/bmw-g87-m2-carbon-fiber-hood"
   ],
-  "missingOldDetails": [],
+  "missingOldDetails": [
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-r44-style",
+    "/products/bmw-g80-g82-carbon-fiber-front-lip-three-piece-csl-style",
+    "/products/bmw-g80-g82-carbon-fiber-rear-diffuser-mp-style",
+    "/products/bmw-g87-m2-carbon-fiber-hood"
+  ],
   "planPagesMissingFromBuild": [],
   "productDuplicateTitles": [],
   "productDuplicateH1": [],

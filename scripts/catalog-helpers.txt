@@ -1,0 +1,48 @@
+
+export function groupByCategory(products: ProductDetail[]): Record<string, ProductDetail[]> {
+  const map: Record<string, ProductDetail[]> = {};
+  for (const p of products) {
+    if (!map[p.categorySlug]) map[p.categorySlug] = [];
+    map[p.categorySlug].push(p);
+  }
+  return map;
+}
+
+export function groupByChassis(products: ProductDetail[]): Record<string, ProductDetail[]> {
+  const map: Record<string, ProductDetail[]> = {};
+  for (const p of products) {
+    for (const c of p.chassisCodes) {
+      if (!map[c]) map[c] = [];
+      map[c].push(p);
+    }
+  }
+  return map;
+}
+
+export function getProductBySlug(slug: string): ProductDetail | undefined {
+  return allProducts.find((p) => p.slug === slug);
+}
+
+export function getFeaturedProducts(count = 6): ProductDetail[] {
+  const rich = allProducts.filter((p) => p.imageCount >= 10);
+  if (rich.length >= count) return rich.slice(0, count);
+  return allProducts.slice(0, count);
+}
+
+export function getRelatedProducts(product: ProductDetail, count = 4): ProductDetail[] {
+  const related = allProducts.filter(
+    (p) =>
+      p.slug !== product.slug &&
+      (product.categorySlug === 'lighting'
+        ? p.categorySlug === 'lighting'
+        : p.categorySlug === product.categorySlug || p.chassisCodes.some((c) => product.chassisCodes.includes(c)))
+  );
+  return related
+    .sort((a, b) => {
+      const score = (p: ProductDetail) =>
+        (p.categorySlug === product.categorySlug ? 2 : 0) +
+        (p.chassisCodes.some((c) => product.chassisCodes.includes(c)) ? 4 : 0);
+      return score(b) - score(a);
+    })
+    .slice(0, count);
+}

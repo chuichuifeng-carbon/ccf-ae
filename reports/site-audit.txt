@@ -1,0 +1,15 @@
+﻿HTML pages: 646 (indexable 628, noindex 18)
+sitemap URLs: 630
+broken internal links: 0 -> 0 targets on 0 pages
+missing images: 0 -> 0 files
+duplicate title groups: 0
+duplicate description groups: 0
+duplicate H1 groups: 0
+pages without H1: 0 | with multiple H1: 0
+title > 60 chars: 0 | title < 20 chars: 0 | description > 160: 0
+pages without title: 0 | without description: 0
+pages without canonical: 0 | canonical mismatch: 0
+lang != ar: 0 | dir != rtl: 0
+sitemap URLs with no page: 0 | indexable pages not in sitemap: 0
+
+Wrote reports\site-audit.json
