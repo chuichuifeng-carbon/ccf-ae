@@ -53,7 +53,9 @@ export default function technicalSeo(): AstroIntegration {
               const buffer = await fs.readFile(absolute);
               const info = await sharp(buffer).metadata();
               if (!info.width || !info.height || (info.pages && info.pages > 1)) continue;
-              const widths = [320, 640, 960, 1280, 1600].filter((w) => w < info.width);
+              // Three responsive sizes cover thumbnails, phones and desktop slots.
+              // Retain the original as the largest candidate and full-size gallery source.
+              const widths = [320, 640, 1280].filter((w) => w < info.width);
               const hash = createHash('sha256').update(buffer).update('webp-q80-v1').digest('hex').slice(0, 16);
               const stem = path.basename(src, path.extname(src));
               const variants: string[] = [];

@@ -48,6 +48,9 @@ for (const page of plan.pages) {
   }
 }
 assert.ok(mailto > 0);
+const outputFiles = fs.readdirSync('dist', { recursive: true, withFileTypes: true }).filter((entry) => entry.isFile());
+assert.ok(outputFiles.length <= 20000, `Cloudflare Pages Free file limit exceeded: ${outputFiles.length}/20000`);
+console.log(`Cloudflare Pages file budget: ${outputFiles.length}/20000.`);
 assert.ok(!sources.has('/*'), 'Unknown URLs retain true 404s');
 assert.ok(rules.some(([from, to]) => from === 'https://www.amxnx.vip/*' && to === 'https://amxnx.vip/:splat'));
 console.log(
