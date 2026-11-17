@@ -35,3 +35,12 @@ pnpm-workspace.yaml
 .env.*
 !.env.example
 !.env.*.example
+
+# catalog source images (reference data, not part of the deployable site)
+完整产品图片/
+
+# local image-processing cache (public imagery must remain versioned)
+node_modules/.cache/
+
+# generated audit reports
+reports/

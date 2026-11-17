@@ -1,4 +1,5 @@
 import pages from '~/data/seo.json';
+import { getCanonical } from '~/utils/permalinks';
 import { SITE } from 'astrowind:config';
 import type { MetaData } from '~/types';
 
@@ -29,7 +30,7 @@ export function getPageSeo(pathname: string) {
 export function withPageSeo(pathname: string, fallback: MetaData = {}): MetaData {
   const page = getPageSeo(pathname);
   if (!page) return fallback;
-  const canonical = page.canonicalPath === null ? null : new URL(page.canonicalPath, SITE.site).toString();
+  const canonical = page.canonicalPath === null ? null : String(getCanonical(page.canonicalPath));
   return {
     ...fallback,
     title: page.title,

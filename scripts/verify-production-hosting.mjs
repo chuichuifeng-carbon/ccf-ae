@@ -7,6 +7,7 @@ const rules = fs
   .filter((line) => line && !line.startsWith('#'))
   .map((line) => line.split(/\s+/));
 const sources = new Set();
+const routes = new Set(plan.pages.map((page) => page.route));
 for (const [source, destination, status] of rules) {
   assert.ok(!sources.has(source), `Duplicate rule: ${source}`);
   sources.add(source);
@@ -17,6 +18,12 @@ for (const [source, destination, status] of rules) {
 let mailto = 0;
 for (const page of plan.pages) {
   const html = fs.readFileSync(`dist/${page.file}`, 'utf8');
+  for (const [, href] of html.matchAll(/\bhref="([^"]+)"/g)) {
+    const url = new URL(href.replaceAll('&amp;', '&'), plan.site);
+    const route = url.pathname.replace(/\/+$/, '') || '/';
+    if (url.origin !== plan.site || !routes.has(route) || /\.[a-z0-9]+$/i.test(route)) continue;
+    assert.equal(url.pathname, route === '/' ? '/' : `${route}/`, `${page.route}: direct canonical link ${href}`);
+  }
   const all = [...html.matchAll(/<a\b[^>]*href="mailto:[^"]*"[^>]*>[\s\S]*?<\/a>/gi)];
   const protectedLinks = [
     ...html.matchAll(/<!--email_off-->(<a\b[^>]*href="mailto:[^"]*"[^>]*>[\s\S]*?<\/a>)<!--\/email_off-->/gi),
@@ -27,7 +34,7 @@ for (const page of plan.pages) {
   assert.ok(!sources.has(`${page.route}/`), `Never reverse Pages' implicit folder redirect: ${page.route}`);
   for (const alias of [`${page.route}/index.html`, `${page.route}.html`]) {
     assert.ok(
-      rules.some(([from, to]) => from === alias && to === page.route),
+      rules.some(([from, to]) => from === alias && to === `${page.route}/`),
       `Canonical alias: ${alias}`
     );
   }

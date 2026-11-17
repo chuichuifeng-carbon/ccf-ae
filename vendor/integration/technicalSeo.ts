@@ -112,7 +112,7 @@ export default function technicalSeo(): AstroIntegration {
           const record = (pageSeo as Record<string, { sitemap: boolean }>)[route];
           if (record?.sitemap && pageImages.size) {
             imageEntries.push(
-              `<url><loc>${xml(origin + route)}</loc>${[...pageImages].map((src) => `<image:image><image:loc>${xml(origin + src)}</image:loc></image:image>`).join('')}</url>`
+              `<url><loc>${xml(origin + (route === '/' ? '/' : route + '/'))}</loc>${[...pageImages].map((src) => `<image:image><image:loc>${xml(origin + src)}</image:loc></image:image>`).join('')}</url>`
             );
           }
         }

@@ -18,6 +18,7 @@ import { fileURLToPath } from 'node:url';
 import XLSX from 'xlsx';
 import sharp from 'sharp';
 
+import { correctCslTailLights } from '../src/data/b2b/product-corrections.ts';
 import { classifyProduct, productCategories } from '../src/data/b2b/product-content.ts';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -857,7 +858,7 @@ async function main() {
 
 export type { ProductDetail } from './all-products-types';
 
-export const allProducts: ProductDetail[] = ${JSON.stringify(products, null, 2)};
+export const allProducts: ProductDetail[] = ${JSON.stringify(products.map(correctCslTailLights), null, 2)};
 ${helpers}`;
   fs.writeFileSync(OUT_TS, body, 'utf8');
 

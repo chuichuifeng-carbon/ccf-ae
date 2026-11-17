@@ -111,17 +111,20 @@ const packagingSteps = [
   { icon: 'tabler:building-factory-2', title: 'شحن بحري', text: 'صندوق خشبي أو منصة نقالة للشحنات الكبيرة.' },
 ];
 
+const isLighting = product.categorySlug === 'lighting';
 const isAbsPart = /ABS/i.test(product.materialEn ?? '');
 const customizationOptions = [
   { icon: 'tabler:brand-whatsapp', title: 'شعار مخصص', text: 'شعار علامتك على القطعة أو التغليف أو كيس الغبار.' },
   {
     icon: 'tabler:palette',
     title: 'لون وتشطيب',
-    text: isAbsPart
-      ? 'أسود لامع قياسي؛ يُؤكَّد التشطيب المطفي واللون قبل الطلب.'
-      : 'لامع أو مطفي، ولمسات لون مخصصة حسب الطلب.',
+    text: isLighting
+      ? specs.finish
+      : isAbsPart
+        ? 'أسود لامع قياسي؛ يُؤكَّد التشطيب المطفي واللون قبل الطلب.'
+        : 'لامع أو مطفي، ولمسات لون مخصصة حسب الطلب.',
   },
-  ...(isAbsPart
+  ...(isAbsPart || isLighting
     ? []
     : [{ icon: 'tabler:grid-dots', title: 'نمط النسج', text: 'Twill 2×2 أو Plain 1×1 — يُؤكَّد للمرجع.' }]),
   { icon: 'tabler:box', title: 'تغليف مخصص', text: 'كرتون بطباعة علامتك وملصقات ومعلومات توريد.' },
@@ -152,7 +155,7 @@ const schemas = [
     brand: { '@type': 'Brand', name: 'CCF' },
     manufacturer: { '@id': `${SITE.site}/#organization` },
     category: product.categoryAr,
-    material: product.materialEn,
+    material: product.materialEn || undefined,
     keywords: product.keywords.join(', '),
     audience: {
       '@type': 'BusinessAudience',
@@ -162,7 +165,7 @@ const schemas = [
     mainEntityOfPage: { '@id': `${canonical}#webpage` },
     additionalProperty: [
       { '@type': 'PropertyValue', name: 'Fitment', value: product.model },
-      { '@type': 'PropertyValue', name: 'Material', value: product.materialEn },
+      ...(product.materialEn ? [{ '@type': 'PropertyValue', name: 'Material', value: product.materialEn }] : []),
       ...specGroups.flatMap((group) =>
         group.rows.map(([key, label]) => ({
           '@type': 'PropertyValue',

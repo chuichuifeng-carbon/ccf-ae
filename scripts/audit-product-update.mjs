@@ -6,6 +6,7 @@ import { allProducts } from '../src/data/b2b/all-products.ts';
 const out = process.argv.find((arg) => arg.startsWith('--out='))?.slice(6) || 'reports/product-audit-2026-11-03';
 fs.mkdirSync(out, { recursive: true });
 const origin = 'https://amxnx.vip';
+const canonicalUrl = (route) => origin + (route === '/' ? '/' : route.replace(/\/+$/, '') + '/');
 const files = fs
   .readdirSync('dist', { recursive: true })
   .map((f) => f.replaceAll('\\', '/'))
@@ -130,7 +131,7 @@ const products = allProducts.map((p) => {
     partType: p.partType,
     chassis: p.chassisCodes,
     genericTitle: /قطعة كربون مخصصة/.test(p.title),
-    inSitemap: sitemap.includes(origin + route + '</loc>'),
+    inSitemap: sitemap.includes(canonicalUrl(route) + '</loc>'),
     categoryLinksToProduct: category?.links.some((l) => l.href.replace(/\/$/, '') === route) || false,
     incomingPages: incoming.map((x) => x.route),
     incomingNonProductPages: incoming
@@ -180,7 +181,7 @@ const summary = {
   productsWithoutNonProductIncoming: products.filter((p) => !p.incomingNonProductPages.length).map((p) => p.route),
   h1Errors: pages.filter((p) => p.h1.length !== 1).map((p) => ({ route: p.route, count: p.h1.length })),
   canonicalErrors: pages
-    .filter((p) => p.route !== '/404.html' && (p.canonical.length !== 1 || p.canonical[0] !== origin + p.route))
+    .filter((p) => p.route !== '/404.html' && (p.canonical.length !== 1 || p.canonical[0] !== canonicalUrl(p.route)))
     .map((p) => ({ route: p.route, canonical: p.canonical })),
   forms: pages.reduce((n, p) => n + p.forms, 0),
   missingImagePlacements: pages.reduce((n, p) => n + p.missingImages.length, 0),

@@ -8,6 +8,7 @@ const planPath = 'reports/seo-metadata-plan/metadata-plan.json';
 const seo = JSON.parse(fs.readFileSync(seoPath, 'utf8'));
 const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
 const base = 'https://amxnx.vip';
+const canonicalUrl = (route) => base + route.replace(/\/$/, '') + '/';
 const exemplar = plan.pages.find((p) => p.route === '/products/hoods');
 const categorySeo = JSON.parse(fs.readFileSync('src/data/b2b/category-seo.json', 'utf8'));
 const records = allProducts.map((p) => ({
@@ -64,8 +65,8 @@ for (const r of records) {
     ...existing,
     ...r,
     id: existing?.id || String(plan.pages.length + 1),
-    url: base + r.route,
-    canonical: base + r.route,
+    url: canonicalUrl(r.route),
+    canonical: canonicalUrl(r.route),
     file: r.route.slice(1) + '/index.html',
     focusKeyword: r.h1,
     supportingKeywords: ['BMW', 'كربون', 'توريد بالجملة'],
@@ -76,7 +77,7 @@ for (const r of records) {
     ogType: 'website',
     ogTitle: r.title,
     ogDescription: r.description,
-    ogUrl: base + r.route,
+    ogUrl: canonicalUrl(r.route),
     ogImage: base + r.image,
     twitterTitle: r.title,
     twitterDescription: r.description,

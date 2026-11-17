@@ -142,7 +142,9 @@ if (base) {
   const endpoint = new URL(base);
   assert.ok(['127.0.0.1', 'localhost'].includes(endpoint.hostname), 'HTTP audit limited to local preview');
   for (const page of plan.pages) {
-    const response = await fetch(new URL(page.route, endpoint), { redirect: 'manual' });
+    const response = await fetch(new URL(new URL(page.canonical || page.url).pathname, endpoint), {
+      redirect: 'manual',
+    });
     assert.equal(response.status, 200, `${page.route}: preview response`);
     assert.ok(response.headers.get('content-type')?.includes('text/html'));
     http.push({ path: page.route, status: response.status });

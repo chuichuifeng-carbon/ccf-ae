@@ -28,11 +28,17 @@ assert.equal(summary.productDuplicateOrganizations, 0);
 assert.equal(summary.h1Errors.length, 0);
 assert.equal(summary.canonicalErrors.length, 0);
 assert.equal(summary.forms, 0);
+const csl = allProducts.find((product) => product.slug === 'bmw-g22-g82-csl-style-tail-lights');
+assert.ok(csl);
+assert.equal(csl.materialEn, '');
+assert.deepEqual(csl.chassisCodes, ['G22', 'G82']);
+assert.ok(!/كربون|carbon|G20|G28|G23|G26/i.test([csl.title, csl.seoTitle, csl.description, csl.material].join(' ')));
+assert.equal(new Set(csl.faq.map((item) => item.q)).size, csl.faq.length, 'CSL FAQs remain unique after imports');
 const imageSitemap = fs.readFileSync('dist/sitemap-images.xml', 'utf8');
 for (const product of products) {
   assert.equal(product.schemaOffers, undefined, `${product.route}: no unverified price/stock`);
   assert.equal(product.returnPolicy, undefined, `${product.route}: shared return policy, no invented period`);
-  assert.ok(imageSitemap.includes(`https://amxnx.vip${product.route}</loc>`));
+  assert.ok(imageSitemap.includes(`https://amxnx.vip${product.route}/</loc>`));
   const page = pages.find((p) => p.route === product.route);
   assert.ok(!/T300|T700|135°C|6 bar|RoHS|Intertek|1:1|50 قطعة|خلال 24/.test(page.mainText));
   assert.ok(page.links.some((l) => l.href.startsWith('https://wa.me/8613427690360')));
@@ -41,7 +47,7 @@ let productInquiries = 0;
 for (const page of pages) {
   for (const link of page.links) {
     if (link.context && link.reference?.includes('/products/bmw-')) {
-      const target = products.find((p) => `https://amxnx.vip${p.route}` === link.reference);
+      const target = products.find((p) => `https://amxnx.vip${p.route}` === link.reference.replace(/\/$/, ''));
       assert.ok(target, `${page.route}: product inquiry refers to a real detail page`);
       assert.equal(link.context, allProducts.find((p) => `/products/${p.slug}` === target.route).title);
       const message = new URL(link.href).searchParams.get('text');

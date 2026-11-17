@@ -2,7 +2,7 @@ site:
   name: CCF
   site: 'https://amxnx.vip'
   base: '/'
-  trailingSlash: false
+  trailingSlash: true
   organization:
     legalName: 'Guangzhou Chui Chui Feng Automotive Products Co., Ltd.'
     email: 'info@ccfrp.com'
