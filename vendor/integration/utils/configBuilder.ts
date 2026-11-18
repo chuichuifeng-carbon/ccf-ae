@@ -21,6 +21,9 @@ export interface SiteConfig {
   googleSiteVerificationId?: string;
   organization?: {
     legalName: string;
+    chineseName?: string;
+    registrationId?: string;
+    availableLanguage?: string[];
     email: string;
     telephone: string;
     mainWebsite: string;

@@ -1,24 +1,40 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import ProductCollection from './ProductCollection.astro';
-import { productCategories } from '~/data/b2b/product-content';
-const { category } = Astro.props as { category: keyof typeof productCategories };
-const title = productCategories[category];
-import categorySeo from '~/data/b2b/category-seo.json';
+import ProductCollection from '~/components/widgets/ProductCollection.astro';
+import Button from '~/components/ui/Button.astro';
+import { categoryNamesRu } from '~/data/b2b/product-labels-ru';
+import { categoryDescriptionsRu } from '~/data/b2b/category-content-ru';
+import { whatsappUrl } from '~/utils/inquiry';
+const { category } = Astro.props as { category: string };
+const name = categoryNamesRu[category];
+const h1 = `${name} для BMW`;
+const metadata = { title: `${name} BMW оптом | CCF`, description: categoryDescriptionsRu[category] };
 ---
 
-<PageLayout>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
-    <h1 class="text-3xl md:text-4xl font-bold">{title}{category === 'lighting' ? '' : ' كربون'} لسيارات BMW</h1>
-    <p class="text-lg text-muted mt-4">
-      {categorySeo[category].description}
-    </p>
+<PageLayout metadata={metadata}>
+  <section class="max-w-[1720px] mx-auto px-4 sm:px-6 pt-12 pb-5">
+    <a href="/products/" class="text-primary">← Все категории</a><p class="text-primary font-bold mt-7">
+      CCF · ОПТОВЫЕ ПОСТАВКИ ИЗ КИТАЯ
+    </p><h1 class="text-4xl md:text-5xl font-bold mt-3">{h1}</h1><p class="text-lg text-muted max-w-4xl mt-5">
+      {categoryDescriptionsRu[category]}
+    </p><div class="flex flex-wrap gap-4 mt-6">
+      <Button href="/vehicles/bmw/" text="Подобрать по кузову BMW" variant="primary" /><Button
+        href={whatsappUrl(`Оптовый заказ: ${name}`)}
+        text="Запросить оптовую цену"
+        variant="secondary"
+        target="_blank"
+      />
+    </div>
   </section>
-  <ProductCollection category={category} />
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex gap-5">
-    <a class="text-primary underline" href="/products">جميع فئات المنتجات</a><a
-      class="text-primary underline"
-      href="/vehicles/bmw">مراجع BMW حسب الشاسيه</a
-    >
-  </nav>
+  <ProductCollection category={category} title={`${name}: фотографии и исполнения`} />
+  <section class="max-w-[1720px] mx-auto px-4 sm:px-6 pb-12">
+    <h2 class="text-2xl font-bold mb-4">Подготовьте запрос</h2><p class="text-muted mb-5">
+      Приложите ссылку на выбранную деталь, фото автомобиля, год выпуска, количество и город доставки. Условия
+      персонализации, упаковки и перевозки согласуем для вашего заказа.
+    </p><div class="flex flex-wrap gap-5 text-primary underline">
+      <a href="/grow/wholesale/">Оптовые поставки</a><a href="/grow/oem-odm/">Разработка OEM/ODM</a><a href="/contact/"
+        >Контакты отдела продаж</a
+      >
+    </div>
+  </section>
 </PageLayout>

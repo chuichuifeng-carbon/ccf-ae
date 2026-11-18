@@ -22,16 +22,16 @@ const { page, category } = Astro.props as Props;
 const currentPage = page.currentPage ?? 1;
 
 const breadcrumbs = [
-  { text: 'الرئيسية', href: getPermalink('/') },
-  { text: 'المدونة', href: getBlogPermalink() },
+  { text: 'Главная', href: getPermalink('/') },
+  { text: 'Блог', href: getBlogPermalink() },
   ...(currentPage > 1
-    ? [{ text: category.title, href: getPermalink(category.slug, 'category') }, { text: `صفحة ${currentPage}` }]
+    ? [{ text: category.title, href: getPermalink(category.slug, 'category') }, { text: `Страница ${currentPage}` }]
     : [{ text: category.title }]),
 ];
 
 const metadata = {
-  title: `تصنيف '${category.title}' ${currentPage > 1 ? ` — صفحة ${currentPage}` : ''}`,
-  description: `مقالات في تصنيف ${category.title} في مدونة CCF.`,
+  title: `Категория '${category.title}' ${currentPage > 1 ? ` — Страница ${currentPage}` : ''}`,
+  description: `Статьи категории «${category.title}» в блоге CCF.`,
   robots: {
     index: blogCategoryRobots?.index,
     follow: blogCategoryRobots?.follow,

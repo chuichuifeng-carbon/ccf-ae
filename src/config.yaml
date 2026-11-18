@@ -5,6 +5,9 @@ site:
   trailingSlash: true
   organization:
     legalName: 'Guangzhou Chui Chui Feng Automotive Products Co., Ltd.'
+    chineseName: '广州市吹吹风汽车用品有限公司'
+    registrationId: '91440111MA59C7ELXQ'
+    availableLanguage: ['ru']
     email: 'info@ccfrp.com'
     telephone: '+86-134-2769-0360'
     mainWebsite: 'https://ccfrp.com'
@@ -22,9 +25,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: مصنع قطع كربون فايبر للسيارات في الصين | CCF
+    default: Карбоновые детали для автомобилей оптом из Китая | CCF
     template: '%s — CCF'
-  description: 'مصنع CCF لقطع كربون فايبر BMW ومرسيدس AMG وبورش. توريد للموزعين وورش التعديل وتطوير OEM/ODM؛ أرسل الطراز والكمية لطلب عرض سعر عبر واتساب.'
+  description: 'Карбоновые детали BMW, Mercedes-AMG и Porsche от производителя CCF. Оптовые поставки, OEM/ODM для дистрибьюторов, тюнинг-ателье и брендов Центральной Азии.'
   robots:
     index: true
     follow: true
@@ -39,8 +42,8 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: ar
-  textDirection: rtl
+  language: ru
+  textDirection: ltr
 
 apps:
   blog:

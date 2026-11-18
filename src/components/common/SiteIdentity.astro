@@ -23,6 +23,10 @@ const schema = [
           '@id': organizationId,
           name: SITE.name,
           legalName: organization.legalName,
+          alternateName: organization.chineseName,
+          ...(organization.registrationId
+            ? { identifier: { '@type': 'PropertyValue', propertyID: 'CN USCC', value: organization.registrationId } }
+            : {}),
           url: base,
           logo: new URL(logo.src, base).toString(),
           email: organization.email,
@@ -37,6 +41,7 @@ const schema = [
           contactPoint: {
             '@type': 'ContactPoint',
             contactType: 'sales',
+            availableLanguage: organization.availableLanguage,
             email: organization.email,
             telephone: organization.telephone,
             url: new URL('/contact', base).toString(),

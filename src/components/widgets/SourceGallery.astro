@@ -15,7 +15,10 @@ interface Gallery {
 }
 const { productSlug } = Astro.props as { productSlug?: string };
 const data = productSlug
-  ? { title: 'صور إضافية للمنتج', images: ((productGalleries as Record<string, Photo[]>)[productSlug] || []).slice(1) }
+  ? {
+      title: 'Дополнительные фотографии товара',
+      images: ((productGalleries as Record<string, Photo[]>)[productSlug] || []).slice(1),
+    }
   : (pageGalleries as Record<string, Gallery>)[normalizeSeoPath(Astro.url.pathname)];
 ---
 
@@ -26,7 +29,7 @@ const data = productSlug
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {data.images.map((photo) => (
           <figure class="rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-page">
-            <a href={photo.image} target="_blank" rel="noopener" aria-label={`${photo.alt} — تكبير الصورة`}>
+            <a href={photo.image} target="_blank" rel="noopener" aria-label={`${photo.alt} — Увеличить изображение`}>
               <img
                 src={photo.image}
                 alt={photo.alt}

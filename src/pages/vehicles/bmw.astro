@@ -1,285 +1,94 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Features from '~/components/widgets/Features.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Button from '~/components/ui/Button.astro';
 import ProductCollection from '~/components/widgets/ProductCollection.astro';
 import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
-import { productCategories } from '~/data/b2b/product-content';
-import { allProducts, groupByChassis } from '~/data/b2b/all-products';
-
+import { allProducts } from '~/data/b2b/all-products';
+import { categoryNamesRu } from '~/data/b2b/product-labels-ru';
+const chassis = [...new Set(allProducts.flatMap((p) => p.chassisCodes))].sort();
+const categories = [...new Set(allProducts.map((p) => p.categorySlug))];
 const metadata = {
-  title: 'قطع كربون BMW M2 وM3 وM4 وM5 بالجملة | CCF',
+  title: 'Карбоновые детали BMW оптом — подбор по кузову | CCF',
   description:
-    'كتالوجات قطع كربون بي إم دبليو BMW M2 وM3 وM4 وM5 وأجيال G وF المختارة. حدّد الطراز والشاسيه ومرجع القطعة لطلب عرض توريد من المصنع.',
+    'Выберите кузов BMW G80, G82, G87, G90 или другой код. Фотографии деталей, фильтр по типу и запрос оптовой цены у производителя CCF.',
 };
-
-// 按底盘分组，每个底盘最多取 6 个代表产品
-const chassisGroups = groupByChassis(allProducts);
-const CHASSIS_INFO_AR: Record<string, string> = {
-  G80: 'M3 سيدان 2021-الآن',
-  G82: 'M4 كوبيه 2021-الآن',
-  G83: 'M4 كابريوليه 2022-الآن',
-  G87: 'M2 كوبيه 2023-الآن',
-  G90: 'M5 سيدان 2024-الآن',
-  G20: 'الفئة الثالثة سيدان 2019-الآن',
-  G22: 'الفئة الرابعة كوبيه 2021-الآن',
-  G30: 'الفئة الخامسة سيدان 2017-2023',
-  F80: 'M3 سيدان 2014-2020',
-  F82: 'M4 كوبيه 2014-2020',
-  F87: 'M2 كوبيه 2016-2021',
-  F90: 'M5 سيدان 2017-2023',
-  F30: 'الفئة الثالثة سيدان 2012-2019',
-};
-const chassisCards = Object.entries(chassisGroups)
-  .map(([code, products]) => ({
-    code,
-    label: CHASSIS_INFO_AR[code] || code,
-    count: products.length,
-    sample: products,
-  }))
-  .sort((a, b) => b.count - a.count);
-
-// 50 chassis codes exist in the sheet; only the 12 with the largest coverage get image cards,
-// the rest stay as a compact index so the page stays light on mobile.
-const primaryChassis = chassisCards.slice(0, 12);
-const otherChassis = chassisCards.slice(12);
 ---
 
 <PageLayout metadata={metadata}>
-  <!-- Hero -->
-  <HeroText
-    tagline="تصفح حسب المركبة · BMW"
-    title="قطع ألياف الكربون لسيارات BMW"
-    subtitle="تصفّح قطع كربون فايبر بي إم دبليو BMW M2 وM3 وM4 وM5 وأجيال G وF المختارة. افتح كتالوج الطراز أدناه، ثم حدّد مرجع القطعة وسنة المركبة ونسخة الهيكل لطلب توريد بالجملة من مصنع CCF."
-    callToAction={{
-      text: 'تواصل عبر واتساب',
-      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
-      target: '_blank',
-      icon: 'tabler:brand-whatsapp',
-      variant: 'primary',
-    }}
-    callToAction2={{
-      text: 'اطلب عرض سعر بالجملة',
-      href: 'https://ccfrp.com/contact/',
-      target: '_blank',
-      variant: 'secondary',
-    }}
-  />
-
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-label="بحث المنتجات">
-    <div class="grid gap-4 sm:grid-cols-3">
-      <label
-        >الشاسيه<select data-filter-chassis class="mt-2 block w-full rounded-lg border p-3 bg-page"
-          ><option value="">جميع الشاسيهات</option>{
-            primaryChassis.map((c) => <option value={c.code}>{c.code}</option>)
-          }</select
-        ></label
-      >
-      <label
-        >نوع القطعة<select data-filter-category class="mt-2 block w-full rounded-lg border p-3 bg-page"
-          ><option value="">جميع القطع</option>{
-            Object.entries(productCategories).map(([code, title]) => <option value={code}>{title}</option>)
-          }</select
-        ></label
-      >
-      <label
-        >ابحث باسم القطعة<input
-          data-filter-search
-          type="search"
-          placeholder="G87، CSL، شفة أمامية"
-          class="mt-2 block w-full rounded-lg border p-3 bg-page"
-        /></label
-      >
-    </div>
-    <p data-filter-status aria-live="polite" class="text-muted mt-3"></p>
-  </section>
-
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-    <h2 class="text-2xl font-bold mb-4">اختر شاسيه سيارتك للوصول إلى مراجع القطع</h2>
-    <nav aria-label="اختيار الشاسيه" class="flex flex-wrap gap-3">
+  <section class="max-w-[1720px] mx-auto px-4 sm:px-6 pt-12 pb-6">
+    <a href="/vehicles/" class="text-primary">← Все марки</a>
+    <p class="text-primary font-bold mt-7">BMW · ОПТОВЫЙ КАТАЛОГ</p>
+    <h1 class="text-4xl md:text-5xl font-bold mt-3">Подберите детали для BMW</h1>
+    <p class="text-lg text-muted max-w-4xl mt-5">
+      Выберите код кузова и тип детали. Для подтверждения применяемости и расчёта цены отправьте год выпуска, фото
+      автомобиля, количество и город доставки.
+    </p>
+    <nav class="flex flex-wrap gap-3 mt-6" aria-label="Популярные кузова BMW">
       {
-        primaryChassis.map((card) => (
-          <a class="text-primary underline" href={`#bmw-${card.code}`}>
-            <bdi dir="ltr">BMW {card.code}</bdi>
+        ['G80', 'G82', 'G87', 'G90', 'F80', 'F82'].map((code) => (
+          <a
+            class="rounded-full bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 px-5 py-2 hover:border-primary"
+            href={`#bmw-${code}`}
+          >
+            BMW {code}
           </a>
         ))
       }
     </nav>
-    <p class="text-muted mt-4">
-      راجع صور السيارة وتجهيزاتها قبل اعتماد المطابقة؛ أسماء الشاسيهات مراجع للاختيار وليست ضماناً لتوافق كل نسخة.
-    </p>
   </section>
-  {
-    primaryChassis.map((card) => (
-      <section id={`bmw-${card.code}`} class="scroll-mt-24">
-        <ProductCollection chassis={card.code} title={`قطع كربون BMW ${card.code}`} limit={8} />
-      </section>
-    ))
-  }
-
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-labelledby="other-chassis">
-    <h2 id="other-chassis" class="text-2xl font-bold mb-4">شاسيهات أخرى مغطاة بالكتالوج</h2>
-    <p class="text-muted leading-relaxed">
-      {otherChassis.map((c) => `BMW ${c.code} (${c.count})`).join(' · ')}
+  <section class="max-w-[1720px] mx-auto px-4 sm:px-6 py-6" aria-label="Фильтры каталога BMW">
+    <div
+      class="bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-700 p-5 grid gap-4 md:grid-cols-4 items-end"
+    >
+      <label
+        >Кузов<select data-filter-chassis aria-label="Кузов" class="block w-full mt-2 border rounded-lg p-3 bg-page"
+          ><option value="">Все кузова</option>{chassis.map((code) => <option value={code}>{code}</option>)}</select
+        ></label
+      >
+      <label
+        >Тип детали<select
+          data-filter-category
+          aria-label="Тип детали"
+          class="block w-full mt-2 border rounded-lg p-3 bg-page"
+          ><option value="">Все детали</option>{
+            categories.map((code) => <option value={code}>{categoryNamesRu[code] || code}</option>)
+          }</select
+        ></label
+      >
+      <label
+        >Поиск<input
+          type="search"
+          data-filter-search
+          aria-label="Поиск"
+          maxlength="120"
+          placeholder="G80, CSL, сплиттер"
+          class="block w-full mt-2 border rounded-lg p-3 bg-page"
+        /></label
+      >
+      <button type="button" data-filter-reset class="btn-secondary">Сбросить фильтры</button>
+    </div>
+    <p data-filter-status role="status" aria-live="polite" class="mt-4 text-muted">
+      Всего товаров: {allProducts.length}
     </p>
-    <p class="text-muted mt-3">
-      تُعرض الشاسيهات أعلاه بأمثلة مصورة. أرسل رمز الشاسيه والقطعة المطلوبة للحصول على القائمة الكاملة والصور المطابقة
-      للمرجع.
+    <p data-filter-empty hidden class="bg-white dark:bg-slate-900 rounded-xl p-6 mt-4">
+      Нет подходящих товаров. Измените фильтры или <a href="https://wa.me/8613427690360" class="text-primary underline"
+        >пришлите фото нужной детали</a
+      >.
     </p>
+    <noscript
+      ><p class="mt-4 text-muted">
+        Показан полный каталог. Для фильтрации включите JavaScript или воспользуйтесь поиском браузера.
+      </p></noscript
+    >
   </section>
-
+  <ProductCollection title="Каталог деталей BMW" />
   <ModelCatalogs brand="bmw" />
-
-  <!-- Stats -->
-  <Stats
-    stats={[
-      { amount: 'M2 · M3 · M4 · M5', title: 'تطبيقات M الرئيسية' },
-      { amount: 'G · F', title: 'أجيال متعددة مغطاة' },
-      { amount: 'كربون جاف', title: 'تركيز الإنتاج' },
-    ]}
-  />
-
-  <!-- Covered models -->
-  <Features2
-    tagline="الطرازات المغطاة"
-    title="طرازات BMW التي نغطيها"
-    subtitle="تطبيقات M الحالية والسابقة، إضافة إلى الفئات الأساسية — توفر القطع يختلف حسب الطراز والجيل."
-    columns={3}
-    items={[
-      {
-        title: 'الجيل الحالي M',
-        description: 'G80/G82 M3 و M4 · G87 M2 · G90 M5 — أوسع تغطية في كتالوجنا، بتصاميم CSL و MP و R44 وغيرها.',
-        icon: 'tabler:car',
-      },
-      {
-        title: 'الجيل السابق M',
-        description: 'F80/F82/F83 M3 و M4 · F87 M2 · F90 M5 — قطع إيروديناميكية وألواح هيكل وأغطية مرايا.',
-        icon: 'tabler:car',
-      },
-      {
-        title: 'الفئات الأساسية',
-        description:
-          'G42 الفئة الثانية · G20/G28 و F30 الفئة الثالثة · G22/G23/G26 الفئة الرابعة · G30/G38 و G60/G68 الفئة الخامسة.',
-        icon: 'tabler:car',
-      },
-    ]}
-  />
-
-  <!-- Popular part types -->
-  <Features
-    tagline="القطع الأكثر طلباً"
-    title="قطع ألياف الكربون الشائعة لمركبات BMW"
-    columns={3}
-    defaultIcon="tabler:checkbox"
-    items={[
-      {
-        title: 'الشفاه الأمامية',
-        description: 'تصاميم CSL و R44 و V و MP لمركبات G80/G82 و G87 M2 و G90 M5 وأجيال F.',
-        icon: 'tabler:wind',
-      },
-      {
-        title: 'الناشرات الخلفية',
-        description: 'تصاميم MP و 3D وإصدارات بإضاءة وسطية لمركبات M الحالية والسابقة.',
-        icon: 'tabler:wind',
-      },
-      {
-        title: 'التنانير الجانبية',
-        description: 'تصاميم MP وبروفايل مسطح لمركبات G80/G82/G83 و G87 M2 و G90 M5.',
-        icon: 'tabler:wind',
-      },
-      {
-        title: 'الأجنحة والسبويلر',
-        description: 'أجنحة MP و A-Style و AT-R3 وسبويلر CS لغطاء الصندوق.',
-        icon: 'tabler:wind',
-      },
-      {
-        title: 'أغطية المحرك وصناديق الأمتعة',
-        description: 'أغطية محرك بتصاميم AC و APN وأغطية صناديق بتصميم CSL — بنسيج قياسي أو Forged Carbon.',
-        icon: 'tabler:engine',
-      },
-      {
-        title: 'الشبكات والزخارف',
-        description: 'شبكات أمامية بتصاميم CSL و V و MP، شبكات كيدني، وأغطية مرايا بديلة.',
-        icon: 'tabler:grill',
-      },
-    ]}
-  />
-
-  <aside class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-    <h2 class="text-2xl font-bold mb-3">هل اخترت المرجع المناسب لمركبتك؟</h2>
-    <p class="text-lg text-muted">
-      يوضح <a class="text-primary underline" href="/carbon-fiber-parts-fitment-check">دليل مراجعة التوافق قبل الطلب</a> صور
-      المصد والعادم وبيانات المركبة التي تساعدنا على مراجعة النسخة المطلوبة.
-    </p>
-  </aside>
-
-  <!-- Closing CTA -->
-  <CallToAction
-    layout="banner"
-    title="اطلب عرض سعر لقطع BMW"
-    subtitle='أرسل طراز مركبتك ورمز الشاسيه والقطعة المطلوبة والكمية. <a class="text-link underline" href="https://ccfrp.com/vehicles/bmw/" target="_blank" rel="noopener">تصفح قطع BMW الكاملة على الموقع الرئيسي ←</a>'
-    actions={[
-      {
-        variant: 'primary',
-        text: 'تواصل عبر واتساب',
-        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
-        target: '_blank',
-        icon: 'tabler:brand-whatsapp',
-      },
-      {
-        variant: 'secondary',
-        text: 'اطلب عرض سعر بالجملة',
-        href: 'https://ccfrp.com/contact/',
-        target: '_blank',
-      },
-    ]}
-  />
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">Нужна помощь с подбором?</h2><p class="text-muted mb-5">
+      Код кузова — отправная точка. Перед заказом согласуем комплектацию автомобиля, крепления и состав комплекта.
+    </p><Button href="https://wa.me/8613427690360" text="Связаться в WhatsApp" variant="primary" target="_blank" />
+  </section>
 </PageLayout>
-
 <script>
-  function setupFilters() {
-    const chassis = document.querySelector<HTMLSelectElement>('[data-filter-chassis]');
-    const category = document.querySelector<HTMLSelectElement>('[data-filter-category]');
-    const search = document.querySelector<HTMLInputElement>('[data-filter-search]');
-    if (!chassis || !category || !search) return;
-    const update = () => {
-      const matches = new Set<string>();
-      document.querySelectorAll<HTMLElement>('section[id^="bmw-"]').forEach((section) => {
-        let count = 0;
-        section.querySelectorAll<HTMLElement>('article[data-category]').forEach((card) => {
-          const match =
-            (!chassis.value || section.id === 'bmw-' + chassis.value) &&
-            (!category.value || card.dataset.category === category.value) &&
-            (card.dataset.search + ' ' + section.id).toLowerCase().includes(search.value.trim().toLowerCase());
-          card.hidden = !match;
-          card.style.display = match ? '' : 'none';
-          if (match) {
-            count++;
-            const href = card.querySelector<HTMLAnchorElement>('a')?.href;
-            if (href) matches.add(href);
-          }
-        });
-        section.hidden = count === 0;
-      });
-      document.querySelector('[data-filter-status]')!.textContent = matches.size
-        ? 'منتجات مطابقة: ' + matches.size
-        : 'لا توجد نتائج. جرّب شاسيه أو نوع قطعة آخر.';
-    };
-    chassis.addEventListener('change', update);
-    category.addEventListener('change', update);
-    search.addEventListener('input', update);
-    document.querySelectorAll<HTMLAnchorElement>('a[href^="#bmw-"]').forEach((link) => {
-      link.addEventListener('click', () => {
-        chassis.value = link.hash.slice('#bmw-'.length);
-        category.value = '';
-        search.value = '';
-        update();
-      });
-    });
-    update();
-  }
-  document.addEventListener('astro:page-load', setupFilters);
+  import '~/scripts/bmw-filters';
 </script>

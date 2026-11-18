@@ -12,7 +12,7 @@ assert.equal(calculateImportCost(100, 0, 0, 0).margin, null);
 assert.equal(calculateImportCost(0, 0, 0, 0).profit, 0);
 for (const input of ['', ' ', '-1', 'NaN', 'Infinity', '1e3', '250x', '1,000', '0.001', '100000001'])
   assert.equal(parseUsd(input), null, input);
-for (const input of ['250.50', '٢٥٠٫٥٠', '۲۵۰.۵۰']) assert.equal(parseUsd(input), 25050);
+for (const input of ['250.50', '250,50', '٢٥٠٫٥٠', '۲۵۰.۵۰']) assert.equal(parseUsd(input), 25050);
 assert.equal(parseUsd('100000000'), 10000000000);
 assert.throws(() => calculateImportCost(-1, 0, 0, 0), RangeError);
 const html = fs.readFileSync('dist/import-cost-calculator/index.html', 'utf8');

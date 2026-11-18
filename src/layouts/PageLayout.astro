@@ -7,6 +7,7 @@ import WhatsAppFAB from '~/components/widgets/WhatsAppFAB.astro';
 import StructuredData from '~/components/common/StructuredData.astro';
 import BuyerResources from '~/components/widgets/BuyerResources.astro';
 import ProcurementHelp from '~/components/widgets/ProcurementHelp.astro';
+import InquiryList from '~/components/widgets/InquiryList.astro';
 
 import { headerData, footerData } from '~/navigation';
 import { getCanonical } from '~/utils/permalinks';
@@ -22,26 +23,33 @@ export interface Props {
   seoSchema?: boolean;
   /** Visible Breadcrumbs emits its own BreadcrumbList; keep only one per page. */
   breadcrumbSchema?: boolean;
+  /** Pages with their own procurement content can avoid duplicate automatic sections. */
+  includeBuyerResources?: boolean;
 }
 
-const { metadata: suppliedMetadata, seoSchema = true, breadcrumbSchema = true } = Astro.props;
+const {
+  metadata: suppliedMetadata,
+  seoSchema = true,
+  breadcrumbSchema = true,
+  includeBuyerResources = true,
+} = Astro.props;
 const metadata = withPageSeo(Astro.url.pathname, suppliedMetadata);
 
 // Automatic per-page structured data: BreadcrumbList + a typed WebPage.
 const SEGMENT_LABELS: Record<string, string> = {
-  products: 'المنتجات',
-  vehicles: 'المركبات',
-  grow: 'الخدمات',
-  cases: 'مشاريع العملاء',
-  blog: 'المدونة',
-  category: 'الفئات',
-  tag: 'الوسوم',
-  about: 'من نحن',
-  contact: 'اتصل بنا',
-  catalogs: 'الكتالوجات',
-  terms: 'الشروط والأحكام',
-  privacy: 'سياسة الخصوصية',
-  'editorial-policy': 'مصادر المحتوى والتصحيحات',
+  products: 'Каталог',
+  vehicles: 'Автомобили',
+  grow: 'Услуги',
+  cases: 'Проекты клиентов',
+  blog: 'Блог',
+  category: 'Категории',
+  tag: 'Темы',
+  about: 'О компании',
+  contact: 'Контакты',
+  catalogs: 'Каталоги',
+  terms: 'Условия сотрудничества',
+  privacy: 'Конфиденциальность',
+  'editorial-policy': 'Источники и исправления',
 };
 
 const pathname = normalizeSeoPath(Astro.url.pathname);
@@ -56,7 +64,7 @@ if (seoSchema) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: SITE?.site },
+        { '@type': 'ListItem', position: 1, name: 'Главная', item: SITE?.site },
         ...segments.map((seg, i) => {
           const isLast = i === segments.length - 1;
           return {
@@ -119,10 +127,11 @@ if (seoSchema) {
   }
   <main class="flex-1">
     <slot />
-    <ProcurementHelp />
-    <BuyerResources />
+    {includeBuyerResources && <ProcurementHelp />}
+    {includeBuyerResources && <BuyerResources />}
     <slot name="after-resources" />
   </main>
   {Astro.slots.has('footer') ? <slot name="footer" /> : <Footer {...footerData} />}
-  <WhatsAppFAB context={String(metadata?.title || 'استفسار B2B')} reference={canonical} />
+  <InquiryList />
+  <WhatsAppFAB context={String(metadata?.title || 'Оптовый запрос')} reference={canonical} />
 </Layout>

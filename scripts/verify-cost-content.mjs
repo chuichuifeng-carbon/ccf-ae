@@ -1,15 +1,29 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import { parse } from 'parse5';
 const links = JSON.parse(fs.readFileSync('src/data/cost-planning-links.json', 'utf8'));
 const article = '/carbon-fiber-import-cost-profit-guide';
 for (const [route, copy] of Object.entries(links)) {
   const file = route === '/' ? 'dist/index.html' : `dist${route}/index.html`;
   const html = fs.readFileSync(file, 'utf8');
-  assert.equal((html.match(/data-calculator-resource/g) || []).length, 1, `${route}: exactly one contextual panel`);
+  assert.equal(
+    (html.match(/data-calculator-resource/g) || []).length,
+    copy.inline ? 0 : 1,
+    `${route}: inline link or exactly one contextual panel`
+  );
+  const targets = [];
+  function walk(node, inMain = false) {
+    inMain ||= node.tagName === 'main';
+    const attrs = Object.fromEntries((node.attrs || []).map((a) => [a.name, a.value]));
+    if (inMain && node.tagName === 'a' && /^\/import-cost-calculator\/?$/.test(attrs.href || '')) targets.push(node);
+    for (const child of node.childNodes || []) walk(child, inMain);
+  }
+  walk(parse(html));
+  assert.ok(targets.length > 0, `${route}: calculator destination in main content`);
   for (const value of [copy.title, copy.text, copy.linkText]) {
     assert.ok(value.length > 15, `${route}: meaningful benefit copy`);
   }
-  assert.ok(html.includes('href="/import-cost-calculator"'));
+  assert.ok(/href="\/import-cost-calculator\/?"/.test(html));
 }
 for (const route of [
   '/about',
@@ -26,7 +40,7 @@ for (const route of [
 }
 const html = fs.readFileSync(`dist${article}/index.html`, 'utf8');
 for (const value of ['445', '154', '25.7', '34.6', '556.25', '593.33', '510', '14.9'])
-  assert.ok(html.includes(value), `Worked example: ${value}`);
+  assert.ok(html.replace(/(\d),(?=\d)/g, '$1.').includes(value), `Worked example: ${value}`);
 for (const target of [
   '/import-cost-calculator',
   '/compare-wholesale-carbon-fiber-quotes',
@@ -34,7 +48,7 @@ for (const target of [
   '/grow/wholesale',
   '/carbon-fiber-parts-fitment-check',
 ])
-  assert.ok(html.includes(`href="${target}"`));
+  assert.ok(html.includes(`href="${target}"`) || html.includes(`href="${target}/"`), `Guide destination: ${target}`);
 const blogPages = fs
   .readdirSync('dist/blog', { recursive: true })
   .filter((file) => file.endsWith('.html'))

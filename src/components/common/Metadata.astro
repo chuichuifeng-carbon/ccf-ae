@@ -30,7 +30,7 @@ const mergedOg: MetaDataOpenGraph = merge(
     url: canonical,
     siteName: SITE?.name,
     images: [],
-    locale: I18N?.language === 'ar' ? 'ar_AR' : I18N?.language || 'en',
+    locale: I18N?.language === 'ru' ? 'ru_RU' : I18N?.language === 'ar' ? 'ar_AR' : I18N?.language || 'en',
     type: 'website',
   },
   METADATA?.openGraph,

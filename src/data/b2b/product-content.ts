@@ -16,19 +16,19 @@ function cleanSlug(slug: string): string {
 }
 
 export const productCategories = {
-  'front-lips-splitters': 'الشفاه الأمامية والكانارد',
-  'grilles-air-intake': 'الشبكات وأنظمة سحب الهواء',
-  'side-skirts': 'التنانير الجانبية',
-  'mirror-caps': 'أغطية المرايا',
-  hoods: 'أغطية المحرك',
-  'spoilers-wings': 'السبويلر والأجنحة',
-  'rear-diffusers': 'الناشرات وملحقات المصد الخلفي',
-  'trunk-lids': 'أغطية صندوق الأمتعة',
-  'exterior-trim': 'زخارف الفتحات الخارجية',
-  'interior-trim': 'أغطية المقاعد الداخلية',
-  'body-panels': 'الأبواب والرفارف',
-  lighting: 'مصابيح السيارات',
-  'engine-bay': 'أغطية حجرة المحرك',
+  'front-lips-splitters': 'Передние сплиттеры',
+  'rear-diffusers': 'Задние диффузоры',
+  'spoilers-wings': 'Спойлеры и антикрылья',
+  'side-skirts': 'Боковые пороги',
+  hoods: 'Капоты',
+  'trunk-lids': 'Крышки багажника',
+  'mirror-caps': 'Накладки зеркал',
+  'grilles-air-intake': 'Решётки и воздухозаборники',
+  lighting: 'Автомобильная оптика',
+  'interior-trim': 'Детали салона',
+  'body-panels': 'Кузовные панели',
+  'exterior-trim': 'Наружные накладки',
+  'engine-bay': 'Детали моторного отсека',
 } as const;
 
 export interface ProductClassification {

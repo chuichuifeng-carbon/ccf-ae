@@ -3,58 +3,58 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'الرئيسية',
+      text: 'Главная',
       href: getPermalink('/'),
     },
     {
-      text: 'المنتجات',
+      text: 'Каталог',
       href: getPermalink('/products'),
       links: [
-        { text: 'الشفاه الأمامية والكانارد', href: getPermalink('/products/front-lips-splitters') },
-        { text: 'الناشرات وملحقات المصد الخلفي', href: getPermalink('/products/rear-diffusers') },
-        { text: 'السبويلر والأجنحة', href: getPermalink('/products/spoilers-wings') },
-        { text: 'التنانير الجانبية', href: getPermalink('/products/side-skirts') },
-        { text: 'أغطية المحرك', href: getPermalink('/products/hoods') },
-        { text: 'الشبكات وأنظمة سحب الهواء', href: getPermalink('/products/grilles-air-intake') },
-        { text: 'جميع الفئات', href: getPermalink('/products') },
+        { text: 'Сплиттеры и канарды', href: getPermalink('/products/front-lips-splitters') },
+        { text: 'Диффузоры и накладки', href: getPermalink('/products/rear-diffusers') },
+        { text: 'Спойлеры и антикрылья', href: getPermalink('/products/spoilers-wings') },
+        { text: 'Боковые пороги', href: getPermalink('/products/side-skirts') },
+        { text: 'Капоты', href: getPermalink('/products/hoods') },
+        { text: 'Решётки и воздухозаборники', href: getPermalink('/products/grilles-air-intake') },
+        { text: 'Все категории', href: getPermalink('/products') },
       ],
     },
     {
-      text: 'المركبات',
+      text: 'По автомобилю',
       links: [
         { text: 'BMW', href: getPermalink('/vehicles/bmw') },
         { text: 'Mercedes-AMG', href: getPermalink('/vehicles/mercedes-amg') },
         { text: 'Porsche', href: getPermalink('/vehicles/porsche') },
-        { text: 'الكتالوجات', href: getPermalink('/catalogs') },
+        { text: 'PDF-каталоги', href: getPermalink('/catalogs') },
       ],
     },
     {
-      text: 'الخدمات',
+      text: 'Услуги',
       links: [
         { text: 'OEM & ODM', href: getPermalink('/grow/oem-odm') },
-        { text: 'البيع بالجملة', href: getPermalink('/grow/wholesale') },
-        { text: 'حاسبة تكلفة الاستيراد', href: getPermalink('/import-cost-calculator') },
-        { text: 'الدروبشيبينغ', href: getPermalink('/grow/dropshipping') },
-        { text: 'شركاء القنوات', href: getPermalink('/grow/channel-partners') },
+        { text: 'Оптовые поставки', href: getPermalink('/grow/wholesale') },
+        { text: 'Калькулятор импорта', href: getPermalink('/import-cost-calculator') },
+        { text: 'Дропшиппинг', href: getPermalink('/grow/dropshipping') },
+        { text: 'Партнёрам', href: getPermalink('/grow/channel-partners') },
       ],
     },
     {
-      text: 'مشاريع العملاء',
+      text: 'Проекты клиентов',
       href: getPermalink('/cases'),
     },
     {
-      text: 'من نحن',
+      text: 'О компании',
       href: getPermalink('/about'),
     },
     {
-      text: 'اتصل بنا',
+      text: 'Контакты',
       href: getPermalink('/contact'),
     },
   ],
   actions: [
     {
-      text: 'واتساب',
-      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+      text: 'WhatsApp',
+      href: 'https://wa.me/8613427690360?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D1%8E%D1%82%20%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20CCF.%20%D0%9F%D1%80%D0%BE%D1%88%D1%83%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.',
       target: '_blank',
       icon: 'tabler:brand-whatsapp',
     },
@@ -64,55 +64,55 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'المنتجات',
+      title: 'Каталог',
       links: [
-        { text: 'جميع المنتجات', href: getPermalink('/products') },
-        { text: 'الشفاه الأمامية والكانارد', href: getPermalink('/products/front-lips-splitters') },
-        { text: 'الناشرات وملحقات المصد الخلفي', href: getPermalink('/products/rear-diffusers') },
-        { text: 'السبويلر والأجنحة', href: getPermalink('/products/spoilers-wings') },
-        { text: 'التنانير الجانبية', href: getPermalink('/products/side-skirts') },
-        { text: 'أغطية المحرك', href: getPermalink('/products/hoods') },
-        { text: 'القطع حسب المركبة', href: getPermalink('/vehicles') },
-        { text: 'عرض الكتالوجات', href: getPermalink('/catalogs') },
-        { text: 'المدونة', href: getBlogPermalink() },
+        { text: 'Все товары', href: getPermalink('/products') },
+        { text: 'Сплиттеры и канарды', href: getPermalink('/products/front-lips-splitters') },
+        { text: 'Диффузоры и накладки', href: getPermalink('/products/rear-diffusers') },
+        { text: 'Спойлеры и антикрылья', href: getPermalink('/products/spoilers-wings') },
+        { text: 'Боковые пороги', href: getPermalink('/products/side-skirts') },
+        { text: 'Капоты', href: getPermalink('/products/hoods') },
+        { text: 'Подбор по автомобилю', href: getPermalink('/vehicles') },
+        { text: 'Скачать каталоги', href: getPermalink('/catalogs') },
+        { text: 'Блог', href: getBlogPermalink() },
       ],
     },
     {
-      title: 'الخدمات',
+      title: 'Услуги',
       links: [
         { text: 'OEM & ODM', href: getPermalink('/grow/oem-odm') },
-        { text: 'البيع بالجملة', href: getPermalink('/grow/wholesale') },
-        { text: 'حاسبة تكلفة الاستيراد', href: getPermalink('/import-cost-calculator') },
-        { text: 'الدروبشيبينغ', href: getPermalink('/grow/dropshipping') },
-        { text: 'شركاء القنوات', href: getPermalink('/grow/channel-partners') },
+        { text: 'Оптовые поставки', href: getPermalink('/grow/wholesale') },
+        { text: 'Калькулятор импорта', href: getPermalink('/import-cost-calculator') },
+        { text: 'Дропшиппинг', href: getPermalink('/grow/dropshipping') },
+        { text: 'Партнёрам', href: getPermalink('/grow/channel-partners') },
       ],
     },
     {
-      title: 'الشركة',
+      title: 'Компания',
       links: [
-        { text: 'من نحن', href: getPermalink('/about') },
-        { text: 'مشاريع العملاء', href: getPermalink('/cases') },
-        { text: 'الأسئلة الشائعة', href: getPermalink('/faqs') },
-        { text: 'اتصل بنا', href: getPermalink('/contact') },
+        { text: 'О компании', href: getPermalink('/about') },
+        { text: 'Проекты клиентов', href: getPermalink('/cases') },
+        { text: 'Вопросы и ответы', href: getPermalink('/faqs') },
+        { text: 'Контакты', href: getPermalink('/contact') },
       ],
     },
     {
-      title: 'تواصل معنا',
+      title: 'Связаться с нами',
       links: [
         {
-          text: 'واتساب: +86 134 2769 0360',
-          href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
+          text: 'WhatsApp: +86 134 2769 0360',
+          href: 'https://wa.me/8613427690360?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D1%8E%D1%82%20%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20CCF.%20%D0%9F%D1%80%D0%BE%D1%88%D1%83%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.',
         },
         { text: 'info@ccfrp.com', href: 'mailto:info@ccfrp.com' },
-        { text: 'قوانغتشو، قوانغدونغ، الصين', href: 'https://ccfrp.com' },
+        { text: 'Гуанчжоу, Гуандун, Китай', href: 'https://ccfrp.com' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'مصادر المحتوى والتصحيحات', href: getPermalink('/editorial-policy') },
-    { text: 'الشروط والأحكام', href: getPermalink('/terms') },
-    { text: 'سياسة الخصوصية', href: getPermalink('/privacy') },
-    { text: 'سياسة الإرجاع والاسترداد', href: getPermalink('/return-refund-policy') },
+    { text: 'Источники и исправления', href: getPermalink('/editorial-policy') },
+    { text: 'Условия сотрудничества', href: getPermalink('/terms') },
+    { text: 'Конфиденциальность', href: getPermalink('/privacy') },
+    { text: 'Возврат и возмещение', href: getPermalink('/return-refund-policy') },
   ],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/ccfrp' },
@@ -122,6 +122,6 @@ export const footerData = {
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    amxnx.vip و ccfrp.com موقعان تابعان لأعمال CCF في الصين. · © 2026 Guangzhou Chui Chui Feng Automotive Products Co., Ltd. · CHUICHUIFENG — مصنع قطع غيار السيارات من ألياف الكربون الجاف · قوانغتشو، قوانغدونغ، الصين
+    amxnx.vip и ccfrp.com — сайты CCF, Китай. · © 2026 Guangzhou Chui Chui Feng Automotive Products Co., Ltd. · CHUICHUIFENG — производство автомобильных деталей из сухого карбона · Гуанчжоу, Китай
   `,
 };

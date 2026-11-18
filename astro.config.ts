@@ -35,17 +35,17 @@ export default defineConfig({
     defaultStrategy: 'hover',
   },
 
-  // Native Fonts API: self-hosts + subsets + preloads Tajawal (Arabic + Latin)
+  // Native Fonts API: self-hosts + subsets + preloads Inter (Arabic + Latin)
   // and generates metric-adjusted fallbacks. Injected via <Font /> in Layout.astro
-  // and consumed through the `--font-tajawal` CSS variable in CustomStyles.astro.
+  // and consumed through the `--font-inter` CSS variable in CustomStyles.astro.
   fonts: [
     {
       provider: fontProviders.fontsource(),
-      name: 'Tajawal',
-      cssVariable: '--font-tajawal',
+      name: 'Inter',
+      cssVariable: '--font-inter',
       weights: ['400', '500', '700', '800'],
       styles: ['normal'],
-      subsets: ['arabic', 'latin'],
+      subsets: ['cyrillic', 'latin'],
       fallbacks: ['sans-serif'],
     },
   ],

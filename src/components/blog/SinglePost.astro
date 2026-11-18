@@ -34,7 +34,7 @@ const Cover = post.imageLink ? 'a' : 'div';
                 {' '}
                 ·{' '}
                 <span class="inline-block">
-                  تحديث <time datetime={post.updateDate.toISOString()}>{getFormattedDate(post.updateDate)}</time>
+                  Обновлено <time datetime={post.updateDate.toISOString()}>{getFormattedDate(post.updateDate)}</time>
                 </span>
               </>
             )
@@ -68,7 +68,7 @@ const Cover = post.imageLink ? 'a' : 'div';
           {
             post.readingTime && (
               <>
-                &nbsp;· <span>{post.readingTime}</span> دقائق قراءة
+                &nbsp;· <span>{post.readingTime}</span> мин. чтения
               </>
             )
           }
@@ -118,11 +118,11 @@ const Cover = post.imageLink ? 'a' : 'div';
       <p>
         {
           !post.listItems?.length &&
-            'تنشر CCF هذا الدليل لمساعدة مشتري الأعمال. مصادر المواصفات مذكورة في المحتوى؛ المقال ليس تقرير اختبار للمنتج. '
+            'Руководство CCF для B2B-покупателей. Источники указаны в тексте; материал не является отчётом об испытаниях изделия. '
         }
-        <a class="underline" href="/editorial-policy">منهج المحتوى والمصادر</a> · <a
+        <a class="underline" href="/editorial-policy">Редакционная политика и источники</a> · <a
           class="underline"
-          href="mailto:info@ccfrp.com?subject=Content%20correction">الإبلاغ عن تصحيح</a
+          href="mailto:info@ccfrp.com?subject=Content%20correction">Сообщить об исправлении</a
         >
       </p>
     </aside>

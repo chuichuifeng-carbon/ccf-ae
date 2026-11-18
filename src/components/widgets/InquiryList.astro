@@ -1,0 +1,113 @@
+---
+import { SITE } from 'astrowind:config';
+---
+
+<div data-rfq-widget data-rfq-origin={SITE.site}>
+  <button
+    hidden
+    type="button"
+    data-rfq-open
+    class="hidden md:block fixed bottom-5 left-4 z-40 rounded-full bg-primary text-white px-5 py-3 font-semibold shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4"
+    aria-haspopup="dialog"
+    aria-controls="rfq-dialog">Список запроса (<span data-rfq-count>0</span>)</button
+  >
+  <dialog
+    id="rfq-dialog"
+    aria-labelledby="rfq-title"
+    class="rfq-dialog bg-page text-heading rounded-2xl p-0 w-[calc(100%_-_2rem)] max-w-3xl max-h-[90dvh]"
+  >
+    <div class="p-5 sm:p-7">
+      <div class="sticky top-0 z-10 bg-page pb-3 flex justify-between items-start gap-4">
+        <div>
+          <h2 id="rfq-title" class="text-2xl font-bold">Список для оптового запроса</h2><p
+            class="text-sm text-muted mt-2"
+          >
+            Соберите детали и количество, затем проверьте текст перед отправкой.
+          </p>
+        </div><button type="button" data-rfq-close class="btn-secondary shrink-0" aria-label="Закрыть список запроса"
+          >Закрыть</button
+        >
+      </div>
+      <p data-rfq-empty class="mt-6 text-muted">
+        Список пуст. Добавьте детали из каталога или карточки товара. <a
+          class="text-primary underline"
+          href="/products/">Открыть каталог</a
+        >
+      </p>
+      <ul data-rfq-items class="list-none space-y-3 my-5"></ul>
+      <p data-rfq-status role="status" aria-live="polite" class="text-sm text-muted my-3"></p>
+      <div data-rfq-fields hidden>
+        <label class="block font-semibold mt-5" for="rfq-destination">Страна и город доставки</label><input
+          id="rfq-destination"
+          data-rfq-destination
+          class="w-full p-3 border rounded-lg bg-page mt-2"
+          maxlength="160"
+          autocomplete="off"
+          placeholder="Например: Казахстан, Алматы"
+        />
+        <label class="block font-semibold mt-4" for="rfq-notes">Автомобиль, исполнение и примечания</label><textarea
+          id="rfq-notes"
+          data-rfq-notes
+          rows="3"
+          maxlength="1200"
+          class="w-full p-3 border rounded-lg bg-page mt-2"
+          placeholder="Год, ACC, отделка, упаковка или вопросы к заказу"></textarea>
+        <label class="block font-semibold mt-4" for="rfq-preview">Текст запроса</label><textarea
+          readonly
+          id="rfq-preview"
+          data-rfq-preview
+          rows="7"
+          class="w-full p-3 border rounded-lg bg-page mt-2 text-sm"></textarea>
+        <p data-rfq-large hidden class="text-sm text-muted mt-3">
+          Для большого списка скопируйте весь текст и вставьте его в WhatsApp или email после открытия приложения.
+        </p>
+        <div class="flex flex-wrap gap-3 mt-5">
+          <a data-rfq-whatsapp class="btn-primary" target="_blank" rel="noopener" href="https://wa.me/8613427690360"
+            >Открыть WhatsApp</a
+          ><a data-rfq-email class="btn-secondary" href="mailto:info@ccfrp.com">Открыть email</a><button
+            type="button"
+            data-rfq-copy
+            class="btn-secondary">Скопировать текст</button
+          ><button type="button" data-rfq-clear class="text-primary underline px-2">Очистить список</button>
+        </div>
+      </div>
+      <p class="text-xs text-muted mt-5">
+        Список товаров хранится в этой вкладке браузера. Адрес доставки и примечания не сохраняются. Сообщение
+        отправляете вы сами. Количество указано в единицах продажи; состав пары или комплекта согласуем в предложении.
+      </p>
+      <a href="/contact/" class="inline-block text-primary underline mt-4">Контакты, оплата и условия поставки</a>
+    </div>
+  </dialog>
+  <template data-rfq-row
+    ><li
+      class="rounded-xl border border-gray-200 dark:border-slate-700 p-4 grid gap-3 sm:grid-cols-[minmax(0,1fr)_6rem_auto] items-start"
+    >
+      <a data-rfq-item-link class="font-semibold text-primary break-words"></a><label class="text-sm"
+        >Количество<input
+          data-rfq-quantity
+          type="number"
+          min="1"
+          max="9999"
+          step="1"
+          inputmode="numeric"
+          class="block w-full border rounded-lg p-2 mt-1 bg-page"
+        /></label
+      ><button data-rfq-remove type="button" class="text-primary underline py-2">Убрать</button>
+    </li></template
+  >
+</div>
+<style>
+  [data-rfq-open][hidden] {
+    display: none !important;
+  }
+  .rfq-dialog {
+    overflow-y: auto;
+    margin: auto;
+  }
+  .rfq-dialog::backdrop {
+    background: rgb(0 0 0 / 0.55);
+  }
+</style>
+<script>
+  import '~/scripts/inquiry-list';
+</script>

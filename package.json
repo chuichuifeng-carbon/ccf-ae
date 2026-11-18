@@ -27,7 +27,12 @@
     "check:products": "node scripts/verify-product-pages.mjs",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
-    "fix:prettier": "prettier -w ."
+    "fix:prettier": "prettier -w .",
+    "check:russian-products": "node scripts/verify-russian-products.mjs",
+    "check:russian-supplier": "node scripts/verify-russian-supplier.mjs",
+    "check:russian-blog": "node scripts/verify-russian-blog.mjs",
+    "check:russian-site": "node scripts/verify-russian-site.mjs",
+    "check:buyer-fixes": "node scripts/verify-buyer-fixes.mjs"
   },
   "dependencies": {
     "@astro-community/astro-embed-twitter": "^0.5.11",

@@ -13,7 +13,7 @@ export interface Props {
 // `prevUrl`/`nextUrl` come from Astro's `page.url` and already include `base`
 // and honour `trailingSlash`, so they must not go through `getPermalink()`
 // (that would prefix `base` a second time, see #629).
-const { prevUrl, nextUrl, prevText = 'مقالات أحدث', nextText = 'مقالات أقدم' } = Astro.props;
+const { prevUrl, nextUrl, prevText = 'Более новые статьи', nextText = 'Предыдущие статьи' } = Astro.props;
 const rtl = I18N.textDirection === 'rtl';
 ---
 

@@ -1,47 +1,55 @@
-# CCF — Dry Carbon Fiber Automotive Parts Manufacturer
+# CCF — производитель автомобильных карбоновых деталей для B2B
 
-> CCF is the B2B website of Guangzhou Chui Chui Feng Automotive Products Co., Ltd. in Guangdong, China. Its manufacturing background began with fiberglass/FRP in 2006, expanded into automotive carbon fiber in 2010, and shifted focus to dry carbon in 2016. This Arabic website focuses only on BMW, Mercedes-AMG and Porsche applications. Confirm the exact product material, fitment, availability and commercial terms with CCF.
+> Русскоязычный сайт Guangzhou Chui Chui Feng Automotive Products Co., Ltd. в провинции Гуандун, Китай. Сайт обслуживает B2B-запросы дистрибьюторов, тюнинг-ателье и собственных марок, в том числе из стран Центральной Азии. Основные применения: BMW, Mercedes-AMG и Porsche. Материал, применяемость, комплектацию и условия поставки определяют для выбранной позиции и заказа.
 
-> CCF هي منصة B2B لشركة Guangzhou Chui Chui Feng Automotive Products في قوانغدونغ، الصين. بدأت الخلفية التصنيعية بالألياف الزجاجية وFRP في 2006، ثم كربون السيارات في 2010 والتركيز على الكربون الجاف في 2016. يركز هذا الموقع العربي على BMW وMercedes-AMG وPorsche فقط؛ تُؤكد المادة والمطابقة والتوفر والشروط لكل طلب.
+## Основные разделы
 
-## Site map (Arabic)
+- [Главная](https://amxnx.vip/): производство и направления B2B-сотрудничества.
+- [Товары](https://amxnx.vip/products): 563 карточки деталей BMW, включая карбоновые детали и отдельные не карбоновые изделия и оптику. Название категории не заменяет материал конкретного товара.
+- [Подбор по автомобилю](https://amxnx.vip/vehicles): BMW, Mercedes-AMG и Porsche. Для BMW — карточки с фильтрами по кузову; для Mercedes-AMG и Porsche — исходные PDF-каталоги.
+- [Каталоги](https://amxnx.vip/catalogs): оригинальные PDF по моделям; файлы могут содержать английский и китайский текст. Номер строки PDF не равен универсальному SKU.
+- [Оптовые поставки](https://amxnx.vip/grow/wholesale): образец, складские закупки и повторные заказы.
+- [OEM/ODM](https://amxnx.vip/grow/oem-odm): дизайн, оснастка, образец, логотип и упаковка. Эксклюзивность требует письменного согласования.
+- [Дропшиппинг](https://amxnx.vip/grow/dropshipping): обсуждение исполнения заказов.
+- [Партнёрам](https://amxnx.vip/grow/channel-partners): сотрудничество с каналами продаж.
+- [Визиты покупателей](https://amxnx.vip/cases): опубликованные встречи с клиентами из США и Канады.
+- [Компания](https://amxnx.vip/about): история, производственные фотографии, документы и юридическое лицо.
+- [Контакты](https://amxnx.vip/contact): действующие каналы связи, адреса и рабочее время.
+- [Блог](https://amxnx.vip/blog): руководства по выбору деталей и закупке.
 
-- [Home](https://amxnx.vip/): Arabic B2B portal of CCF — overview, catalog entries, company stats
-- [Products](https://amxnx.vip/products): Illustrated BMW product records, browsable by part category; see the current category index below.
-- [Vehicles](https://amxnx.vip/vehicles): parts organized by vehicle brand (BMW, Mercedes-AMG, Porsche only)
-- [Services](https://amxnx.vip/grow): OEM/ODM programs, private label, wholesale, dropshipping, channel partners
-- [Cases](https://amxnx.vip/cases): US and Canadian customer visits and sourcing discussions
-- [About](https://amxnx.vip/about): company profile, factory, certifications, history since 2006
-- [Contact](https://amxnx.vip/contact): inquiry channels — email, WhatsApp, working hours
-- [Catalogs](https://amxnx.vip/catalogs): downloadable product catalogs
-- [Blog](https://amxnx.vip/blog): articles about dry carbon fiber parts (Arabic)
-- [Content sources and corrections](https://amxnx.vip/editorial-policy): publishing responsibility, source limits and correction contact
+## Вопросы покупателя и прямые источники ответа
 
-## Buyer questions and primary sources | أسئلة المشتري ومصادر الإجابة
+- [Кто поставщик?](https://amxnx.vip/about#publisher) · [Производственные фотографии](https://amxnx.vip/about#evidence-factory) · [Документы](https://amxnx.vip/about#evidence-documents).
+- [Минимальный заказ и образец](https://amxnx.vip/faqs#ordering): от 1 единицы; условия выбранной позиции и кастомизации согласуются в заказе.
+- [Применяемость](https://amxnx.vip/faqs#fitment): модель, год, код кузова, оснащение и фотографии зоны установки. [Подготовка RFQ](https://amxnx.vip/carbon-fiber-parts-rfq-checklist).
+- [Производство и перевозка](https://amxnx.vip/faqs#shipping): производство 25–30 дней; время перевозки рассматривается отдельно. Это не обещание прибытия в любую страну за 25–30 дней.
+- [Гарантия](https://amxnx.vip/faqs#warranty): 1 год на производственные дефекты сухого карбона с даты доставки. При подтверждённом транспортном повреждении — замена или повторная отправка, включая применимую доставку замены.
+- [Порядок обращений](https://amxnx.vip/return-refund-policy): видимые дефекты — в течение 14 дней, транспортные повреждения — в течение 7 дней; 14-дневный срок не сокращает годовую гарантию. Условия для мокрого карбона и индивидуальных заказов изложены в политике.
+- [Стоимость импорта](https://amxnx.vip/import-cost-calculator): расчёт по суммам покупателя в USD, без выбора таможенных ставок, текущих тарифов или отправки введённых сумм.
+- [Сухой и мокрый карбон](https://amxnx.vip/dry-carbon-vs-wet-carbon): конструкция, материал и границы технических выводов.
+- [Сравнение предложений](https://amxnx.vip/compare-wholesale-carbon-fiber-quotes): единица продажи, комплектация, упаковка и объём расходов.
 
-- [Company and factory identity](https://amxnx.vip/about#publisher) · [Production facilities](https://amxnx.vip/about#evidence-factory) · [Verification documents](https://amxnx.vip/about#evidence-documents)
-- [ما الحد الأدنى للطلب؟ Minimum order and samples](https://amxnx.vip/faqs#ordering) · [Wholesale orders](https://amxnx.vip/grow/wholesale)
-- [كيف أتحقق من المطابقة؟ Fitment by model and chassis](https://amxnx.vip/faqs#fitment) · [Required RFQ information](https://amxnx.vip/carbon-fiber-parts-rfq-checklist)
-- [ما مدة التجهيز؟ Production lead time and shipping](https://amxnx.vip/faqs#shipping) · [Import cost calculator](https://amxnx.vip/import-cost-calculator)
-- [ما الذي يغطيه الضمان؟ Warranty and shipping damage](https://amxnx.vip/faqs#warranty) · [Claims and reporting periods](https://amxnx.vip/return-refund-policy)
-- [Private-label and OEM/ODM projects](https://amxnx.vip/grow/oem-odm) · [Project questions](https://amxnx.vip/faqs#oem)
-- [Publisher and source policy](https://amxnx.vip/editorial-policy) · [Canonical sitemap](https://amxnx.vip/sitemap-index.xml)
+## Факты о компании и границы применения
 
-## Company facts
+Юридическое лицо: Guangzhou Chui Chui Feng Automotive Products Co., Ltd. (广州市吹吹风汽车用品有限公司). Производственная история: FRP/стеклопластик с 2006 года, автомобильный карбон с 2010 года, фокус на сухом карбоне с 2016 года. 2006 год относится к производственной истории и не заявляется датой регистрации юридического лица.
 
-- Legal entity: Guangzhou Chui Chui Feng Automotive Products Co., Ltd. (广州市吹吹风汽车用品有限公司)
-- Manufacturing background: fiberglass/FRP in 2006; automotive carbon fiber in 2010; dry carbon focus in 2016. The year 2006 is not stated as the legal incorporation date.
-- HQ: Renhe Town, Baiyun District, Guangzhou; production base: Qingxin District, Qingyuan, Guangdong, China
-- Website scope: BMW, Mercedes-AMG and Porsche only; Model PDFs are grouped by brand in the official catalog library.
-- Verification documents: Intertek supplier assessment, ISO 9001 certificate for the listed automotive-parts sales scope, and RoHS/sample test documents. Review their scope and validity; they do not certify every catalog item or road-use approval.
-- Main English site: https://ccfrp.com
+Офис находится в Renhe Town, Baiyun District, Guangzhou; производственная база — Qingxin District, Qingyuan, Guangdong, China. Более широкий корпоративный ассортимент и текущие 563 карточки BMW на этом сайте — разные показатели.
 
-## Contact
+Опубликованы оценка поставщика Intertek, сертификат ISO 9001 с указанной областью продажи автомобильных деталей и документы RoHS/испытаний образцов. Их область и срок действия относятся к конкретным документам: это не сертификация каждой позиции и не дорожный допуск.
 
-- Email: info@ccfrp.com
-- WhatsApp / Phone: +86 134 2769 0360 (https://wa.me/8613427690360)
-- Working hours: Monday–Friday 09:00–18:00 GMT+8
-- LinkedIn: https://www.linkedin.com/company/ccfrp
-- Facebook: https://www.facebook.com/ccfrpcom
-- Instagram: https://www.instagram.com/ccfcarbon/
-- YouTube: https://www.youtube.com/@ccfrp2006
+CCF — независимый поставщик aftermarket. Названия BMW, Mercedes-AMG, Porsche и OEM Style указывают применение или стиль, но не оригинальное происхождение и не официальное одобрение автопроизводителем. Фото не заменяет спецификацию или проверку применяемости. Обозначение DCF сохраняется как в каталоге и не раскрывается автоматически как определённый материал или процесс. Цены, наличие и права на использование брендов не выводятся из общего руководства.
+
+## Оплата, перевозка и русскоязычная связь
+
+Предложения в USD. Поддерживаются банковский перевод (T/T), Alipay, PayPal и WeChat Pay; способ и реквизиты фиксируются в проформа-инвойсе. Перевозка авиа- и морская, маршрут и стоимость согласуются по заказу. Поддерживается общение на русском языке. Контактное лицо: Чэнь Чэн (陈骋). Китайское название компании: 广州市吹吹风汽车用品有限公司; USCC: 91440111MA59C7ELXQ.
+
+## Контакты и первичные документы
+
+- Email: info@ccfrp.com.
+- WhatsApp / телефон: [+86 134 2769 0360](https://wa.me/8613427690360).
+- Рабочее время: понедельник–пятница, 09:00–18:00 GMT+8.
+- [Основной англоязычный сайт CCF](https://ccfrp.com).
+- [Редакционная политика и исправления](https://amxnx.vip/editorial-policy).
+- [Условия](https://amxnx.vip/terms) · [Конфиденциальность](https://amxnx.vip/privacy) · [Возврат и гарантия](https://amxnx.vip/return-refund-policy).
+- [Карта сайта](https://amxnx.vip/sitemap-index.xml).
+- [LinkedIn](https://www.linkedin.com/company/ccfrp) · [Facebook](https://www.facebook.com/ccfrpcom) · [Instagram](https://www.instagram.com/ccfcarbon/) · [YouTube](https://www.youtube.com/@ccfrp2006).

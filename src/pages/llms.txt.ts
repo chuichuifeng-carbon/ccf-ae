@@ -8,18 +8,18 @@ import { allProducts } from '~/data/b2b/all-products';
 export const GET: APIRoute = () => {
   const categories = Object.entries(productCategories).map(
     ([slug, name]) =>
-      `- [${name}](${getCanonical('/products/' + slug)}) — ${allProducts.filter((product) => product.categorySlug === slug).length} product records`
+      `- [${name}](${getCanonical('/products/' + slug)}) — ${allProducts.filter((product) => product.categorySlug === slug).length} карточек товаров`
   );
   const documents = catalogs.map(
     ({ brand, entries }) =>
-      `- [${brand.toUpperCase()}](${getCanonical('/catalogs#catalogs-' + brand)}) — ${entries.length} PDF catalog entries`
+      `- [${brand.toUpperCase()}](${getCanonical('/catalogs#catalogs-' + brand)}) — ${entries.length} записей PDF-каталогов`
   );
   return new Response(
     [
       guide.trim().replace(/https:\/\/amxnx\.vip[^\s)]+/g, (url) => String(getCanonical(url))),
-      '## Product categories',
+      '## Категории товаров',
       categories.join('\n'),
-      '## Model catalogs',
+      '## Каталоги по моделям',
       documents.join('\n'),
     ].join('\n\n') + '\n',
     { headers: { 'Content-Type': 'text/plain; charset=utf-8' } }

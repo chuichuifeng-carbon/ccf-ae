@@ -1,0 +1,115 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import BuyerResources from '~/components/widgets/BuyerResources.astro';
+import Button from '~/components/ui/Button.astro';
+import StructuredData from '~/components/common/StructuredData.astro';
+import { supplierPagesRu } from '~/data/supplier-pages-ru';
+import { whatsappUrl } from '~/utils/inquiry';
+const { route } = Astro.props as { route: string };
+const page = supplierPagesRu[route];
+const metadata = { title: page.title, description: page.description, ignoreTitleTemplate: true };
+const faqSchema = page.faqs
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      inLanguage: 'ru',
+      mainEntity: page.faqs.map((entry) => ({
+        '@type': 'Question',
+        name: entry.q,
+        acceptedAnswer: { '@type': 'Answer', text: entry.a },
+      })),
+    }
+  : undefined;
+---
+
+<PageLayout metadata={metadata} includeBuyerResources={false}>
+  {faqSchema && <StructuredData slot="head" schema={faqSchema} />}
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-8">
+    <p class="text-primary font-bold">{page.tagline}</p><h1 class="text-4xl md:text-5xl font-bold mt-4 max-w-5xl">
+      {page.h1}
+    </h1><p class="text-lg text-muted mt-6 max-w-4xl">{page.intro}</p><div class="flex flex-wrap gap-4 mt-7">
+      <Button
+        href={whatsappUrl(page.h1)}
+        text="Обсудить запрос в WhatsApp"
+        target="_blank"
+        variant="primary"
+        icon="tabler:brand-whatsapp"
+      /><Button href="mailto:info@ccfrp.com" text="Написать по email" variant="secondary" />
+    </div>
+  </section>
+  {
+    page.sections.map((section) => (
+      <section id={section.id} class="max-w-7xl mx-auto px-4 sm:px-6 py-7 scroll-mt-24">
+        <div class="rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-bold">{section.title}</h2>
+          {section.text && <p class="text-muted leading-relaxed mt-4 max-w-5xl">{section.text}</p>}
+          {section.items && (
+            <ul class="list-disc ps-5 space-y-3 mt-5 text-muted">
+              {section.items.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          )}
+          {section.images && (
+            <div class="grid sm:grid-cols-2 gap-5 mt-6">
+              {section.images.map((image) => (
+                <figure>
+                  <a href={image.src} target="_blank" rel="noopener" aria-label={`Открыть оригинал: ${image.alt}`}>
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      loading="lazy"
+                      class="rounded-xl w-full aspect-[4/3] object-contain bg-white"
+                    />
+                  </a>
+                  <figcaption class="text-sm text-muted mt-2">{image.alt}</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+          {section.links && (
+            <div class="flex flex-wrap gap-5 text-primary underline mt-5">
+              {section.links.map((link) => (
+                <a href={link.href}>{link.text} →</a>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    ))
+  }
+  {
+    page.faqs && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+        <>
+          <h2 class="text-3xl font-bold mb-5">Вопросы перед обращением</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            {page.faqs.map((entry) => (
+              <details class="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-5">
+                <summary class="font-semibold cursor-pointer">{entry.q}</summary>
+                <p class="text-muted mt-3">{entry.a}</p>
+              </details>
+            ))}
+          </div>
+        </>
+      </section>
+    )
+  }
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <div class="rounded-2xl bg-primary text-white p-7 md:p-10">
+      <h2 class="text-2xl font-bold">Перейдите к конкретному заказу</h2><p class="mt-4 mb-6">
+        Пришлите выбранную деталь или материалы проекта, количество и город доставки. Согласуем применяемость и условия
+        предложения.
+      </p><div class="flex flex-wrap gap-5">
+        <Button
+          href={whatsappUrl(page.h1)}
+          text="Отправить запрос в WhatsApp"
+          target="_blank"
+          variant="secondary"
+          class="bg-white border-white text-black hover:bg-gray-100"
+        /><a href="/products/" class="underline self-center">Открыть каталог деталей</a>
+      </div>
+    </div>
+  </section>
+  <BuyerResources calculatorOnly />
+</PageLayout>

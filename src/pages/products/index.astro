@@ -1,206 +1,61 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import FeaturedProducts from '~/components/widgets/FeaturedProducts.astro';
-import { productCategories } from '~/data/b2b/product-content';
-import HeroText from '~/components/widgets/HeroText.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Bento from '~/components/widgets/Bento.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-
-const metadata = {
-  title: 'قطع كربون فايبر للسيارات حسب نوع القطعة | CCF',
-  description:
-    'اختر قطع ألياف الكربون حسب النوع: شفة أمامية، ديفيوزر، سبويلر، غطاء محرك ومرايا. راجع التطبيقات المختارة واطلب عرض توريد للموزعين وورش التعديل.',
-};
-
+import ProductCollection from '~/components/widgets/ProductCollection.astro';
 import { allProducts } from '~/data/b2b/all-products';
-
-// One hand-picked catalog photo per category: `categorySlug: productSlug`.
-const categoryShowcase: Record<string, string> = {
-  'front-lips-splitters': 'bmw-g80-g82-csl-style-3-piece-front-lip',
-  'rear-diffusers': 'bmw-g80-g82-adro-style-3-piece-rear-diffuser',
-  'side-skirts': 'bmw-g80-g82-3d-style-side-skirts',
-  'spoilers-wings': 'bmw-g80-g82-adro-v2-style-rear-wing',
-  hoods: 'bmw-g80-g82-n-style-csl-hood',
-  'trunk-lids': 'bmw-g80-csl-style-trunk-lid',
-  'grilles-air-intake': 'bmw-g80-g82-csl-front-grille-with-acc',
-  'mirror-caps': 'bmw-g80-g82-mp-style-forged-carbon-mirror-caps',
-  'exterior-trim': 'bmw-g80-g82-ae-style-fender-trim',
-  'body-panels': 'bmw-g82-m4-doors',
-  'engine-bay': 'bmw-g80-g82-g87-m3-m4-m2-carbon-fiber-engine-cover',
-  'interior-trim': 'bmw-g80-g82-bucket-seat-trim-covers',
-};
-
-// Real catalog photo of the chosen product, with the first product of the category as fallback.
-const categoryImage = (slug: string) => {
-  const product =
-    allProducts.find((item) => item.slug === categoryShowcase[slug]) ??
-    allProducts.find((item) => item.categorySlug === slug && item.images?.length);
-  return product ? { src: product.images[0].lg.url, alt: product.title } : undefined;
+import { categoryNamesRu } from '~/data/b2b/product-labels-ru';
+import { categoryDescriptionsRu } from '~/data/b2b/category-content-ru';
+const metadata = {
+  title: 'Каталог деталей BMW оптом — карбон, кузовные детали и оптика | CCF',
+  description:
+    '563 карточки деталей BMW от CCF: сплиттеры, диффузоры, капоты, зеркала, кузовные детали и оптика. Выберите категорию или кузов для оптового запроса.',
 };
 ---
 
 <PageLayout metadata={metadata}>
-  <nav aria-label="فئات القطع المصورة" class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 flex flex-wrap gap-4">
-    {
-      Object.entries(productCategories).map(([slug, label]) => (
-        <a class="text-primary underline" href={`/products/${slug}`}>
-          {label}
-        </a>
-      ))
-    }
-  </nav>
-  <!-- Hero -->
-  <HeroText
-    tagline="منتجات ألياف الكربون للسيارات"
-    title="قطع كربون فايبر للسيارات حسب نوع القطعة"
-    subtitle="تصفّح قطع ألياف الكربون ضمن نطاق BMW وMercedes-AMG وPorsche: شفاه أمامية، ناشرات، قطع جانبية، أجنحة، أغطية محرك وصندوق ومرايا وشبكات. تختلف القطع المتاحة حسب الطراز والمرجع."
-    callToAction={{
-      text: 'تواصل عبر واتساب',
-      href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
-      target: '_blank',
-      icon: 'tabler:brand-whatsapp',
-      variant: 'primary',
-    }}
-    callToAction2={{
-      text: 'اطلب عرض سعر بالجملة',
-      href: 'https://ccfrp.com/contact/',
-      target: '_blank',
-      variant: 'secondary',
-    }}
-  />
-
-  <!-- Stats -->
-  <Stats
-    stats={[
-      { amount: '3', title: 'علامات مركبات في هذا الموقع' },
-      { amount: '8', title: 'فئات منتجات رئيسية' },
-      { amount: 'OEM/ODM', title: 'كتالوج + تطوير مخصص' },
-    ]}
-  />
-
-  <!-- Product categories -->
-  <Bento
-    tagline="نطاق المنتجات"
-    title="قطع ألياف الكربون حسب النوع"
-    subtitle="استكشف قطع السيارات المصنوعة من ألياف الكربون لدينا — سبويلر، أجنحة، أغطية محرك، ناشرات والمزيد. تختلف التوفر حسب تطبيق المركبة."
-    columns={4}
-    classes={{ container: 'max-w-[1720px]' }}
-    items={[
+  <section class="max-w-[1720px] mx-auto px-4 sm:px-6 pt-12 pb-6">
+    <p class="text-primary font-bold">CCF · КАТАЛОГ ДЛЯ БИЗНЕСА</p><h1 class="text-4xl md:text-5xl font-bold mt-3">
+      Детали BMW по категориям
+    </h1><p class="text-lg text-muted mt-5 max-w-4xl">
+      {allProducts.length} карточки товаров с фотографиями. Выберите тип детали или <a
+        href="/vehicles/bmw/"
+        class="text-primary underline">подберите BMW по кузову</a
+      >. Для Mercedes-AMG и Porsche доступны <a href="/catalogs/" class="text-primary underline">каталоги по моделям</a
+      >.
+    </p>
+  </section>
+  <section class="max-w-[1720px] mx-auto px-4 sm:px-6 py-8" aria-label="Категории деталей">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {
-        title: 'الشفاه الأمامية والسبليتر',
-        image: categoryImage('front-lips-splitters'),
-        callToAction: { text: 'عرض الفئة', href: '/products/front-lips-splitters' },
-      },
-      {
-        title: 'الناشرات الخلفية',
-        image: categoryImage('rear-diffusers'),
-        callToAction: { text: 'عرض الفئة', href: '/products/rear-diffusers' },
-      },
-      {
-        title: 'التنانير الجانبية',
-        image: categoryImage('side-skirts'),
-        callToAction: { text: 'عرض الفئة', href: '/products/side-skirts' },
-      },
-      {
-        title: 'السبويلر والأجنحة',
-        image: categoryImage('spoilers-wings'),
-        callToAction: { text: 'عرض الفئة', href: '/products/spoilers-wings' },
-      },
-      {
-        title: 'أغطية المحرك',
-        image: categoryImage('hoods'),
-        callToAction: { text: 'عرض الفئة', href: '/products/hoods' },
-      },
-      {
-        title: 'أغطية صندوق الأمتعة',
-        image: categoryImage('trunk-lids'),
-        callToAction: { text: 'عرض الفئة', href: '/products/trunk-lids' },
-      },
-      {
-        title: 'الشبكات وفتحات التهوية',
-        image: categoryImage('grilles-air-intake'),
-        callToAction: { text: 'عرض الفئة', href: '/products/grilles-air-intake' },
-      },
-      {
-        title: 'أغطية المرايا',
-        image: categoryImage('mirror-caps'),
-        callToAction: { text: 'عرض الفئة', href: '/products/mirror-caps' },
-      },
-      {
-        title: 'الزخارف الخارجية',
-        image: categoryImage('exterior-trim'),
-        callToAction: { text: 'عرض الفئة', href: '/products/exterior-trim' },
-      },
-      {
-        title: 'الأبواب والرفارف',
-        image: categoryImage('body-panels'),
-        callToAction: { text: 'عرض الفئة', href: '/products/body-panels' },
-      },
-      {
-        title: 'أغطية حجرة المحرك',
-        image: categoryImage('engine-bay'),
-        callToAction: { text: 'عرض الفئة', href: '/products/engine-bay' },
-      },
-      {
-        title: 'زخارف المقاعد الداخلية',
-        image: categoryImage('interior-trim'),
-        callToAction: { text: 'عرض الفئة', href: '/products/interior-trim' },
-      },
-    ]}
-  />
-
-  <!-- Product FAQ -->
-  <FAQs
-    tagline="أسئلة المنتجات"
-    title="الأسئلة الشائعة حول قطع ألياف الكربون"
-    subtitle="إجابات عن أسئلة شائعة حول بنية المنتجات والتشطيبات والطلب بالجملة."
-    schema
-    items={[
-      {
-        title: 'ما أنواع قطع ألياف الكربون التي تقدمها CCF؟',
-        description:
-          'يشمل كتالوج CCF قطعاً خارجية وداخلية وإيروديناميكية وقطع هيكل لتطبيقات مركبات مختارة — شفاه أمامية، ناشرات خلفية، تنانير جانبية، سبويلر، أغطية محرك وأغطية صناديق أمتعة. تصفح حسب المركبة وافتح صفحة المنتج للتحقق من التصميم والتطبيق المذكورين.',
-      },
-      {
-        title: 'ما الفرق بين قطع الكربون الجاف والكربون الرطب؟',
-        description:
-          'يشير الكربون الجاف عادةً إلى قطع مصنوعة من ألياف كربون مُشبّعة مسبقاً (بريبريغ)، بينما يشير الكربون الرطب إلى عملية تمديد الراتنج الرطب. هذه المصطلحات وحدها لا تحدد الوزن أو القوة أو المطابقة — اسأل عن عملية التصنيع والبنية والوزن الفعلي للقطعة المختارة قبل مقارنة عروض الأسعار.',
-      },
-      {
-        title: 'هل تتوفر تشطيبات لامعة ومطفية؟',
-        description:
-          'تعتمد التشطيبات المتاحة على المنتج ومتطلبات الطلب. أرسل لنا مرجع المنتج والتشطيب المفضل (لامع أو مطفي) للتأكيد. وعند طلب طقم متطابق، حدد أيضاً نمط النسيج واتجاهه — لا تفترض أن القطع المطلوبة بشكل منفصل ستكون متطابقة المظهر.',
-      },
-      {
-        title: 'هل تعرض صور المنتجات كل ما يشمله الطلب؟',
-        description:
-          'صور المنتجات هي مراجع تصميمية؛ أكّد المحتويات المورّدة لرمز المنتج المحدد. اسأل عما إذا كان الإدراج يغطي قطعة واحدة أم زوجاً أم طقماً متعدد القطع، وعما إذا كانت الأقواس والمثبتات والملحقات مشمولة. قد تعرض صور المركبات قطعاً إضافية تُطلب بشكل منفصل.',
-      },
-    ]}
-  />
-
-  <!-- Closing CTA -->
-  <CallToAction
-    layout="banner"
-    title="لم تجد القطعة التي تحتاجها؟"
-    subtitle='أرسل لنا طراز مركبتك والقطعة المطلوبة — سنتحقق من تغطية الكتالوج أو نقيّم طلب تطوير مخصص. يمكنك أيضاً <a class="text-link underline" href="https://ccfrp.com/products/" target="_blank" rel="noopener">تصفح المنتجات على الموقع الرئيسي ←</a>'
-    actions={[
-      {
-        variant: 'primary',
-        text: 'تواصل عبر واتساب',
-        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
-        target: '_blank',
-        icon: 'tabler:brand-whatsapp',
-      },
-      {
-        variant: 'secondary',
-        text: 'اطلب عرض سعر بالجملة',
-        href: 'https://ccfrp.com/contact/',
-        target: '_blank',
-      },
-    ]}
-  />
-  <FeaturedProducts />
+        Object.entries(categoryNamesRu).map(([slug, name]) => {
+          const products = allProducts.filter((p) => p.categorySlug === slug);
+          const photo = products[0].images[0].lg;
+          return (
+            <a
+              href={`/products/${slug}/`}
+              class="bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-700 overflow-hidden hover:border-primary"
+            >
+              <>
+                <img
+                  src={photo.url}
+                  width={photo.width}
+                  height={photo.height}
+                  alt={name}
+                  loading="lazy"
+                  class="w-full aspect-[4/3] object-contain bg-white"
+                />
+                <div class="p-5">
+                  <>
+                    <h2 class="text-xl font-bold">{name}</h2>
+                    <p class="text-primary text-sm mt-2">Товаров: {products.length}</p>
+                    <p class="text-muted text-sm mt-3">{categoryDescriptionsRu[slug]}</p>
+                  </>
+                </div>
+              </>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+  <ProductCollection title="Избранные исполнения из каталога" limit={12} />
 </PageLayout>

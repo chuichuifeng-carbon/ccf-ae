@@ -1,0 +1,61 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
+import Button from '~/components/ui/Button.astro';
+import { whatsappUrl } from '~/utils/inquiry';
+const { brand, name } = Astro.props as { brand: string; name: string };
+const metadata = {
+  title: `Детали ${name} оптом — каталоги по моделям | CCF`,
+  description: `Подбор деталей ${name} по PDF-каталогам CCF. Укажите модель, год, комплектацию, номер позиции и количество для расчёта оптовой поставки из Китая.`,
+};
+---
+
+<PageLayout metadata={metadata}>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-6">
+    <a href="/vehicles/" class="text-primary">← Все марки</a><p class="text-primary font-bold mt-7">
+      {name} · ПОДБОР ПО КАТАЛОГАМ
+    </p><h1 class="text-4xl md:text-5xl font-bold mt-3">Детали {name} для оптовых заказов</h1><p
+      class="text-lg text-muted mt-5 max-w-4xl"
+    >
+      Выберите каталог модели и найдите нужную позицию. Пришлите название PDF, номер позиции, год автомобиля, фотографии
+      и количество — согласуем применяемость, состав комплекта и цену поставки.
+    </p><div class="flex flex-wrap gap-4 mt-7">
+      <Button variant="primary" href="#model-catalogs" text="Выбрать каталог модели" /><Button
+        variant="secondary"
+        href={whatsappUrl(`Подбор деталей ${name}`)}
+        text="Запросить подбор в WhatsApp"
+        target="_blank"
+      />
+    </div>
+  </section>
+  <ModelCatalogs brand={brand} />
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+    <h2 class="text-2xl font-bold mb-5">Что прислать для предложения</h2><ol
+      class="grid md:grid-cols-3 gap-5 list-none"
+    >
+      {
+        [
+          [
+            '1. Автомобиль',
+            'Модель, поколение, год выпуска и комплектация. Добавьте фото бампера, выхлопа или заменяемого узла.',
+          ],
+          [
+            '2. Деталь',
+            'Ссылка на каталог, номер позиции и выбранное исполнение. Уточните материал и состав комплекта.',
+          ],
+          [
+            '3. Заказ',
+            'Количество по каждой позиции, страна и город доставки, требования к упаковке и вашему логотипу.',
+          ],
+        ].map(([title, text]) => (
+          <li class="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6">
+            <>
+              <h3 class="font-bold">{title}</h3>
+              <p class="text-muted mt-3">{text}</p>
+            </>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</PageLayout>

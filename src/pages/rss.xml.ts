@@ -20,7 +20,7 @@ export const GET = async () => {
   const posts = await fetchPosts();
 
   const rss = await getRssString({
-    title: getPageSeo('/blog')?.h1 || `${SITE.name} — أدلة المشترين`,
+    title: getPageSeo('/blog')?.h1 || `${SITE.name} — Руководства покупателя`,
     description: getPageSeo('/blog')?.description || METADATA?.description || '',
     site: import.meta.env.SITE,
 

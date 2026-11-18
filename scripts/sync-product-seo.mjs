@@ -25,7 +25,7 @@ const records = allProducts.map((p) => ({
 }));
 for (const slug of Object.keys(productCategories)) {
   const p = allProducts.find((p) => p.categorySlug === slug);
-  const h1 = `${productCategories[slug]}${slug === 'lighting' ? '' : ' كربون'} لسيارات BMW`;
+  const h1 = `${productCategories[slug]} для BMW`;
   records.push({
     route: `/products/${slug}`,
     title: `${categorySeo[slug].title} | CCF`,
@@ -69,12 +69,13 @@ for (const r of records) {
     canonical: canonicalUrl(r.route),
     file: r.route.slice(1) + '/index.html',
     focusKeyword: r.h1,
-    supportingKeywords: ['BMW', 'كربون', 'توريد بالجملة'],
+    supportingKeywords: ['BMW', 'оптом', 'производитель'],
     titleCharacters: [...r.title].length,
     descriptionCharacters: [...r.description].length,
     robots: 'index, follow, max-image-preview:large',
     sitemap: true,
     ogType: 'website',
+    ogLocale: 'ru_RU',
     ogTitle: r.title,
     ogDescription: r.description,
     ogUrl: canonicalUrl(r.route),

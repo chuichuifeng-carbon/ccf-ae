@@ -1,8 +1,9 @@
+import { localizeProductRu } from './product-localization-ru.ts';
 import type { ProductDetail } from './all-products-types';
 
 export type { ProductDetail } from './all-products-types';
 
-export const allProducts: ProductDetail[] = [
+const sourceProducts: ProductDetail[] = [
   {
     reviewedAt: '2026-11-16',
     slug: 'bmw-g80-g82-3d-style-front-lip-with-bumper-spats-kit',
@@ -140927,6 +140928,8 @@ export const allProducts: ProductDetail[] = [
     ],
   },
 ];
+
+export const allProducts: ProductDetail[] = sourceProducts.map(localizeProductRu);
 
 export function groupByCategory(products: ProductDetail[]): Record<string, ProductDetail[]> {
   const map: Record<string, ProductDetail[]> = {};

@@ -41,6 +41,13 @@ const generatePermalink = async ({
     .join('/');
 };
 
+const taxonomyLabelsRu: Record<string, string> = {
+  'أدلة المشترين': 'Руководства покупателя',
+  الجملة: 'Оптовые закупки',
+  التصنيع: 'Производство',
+  'ألياف الكربون الجاف': 'Сухой карбон',
+};
+
 const catalogUrls = new Set(catalogs.flatMap((group) => group.entries.map((entry) => entry.url)));
 
 const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> => {
@@ -72,13 +79,13 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
   const category = rawCategory
     ? {
         slug: cleanSlug(rawCategory),
-        title: rawCategory,
+        title: taxonomyLabelsRu[rawCategory] || rawCategory,
       }
     : undefined;
 
   const tags = rawTags.map((tag: string) => ({
     slug: cleanSlug(tag),
-    title: tag,
+    title: taxonomyLabelsRu[tag] || tag,
   }));
 
   return {
@@ -150,7 +157,7 @@ export const blogPostsPerPage = APP_BLOG?.postsPerPage;
 
 /** */
 export const fetchPosts = async (): Promise<Array<Post>> => {
-  if (!_posts) {
+  if (!_posts || import.meta.env.DEV) {
     _posts = await load();
   }
 

@@ -854,11 +854,14 @@ async function main() {
   }
 
   const helpers = fs.readFileSync(path.join(ROOT, 'scripts/catalog-helpers.txt'), 'utf8');
-  const body = `import type { ProductDetail } from './all-products-types';
+  const body = `import { localizeProductRu } from './product-localization-ru.ts';
+import type { ProductDetail } from './all-products-types';
 
 export type { ProductDetail } from './all-products-types';
 
-export const allProducts: ProductDetail[] = ${JSON.stringify(products.map(correctCslTailLights), null, 2)};
+const sourceProducts: ProductDetail[] = ${JSON.stringify(products.map(correctCslTailLights), null, 2)};
+
+export const allProducts: ProductDetail[] = sourceProducts.map(localizeProductRu);
 ${helpers}`;
   fs.writeFileSync(OUT_TS, body, 'utf8');
 

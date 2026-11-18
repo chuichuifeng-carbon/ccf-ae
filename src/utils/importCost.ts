@@ -4,7 +4,8 @@ export function parseUsd(value: string): number | null {
     .trim()
     .replace(/[٠-٩]/g, (digit) => String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit)))
     .replace(/[۰-۹]/g, (digit) => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(digit)))
-    .replace('٫', '.');
+    .replace('٫', '.')
+    .replace(',', '.');
   if (!/^\d+(?:\.\d{1,2})?$/.test(normalized)) return null;
   const [whole, fraction = ''] = normalized.split('.');
   const cents = Number(whole) * 100 + Number(fraction.padEnd(2, '0'));

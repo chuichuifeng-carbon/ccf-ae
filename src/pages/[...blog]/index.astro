@@ -110,8 +110,8 @@ const articleSchema = {
 };
 
 const breadcrumbs = [
-  { text: 'الرئيسية', href: getPermalink('/') },
-  ...(isBlogListRouteEnabled ? [{ text: 'المدونة', href: getBlogPermalink() }] : []),
+  { text: 'Главная', href: getPermalink('/') },
+  ...(isBlogListRouteEnabled ? [{ text: 'Блог', href: getBlogPermalink() }] : []),
   ...(post.category && isBlogCategoryRouteEnabled
     ? [{ text: post.category.title, href: getPermalink(post.category.slug, 'category') }]
     : []),

@@ -42,7 +42,7 @@ export function withPageSeo(pathname: string, fallback: MetaData = {}): MetaData
       ...fallback.openGraph,
       url: canonical || undefined,
       siteName: SITE.name,
-      locale: 'ar_AR',
+      locale: 'ru_RU',
       type: page.ogType,
       images: [{ url: page.image, width: page.imageWidth, height: page.imageHeight }],
     },

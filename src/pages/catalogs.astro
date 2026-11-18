@@ -1,9 +1,6 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
 import ModelCatalogs from '~/components/widgets/ModelCatalogs.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 import StructuredData from '~/components/common/StructuredData.astro';
 import catalogs from '~/data/b2b/catalogs.json';
 import { getCanonical } from '~/utils/permalinks';
@@ -19,13 +16,13 @@ const documents = catalogs.flatMap((group) =>
 );
 
 const metadata = {
-  title: 'كتالوج قطع كربون BMW ومرسيدس وبورش PDF | CCF',
+  title: 'PDF-каталоги деталей BMW, Mercedes-AMG и Porsche | CCF',
   description:
-    'افتح كتالوجات PDF لقطع كربون BMW وMercedes-AMG وPorsche حسب الطراز والجيل. حدّد رقم المرجع والمادة ثم أرسل الكمية والوجهة لطلب السعر عبر واتساب.',
+    'Оригинальные PDF-каталоги CCF по марке и модели: BMW, Mercedes-AMG и Porsche. Выберите позицию, исполнение и количество для запроса оптовой цены.',
 };
 ---
 
-<PageLayout metadata={metadata}>
+<PageLayout metadata={metadata} includeBuyerResources={false}>
   <StructuredData
     slot="head"
     schema={{
@@ -33,76 +30,34 @@ const metadata = {
       '@type': 'ItemList',
       '@id': url + '#model-catalogs',
       mainEntityOfPage: { '@id': url + '#webpage' },
-      name: 'كتالوجات المركبات',
+      name: 'Каталоги по моделям',
       numberOfItems: documents.length,
       itemListElement: documents.map((item, i) => ({ '@type': 'ListItem', position: i + 1, item })),
     }}
   />
-  <!-- HeroText -->
-  <HeroText
-    tagline="BMW · Mercedes-AMG · Porsche · كتالوجات PDF"
-    title="كتالوجات قطع ألياف الكربون PDF حسب المركبة"
-    subtitle="اختر العلامة والطراز وافتح كتالوج PDF مباشرة. تعرض هذه الصفحة كتالوجات BMW ومرسيدس Mercedes-AMG وبورش Porsche؛ حدّد رقم المرجع والمادة ثم أرسل الكمية وبلد التسليم لطلب عرض سعر عبر واتساب."
-    callToAction={{
-      text: 'اسأل عن القطع عبر واتساب',
-      href: 'https://wa.me/8613427690360',
-      target: '_blank',
-      icon: 'tabler:brand-whatsapp',
-    }}
-    callToAction2={{ text: 'اختر كتالوج المركبة', href: '#model-catalogs', variant: 'secondary' }}
-  />
-
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-6">
+    <p class="text-primary font-bold">BMW · MERCEDES-AMG · PORSCHE · PDF</p><h1
+      class="text-4xl md:text-5xl font-bold mt-4"
+    >
+      Каталоги деталей по моделям автомобилей
+    </h1><p class="text-lg text-muted max-w-4xl mt-5">
+      Выберите марку и модель, откройте исходный PDF и отправьте название каталога, номер позиции, количество и город
+      доставки. Номер строки относится к этому каталогу и не обязательно является заводским SKU.
+    </p><div class="flex flex-wrap gap-4 mt-6">
+      <a class="btn-primary" href="/vehicles/bmw/">Подобрать BMW по кузову</a><a class="btn-secondary" href="/contact/"
+        >Запросить помощь с подбором</a
+      >
+    </div>
+  </section>
   <ModelCatalogs />
-
-  <!-- About the catalog library -->
-  <Features2
-    tagline="داخل مكتبة الكتالوجات"
-    title="مراجع منتجات حسب العلامة والطراز"
-    subtitle="تعرض كتالوجات PDF مراجع المنتجات المنشورة لتطبيقات مركبات مختارة. للتطبيقات دون كتالوج منشور، أرسل الطراز والسنة والقطع المطلوبة لمراجعة الملاءمة والتوفر."
-    columns={4}
-    items={[
-      {
-        title: 'كتالوجات العلامات الثلاث',
-        description: 'مراجع المنتجات حسب الطراز لسيارات BMW وMercedes-AMG وPorsche فقط في هذا الموقع.',
-        icon: 'tabler:file-type-pdf',
-      },
-      {
-        title: 'مراجعة التطبيق',
-        description: 'أرسل سنة المركبة ورمز الهيكل ومرجع القطعة وصور منطقة التركيب لمراجعة المطابقة.',
-        icon: 'tabler:car',
-      },
-      {
-        title: 'طلب من وحدة واحدة',
-        description: 'منتجات الكتالوج القياسية تدعم الشراء بوحدة واحدة حيثما توفرت، مع إمكانية دمج منتجات مختارة.',
-        icon: 'tabler:package',
-      },
-      {
-        title: 'تطوير OEM/ODM',
-        description: 'لقطعة غير موجودة في الكتالوج، يمكن مراجعة التوريد بعلامة خاصة أو مشروع تطوير منفصل.',
-        icon: 'tabler:settings',
-      },
-    ]}
-  />
-
-  <!-- Closing CTA -->
-  <CallToAction
-    layout="banner"
-    title="اختر كتالوج BMW أو Mercedes-AMG أو Porsche"
-    subtitle="المكتبة الكاملة مستضافة على ccfrp.com. تصفّح الكتالوج المناسب لمركبتك، ثم أرسل رمز المنتج والكمية وبلد الوجهة للتحقق من التوفر والتسعير."
-    actions={[
-      {
-        variant: 'primary',
-        text: 'تواصل عبر واتساب',
-        href: 'https://wa.me/8613427690360?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%82%D8%B7%D8%B9%20%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%88%D9%86%20%D9%85%D9%86%20CCF%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1.',
-        target: '_blank',
-        icon: 'tabler:brand-whatsapp',
-      },
-      {
-        variant: 'secondary',
-        text: 'اطلب عرض سعر',
-        href: 'https://ccfrp.com/contact/',
-        target: '_blank',
-      },
-    ]}
-  />
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+    <h2 class="text-2xl font-bold mb-4">От позиции каталога к предложению</h2><p class="text-muted">
+      Добавьте год и фотографии автомобиля, выбранное исполнение и нужный состав комплекта. Материал, применяемость,
+      доступность и условия поставки согласуются по заказу. Исходные PDF могут содержать английский и китайский текст.
+    </p><div class="flex flex-wrap gap-5 mt-5 text-primary underline">
+      <a href="/products/">Карточки товаров</a><a href="/grow/wholesale/">Оптовые поставки</a><a href="/faqs/#fitment"
+        >Вопросы по применяемости</a
+      >
+    </div>
+  </section>
 </PageLayout>

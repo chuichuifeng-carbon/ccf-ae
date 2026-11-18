@@ -1,8 +1,10 @@
 ---
+import { productCardTitleRu } from '~/data/b2b/product-labels-ru';
 import { allProducts } from '~/data/b2b/all-products';
 import Button from '~/components/ui/Button.astro';
 import { whatsappUrl } from '~/utils/inquiry';
 import { getCanonical } from '~/utils/permalinks';
+import { productReference } from '~/utils/product-reference';
 
 const { category, chassis, title, limit } = Astro.props as {
   category?: string;
@@ -23,11 +25,11 @@ if (filtered.length === 0) {
 }
 ---
 
-<section data-product-collection={category} class="max-w-[1720px] mx-auto px-4 sm:px-6 py-12 md:py-16">
+<section data-product-collection={category || 'all'} class="max-w-[1720px] mx-auto px-4 sm:px-6 py-12 md:py-16">
   {title && <h2 class="text-3xl md:text-4xl font-bold mb-4">{title}</h2>}
-  <p class="text-lg text-muted max-w-4xl mb-8">
-    تصفّح {shown.length}{truncated ? ` من ${filtered.length}` : ''} مرجعاً مصوراً. افتح تفاصيل القطعة لمراجعة التطبيق؛ المادة
-    والمطابقة والتوفر تُؤكّد للطلب المحدد.
+  <p data-collection-summary class="text-lg text-muted max-w-4xl mb-8">
+    Показано {shown.length}{truncated ? ` из ${filtered.length}` : ''} товаров. Откройте карточку, чтобы посмотреть фотографии
+    и отправить запрос.
   </p>
 
   <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -35,13 +37,16 @@ if (filtered.length === 0) {
       shown.map((product) => (
         <article
           data-category={product.categorySlug}
-          data-search={product.title.toLowerCase()}
-          class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-700 bg-page group"
+          data-chassis={product.chassisCodes.join(' ')}
+          data-search={[productCardTitleRu(product), product.productDirName, product.model, product.partTypeEn]
+            .join(' ')
+            .toLowerCase()}
+          class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 group"
         >
-          <a href={`/products/${product.slug}`} aria-label={product.title} class="block bg-white">
+          <a href={`/products/${product.slug}/`} aria-label={productCardTitleRu(product)} class="block bg-white">
             <img
               src={product.featuredSm}
-              alt={product.title}
+              alt={productCardTitleRu(product)}
               width="400"
               height="300"
               loading="lazy"
@@ -55,23 +60,33 @@ if (filtered.length === 0) {
               <bdi dir="ltr">{product.model}</bdi>
             </p>
             <h3 class="font-bold mb-3 leading-snug">
-              <a href={`/products/${product.slug}`} class="hover:underline">
-                {product.title}
+              <a href={`/products/${product.slug}/`} class="hover:underline">
+                {productCardTitleRu(product)}
               </a>
             </h3>
+            <p class="text-xs text-muted mb-3">Код сайта: {productReference(product.slug)}</p>
             <div class="mt-auto flex flex-wrap gap-3">
-              <Button variant="primary" text="عرض التفاصيل" href={`/products/${product.slug}`} class="text-sm" />
+              <Button variant="primary" text="Подробнее" href={`/products/${product.slug}/`} class="text-sm" />
               <Button
                 variant="secondary"
-                text="اطلب سعر"
+                text="Запросить цену"
                 icon="tabler:brand-whatsapp"
                 target="_blank"
-                href={whatsappUrl(product.title, String(getCanonical(`/products/${product.slug}`)))}
-                data-inquiry-context={product.title}
-                data-inquiry-reference={String(getCanonical(`/products/${product.slug}`))}
+                href={whatsappUrl(productCardTitleRu(product), String(getCanonical(`/products/${product.slug}/`)))}
+                data-inquiry-context={productCardTitleRu(product)}
+                data-inquiry-reference={String(getCanonical(`/products/${product.slug}/`))}
                 class="text-sm"
               />
             </div>
+            <button
+              hidden
+              type="button"
+              data-rfq-add={product.slug}
+              data-rfq-title={product.title}
+              class="btn-secondary w-full mt-3 text-sm"
+            >
+              В список запроса
+            </button>
           </div>
         </article>
       ))
@@ -81,12 +96,12 @@ if (filtered.length === 0) {
   {
     truncated && (
       <div class="mt-8">
-        <Button variant="secondary" text={`عرض جميع المنتجات (${allProducts.length})`} href="/products" />
+        <Button variant="secondary" text={`Все товары (${allProducts.length})`} href="/products" />
       </div>
     )
   }
 
   <p class="text-sm text-muted mt-6">
-    قد تعرض صور التركيب أجزاء أخرى غير مشمولة. أكّد المرجع والمادة والتشطيب والقطع المتضمنة لطلبك المحدد.
+    Для точного расчёта сообщите комплектацию автомобиля, количество и город доставки.
   </p>
 </section>

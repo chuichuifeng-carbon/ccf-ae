@@ -76,12 +76,12 @@ const persistKey = `header-${Array.from(
     <div class="absolute inset-0"></div>
     <div
       class:list={[
-        'relative text-default py-3 px-3 lg:px-6 mx-auto w-full',
+        'relative text-default py-3 px-3 xl:px-6 mx-auto w-full',
         {
-          'lg:flex lg:justify-between': position !== 'center',
+          'xl:flex xl:justify-between': position !== 'center',
         },
         {
-          'lg:grid lg:grid-cols-3 lg:items-center': position === 'center',
+          'xl:grid xl:grid-cols-[auto_minmax(0,1fr)_auto] xl:items-center': position === 'center',
         },
         {
           'max-w-7xl': !isFullWidth,
@@ -92,16 +92,16 @@ const persistKey = `header-${Array.from(
         <a class="flex items-center" href={getHomePermalink()}>
           <Logo />
         </a>
-        <div class="flex items-center lg:hidden">
+        <div class="flex items-center xl:hidden">
           <ToggleMenu />
         </div>
       </div>
       <nav
-        class="items-center w-full lg:w-auto hidden lg:flex lg:mx-5 text-default overflow-y-auto overflow-x-hidden lg:overflow-visible lg:justify-self-center"
-        aria-label="التنقل الرئيسي"
+        class="items-center w-full xl:w-auto hidden xl:flex xl:mx-5 text-default overflow-y-auto overflow-x-hidden xl:overflow-visible xl:justify-self-center"
+        aria-label="Основная навигация"
       >
         <ul
-          class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] font-medium lg:justify-center"
+          class="flex flex-col xl:flex-row xl:self-center w-full xl:w-auto text-xl xl:text-[0.9375rem] tracking-[0.01rem] font-medium xl:justify-center"
         >
           {
             links.map(({ text, href, links }) => (
@@ -110,20 +110,20 @@ const persistKey = `header-${Array.from(
                   <>
                     <button
                       type="button"
-                      class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap"
+                      class="hover:text-link dark:hover:text-white px-4 xl:px-2.5 py-3 flex items-center whitespace-nowrap"
                     >
                       {text}{' '}
                       <Icon
                         name="tabler:chevron-down"
-                        class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden lg:inline"
+                        class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden xl:inline"
                       />
                     </button>
-                    <ul class="dropdown-menu lg:backdrop-blur-md dark:lg:bg-slate-900 dark:lg:border dark:lg:border-slate-700/50 rounded lg:absolute ps-4 lg:ps-0 lg:hidden font-medium lg:bg-white/90 lg:min-w-[200px] drop-shadow-xl">
+                    <ul class="dropdown-menu xl:backdrop-blur-md dark:xl:bg-slate-900 dark:xl:border dark:xl:border-slate-700/50 rounded xl:absolute ps-4 xl:ps-0 xl:hidden font-medium xl:bg-white/90 xl:min-w-[200px] drop-shadow-xl">
                       {links.map(({ text: text2, href: href2 }) => (
                         <li>
                           <a
                             class:list={[
-                              'first:rounded-t last:rounded-b lg:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-nowrap',
+                              'first:rounded-t last:rounded-b xl:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-nowrap',
                               { 'aw-link-active': isActive(href2) },
                             ]}
                             href={href2}
@@ -138,7 +138,7 @@ const persistKey = `header-${Array.from(
                 ) : (
                   <a
                     class:list={[
-                      'hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap',
+                      'hover:text-link dark:hover:text-white px-4 xl:px-2.5 py-3 flex items-center whitespace-nowrap',
                       { 'aw-link-active': isActive(href) },
                     ]}
                     href={href}
@@ -155,17 +155,17 @@ const persistKey = `header-${Array.from(
       <div
         class:list={[
           { 'ml-auto rtl:ml-0 rtl:mr-auto': position === 'left' },
-          'hidden lg:self-center lg:flex items-center lg:mb-0 fixed w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end',
+          'hidden xl:self-center xl:flex items-center xl:mb-0 fixed w-full xl:w-auto xl:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 xl:p-0 xl:justify-self-end',
         ]}
       >
-        <div class="items-center flex justify-between w-full lg:w-auto">
+        <div class="items-center flex justify-between w-full xl:w-auto">
           <div class="flex">
-            {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 lg:w-5 lg:h-5 lg:inline-block" />}
+            {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 xl:w-5 xl:h-5 xl:inline-block" />}
             {
               showRssFeed && (
                 <a
                   class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                  aria-label="خلاصة RSS"
+                  aria-label="RSS-лента"
                   href={getAsset('/rss.xml')}
                 >
                   <Icon name="tabler:rss" class="w-5 h-5" />
@@ -177,7 +177,7 @@ const persistKey = `header-${Array.from(
             actions?.length ? (
               <span class="ml-4 rtl:ml-0 rtl:mr-4">
                 {actions.map((btnProps) => (
-                  <Button {...btnProps} class="ml-2 py-2.5 px-5.5 lg:px-6 font-semibold shadow-none text-sm w-auto" />
+                  <Button {...btnProps} class="ml-2 py-2.5 px-5.5 xl:px-6 font-semibold shadow-none text-sm w-auto" />
                 ))}
               </span>
             ) : (
@@ -267,7 +267,7 @@ const persistKey = `header-${Array.from(
       });
 
       // Close it when leaving the mobile/tablet breakpoint (desktop nav starts at `lg`).
-      this.mql = window.matchMedia('(max-width: 1023px)');
+      this.mql = window.matchMedia('(max-width: 1279px)');
       this.onMqlChange = () => closeMenu();
       this.mql.addEventListener('change', this.onMqlChange);
 

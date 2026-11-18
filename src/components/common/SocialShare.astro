@@ -11,12 +11,12 @@ const { text, url, class: className = 'inline-block' } = Astro.props;
 ---
 
 <aw-social-share class={className}>
-  <span class="align-super font-bold text-slate-500 dark:text-slate-400">مشاركة:</span>
+  <span class="align-super font-bold text-slate-500 dark:text-slate-400">Поделиться:</span>
   <button
     type="button"
     class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="مشاركة عبر تويتر"
-    aria-label="مشاركة عبر تويتر"
+    title="Поделиться в X"
+    aria-label="Поделиться в X"
     data-aw-social-share="twitter"
     data-aw-url={url}
     data-aw-text={text}
@@ -28,8 +28,8 @@ const { text, url, class: className = 'inline-block' } = Astro.props;
   <button
     type="button"
     class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="مشاركة عبر فيسبوك"
-    aria-label="مشاركة عبر فيسبوك"
+    title="Поделиться в Facebook"
+    aria-label="Поделиться в Facebook"
     data-aw-social-share="facebook"
     data-aw-url={url}
     ><Icon
@@ -40,8 +40,8 @@ const { text, url, class: className = 'inline-block' } = Astro.props;
   <button
     type="button"
     class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="مشاركة عبر لينكدإن"
-    aria-label="مشاركة عبر لينكدإن"
+    title="Поделиться в LinkedIn"
+    aria-label="Поделиться в LinkedIn"
     data-aw-social-share="linkedin"
     data-aw-url={url}
     data-aw-text={text}
@@ -53,8 +53,8 @@ const { text, url, class: className = 'inline-block' } = Astro.props;
   <button
     type="button"
     class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="مشاركة عبر واتساب"
-    aria-label="مشاركة عبر واتساب"
+    title="Поделиться в WhatsApp"
+    aria-label="Поделиться в WhatsApp"
     data-aw-social-share="whatsapp"
     data-aw-url={url}
     data-aw-text={text}
@@ -66,8 +66,8 @@ const { text, url, class: className = 'inline-block' } = Astro.props;
   <button
     type="button"
     class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="مشاركة عبر البريد الإلكتروني"
-    aria-label="مشاركة عبر البريد الإلكتروني"
+    title="Поделиться по email"
+    aria-label="Поделиться по email"
     data-aw-social-share="mail"
     data-aw-url={url}
     data-aw-text={text}

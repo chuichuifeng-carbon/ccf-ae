@@ -17,7 +17,8 @@ for (const post of registry) {
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   );
   assert.ok(headings[0][2].startsWith('CCF'));
-  assert.ok(fm.metadata.title.includes('Top 10 Best'));
+  assert.ok(fm.metadata.title.includes('10') && /[А-Яа-яЁё]/.test(fm.metadata.title));
+  assert.ok(!/[\u0600-\u06ff]/.test(fm.metadata.title + fm.excerpt + JSON.stringify(fm.listItems)));
   assert.ok(fm.title.includes('10'));
   assert.ok(!/تصنيفاً مستقلاً|هذه توصيات تحريرية|هذه ترشيحات CCF|هذه اختيارات CCF/.test(body));
   const external = [...body.matchAll(/\[[^\]]+\]\((https?:\/\/[^)]+)\)/g)].map((m) => m[1]);
@@ -52,7 +53,8 @@ for (const post of registry) {
   }
   walk(parse(html));
   assert.equal(competitors, 0);
-  assert.ok(html.includes('data-inquiry-context'));
+  assert.ok(html.includes('data-inquiry-prefilled'));
+  assert.ok(html.includes('8613427690360'));
   assert.ok(post.sources.length >= 4);
   assert.ok(fs.readFileSync(`dist${post.parent}/index.html`, 'utf8').includes(post.route));
   report.push({
@@ -78,5 +80,5 @@ fs.writeFileSync(
   JSON.stringify({ date: '2026-11-02', articles: report }, null, 2) + '\n'
 );
 console.log(
-  'Passed 10 listicles: Top 10/Best titles, 10 items each, CCF first, no competitor hyperlinks, matching Article/ItemList, parent links and source records.'
+  'Passed 10 listicles: Russian selection titles, 10 items each, CCF first, no competitor hyperlinks, matching Article/ItemList, parent links and source records.'
 );
